@@ -1,0 +1,1132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-1 (1.67)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Change of Base Rings</TITLE>
+<META NAME="description" CONTENT="Change of Base Rings">
+<META NAME="keywords" CONTENT="frt">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="frt.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node3.html">
+<LINK REL="up" HREF="frt.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html53"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html51"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html45"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html54"
+  HREF="node5.html">FRT-Construction</A>
+<B> Up:</B> <A NAME="tex2html52"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html46"
+  HREF="node3.html">Comparison Theorems</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00040000000000000000">
+Change of Base Rings</A>
+</H1>
+
+<P>
+Let <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$"> be another noetherian integral domain together with a
+homomorphism <!-- MATH
+ $R\rightarrow S$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img110.png"
+ ALT="$R\rightarrow S$"> of rings. We will consider <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">
+as an <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-algebra via this homomorphism. In this situation there
+is a functor from the category of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-modules into the category of 
+<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">-modules given by
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{W}^{S}:=S\otimes_{R} W \;\;\mbox{ and } \;\;
+ {\alpha}^{S}:={\rm id}_{S} \otimes \alpha:{U}^{S} \rightarrow 
+{W}^{S}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="S-Funktor"></A><IMG
+ WIDTH="481" HEIGHT="31" BORDER="0"
+ SRC="img111.png"
+ ALT="\begin{displaymath}
+{W}^{S}:=S\otimes_{R} W \;\;\mbox{ and } \;\;
+{\alpha}^{S}:={\rm id}_{S} \otimes \alpha:{U}^{S} \rightarrow
+{W}^{S}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+to each pair of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-modules <IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$W$"> and <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img59.png"
+ ALT="$U$"> and an  <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-homomorphism
+<!-- MATH
+ $\alpha:U \rightarrow W$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img112.png"
+ ALT="$\alpha:U \rightarrow W$">. We will study the behaviour of the construction of
+centralizer coalgebras under these functors. It will turn out that the
+centralizer coalgebra behaves better than the centralizer algebra.
+To start with let
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{{\cal E}}_{S} := {\rm End}_{S}{({V}^{S})},\;\;
+{\zeta}_{S}:{{\cal E}}^{S}\rightarrow {{\cal E}}_{S}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="407" HEIGHT="33" BORDER="0"
+ SRC="img113.png"
+ ALT="\begin{displaymath}{{\cal E}}_{S} := {\rm End}_{S}{({V}^{S})},\;\;
+{\zeta}_{S}:{{\cal E}}^{S}\rightarrow {{\cal E}}_{S}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="${\zeta}_{S}$"> is given by
+<!-- MATH
+ ${\zeta}_{S}(s \otimes e)(t \otimes v):=
+st \otimes e(v)$
+ -->
+<IMG
+ WIDTH="234" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="${\zeta}_{S}(s \otimes e)(t \otimes v):=
+st \otimes e(v)$"> for all <!-- MATH
+ $s,t \in S, e \in {\rm End}_{R}{(V)}, v \in
+ V$
+ -->
+<IMG
+ WIDTH="235" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.png"
+ ALT="$s,t \in S, e \in {\rm End}_{R}{(V)}, v \in
+V$">. Let <!-- MATH
+ $J_{A}:A\hookrightarrow {\cal E}$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.png"
+ ALT="$J_{A}:A\hookrightarrow {\cal E}$"> be the natural embedding 
+of the subalgebra <!-- MATH
+ $A\subseteq {\cal E}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$A\subseteq {\cal E}$"> and let
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{A}_{S}:={\rm im}({\zeta}_{S}\circ{J_{A}}^{S})
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="356" HEIGHT="33" BORDER="0"
+ SRC="img118.png"
+ ALT="\begin{displaymath}{A}_{S}:={\rm im}({\zeta}_{S}\circ{J_{A}}^{S})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+denote the image of <IMG
+ WIDTH="28" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img119.png"
+ ALT="${A}^{S}$"> in <!-- MATH
+ ${{\cal E}}_{S}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.png"
+ ALT="${{\cal E}}_{S}$">. Further there are
+natural homomorphisms
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\eta}_{S}: {C(A)}^{S} \rightarrow C({A}_{S})={\rm End}_{{A}_{S}}{({V}^{S})}\subseteq {{\cal E}}_{S}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="446" HEIGHT="33" BORDER="0"
+ SRC="img121.png"
+ ALT="\begin{displaymath}{\eta}_{S}: {C(A)}^{S} \rightarrow C({A}_{S})={\rm End}_{{A}_{S}}{({V}^{S})}\subseteq {{\cal E}}_{S}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+on generators given in a similar way to <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="${\zeta}_{S}$">. Note, that
+both, <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="${\zeta}_{S}$"> and <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> are homomorphisms of algebras
+connected by the equation
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+J_{C({A}_{S})}\circ {\eta}_{S}={\zeta}_{S} \circ
+{J_{C(A)}}^{S}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="382" HEIGHT="34" BORDER="0"
+ SRC="img123.png"
+ ALT="\begin{displaymath}J_{C({A}_{S})}\circ {\eta}_{S}={\zeta}_{S} \circ
+{J_{C(A)}}^{S}. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Thus <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> is injective
+if and only if <!-- MATH
+ ${J_{C(A)}}^{S}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.png"
+ ALT="${J_{C(A)}}^{S}$"> is injective (<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$J$"> stands for the 
+corresponding embeddings).  This may fail if <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$">
+is not a pure <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-submodule in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">. Further <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> may fail to
+be surjective (see the example following theorem <A HREF="node4.html#starkes_Kriterium">4.3</A>).
+<IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$"> is called <EM>stable under base change</EM> if <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> is an
+isomorphism of for all choices for <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">. Now, in 
+analogy to <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> we are going to consider natural homomorphisms
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\mu}_{S} : {M(A)}^{S} \rightarrow M({A}_{S})={({{\cal E}}_{S})}^*/K({A}_{S})
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="435" HEIGHT="33" BORDER="0"
+ SRC="img126.png"
+ ALT="\begin{displaymath}{\mu}_{S} : {M(A)}^{S} \rightarrow M({A}_{S})={({{\cal E}}_{S})}^*/K({A}_{S})\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+We will show that they are isomorphisms independent of the choices for <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.png"
+ ALT="$A,\; R$"> and <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">.
+To this claim we consider
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\chi}_{S}:={{{\zeta}_{S}}^*}^{-1}\circ\psi_{{\cal E}}:
+{{{\cal E}}^*}^{S}\rightarrow {({{\cal E}}_{S})}^*
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="404" HEIGHT="33" BORDER="0"
+ SRC="img128.png"
+ ALT="\begin{displaymath}{\chi}_{S}:={{{\zeta}_{S}}^*}^{-1}\circ\psi_{{\cal E}}:
+{{{\cal E}}^*}^{S}\rightarrow {({{\cal E}}_{S})}^*
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where  <!-- MATH
+ $\psi_{{\cal E}}:{{{\cal E}}^*}^{S}\rightarrow {{{\cal E}}^{S}}^*$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.png"
+ ALT="$\psi_{{\cal E}}:{{{\cal E}}^*}^{S}\rightarrow {{{\cal E}}^{S}}^*$"> is the natural
+homomorphism given by
+<!-- MATH
+ $\psi_{{\cal E}}(s \otimes f)(t \otimes e):=stf(e)$
+ -->
+<IMG
+ WIDTH="217" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.png"
+ ALT="$\psi_{{\cal E}}(s \otimes f)(t \otimes e):=stf(e)$">
+on genorators with <!-- MATH
+ $s,t \in S, \; f \in {{\cal E}}^*
+\; e \in W$
+ -->
+<IMG
+ WIDTH="189" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img131.png"
+ ALT="$s,t \in S, \; f \in {{\cal E}}^*
+\; e \in W$">. It is easy to check 
+that <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.png"
+ ALT="${\chi}_{S}$"> is a homomorphism of coalgebras
+if the coalgebra structure on <!-- MATH
+ ${{{\cal E}}^*}^{S}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img133.png"
+ ALT="${{{\cal E}}^*}^{S}$"> is defined in a canonical
+way (for details see [<A
+ HREF="node9.html#doc">Oe</A>] section 1.5). Further, the verification
+of the commutativity rule
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\chi}_{S}\circ {{\vartheta}_{tr}}^{S}={{\vartheta}_{tr}}_{S}\circ {\zeta}_{S}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="komm._isod"></A><IMG
+ WIDTH="362" HEIGHT="32" BORDER="0"
+ SRC="img134.png"
+ ALT="\begin{displaymath}
+{\chi}_{S}\circ {{\vartheta}_{tr}}^{S}={{\vartheta}_{tr}}_{S}\circ {\zeta}_{S}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+is straightforward, as well. Here <!-- MATH
+ ${{\vartheta}_{tr}}_{S}:{{\cal E}}_{S}\rightarrow 
+{({{\cal E}}_{S})}^*$
+ -->
+<IMG
+ WIDTH="145" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img135.png"
+ ALT="${{\vartheta}_{tr}}_{S}:{{\cal E}}_{S}\rightarrow
+{({{\cal E}}_{S})}^*$"> is the isomorphism induced by the
+matrix trace map <!-- MATH
+ ${tr}_{S}:{{\cal E}}_{S}\rightarrow S$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="${tr}_{S}:{{\cal E}}_{S}\rightarrow S$">. Setting
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+L({A}_{S}):=<[\nu,\mu ]| \nu \in {A}_{S}, \mu \in {{\cal E}}_{S}
+>_{S
+-\mbox{mod}},
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="450" HEIGHT="36" BORDER="0"
+ SRC="img137.png"
+ ALT="\begin{displaymath}L({A}_{S}):=&lt;[\nu,\mu ]\vert \nu \in {A}_{S}, \mu \in {{\cal E}}_{S}
+&gt;_{S
+-\mbox{mod}},\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+we obtain
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\rm im}({\zeta}_{S}\circ {J_{L(A)}}^{S})=L({A}_{S}),
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="380" HEIGHT="34" BORDER="0"
+ SRC="img138.png"
+ ALT="\begin{displaymath}{\rm im}({\zeta}_{S}\circ {J_{L(A)}}^{S})=L({A}_{S}),\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+since <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="${\zeta}_{S}$"> is an isomorphism of <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">-algebras. By
+definition we have <!-- MATH
+ ${K(A)}_{S}={{\vartheta}_{tr}}_{S}({L(A)}_{S})$
+ -->
+<IMG
+ WIDTH="184" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="${K(A)}_{S}={{\vartheta}_{tr}}_{S}({L(A)}_{S})$">
+and <!-- MATH
+ ${\rm im}({J_{K(A)}}^{S})={\rm im}({{\vartheta}_{tr}}^{S}\circ {J_{L(A)}}^{S})$
+ -->
+<IMG
+ WIDTH="256" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="${\rm im}({J_{K(A)}}^{S})={\rm im}({{\vartheta}_{tr}}^{S}\circ {J_{L(A)}}^{S})$">.
+Using (<A HREF="node4.html#komm._isod">6</A>) this yields
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\rm im}({\chi}_{S}\circ {J_{K(A)}}^{S})=K({A}_{S}).
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="Bild_KK"></A><IMG
+ WIDTH="386" HEIGHT="34" BORDER="0"
+ SRC="img141.png"
+ ALT="\begin{displaymath}
+{\rm im}({\chi}_{S}\circ {J_{K(A)}}^{S})=K({A}_{S}).
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Here again, we have used the symbol <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$J$"> to indicate embeddings
+of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-submodules. Note that in particular <!-- MATH
+ $K:= {\rm im}({J_{K(A)}}^{S})$
+ -->
+<IMG
+ WIDTH="141" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.png"
+ ALT="$K:= {\rm im}({J_{K(A)}}^{S})$"> is
+a coideal in <!-- MATH
+ ${{{\cal E}}^*}^{S}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img133.png"
+ ALT="${{{\cal E}}^*}^{S}$"> since <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.png"
+ ALT="${\chi}_{S}$"> is an isomorphism of
+coalgebras and therefore
+<!-- MATH
+ ${M(A)}^{S}\cong {{{\cal E}}^*}^{S}/ K$
+ -->
+<IMG
+ WIDTH="144" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="${M(A)}^{S}\cong {{{\cal E}}^*}^{S}/ K$"> is a coalgebra.
+Finally, we are able to define the natural homomorphism <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.png"
+ ALT="${\mu}_{S}$">
+as the factorization of <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.png"
+ ALT="${\chi}_{S}$"> 
+which exists by (<A HREF="node4.html#Bild_KK">7</A>).
+We immediately obtain
+
+<P>
+<P>
+<DIV><A NAME="base_extension"><B>Theorem  4.1</B></A> (Change of Base Rings)  &nbsp; 
+For any noetherian integral domain <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$"> which is an <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-algebra and any
+<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-subalgebra <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> there is a  natural homomorphism
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\mu}_{S}:S\otimes_{R}M(A)\rightarrow M(S\otimes_{R} A)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="406" HEIGHT="33" BORDER="0"
+ SRC="img145.png"
+ ALT="\begin{displaymath}{\mu}_{S}:S\otimes_{R}M(A)\rightarrow M(S\otimes_{R} A) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+which is an isomorphism of <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">-coalgebras. </DIV><P></P>
+
+<P>
+This means that <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is stable under base changes for all choices of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> and <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">.
+If the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-algebra <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$"> is a field, it follows from theorems
+<A HREF="node3.html#duale_Algebra">3.3</A> and <A HREF="node4.html#base_extension">4.1</A> that
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\rm dim}_{S}{(C({A}_{S}))}=
+{\rm dim}_{S}{({M({A}_{S})}^*)}=
+{\rm dim}_{S}{({({M(A)}^{S})}^*)}={\rm dim}_{S}{({M(A)}^{S})}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="Dim_CA_MA"></A><IMG
+ WIDTH="555" HEIGHT="33" BORDER="0"
+ SRC="img146.png"
+ ALT="\begin{displaymath}
+{\rm dim}_{S}{(C({A}_{S}))}=
+{\rm dim}_{S}{({M({A}_{S})}^*)}=
+{\rm dim}_{S}{({({M(A)}^{S})}^*)}={\rm dim}_{S}{({M(A)}^{S})}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Now, for a noetherian integral domain <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$"> 
+it is known from commutative algebra that an <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module <IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img60.png"
+ ALT="$W$"> is
+projective if and only if the dimension of <IMG
+ WIDTH="35" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img147.png"
+ ALT="${W}^{S}$"> is independent
+of the field <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">. Thus we obtain
+
+<P>
+<P>
+<DIV><A NAME="MA_lokal_frei"><B>Corollary  4.2</B></A> &nbsp; 
+Let <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$F$"> be the field of fractions of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">. Then
+<IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is projective if and only if
+<!-- MATH
+ ${\rm dim}_{S}{(C({A}_{S}))}={\rm dim}_{F}{(C({A}_{F}))}$
+ -->
+<IMG
+ WIDTH="250" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="${\rm dim}_{S}{(C({A}_{S}))}={\rm dim}_{F}{(C({A}_{F}))}$"> holds for each field
+<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">.</DIV><P></P>
+
+<P>
+<P>
+<DIV><A NAME="starkes_Kriterium"><B>Theorem  4.3</B></A> (Criterion of Projectivity)  &nbsp; 
+The following statements are equivalent:
+<DL COMPACT>
+<DT>(a)</DT>
+<DD>The centralizer coalgebra <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is projectiv.
+</DD>
+<DT>(b)</DT>
+<DD>The centralizer algebra <!-- MATH
+ $C(A)={\rm End}_{A}{(V)}$
+ -->
+<IMG
+ WIDTH="147" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.png"
+ ALT="$C(A)={\rm End}_{A}{(V)}$"> is stable under base change.
+</DD>
+<DT>(c)</DT>
+<DD><IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is torsion free and <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$"> a direct summand in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">. 
+</DD>
+</DL></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>First assume (a). Then the sequence
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+0\rightarrow K(A)\rightarrow {{\cal E}}^*\rightarrow M(A)\rightarrow 0
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="405" HEIGHT="33" BORDER="0"
+ SRC="img151.png"
+ ALT="\begin{displaymath}0\rightarrow K(A)\rightarrow {{\cal E}}^*\rightarrow M(A)\rightarrow 0 \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+is split and consequently the same is true for
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+0\rightarrow {M(A)}^*\rightarrow {{{\cal E}}^*}^* \rightarrow {{{\cal E}}^*}^*/{K(A)}^{\bot}\rightarrow 0.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="438" HEIGHT="33" BORDER="0"
+ SRC="img152.png"
+ ALT="\begin{displaymath}0\rightarrow {M(A)}^*\rightarrow {{{\cal E}}^*}^* \rightarrow {{{\cal E}}^*}^*/{K(A)}^{\bot}\rightarrow 0. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Since <!-- MATH
+ ${\rm Ev}_{{\cal E}}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="${\rm Ev}_{{\cal E}}$"> induces an isomorphism between
+<!-- MATH
+ ${{{\cal E}}^*}^*/{K(A)}^{\bot}$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.png"
+ ALT="${{{\cal E}}^*}^*/{K(A)}^{\bot}$"> and <IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.png"
+ ALT="${\cal E}/C(A)$">
+according to lemma <A HREF="node3.html#duales_Komplement">3.1</A> it follows
+that <IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.png"
+ ALT="${\cal E}/C(A)$"> is projective, as well. Thus
+<IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$"> is a direct summand in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">
+proving (c).
+<BR>
+<P>
+Part (a) follows from (c) by theorem <A HREF="node3.html#duale_Koalgebra">3.7</A>, since the
+dual of a projective module is projective again.
+To verify (b) we therefore may assume both (a) and (c). Since <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$">
+is a direct summand <!-- MATH
+ ${J_{C(A)}}^{S}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.png"
+ ALT="${J_{C(A)}}^{S}$"> is injective for all <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-algebras
+<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">. Consequentely all
+<IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> are injective (see above). To show surjectivity note that the image
+<!-- MATH
+ ${\rm im}({\zeta}_{S} \circ{J_{C(A)}}^{S})=
+{\rm im}(J_{C({A}_{S})}\circ {\eta}_{S})$
+ -->
+<IMG
+ WIDTH="276" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.png"
+ ALT="${\rm im}({\zeta}_{S} \circ{J_{C(A)}}^{S})=
+{\rm im}(J_{C({A}_{S})}\circ {\eta}_{S})$"> of <IMG
+ WIDTH="58" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.png"
+ ALT="${C(A)}^{S}$"> in <!-- MATH
+ ${{\cal E}}_{S}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.png"
+ ALT="${{\cal E}}_{S}$">
+must be a direct summand therein, since <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="${\zeta}_{S}$">
+is an isomorphism and <!-- MATH
+ ${\rm im}({J_{C(A)}}^{S})$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img157.png"
+ ALT="${\rm im}({J_{C(A)}}^{S})$"> a direct summand in <!-- MATH
+ ${{\cal E}}^{S}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="${{\cal E}}^{S}$">.
+Therefore, to show that this submodule of <!-- MATH
+ ${{\cal E}}_{S}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.png"
+ ALT="${{\cal E}}_{S}$"> 
+coincides with <IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.png"
+ ALT="$C({A}_{S})$">, it is enough to verify that both
+have the same rank (the dimension of the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img160.png"
+ ALT="$G$">-tensored module
+over the field <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img160.png"
+ ALT="$G$"> of fractions on <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">). But these ranks must indeed be
+the same as can be seen from the following calculations
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\rm dim}_{G}{({C(A)}^{G})}={\rm dim}_{F}{({C(A)}^{F})}={\rm dim}_{F}{(C({A}_{F}))}=
+{\rm dim}_{G}{(C({A}_{G}))}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="542" HEIGHT="33" BORDER="0"
+ SRC="img161.png"
+ ALT="\begin{displaymath}{\rm dim}_{G}{({C(A)}^{G})}={\rm dim}_{F}{({C(A)}^{F})}={\rm dim}_{F}{(C({A}_{F}))}=
+{\rm dim}_{G}{(C({A}_{G}))}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where the left-hand-side equation holds by projectivity of <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$">, the right-hand-side one
+by corollary <A HREF="node4.html#MA_lokal_frei">4.2</A> and the one in the middle
+since <IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.png"
+ ALT="${\eta}_{F}$">
+is an isomorphism by flatness of the field <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$F$"> of fractions on <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">. 
+This establishes (b).
+<BR>
+<P>
+Now assume (b). This implies that the map <!-- MATH
+ ${J_{C(A)}}^{S}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.png"
+ ALT="${J_{C(A)}}^{S}$"> induced by
+the embedding <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.png"
+ ALT="$J_{C(A)}$"> is injective for all <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">. By
+commutative algebra arguments one concludes that <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$"> is a direct
+summand in the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-free module <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">, in particular it is
+projective. Now, let <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$"> be a field.
+Since <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="${\eta}_{S}$"> is an isomorphism we have
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\rm dim}_{S}{({C(A)}^{S})}= {\rm dim}_{S}{(C({A}_{S}))}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="402" HEIGHT="33" BORDER="0"
+ SRC="img164.png"
+ ALT="\begin{displaymath}{\rm dim}_{S}{({C(A)}^{S})}= {\rm dim}_{S}{(C({A}_{S}))}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+The left-hand-side is independent of <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$"> by projectivity of <IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$C(A)$">. Thus by corollary <A HREF="node4.html#MA_lokal_frei">4.2</A> <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is projective yielding
+(a).<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="$\Box$">
+<BR><P>
+<B>Example:</B> Let <!-- MATH
+ $R={\mathbb{Z}}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img165.png"
+ ALT="$R={\mathbb{Z}}$"> and <!-- MATH
+ $V={\mathbb{Z}}^4$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img166.png"
+ ALT="$V={\mathbb{Z}}^4$">. Further let
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+a:=\left( \begin{array}{cccc}
+0 & 2 & 0 & 0 \\
+0 & 2 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 2 \\
+\end{array} \right)\in {\cal E}={\rm End}_{{\mathbb{Z}}}{({\mathbb{Z}}^4)}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="434" HEIGHT="99" BORDER="0"
+ SRC="img167.png"
+ ALT="\begin{displaymath}a:=\left( \begin{array}{cccc}
+0 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 2 &amp; 0 &amp; 0...
+... \right)\in {\cal E}={\rm End}_{{\mathbb{Z}}}{({\mathbb{Z}}^4)}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and <IMG
+ WIDTH="93" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.png"
+ ALT="$A:=&lt;a&gt;$"> be the subalgebra in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> generated by <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img169.png"
+ ALT="$a$">. 
+Each field can be considered as a <IMG
+ WIDTH="17" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="${\mathbb{Z}}$">-algebra.
+For a field of characteristic different from <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img170.png"
+ ALT="$2$"> the minimum
+polynomial of <IMG
+ WIDTH="24" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img171.png"
+ ALT="${a}^{S}$"> is
+<IMG
+ WIDTH="58" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.png"
+ ALT="$t^2-2t$">, but in characteristic <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img170.png"
+ ALT="$2$"> it is <IMG
+ WIDTH="19" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img173.png"
+ ALT="$t^2$">. This means that
+the algebra <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="${A}_{S}$"> is two dimensional for each field <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img109.png"
+ ALT="$S$">.
+It follows that <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> is a direct summand in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">.
+But nevertheless <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is not projective (free), because in the case
+of a field of characteristic different from <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img170.png"
+ ALT="$2$">
+<IMG
+ WIDTH="24" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img171.png"
+ ALT="${a}^{S}$"> is diagonalisable and one calculates
+<!-- MATH
+ ${\rm dim}_{S}{(C({A}_{S}))}=2^2+2^2=8$
+ -->
+<IMG
+ WIDTH="230" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img175.png"
+ ALT="${\rm dim}_{S}{(C({A}_{S}))}=2^2+2^2=8$">, while in the case of characteristic
+<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img170.png"
+ ALT="$2$"> we have <!-- MATH
+ ${\rm dim}_{S}{(C({A}_{S}))}=9$
+ -->
+<IMG
+ WIDTH="148" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img176.png"
+ ALT="${\rm dim}_{S}{(C({A}_{S}))}=9$">. Therefore <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$">
+can't be projective in view of corollary <A HREF="node4.html#MA_lokal_frei">4.2</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html53"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html51"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html45"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html54"
+  HREF="node5.html">FRT-Construction</A>
+<B> Up:</B> <A NAME="tex2html52"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html46"
+  HREF="node3.html">Comparison Theorems</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2003-03-26
+</ADDRESS>
+</BODY>
+</HTML>

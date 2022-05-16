@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Details to the Proof of 11.2 </TITLE>
+<META NAME="description" CONTENT="Details to the Proof of 11.2 ">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node20.html">
+<LINK REL="previous" HREF="node18.html">
+<LINK REL="up" HREF="node18.html">
+<LINK REL="next" HREF="node20.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html259"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html255"
+  HREF="node18.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html249"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html257"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html260"
+  HREF="node20.html">Details to the Proof</A>
+<B> Up:</B> <A NAME="tex2html256"
+  HREF="node18.html">Appendix: Technical Details</A>
+<B> Previous:</B> <A NAME="tex2html250"
+  HREF="node18.html">Appendix: Technical Details</A>
+ &nbsp; <B>  <A NAME="tex2html258"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000181000000000000000"></A>
+<A NAME="Diamond_Lemma"></A>
+<BR>
+Details to the Proof of <A HREF="node11.html#Basis_aussere_Algebra">11.2</A> 
+</H2>
+
+<P>
+With the help of the Diamond Lemma for Ring Theory [<A
+ HREF="node22.html#bergman">Bg</A>] we will
+construct a free basis for <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$">. Our order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$"> on <!-- MATH
+ $\underline{n}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \underline{n}$"> induces a
+lexcographical order on multi-indices <!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> and on the 
+correspondinmg monomials <!-- MATH
+ $v_{{\bf i}} \in V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1310.png"
+ ALT="$ v_{{\bf i}} \in V^{\otimes r}$">, which will be denoted by the
+same symbol <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$">. On the monomials of <!-- MATH
+ ${\cal T}(V)$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.png"
+ ALT="$ {\cal T}(V)$"> we get an induces
+partial order if we declare monomials of different degree to be uncomparable.
+It is clear that <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$"> is compatible with the semigroup structure of the
+set of monomials of <!-- MATH
+ ${\cal T}(V)$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.png"
+ ALT="$ {\cal T}(V)$"> as required in [<A
+ HREF="node22.html#bergman">Bg</A>].
+<BR>
+<P>
+We now introduce a system of reductions of degree two in <!-- MATH
+ ${\cal T}(V)$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.png"
+ ALT="$ {\cal T}(V)$"> 
+extracted from the relations (<A HREF="node11.html#Rel_1">13</A>), (<A HREF="node11.html#Rel_3">14</A>) and (<A HREF="node11.html#Rel_4">16</A>) 
+of the exterior algebra and divide them accordingly 
+into three types. As in [<A
+ HREF="node22.html#bergman">Bg</A>] we write them as pairs consisting of
+a monomial and a substitution expression:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{cll}
+(R1) & (v_{i}v_{j},-q^{{\rm sign}(j-i)}v_{j}v_{i}) & \mbox{ if } j \prec i,\;  i \neq j'\\
+(R2) & (v_{i'}v_{i},-q^{-2}v_{i}v_{i'}
+-(q^{-2}-1)\sum_{j=i+1}^mq^{i-j}v_{j}v_{j'}) & \mbox{ if } 1 \leq i < m \\
+(R3) & (v_{i}v_{i},0) & \mbox{ if } 1 \leq i \leq n.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="565" HEIGHT="89" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1311.png"
+ ALT="$\displaystyle \begin{array}{cll}
+(R1) &amp; (v_{i}v_{j},-q^{{\rm sign}(j-i)}v_{j}v...
+... i &lt; m \\
+(R3) &amp; (v_{i}v_{i},0) &amp; \mbox{ if } 1 \leq i \leq n.
+\end{array}
+$">
+</DIV><P></P>
+
+<P>
+Since all monomials of the reduction system are greater than the monomials in
+the corresponding substitution expressions our partial order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$"> on
+<!-- MATH
+ ${\cal T}(V)$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.png"
+ ALT="$ {\cal T}(V)$"> is compatible with the reduction system.
+<BR>
+<P>
+The set of monomials in <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> which don't contain any monomial of the
+reduction system as a subexpression clearly is
+<!-- MATH
+ \begin{displaymath}
+F_r:=\{v_{{\bf i}}| {\bf i}=(i_1, \ldots , i_r) \in I(n,r) ,\; i_1 \prec \ldots \prec
+i_r \}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="404" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1312.png"
+ ALT="$\displaystyle F_r:=\{v_{{\bf i}}\vert {\bf i}=(i_1, \ldots , i_r) \in I(n,r) ,\; i_1 \prec \ldots \prec
+i_r \}.$">
+</DIV><P></P>
+
+<P>
+Obviously <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img825.png"
+ ALT="$ F_r$"> generates the <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">-th homogeneous summand <!-- MATH
+ ${\bigwedge}_{R,q}(n,$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1313.png"
+ ALT="$ {\bigwedge}_{R,q}(n,$">) of the
+exterior algebra as an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module. To see that these sets are linear
+independent we must show that all ambiguities of the reduction system are
+solvable. Since all monomials are of degree two only overlapping ambiguities
+occur and we can reduce to the case of degree three. Ambiguities between
+reductions of type (R3) are trivially solvable and such ones where
+both reductions are of type (R2) do not occur. Thus we have to handle the
+following remaining cases:
+
+<P>
+
+<OL>
+<LI>Both reductions are of type (R1): 
+<BR>
+<!-- MATH
+ $v_{i}v_{j}v_{k}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1314.png"
+ ALT="$ v_{i}v_{j}v_{k}$"> where <!-- MATH
+ $k \prec j \prec i$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1315.png"
+ ALT="$ k \prec j \prec i$">
+and <!-- MATH
+ $i \neq j' \neq k$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1316.png"
+ ALT="$ i \neq j' \neq k$">.
+</LI>
+<LI>Ambiguities between (R1) und (R3): 
+<BR>
+(a) <!-- MATH
+ $v_{i}v_{i}v_{j}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1317.png"
+ ALT="$ v_{i}v_{i}v_{j}$"> where <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1318.png"
+ ALT="$ j \prec i$"> and <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1319.png"
+ ALT="$ i\neq j'$">
+<BR>
+(b) <!-- MATH
+ $v_{j}v_{i}v_{i}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1320.png"
+ ALT="$ v_{j}v_{i}v_{i}$"> where <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1321.png"
+ ALT="$ i \prec j$"> and <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1319.png"
+ ALT="$ i\neq j'$">
+</LI>
+<LI>Ambiguities between  (R2) und (R3): 
+<BR>
+(a) <!-- MATH
+ $v_{i'}v_{i}v_{i}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1322.png"
+ ALT="$ v_{i'}v_{i}v_{i}$"> where <!-- MATH
+ $1\leq i \leq m$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1287.png"
+ ALT="$ 1\leq i\leq m$">
+<BR>
+(b) <!-- MATH
+ $v_{i'}v_{i'}v_{i}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1323.png"
+ ALT="$ v_{i'}v_{i'}v_{i}$"> where <!-- MATH
+ $1\leq i \leq m$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1287.png"
+ ALT="$ 1\leq i\leq m$">
+</LI>
+<LI>Ambiguities between  (R1) und (R2): 
+<BR>
+(a) <!-- MATH
+ $v_{i}v_{j'}v_{j}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1324.png"
+ ALT="$ v_{i}v_{j'}v_{j}$"> where <!-- MATH
+ $j' \prec i$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1325.png"
+ ALT="$ j' \prec i$"> and <!-- MATH
+ $1 \leq j \leq m$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1326.png"
+ ALT="$ 1 \leq j \leq m$">
+<BR>
+(b) <!-- MATH
+ $v_{j'}v_{j}v_{i}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1327.png"
+ ALT="$ v_{j'}v_{j}v_{i}$"> where <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1321.png"
+ ALT="$ i \prec j$"> and <!-- MATH
+ $1 \leq j \leq m$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1326.png"
+ ALT="$ 1 \leq j \leq m$">
+</LI>
+</OL>
+
+<P>
+In order to prove solvability of these ambiguities we will write an
+application of a reduction as: monomial <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1328.png"
+ ALT="$ \mapsto$"> substitution expression.
+The first case can be solved in the following way beginning with reduction of
+the left hand side pair
+<!-- MATH
+ \begin{displaymath}
+v_{i}v_{j}v_{k} \mapsto -q^{{\rm sign}(j-i)}v_{j}v_{i}v_{k}
+\mapsto q^{{\rm sign}(j-i)+{\rm sign}(k-i)} v_{j}v_{k}v_{i}
+\mapsto -q^{{\rm sign}(j-i)+{\rm sign}(k-i)+{\rm sign}(k-j)}v_{k}v_{j}v_{i}, 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="714" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1329.png"
+ ALT="$\displaystyle v_{i}v_{j}v_{k} \mapsto -q^{{\rm sign}(j-i)}v_{j}v_{i}v_{k}
+\ma...
+...\mapsto -q^{{\rm sign}(j-i)+{\rm sign}(k-i)+{\rm sign}(k-j)}v_{k}v_{j}v_{i},
+$">
+</DIV><P></P>
+
+<P>
+and then begining with the right hand side pair
+<!-- MATH
+ \begin{displaymath}
+v_{i}v_{j}v_{k} \mapsto -q^{{\rm sign}(k-j)}v_{i}v_{k}v_{j}
+\mapsto q^{{\rm sign}(k-i)+{\rm sign}(k-j)} v_{k}v_{i}v_{j}
+\mapsto -q^{{\rm sign}(j-i)+{\rm sign}(k-i)+{\rm sign}(k-j)}v_{k}v_{j}v_{i}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="719" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1330.png"
+ ALT="$\displaystyle v_{i}v_{j}v_{k} \mapsto -q^{{\rm sign}(k-j)}v_{i}v_{k}v_{j}
+\map...
+...\mapsto -q^{{\rm sign}(j-i)+{\rm sign}(k-i)+{\rm sign}(k-j)}v_{k}v_{j}v_{i}.
+$">
+</DIV><P></P>
+
+<P>
+The treatment of case 2 is very easy and must not be written down.
+In order to treat case 3 (a) we have to show that starting with a reduction
+of type (R2) on the left hand side pair finally reduces to zero.
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{lll}
+v_{i'}v_{i}v_{i} & 
+\mapsto & -q^{-2}v_{i}v_{i'}v_{i}
+-(q^{-2}-1)\sum_{j=i+1}^mq^{i-j}v_{j}v_{j'}v_{i} \\
+& \mapsto & -q^{-2}( -q^{-2}v_{i'}v_{i}v_{i}
+-(q^{-2}-1)\sum_{j=i+1}^mq^{i-j}v_{i}v_{j}v_{j'})\\
+& &-(q^{-2}-1)\sum_{j=i+1}^mq^{i-j + {\rm sign}(i-j')}v_{j}v_{i}v_{j'}\\
+& \mapsto & q^{-2}(q^{-2}-1)\sum_{j=i+1}^mq^{i-j}v_{i}v_{j}v_{j'})\\
+& & -q^{{\rm sign}(i-j')+{\rm sign}(i-j)}(q^{-2}-1)\sum_{j=i+1}^mq^{i-j}v_{i}v_{j}v_{j'}
+=0.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="509" HEIGHT="129" BORDER="0"
+ SRC="img1331.png"
+ ALT="\begin{displaymath}
+\begin{array}{lll}
+v_{i'}v_{i}v_{i} &amp;
+\mapsto &amp; -q^{-2}v...
+...-2}-1)\sum_{j=i+1}^mq^{i-j}v_{i}v_{j}v_{j'}
+=0.
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Part (b) of case 3 is similar and we can proceed to case 4. Condition
+<!-- MATH
+ $j' \prec i$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1325.png"
+ ALT="$ j' \prec i$"> means that <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1332.png"
+ ALT="$ i &lt; j$"> (the case <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1333.png"
+ ALT="$ i=j$"> has been treated above)
+or <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1334.png"
+ ALT="$ i &gt; j'$"> whereas <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1321.png"
+ ALT="$ i \prec j$"> means that <!-- MATH
+ $j < i < j'$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1335.png"
+ ALT="$ j &lt; i &lt; j'$">. As above we reduce
+begining with the left hand side pair in (a)
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{ll}
+v_{i}v_{j'}v_{j}  \mapsto \ldots 
+\mapsto &
+-q^{-2 +{\rm sign}(j'-i)+{\rm sign}(j-i)}v_{j}v_{j'}v_{i} \\
+& -(q^{-2}-1)\sum_{k=j+1}^mq^{j-k+{\rm sign}(j'-i)+{\rm sign}(j-i)}v_{k}v_{k'}v_{i}.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="528" HEIGHT="55" BORDER="0"
+ SRC="img1336.png"
+ ALT="\begin{displaymath}
+\begin{array}{ll}
+v_{i}v_{j'}v_{j} \mapsto \ldots
+\mapst...
+...rm sign}(j'-i)+{\rm sign}(j-i)}v_{k}v_{k'}v_{i}.
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+and then beginning with the right hand side pair
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{ll}
+v_{i}v_{j'}v_{j}  \mapsto \ldots 
+\mapsto &
+-q^{-2 +{\rm sign}(j'-i)+{\rm sign}(j-i)}v_{j}v_{j'}v_{i} \\
+& -(q^{-2}-1)\sum_{k=j+1}^mq^{j-k+{\rm sign}(k'-i)+{\rm sign}(k-i)}v_{k}v_{k'}v_{i},
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="530" HEIGHT="55" BORDER="0"
+ SRC="img1337.png"
+ ALT="\begin{displaymath}
+\begin{array}{ll}
+v_{i}v_{j'}v_{j} \mapsto \ldots
+\mapst...
+...rm sign}(k'-i)+{\rm sign}(k-i)}v_{k}v_{k'}v_{i},
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Since <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1332.png"
+ ALT="$ i &lt; j$"> or <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1334.png"
+ ALT="$ i &gt; j'$"> and <IMG
+ WIDTH="49" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1338.png"
+ ALT="$ j &lt; k$"> we have <!-- MATH
+ ${\rm sign}(j'-i)={\rm sign}(k'-i)$
+ -->
+<IMG
+ WIDTH="211" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1339.png"
+ ALT="$ {\rm sign}(j'-i)={\rm sign}(k'-i)$">
+and <!-- MATH
+ ${\rm sign}(j-i)={\rm sign}(k-i)$
+ -->
+<IMG
+ WIDTH="202" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1340.png"
+ ALT="$ {\rm sign}(j-i)={\rm sign}(k-i)$">. Thus both reductions lead to the same
+expression. Turning to part (b) the calculation of both reductions
+lead to similar expressions but we have to divide the sum into a <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1341.png"
+ ALT="$ i\prec k$">
+and a <IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1342.png"
+ ALT="$ k\prec i$"> section. First we begin
+with the right hand side pair in (b)
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{ll}
+v_{j'}v_{j}v_{i}  \mapsto \ldots 
+\mapsto &
+-q^{-2 +{\rm sign}(i-j')+{\rm sign}(i-j)}v_{i}v_{j}v_{j'} \\
+ & -(q^{-2}-1)\sum_{k=j+1, i\prec k}^mq^{j-k+{\rm sign}(i-j')+{\rm sign}(i-j)}
+v_{i}v_{k}v_{k'} \\
+& -(q^{-2}-1)\sum_{k=j+1, k\prec i}^mq^{j-k+{\rm sign}(k'-i)+{\rm sign}(k-i)}
+v_{k}v_{k'}v_{i}
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="551" HEIGHT="80" BORDER="0"
+ SRC="img1343.png"
+ ALT="\begin{displaymath}
+\begin{array}{ll}
+v_{j'}v_{j}v_{i} \mapsto \ldots
+\mapst...
+...m sign}(k'-i)+{\rm sign}(k-i)}
+v_{k}v_{k'}v_{i}
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+and then begining with the left hand side pair
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{ll}
+v_{j'}v_{j}v_{i}  \mapsto \ldots 
+\mapsto &
+-q^{-2 +{\rm sign}(i-j')+{\rm sign}(i-j)}v_{i}v_{j}v_{j'} \\
+& -(q^{-2}-1)\sum_{k=j+1, i\prec k}^mq^{j-k}
+v_{i}v_{k}v_{k'} \\
+& -(q^{-2}-1)\sum_{k=j+1, k\prec i}^mq^{j-k+{\rm sign}(k'-i)+{\rm sign}(k-i)}
+v_{k}v_{k'}v_{i}
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="551" HEIGHT="80" BORDER="0"
+ SRC="img1343.png"
+ ALT="\begin{displaymath}
+\begin{array}{ll}
+v_{j'}v_{j}v_{i} \mapsto \ldots
+\mapst...
+...m sign}(k'-i)+{\rm sign}(k-i)}
+v_{k}v_{k'}v_{i}
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Since <!-- MATH
+ $j < i < j'$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1335.png"
+ ALT="$ j &lt; i &lt; j'$"> the expression <!-- MATH
+ ${\rm sign}(i-j)+{\rm sign}(i-j')$
+ -->
+<IMG
+ WIDTH="203" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1344.png"
+ ALT="$ {\rm sign}(i-j)+{\rm sign}(i-j')$">
+is always zero. Thus both reduction coincide and the proof is finished.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html259"
+  HREF="node20.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html255"
+  HREF="node18.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html249"
+  HREF="node18.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html257"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html260"
+  HREF="node20.html">Details to the Proof</A>
+<B> Up:</B> <A NAME="tex2html256"
+  HREF="node18.html">Appendix: Technical Details</A>
+<B> Previous:</B> <A NAME="tex2html250"
+  HREF="node18.html">Appendix: Technical Details</A>
+ &nbsp; <B>  <A NAME="tex2html258"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

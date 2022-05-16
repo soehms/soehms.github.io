@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Details to the Proof of 11.3 </TITLE>
+<META NAME="description" CONTENT="Details to the Proof of 11.3 ">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node18.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html271"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html267"
+  HREF="node18.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html261"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html269"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html272"
+  HREF="node21.html">Details to the Proof</A>
+<B> Up:</B> <A NAME="tex2html268"
+  HREF="node18.html">Appendix: Technical Details</A>
+<B> Previous:</B> <A NAME="tex2html262"
+  HREF="node19.html">Details to the Proof</A>
+ &nbsp; <B>  <A NAME="tex2html270"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION000182000000000000000"></A> <A NAME="Rel_and_kernel"></A>
+<BR>
+Details to the Proof of <A HREF="node11.html#Rel_und_Kernel">11.3</A> 
+</H2>
+
+<P>
+We have to verrify the third equation listed in the proof.
+Let us first find suitable expressions for <!-- MATH
+ $\beta(c_i)$
+ -->
+<IMG
+ WIDTH="44" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1345.png"
+ ALT="$ \beta(c_i)$"> and <!-- MATH
+ $\beta(d_i)$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1346.png"
+ ALT="$ \beta(d_i)$">.
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\beta(c_i) & = & q^i\beta( v_{i'}v_{i}) \\
+& = & q^i(v_{i}v_{i'}+(y-1)v_{i'}v_{i}
+-(y-1)\sum_{k=i+1}^nq^{\rho_k-\rho_i}\epsilon_k\epsilon_iv_{k}v_{k'} ) \\
+& = & -y^i d_i+(y-1)c_i
+-(y-1)q^i(\sum_{k=i+1}^mq^{i-k}v_{k}v_{k'}+ 
+\sum_{k=1}^m-q^{-\rho_k -\rho_i}v_{k'}v_{k} ) \\
+& = & -y^id_i+(y-1)(c_i +
+y^i(\sum_{k=i+1}^m d_k + y^{-m-1} 
+\sum_{k=1}^m c_k ) )\\\\
+\beta(d_i) & = & -q^{-i}\beta( v_{i}v_{i'}) \\
+& = & -q^{-i}(v_{i'}v_{i}
+-(y-1)\sum_{k=i'+1}^nq^{\rho_k-\rho_i}\epsilon_k\epsilon_{i'}v_{k}v_{k'} ) \\
+& = & -y^{-i} c_i+
+(y-1)q^{-i}\sum_{k=1}^{i-1}q^{\rho_{k'}-\rho_{i'}}v_{k'}v_{k} \\
+& = & -y^{-i} c_i+
+(y-1)y^{-i}\sum_{k=1}^{i-1}c_k
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="651" HEIGHT="217" BORDER="0"
+ SRC="img1347.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\beta(c_i) &amp; = &amp; q^i\beta( v_{i'}v_{i})...
+...= &amp; -y^{-i} c_i+
+(y-1)y^{-i}\sum_{k=1}^{i-1}c_k
+\end{array}
+\end{displaymath}">
+</DIV><P></P> 
+
+<P>
+We obtain <!-- MATH
+ $\beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\sum_{j=i+1}^md_j)=$
+ -->
+<IMG
+ WIDTH="337" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1348.png"
+ ALT="$ \beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\sum_{j=i+1}^md_j)=$">
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+& - & d_i+y^{-i}(y-1)c_i+(y-1)(\sum_{k=i+1}^md_k + y^{-m-1}\sum_{k=1}^m c_k)\\
+& + &  y^{-i-1} c_i + y^{-i}(y^{-1}-1)\sum_{k=1}^{i-1}c_k \\
+& - &  (y^{-1}-1)\sum_{j=i+1}^{m}( -y^{-j}c_j + y^{-j}(y-1) \sum_{k=1}^{j-1} c_k )
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="480" HEIGHT="80" BORDER="0"
+ SRC="img1349.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+&amp; - &amp; d_i+y^{-i}(y-1)c_i+(y-1)(\sum_{k=...
+... -y^{-j}c_j + y^{-j}(y-1) \sum_{k=1}^{j-1} c_k )
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+Let us focus attention to the summand displayed in the last line:
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+ \sum_{j=i+1}^{m}( -y^{-j}c_j + y^{-j}(y-1) \sum_{k=1}^{j-1} c_k ) & = &
+- \sum_{k=i+1}^{m}y^{-k}c_k - (y-1) \sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{-j}c_k 
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="716" HEIGHT="36" BORDER="0"
+ SRC="img1350.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\sum_{j=i+1}^{m}( -y^{-j}c_j + y^{-j}(...
+... (y-1) \sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{-j}c_k
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+The second summand in this expression can be transformed in the following way:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{-j}c_k & = & 
+\sum_{j=i+1}^m(\sum_{k=1}^{i-1} y^{-j}c_k + \sum_{k=i}^{j-1} y^{-j}c_k) \\
+& = & \sum_{k=1}^{i-1}(\sum_{j=i+1}^my^{-j})c_k +
+\sum_{k=i}^{m-1}(\sum_{j=k+1}^m y^{-j})c_k
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="563" HEIGHT="58" BORDER="0"
+ SRC="img1351.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{-j}c_...
+..._k +
+\sum_{k=i}^{m-1}(\sum_{j=k+1}^m y^{-j})c_k
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Thus:
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+(y-1)\sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{-j}c_k & = & 
+\sum_{k=i}^{m-1}y^{-k}c_k -y^{-m}\sum_{k=1}^{m-1} c_k +y^{-i}\sum_{k=i}^{i-1}
+c_k \\
+& = & \sum_{k=i}^{m}y^{-k}c_k -y^{-m}\sum_{k=1}^{m} c_k +y^{-i}\sum_{k=i}^{i-1} c_k
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="601" HEIGHT="57" BORDER="0"
+ SRC="img1352.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+(y-1)\sum_{j=i+1}^m\sum_{k=1}^{j-1} y^{...
+...m}\sum_{k=1}^{m} c_k +y^{-i}\sum_{k=i}^{i-1} c_k
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+In order to get the last line you have to add <!-- MATH
+ $y^{-m}c_m
+-y^{-m}c_m$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1353.png"
+ ALT="$ y^{-m}c_m
+-y^{-m}c_m$">. Substituting this result into the above expression yields 
+<!-- MATH
+ $\beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\sum_{j=i+1}^md_j)=$
+ -->
+<IMG
+ WIDTH="337" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1348.png"
+ ALT="$ \beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\sum_{j=i+1}^md_j)=$">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+ & - & d_i+y^{-i+1}c_i-y^{-i}c_i+(y-1)\sum_{k=i+1}^md_k + y^{-m-1}(y-1)\sum_{k=1}^m
+c_k\\
+& + & y^{-i-1} c_i + y^{-i}(y^{-1}-1)\sum_{k=1}^{i-1}c_k +
+(y^{-1}-1)\sum_{k=i+1}^my^{-k}c_k \\
+&  - &  y^{-1}(y-1)(y^{-m}\sum_{k=1}^{m}c_k - y^{-i} \sum_{k=1}^{i-1} c_k -
+\sum_{k=i}^{m}y^{-k}c_k)
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="549" HEIGHT="79" BORDER="0"
+ SRC="img1354.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+&amp; - &amp; d_i+y^{-i+1}c_i-y^{-i}c_i+(y-1)\...
+...\sum_{k=1}^{i-1} c_k -
+\sum_{k=i}^{m}y^{-k}c_k)
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Now we see that almost all summands in this expression cancel each other an we
+end up with
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rcl}
+\beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\sum_{j=i+1}^md_j)
+ & = & y^{-i+1}c_i-d_i +(y-1)\sum_{j=i+1}^md_j.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="621" HEIGHT="36" BORDER="0"
+ SRC="img1355.png"
+ ALT="\begin{displaymath}
+\begin{array}{rcl}
+\beta(y^{-i}c_i-y^{-1}d_i-(y^{-1}-1)\su...
+...
+&amp; = &amp; y^{-i+1}c_i-d_i +(y-1)\sum_{j=i+1}^md_j.
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+<BR><HR>
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

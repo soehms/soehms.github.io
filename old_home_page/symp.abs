@@ -1,0 +1,48 @@
+\section{Introduction}
+
+A $q$-analogue version of {\em Schur algebras} has been introduced
+by {\em R.\ Dipper} and {\em G.\ James} 
+in connection with the representation
+theory of finite general linear groups. In recent work of {\em Dipper},
+{\em James} and {\em A.\ Matthas} 
+this theory has been extended to other
+{\em groups of Lie type} substituting {\em Hecke algebras} of 
+type $A$ by {\em Ariki-Koike
+algebras} leading to so called {\em Cyclotomic $q$-Schur algebras}. 
+On the other hand
+the original $q$-Schur algebra can be obtained (up to Morita
+equivalence) using constructions from the theory of {\em quantum groups}.
+In this paper we apply these constructions to 
+$q$-Schur algebras being related to the {\em symplectic groups}. These
+algebras
+appear in general as centralizer algebras of the
+{\em Birman-Murakami-Wenzl algebras} on tensor spaces.
+Setting
+the deformation parameter $q$ to $1$, we obtain classical symplectic
+Schur algebras in the sense of {\em S.\ Donkin}.</p> 
+
+The main result in this paper is that symplectic
+$q$-Schur algebras are {\em cellular} in the sense of {\em J.\ Graham} and
+{\em G.\ Lehrer} \cite{graham} and  {\em integrally quasi-hereditary}
+as algebras over the ring of integer Laurent polynomials.
+A cellular basis is realized via a quantum symplectic version
+of {\em bideterminants}. While in the authors paper on
+Centralizer Coalgebras, FRT-Construction and Symplectic Monoids
+a symplectic version of
+the {\em straightening formula} for bideterminants
+has been presented in the classical case,
+we will give a quantized version of that
+formula, here.\Ab
+
+The {\em standard modules} (or {\em cell
+representations}) of $\ssch{q} r$
+are indexed by pairs $(\lambda, l)$ consisting of
+an integer $0 \leq l \leq \frac r2$ and a partition
+$\lambda \in \prt m{r-2l}$ of $r-2l$ in not more than $m$-parts. Here
+$n=2m$ is the dimension of the natural module of the symplectic group.
+The part of the basis corresponding to $(\lambda , l)$  is labbeled by pairs of
+{\em $\lambda$-symplectic standard tableaux} in the sense of
+{\em R.C.\ King}, or more precisely by a reversed version of
+them.</p>
+
+

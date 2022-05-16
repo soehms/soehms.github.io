@@ -1,0 +1,2034 @@
+\documentclass[twoside,12pt]{article}
+%\usepackage{babel}
+\usepackage{latexsym,amssymb,amsfonts}
+\topmargin-1.1cm
+\parindent0cm
+\headheight0mm
+\textwidth16.0cm
+\textheight24.5cm
+\tabcolsep-4mm
+\oddsidemargin-2mm
+\evensidemargin-2mm
+\pagestyle{myheadings}
+\markboth{\centerline{Sebastian Oehms}}{\centerline{Symplectic Monoids}}
+
+
+
+
+
+
+\begin{document}
+
+
+
+
+
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{lem}[prop]{Lemma}
+\newtheorem{Def}[prop]{Definition}
+\newtheorem{rem}[prop]{Remark}
+
+\newenvironment{Pf}{{\sc Proof: }}{$\Box$\\}
+\newenvironment{PfS}{{\sc Sketch of Proof: }}{$\Box$\\}
+
+
+
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\F}{{\mathbb F}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\Q}{{\mathbb Q}}
+
+
+
+
+\newcommand{\Ab}{\\[-2mm]}
+\newcommand{\pfr}{\rightarrow}
+\newcommand{\pfl}{\leftarrow}
+\newcommand{\gdw}{\Longleftrightarrow}
+\newcommand{\ohne}{\backslash}
+
+\newcommand{\Dim}[2]{{\rm dim}_{#1}{(#2)}}      
+\newcommand{\Min}[1]{{\rm min}(#1)}      
+\newcommand{\Char}[1]{{\rm char}(#1)}   
+\newcommand{\Ker}[1]{{\rm ker}(#1)}   
+\newcommand{\Ima}[1]{{\rm im}(#1)}   
+\newcommand{\mg}[1]{\underline{#1}}           %Menge 1,... , #1 
+\newcommand{\tmg}[2]{P({#1},{#2})}     %#2-elm Teilmengen von 1,... ,#1
+
+
+
+\newenvironment{tableau}[1]{\begin{array}{*{#1}{|p{2mm}}|}
+}{\end{array}}
+\newcommand{\tline}[3]{#1  &\multicolumn{#2}{c}{} \\ \cline{1-#3}}
+
+
+
+
+\newcommand{\kom}{\Delta}                     % Komultiplikation
+\newcommand{\koe}{\epsilon}                   % Koeins
+\newcommand{\cmd}[1]{\tau_{#1}}               % Komodulstrukturabb.
+
+
+\newcommand{\id}[1]{{\rm id}_{#1}}            % Identit"at
+\newcommand{\gr}{R}                           % Grundring
+\newcommand{\er}{S}                           % Erweiterungsring
+\newcommand{\nt}{V}                           % Natuerlicher Modul
+\newcommand{\Ed}{{\cal E}}                    % Abbk. f"ur \grntend
+\newcommand{\rEd}{{\cal E}_r}                 % Abbk. f"ur \grntrtsend
+\newcommand{\gEd}[1]{{\cal E}_{#1}}           % wie \rEd f"ur bel. r
+\newcommand{\dual}[1]{{#1}^*}                 % dualer Modul
+\newcommand{\dEd}{\dual{\Ed}}                 % dualer Modul zu \grntend
+\newcommand{\rdEd}{\dual{\rEd}}               % dualer Modul zu \grntrtsend
+\newcommand{\gdEd}[1]{\dual{\gEd{#1}}}        % wie \rdEd f"ur bel. r
+
+
+\newcommand{\bs}[1]{v_{#1}}                   % Basis von \nt
+\newcommand{\es}[2]{e_{#1}^{ #2}}              % Basis von \Ed
+\newcommand{\dbs}[1]{\dual{\bs{#1}}}          % Basis von \dnt
+\newcommand{\des}[2]{{\dual{e}_{#1}}^{#2}}    % Basis von \dEd
+
+\newcommand{\isod}{{\vartheta}_{\tr}}         % Isomorph. \Ed nach \dEd
+
+\newcommand{\ts}[2]{{#1}^{\otimes #2}}        % mehrfache Tensorprodukte
+\newcommand{\ntts}[1]{\nt^{\otimes #1}}       % "         " mit nat. Modul
+\newcommand{\ntrts}{\nt^{\otimes r}}          % r-fache   " "   nat Mod.
+
+\newcommand{\End}[2]{{\rm End}_{#1}{(#2)}}          % Endomrphismenring
+\newcommand{\Hom}[3]{{\rm Hom}_{#1}{(#2,#3)}}       % Hom-Menge
+\newcommand{\tr}{tr}                          % Spurabb.
+\newcommand{\tens}[1]{{\cal T}(#1)}           % Tensoralgebra
+
+
+\newcommand{\mind}[2]{I(#1,#2)}               %  Multiindizes
+\newcommand{\nmind}[1]{\mind{n}{#1}}          % Menge der n Multiindizes
+\newcommand{\mmind}[1]{\mind{m}{#1}}          % Menge der m Multiindizes
+\newcommand{\ibf}[1]{{\bf #1}}                % Multiindex
+\newcommand{\komp}[2]{\Lambda(#1, #2)}        % Komposition
+\newcommand{\skomp}[2]{\Lambda^{\rm s}(#1, #2)}     % sympl. Komposition
+\newcommand{\nkomp}[1]{\komp{n}{#1}}          % Komposition in n Teile
+\newcommand{\nrkomp}{\komp{n}{r}}             % Komposition r in n Teile
+\newcommand{\prt}[2]{\Lambda^+(#1, #2)}       % Partition in Teile
+\newcommand{\sprt}[2]{\Lambda^{{\rm s}+}(#1, #2)}   % sympl. Partition in Teile
+\newcommand{\nprt}[1]{\prt{n}{#1}}            % Partition in n Teile
+\newcommand{\nrprt}{\prt{n}{r}}               % Partition r in n Teile
+\newcommand{\rprt}[1]{\Lambda^+(#1)}          % Partition
+
+
+\newcommand{\frt}[1]{{\cal M}(#1)}            % FRT-Konstruktion zu
+
+
+\newcommand{\gmhg}[2]{{\rm M}_{#2}(#1)}       % Matrixhalbgruppe Typ A
+\newcommand{\gspm}[2]{{\rm SpM}_{#2}(#1)}     % Matrixmonoid Typ C
+\newcommand{\mmsp}[2]{{\rm SpH}_{#2}(#1)}     % nichtinvertierbare sympl. Matr.
+\newcommand{\gln}[2]{{\rm GL}_{#2}(#1)}       % Generelle lineare Gruppe
+\newcommand{\gsp}[2]{{\rm GSp}_{#2}(#1)}      % Generelle symplektische Gr
+\newcommand{\zgsp}[2]{\overline{\gsp{#1}{#2}}} % Matrixmon. C Zariski-Abs.
+\newcommand{\sln}[2]{{\rm SL}_{#2}(#1)}       % Spezielle lineare Gruppe
+\newcommand{\spn}[2]{{\rm Sp}_{#2}(#1)}       % Symplektische Gruppe
+
+\newcommand{\symg}[1]{{\cal S}_{#1}}          % Symetrische Gruppe
+
+\newcommand{\zopf}[1]{{\cal Z}_{#1}}          % Zopf Gruppe
+
+\newcommand{\br}[2]{D_{#1}({#2})}         % Brauer-Algebra
+\newcommand{\falg}{{\cal A}}                  % Algebren-Familie
+\newcommand{\gfalg}[1]{{\cal A}_{#1}}         % Algebren-Familie homogene Teile
+\newcommand{\rfalg}{{\cal A}_r}               % Algebren-Fam. r-homogene Teile
+\newcommand{\il}{s}                           % linke Inlusion
+\newcommand{\ir}{t}                           % rechte Inlusion
+\newcommand{\gil}[1]{s_{#1}}                  % #1-te linke Inlusion
+\newcommand{\gir}[1]{t_{#1}}                  % #1-te rechte Inlusion
+\newcommand{\kerz}[2]{\isod([#1,#2])}         % Erzeuger Komm. Koideal
+
+\newcommand{\ZK}[1]{M(#1)}                    % Zentralisatorkoalgebra
+\newcommand{\ZA}[1]{C(#1)}                    % Zentralisatoralgebra
+\newcommand{\KK}[1]{K(#1)}                    % Kommutatorkoideal
+\newcommand{\KL}[1]{L(#1)}                    % Vor-Kommutatorkoideal
+\newcommand{\MA}{\ZK A}                       % Zentralisatorkoalgebra von A
+\newcommand{\CA}{\ZA A}                       % Zentralisatoralgebra von A
+\newcommand{\KA}{\KK A}                       % Kommutatorkoideal von A
+\newcommand{\comp}[1]{{#1}^{\bot}}            % duales Komplement
+\newcommand{\ausw}[1]{{\rm Ev}_{#1}}          % Auswerteabbildung
+\newcommand{\merw}[2]{{#1}^{#2}}              % Erweiterter Modul
+\newcommand{\smerw}[1]{\merw{#1}{\er}}        % Erweiterter Modul mit \er
+\newcommand{\zerw}[2]{{#1}_{#2}}              % Zentralisator nach Erweiterung
+\newcommand{\szerw}[1]{\zerw{#1}{\er}}        % Zentr. nach Erweiterung mit \er
+
+                                              % Eingebetteter erw. Modul
+\newcommand{\iserw}[1]{\ierw{#1}{\er}}        % Eingebett. erw. Modul \er
+\newcommand{\einb}{J}                     % Einbettungsabbildungen
+\newcommand{\geinb}[1]{\einb_{#1}}            % Einbettungsabb. konkret
+\newcommand{\seinb}[1]{\smerw{\geinb{#1}}}  % induzierte konkr. Einbettung
+\newcommand{\duerw}[1]{\psi_{#1}}             % Isom. zwischen W*S und WS*
+
+
+\newcommand{\An}[1]{A_{#1}(n)}
+\newcommand{\rAn}[2]{A_{#1}(n,#2)}
+\newcommand{\sAn}[1]{A^{{\rm s}}_{#1}(n)}
+\newcommand{\rsAn}[2]{A^{{\rm s}}_{#1}(n,#2)}
+\newcommand{\shAn}[1]{A^{{\rm sh}}_{#1}(n)}
+\newcommand{\rshAn}[2]{A^{{\rm sh}}_{#1}(n,#2)}
+
+
+
+\newcommand{\spT}{J}
+\newcommand{\spq}{d}
+
+
+\newcommand{\naA}[2]{{\bigwedge}_{#1}(#2)}
+\newcommand{\nraA}[3]{{\bigwedge}_{#1}(#2,#3)}
+\newcommand{\aA}{\naA{\gr}{n}}
+\newcommand{\raA}[1]{\nraA{\gr}{n}{#1}}
+\newcommand{\snaA}[2]{{\bigwedge}^{\rm s}_{#1}(#2)}
+\newcommand{\snraA}[3]{{\bigwedge}^{\rm s}_{#1}(#2,#3)}
+\newcommand{\saA}{\snaA{\gr}{n}}
+\newcommand{\sraA}[1]{\snraA{\gr}{n}{#1}}
+\newcommand{\gtab}[1]{T^{#1}}                %Grund Tableau von #1
+
+\newcommand{\gsmind}[2]{I_{#1}^{#2}}          %Standardtableau
+\newcommand{\asmind}[1]{\gsmind{#1}{}} 
+\newcommand{\symind}[1]{\gsmind{#1}{\rm sym}}
+
+\newcommand{\itab}[2]{\gtab{#1}_{\ibf{#2}}}  %Tableau zu Multiindex
+\newcommand{\bidet}[3]{\gtab{#1}(#2:#3)}     %Bideterminante klassisch
+
+\newcommand{\xes}[2]{x_{#1 #2}}              %Monome in $\frtsym$
+\newcommand{\B}{{\bf B}}                     %Basis von $\frtsym$
+\newcommand{\sign}[1]{{\rm sign}(#1)}        %Signum einer Perm.
+
+
+
+
+
+
+
+\thispagestyle{empty}
+
+\begin{center} 
+{\bf \huge Centralizer Coalgebras, FRT-Construction and Symplectic Monoids}
+ \\[3mm]
+{\bf  Sebastian Oehms\footnote{E-Mail: seba@mathematik.uni-stuttgart.de}, 
+Mathematisches Institut B,\\
+Universit{\"a}t Stuttgart, D70550 Stuttgart, Germany
+}
+\end{center}
+
+
+\section{Introduction}
+
+L.\ Faddeev, N.\ Reshetikhin and L.\ Takhtadjian \cite{frt}
+introduced a construction to obtain quantum deformations of
+coordinate rings of classical groups.
+General considerations about this so called FRT-construction 
+can be found for instance in
+\cite{manin},\cite{tak2}, \cite{hay4}, \cite{Sudbery} 
+and also in many textbooks on quantum groups. 
+Our approach differs from former ones in the following three aspects:\Ab
+
+First, we focus attention to the {\em graded matric bialgebra} which
+arises in the first step of the construction. This means that we
+rather look
+at quantizations of appropriate closed monoids instead of classical groups.
+Especially we look at the {\em homogenous summands} of these graded bialgebras.
+These are coalgebras which can be defined in a dual way to
+{\em centralizer algebras} of subsets in an endomorphism ring.
+We therefore call them {\em centralizer coalgebras} and investigate their
+relationship to the corresponding {\em centralizer algebras}.\Ab
+
+Further, we work over arbitrary noetherian integral domains as base rings. This makes
+sense since all known examples are already well defined
+over rings of integral {\em Laurent} polynomials, i.e.\
+$\Z[X, X^{-1}]$ (in the  indeterminate $X$). We will see that there are
+tremendous differences to the theory over fields, especially
+concerning the comparison of centralizer algebras and coalgebras.
+For instance the centralizer coalgebra may have $\gr$-torsion. We present the
+following criterion for $\gr$-projectivity: This property holds if and only if
+the centralizer algebra is stable under base changes. Furthermore, we will see
+that the latter property is always valid for centralizer coalgebras.
+\Ab
+
+Finally, the FRT-construction in the ordinary form depends on exactly
+one endomorphism 
+which usually is a {\em quantum Yang-Baxter operator} in the applications.
+Here we give another version of the FRT-construction which can be applied to
+sets of endomorphisms. This generalization is necessary to describe
+the coordinate rings of 
+classical symplectic and orthogonal monoids by use of an
+FRT-type construction. We demonstrate this in the symplectic case, giving
+some improvements of
+results by S.\ Doty \cite{doty}. 
+Furthermore, applying our results on centralizer coalgebras
+we obtain an integral form for the {\em symplectic Schur algebra} 
+defined by S.\ Donkin in \cite{donk3}
+without any use of the hyperalgebra or Kostant $\Z$-form. As an additional incredient
+we need a symplectic version of the straightening formula for bideterminants
+the proof of which covers all of the last two sections.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Centralizer Coalgebras}
+
+
+Let $\gr$ be a noetherian integral domain, $\nt$ a free
+$\gr$-module with a fixed basis $\{\bs 1, \ldots , \bs n\}$. Let
+$\es ij$ denote the corresponding basis of matrix units for
+$\Ed:=\End{\gr}{\nt}$. The algebra structure on $\Ed$ induces a
+coalgebra structure on the dual $\gr$-module
+$\dEd:=\Hom{\gr}{\Ed}{\gr}$. On the dual basis elements the comultiplication
+$\kom$ and the counit $\koe$ are given by
+
+\[ \kom (\des ij)=\sum_{k=1}^n \des ik  \otimes \des kj ,\; \; \koe (\des ij)
+=\delta_{ij}.\]
+
+We will be engaged with epimorphic coalgebra images of $\dEd$ since
+they correspond to subalgebras of $\Ed$. Consider the isomorphism
+$\isod :\Ed \pfr \dEd$ of $\gr$-modules induced by 
+the nondegenerate bilinear form corresponding to 
+the matrix trace map $\tr :\Ed \pfr \gr$, i.e.\ $\isod(\mu)(\nu):= \tr(\mu\nu)$.
+Note that $\isod$ maps $\es ij$ onto $\des ji$.
+Let $A\subseteq \Ed$ be an arbitrary
+subset and $\KL A$ the $\gr$-linear span in $\Ed$ of all commutators
+$[\nu, \mu ]=\nu\mu-\mu\nu$ where $\nu$ runs through $A$ and $\mu$
+runs through $\Ed$. We set $\KK A:=\isod (\KL A)\subseteq \dEd$. If $A$ consists of
+just one element $\nu$ we use abbreviations $\KL{\nu}$ and $\KK{\nu}$
+for $\KL A$ and $\KK A$.
+
+\begin{lem} \label{Koideal}
+$\KK A$ is a coideal in $\dEd$ for each subset $A\subseteq \Ed$.
+\end{lem}
+
+\begin{PfS}
+Since the sum of coideals is a coideal again we only need to consider
+the case $A=\{\nu\}$. Using an explicit expression for $\nu$ 
+in terms of the basiselements $\es{i}{j}$ one
+calculates for arbitrary numbers $k,l \in \{1,\ldots, n\}$:
+
+\[ \kom (\isod([\nu ,\es{k}{l}]))=
+\sum_m (
+\des{l}{m}\otimes\isod([\nu,\es{k}{m}]) +
+\isod([\nu, \des{m}{l}]) \otimes \des{m}{k},
+\]
+
+which just means
+
+\[ \kom (\KK{\nu}) \subseteq \KK{\nu} \otimes \dEd + \dEd
+\otimes \KK{\nu}. \]
+
+In a simialar way one shows $\koe(\KK{\nu})=0$. A more detailed proof
+can be found in section 1.3 of
+\cite{doc}.
+\end{PfS}
+
+If $C$ is an arbitrary coalgebra such that $\nt$ is a $C$-comodule
+with structure map $\cmd{\nt}:\nt \pfr \nt \otimes C$ we denote the set of $C$-comodule
+endomorphisms by
+
+\[ \End C{\nt}:=\{
+\mu \in \Ed|\; \; (\mu \otimes \id{C}) \circ \cmd{\nt}= \cmd{\nt} 
+\circ \mu \}.\]
+
+Clearly this is a subalgebra of $\Ed$. The proof of the next lemma is
+similar to the preceeding one.
+
+\begin{lem} \label{Koalgebren Endomorphismen}
+Let $C$ be a coalgebra together with an epimorphism
+$\pi: \dEd \pfr C$. Then
+\[ \mu \in \End{C}{\nt} \gdw \KK{\mu}  \subseteq \Ker{\pi}.
+\]
+\end{lem}
+
+\begin{cor} \label{Verknupfungstreue}
+Let $M$ be a coideal in $\dEd$ and $\mu , \nu \in \Ed$. Then
+$\KK\mu  \subseteq M$ and $\KK{\nu} \subseteq M$ implies
+$\KK{\mu \nu} \subseteq M$ and $\KK{\nu\mu } \subseteq M$.
+\end{cor}
+
+We now define the {\em centralizer coalgebra} of the subset
+$A\subseteq\Ed$ as
+\[\MA:=\dEd / \KK{A}.\] 
+According to
+lemma
+\ref{Koalgebren Endomorphismen} we have
+\[A \subseteq \End{\MA}{\nt}.\]
+Furthermore $\MA$ is the largest epimorphic image of $\dEd$ with this
+property. By the corollary $\MA$ does not change if $A$ is substituted
+by its algebraic span. Before going deeper into the analysis of
+relationships between $\MA$ and the {\em centralizer algebra}
+\[ \ZA A:=\End A{\nt}=\{ \mu \in \Ed|\; [\mu , \nu]=0, \;\mbox{ for
+all } \nu \in A\} \]
+we give a presentation of $\MA$ by generators and relations, which is
+convenient for practical use.\Ab
+
+The residue classes of the
+basis elements $\des ij$ with respect to any coideal in $\dEd$ will
+always be denoted by $\xes ij$ where $i,j\in \mg n:=\{1, \ldots , n\}$. 
+If 
+$\mu =\sum_{i,j=1}^n a_{ij}\es ij\in \Ed$ is arbitrary we write 
+
+\begin{equation}\label{Notation End}
+\mu \xes{i}{j} :=\sum_{k=1}^n a_{ik}\xes{kj} \; \; \mbox{ and } \; \;
+\xes{i}{j}\mu :=\sum_{k=1}^n \xes{i}{k}a_{kj}.
+\end{equation}
+
+Now, if $N$ is a subset of $\Ed$ and $A$ its algebraic span
+then  $\ZK A$ is defined by the generators $\xes ij$ and the relations
+
+\begin{equation} \label{Rel MA}
+\mu \xes{i}{j} = \xes{i}{j} \mu \; \; \mbox{ for all } \mu \in N, \;
+i,j \in \mg n.
+\end{equation}
+
+As consequences one has relations of the same form where $\mu$ runs
+through all of $A$.
+
+
+
+
+
+
+
+
+\section{Comparison Theorems}
+
+Remember the definition of the {\em complement}
+
+\[
+\comp{U}:=\{f \in \dual{W}=\Hom{\gr}{W}{\gr}| \; f(u)=0 \; \, \forall u \in U\}
+\]
+
+of a submodule $U$ in an $\gr$-module $W$ and the definition of the {\em
+  evaluation map}
+\[\ausw{W}:W \pfr \dual{\dual W}, \;\mbox{ given by }
+\ausw W(x)(y):=y(x)\; x \in W, \; y \in \dual W\] 
+In $\dual{\dual{\dual{W}}}$ we have the following commutativity rule
+
+\begin{equation} \label{Ev comp}
+\ausw{\dual{W}}(\comp U)=\comp{\ausw W(U)}.
+\end{equation}
+
+Turning to our special situation we first note that 
+$\tr(b[x,a])=\tr(x[a,b])$ for all $x, a, b \in \Ed$. Since the bilinear form
+induced by $\tr$ is nondegenerate, it follows:
+\begin{equation} \label{Lieklammer}
+\isod([x,a])(b)=\tr(b[x,a])=0 \mbox{ for all } x \in\Ed \gdw [a,b]=0.
+\end{equation}
+
+The following fundamental lemma of this section is easy to prove now.
+
+\begin{lem} \label{duales Komplement}
+We have $\comp{\KA} =\ausw{\Ed}(\CA)$ and
+$\comp{\comp{\KA}} =\ausw{\dEd}(\comp{\CA})$
+\end{lem}
+
+\begin{Pf}
+According to the definition $\ausw{\Ed}(b)\in \comp{\KA}$ if and only if
+$\ausw{\Ed}(b)(\isod([x,a]))=\isod([x,a])(b)=0$ for all $x \in \Ed$
+and $a\in A$. Applying (\ref{Lieklammer}) this is the case if and only if
+$[a,b]=0$ for all $a \in A$, thus if and only if
+$b \in \CA$. The second equation follows from the first by use of
+equation (\ref{Ev comp}).
+\end{Pf}
+
+Remember that the dual module
+$\dual{C}=\Hom{\gr}{C}{\gr}$ of a coalgebra $C$ always posseses the structure
+of an algebra by use of the {\em convolution product} 
+
+\[ \mu \nu :=(\mu \otimes \nu) \circ\kom \;\;\mbox{ where }
+\mu ,\nu \in \dual C.
+ \]
+
+Here, we have identified $\mu \otimes \nu$ with its image under the
+natural homomorphism
+$\dual{C} \otimes \dual{C} \pfr \dual{(C \otimes C)}$. Note that this 
+construction is functorial. In the special case
+$C=\dEd$ we obtain an algebra structure on $\dual{\dEd}$. Furthermore
+it is easy to show that the evaluation map
+$\ausw{\Ed}:\Ed\pfr\dual{\dEd}$ is an isomorphism of algebras.
+
+
+\begin{lem} \label{duale Algebra allgemein}
+Let $C$ be a coalgebra together with an epimorphism 
+$\pi:\dEd\pfr C$. Set $K:=\Ker{\pi}$.
+Then $\rho:=\ausw{\Ed}^{-1}\circ \dual{\pi}:\dual{C}\pfr \Ed$ is a
+monomorphism
+of $\gr$-algebras and $\Ima{\rho}=\ausw{\Ed}^{-1}(\comp K)$.
+\end{lem}
+
+\begin{Pf}
+By functoriality the dual map
+$\dual{\pi}:\dual{C} \pfr \dual{\dEd}$ is an
+algebra homomorphism.
+Since $\Hom{\gr}{-}{\gr}$ is exact on the right, $\dual{\pi}$ is injective.
+One easily shows $\Ima{\dual{\pi}}=\comp{ K}$. This completes the
+proof, since $\ausw{\Ed}$ is an algebra isomorphism as mentioned above.
+\end{Pf}
+
+\begin{thm}[First Comparison Theorem] \label{duale Algebra}
+The centralizer algebras $\CA$ and the dual of the centralizer coalgebra
+$\dual{\MA}$ are isomorphic to each other. An isomorphism
+is given by $\rho$.
+\end{thm}
+
+\begin{Pf}
+This follows immediately from lemmas
+\ref{duales Komplement} and \ref{duale Algebra allgemein}.
+\end{Pf}
+
+
+Now, let us compare the dual of $\ZA A$ with $\MA$. To this aim we
+consider the dual map $\dual{\einb}:\dEd \pfr \dual{\CA}$ of the inclusion
+$\einb:\CA \hookrightarrow \Ed$.
+Because of $\ausw{\dEd}(U)\subseteq \comp{\comp U}$ for arbitrary
+submodules $U$ and according to Lemma
+\ref{duales Komplement} we have
+
+\[\KA \subseteq\ausw{\dEd}^{-1}(\comp{\comp{\KA}})=
+\ausw{\dEd}^{-1}(\ausw{\dEd}(\comp{\CA}))= \comp{\CA}
+=\Ker{\dual{\einb}}. \]
+
+Therefore $\dual{\einb}$ factors to an $\gr$-module homomorphism
+
+\[ \theta :\MA \pfr \dual{\CA}. \]
+
+\begin{lem}\label{Kern theta}
+The kernel of $\theta$ is precisely the torsion submodule of $\MA$
+\end{lem}
+
+\begin{Pf}
+From general results of commutative algebra (cf. \cite{doc} Anhang A 1.2) it follows
+that the torsion submodule of $\MA$ coincides with
+$\ausw{\dEd}^{-1}(\comp{\comp{\KA}})/\KA$.
+By the above calculations this is just the kernel
+$\comp{\CA}/\KA$ of $\theta$.
+\end{Pf}
+
+This immediately implies
+
+\begin{cor}[Criterion of torsion freeness] \label{schwaches Kriterium}
+The following statements are equivalent:
+\begin{itemize}
+\item[(a)] $\MA$ is torsion free
+\item[(b)] $\KA=\comp{\CA}$
+\item[(c)] $\theta$ is injective.
+\end{itemize}
+\end{cor}
+
+
+\begin{rem} \label{Ext}
+The map $\theta$ is
+surjective if and only if the  extension group
+${\rm Ext}_{\gr}^1(\Ed/\CA, \gr)$ is trivial, in particular if
+$\CA$ is a direct summand in $\Ed$.
+\end{rem}
+
+At the beginning of this section we have constructed an algebra
+structure on the dual module of a coalgebra. Conversely we should obtain
+a coalgebra structure on the dual of an algebra $A$. Whereas this is not
+possible in general, it can be done under certain restrictions to
+the $\gr$-module structure of the algebra $A$. To be more precise,
+the natural $\gr$-homomorphism from $\dual A\otimes \dual A$ into
+$\dual{(A\otimes A)}$ must be an isomorphism. This is the case
+if $A$ is projective and finitely generated. Therefore, under these
+circumstances the construction is always possible and functorial,
+that is: duals of algebra maps become coalgebra maps. Thus we obtain
+
+
+\begin{thm}[Second Comparison Theorem] \label{duale Koalgebra}
+Suppose the centralizer algebra $\CA$  of $A$ is a direct summand in
+$\Ed$ as an $\gr$-module. Then
+$\dual{\CA}$ can be turned into a coalgebra. The map 
+$\theta:\MA\pfr \dual{\CA}$  is an epimorphism of coalgebras, whose
+kernel is just the torsion submodule of $\MA$.
+\end{thm}
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Change of Base Rings}
+
+Let $\er$ be another noetherian integral domain together with a
+homomorphism $\gr \pfr \er$ of rings. We will consider $\er$
+as an $\gr$-algebra via this homomorphism. In this situation there
+is a functor from the category of $\gr$-modules into the category of 
+$\er$-modules given by
+
+\begin{equation} \label{S-Funktor}
+\merw{W}{\er}:=\er \otimes_{\gr} W \;\;\mbox{ and } \;\;
+ \merw{\alpha}{\er}:=\id{\er} \otimes \alpha:\merw{U}{\er} \pfr
+\merw{W}{\er}
+\end{equation}
+
+to each pair of $\gr$-modules $W$ and $U$ and an  $\gr$-homomorphism
+$\alpha:U \pfr W$. We will study the behaviour of the construction of
+centralizer coalgebras under these functors. It will turn out that the
+centralizer coalgebra behaves better than the centralizer algebra.
+To start with let
+
+\[\szerw{\Ed} := \End{\er}{\smerw{\nt}},\;\;
+\szerw{\zeta}:\smerw{\Ed}\pfr\szerw{\Ed}\]
+
+where $\szerw{\zeta}$ is given by
+$\szerw{\zeta}(s \otimes e)(t \otimes v):=
+st \otimes e(v)$ for all $s,t \in \er, e \in \End{\gr}{\nt}, v \in
+\nt$. Let $\geinb A:A\hookrightarrow \Ed$ be the natural embedding 
+of the subalgebra $A\subseteq \Ed$ and let
+
+\[ \szerw A:=\Ima{\szerw{\zeta}\circ\seinb A}\]
+
+denote the image of $\smerw A$ in $\szerw{\Ed}$. Further there are
+natural homomorphisms
+
+\[\szerw{\eta}: \smerw{\CA} \pfr \ZA{\szerw A}=\End{\szerw
+A}{\smerw{\nt}}\subseteq \szerw{\Ed}\]
+
+on generators given in a similar way to $\szerw{\zeta}$. Note, that
+both, $\szerw{\zeta}$ and $\szerw{\eta}$ are homomorphisms of algebras
+connected by the equation
+
+\[ \geinb{\ZA{\szerw A}}\circ \szerw{\eta}=\szerw{\zeta} \circ
+\seinb{\CA}. \]
+
+Thus $\szerw{\eta}$ is injective
+if and only if $\seinb{\CA}$ is injective ($\einb$ stands for the 
+corresponding embeddings).  This may fail if $\ZA A$
+is not a pure $\gr$-submodule in $\Ed$. Further $\szerw{\eta}$ may fail to
+be surjective (see the example following theorem \ref{starkes Kriterium}).
+$\ZA A$ is called {\em stable under base change} if $\szerw{\eta}$ is an
+isomorphism of for all choices for $\er$. Now, in 
+analogy to $\szerw{\eta}$ we are going to consider natural homomorphisms
+
+%\[ \szerw{\rho}:\smerw{\KK A} \pfr \KK{\szerw A}\;\mbox{ and }\;
+\[ \szerw\mu : \smerw{\ZK A} \pfr \ZK{\szerw
+  A}=\dual{(\szerw{\Ed})}/\KK{\szerw{A}}\]
+
+We will show that they are isomorphisms independent of the choices for $A,\; \gr$ and $\er$.
+To this claim we consider
+
+\[\szerw{\chi}:={\dual{\szerw{\zeta}}}^{-1}\circ\duerw{\Ed}:
+\smerw{\dEd}\pfr \dual{(\szerw{\Ed})}
+\]
+
+where  $\duerw{\Ed}:\smerw{\dEd}\pfr \dual{\smerw{\Ed}}$ is the natural
+homomorphism given by
+$\duerw{\Ed}(s \otimes f)(t \otimes e):=stf(e)$
+on genorators with $s,t \in \er, \; f \in \dual{\Ed}
+\; e \in W$. It is easy to check 
+that $\szerw{\chi}$ is a homomorphism of coalgebras
+if the coalgebra structure on $\smerw{\dEd}$ is defined in a canonical
+way (for details see \cite{doc} section 1.5). Further, the verification
+of the commutativity rule
+
+\begin{equation} \label{komm. isod}
+\szerw{\chi}\circ \smerw{\isod}=\szerw{\isod}\circ \szerw{\zeta}
+\end{equation}
+
+is straightforward, as well. Here $\szerw{\isod}:\szerw{\Ed}\pfr
+\dual{(\szerw{\Ed})}$ is the isomorphism induced by the
+matrix trace map $\szerw{\tr}:\szerw{\Ed}\pfr \er$. Setting
+
+\[\KL{\szerw A}:=<[\nu,\mu ]| \nu \in \szerw A, \mu \in \szerw{\Ed}
+>_{\er
+-\mbox{mod}},\]
+
+we obtain
+
+\[ \Ima{\szerw{\zeta}\circ \seinb{\KL A}}=\KL{\szerw A},\]
+
+since $\szerw{\zeta}$ is an isomorphism of $\er$-algebras. By
+definition we have $\szerw{\KA}=\szerw{\isod}(\szerw{\KL A})$
+and $\Ima{\seinb{\KA}}=\Ima{\smerw{\isod}\circ \seinb{\KL  A}}$.
+Using (\ref{komm. isod}) this yields
+\begin{equation} \label{Bild KK}
+\Ima{\szerw{\chi}\circ \seinb{\KA}}=\KK{\szerw A}.
+\end{equation}
+
+Here again, we have used the symbol $\einb$ to indicate embeddings
+of $\gr$-submodules. Note that in particular $K:= \Ima{\seinb{\KA}}$ is
+a coideal in $\smerw{\dEd}$ since $\szerw{\chi}$ is an isomorphism of
+coalgebras and therefore
+$\smerw{\MA}\cong \smerw{\dEd}/ K$ is a coalgebra.
+Finally, we are able to define the natural homomorphism $\szerw\mu$
+%\[ \szerw{\rho}:=\szerw{\chi}\circ\seinb{\KA}:\smerw{\KK A} \pfr
+%\KK{\szerw A}\]
+%and 
+% : \smerw{\ZK A} \pfr \ZK{\szerw A}=\dual{(\szerw{\Ed})}/
+%\KK{\szerw A}\]
+%where the latter one is defined 
+as the factorization of $\szerw{\chi}$ 
+which exists by (\ref{Bild KK}).
+We immediately obtain
+
+\begin{thm}[Change of Base Rings]   \label{base extension}
+For any noetherian integral domain $\er$ which is an $\gr$-algebra and any
+$\gr$-subalgebra $A$ of $\Ed$ there is a  natural homomorphism
+\[ \szerw\mu:\er \otimes_{\gr}\MA \pfr \ZK{\er \otimes_{\gr} A} \]
+which is an isomorphism of $\er$-coalgebras. 
+\end{thm}
+
+This means that $\MA$ is stable under base changes for all choices of $A$ and $\gr$.
+If the $\gr$-algebra $\er$ is a field, it follows from theorems
+\ref{duale Algebra} and \ref{base extension} that
+\begin{equation} \label{Dim CA MA}
+\Dim{\er}{\ZA{\szerw A}}=
+\Dim{\er}{\dual{\ZK{\szerw A}}}=
+\Dim{\er}{\dual{(\smerw{\MA})}}=\Dim{\er}{\smerw{\MA}}
+\end{equation}
+
+Now, for a noetherian integral domain $\gr$ 
+it is known from commutative algebra that an $\gr$-module $W$ is
+projective if and only if the dimension of $\smerw W$ is independent
+of the field $\er$. Thus we obtain
+
+
+\begin{cor} \label{MA lokal frei} 
+Let $F$ be the field of fractions of $\gr$. Then
+$\MA$ is projective if and only if
+$\Dim{\er}{\ZA{\szerw A}}=\Dim{F}{\ZA{\zerw AF}}$ holds for each field
+$\er$.
+\end{cor}
+
+
+
+\begin{thm}[Criterion of Projectivity] \label{starkes Kriterium}
+The following statements are equivalent:
+\begin{itemize}
+\item[(a)] The centralizer coalgebra $\MA$ is projectiv.
+\item[(b)] The centralizer algebra $\ZA A=\End{A}{\nt}$ is stable under base change.
+\item[(c)] $\MA$ is torsion free and $\CA$ a direct summand in $\Ed$. 
+\end{itemize}
+\end{thm}
+
+\begin{Pf}
+First assume (a). Then the sequence
+\[ 0\pfr \KA\pfr \dEd \pfr \MA\pfr 0 \]
+is split and consequently the same is true for
+\[ 0\pfr \dual{\MA}\pfr \dual{\dEd} \pfr \dual{\dEd}/\comp{\KA}\pfr 0. \]
+
+Since $\ausw{\Ed}$ induces an isomorphism between
+$\dual{\dEd}/\comp{\KA}$ and $\Ed /\CA$
+according to lemma \ref{duales Komplement} it follows
+that $\Ed /\CA$ is projective, as well. Thus
+$\CA$ is a direct summand in $\Ed$
+proving (c).\Ab
+
+Part (a) follows from (c) by theorem \ref{duale Koalgebra}, since the
+dual of a projective module is projective again.
+To verify (b) we therefore may assume both (a) and (c). Since $\ZA A$
+is a direct summand $\seinb{\ZA A}$ is injective for all $\gr$-algebras
+$\er$. Consequentely all
+$\szerw{\eta}$ are injective (see above). To show surjectivity note that the image
+$\Ima{\szerw{\zeta} \circ\seinb{\CA}}=
+\Ima{\geinb{\ZA{\szerw A}}\circ \szerw{\eta}}$ of $\smerw{\CA}$ in $\szerw{\Ed}$
+must be a direct summand therein, since $\szerw{\zeta}$
+is an isomorphism and $\Ima{\seinb{\CA}}$ a direct summand in $\smerw{\Ed}$.
+Therefore, to show that this submodule of $\szerw{\Ed}$ 
+coincides with $\ZA{\szerw A}$, it is enough to verify that both
+have the same rank (the dimension of the $G$-tensored module
+over the field $G$ of fractions on $\er$). But these ranks must indeed be
+the same as can be seen from the following calculations
+\[ \Dim{G}{\merw{\CA}{G}}=\Dim{F}{\merw{\CA}{F}}=\Dim{F}{\ZA{\zerw AF}}=
+\Dim{G}{\ZA{\zerw AG}}.\]
+
+where the left-hand-side equation holds by projectivity of $\CA$, the right-hand-side one
+by corollary \ref{MA lokal frei} and the one in the middle
+since $\zerw{\eta}{F}$
+is an isomorphism by flatness of the field $F$ of fractions on $\gr$. 
+This establishes (b).\Ab
+
+Now assume (b). This implies that the map $\seinb{\ZA A}$ induced by
+the embedding $\geinb{\ZA A}$ is injective for all $\er$. By
+commutative algebra arguments one concludes that $\ZA A$ is a direct
+summand in the $\gr$-free module $\Ed$, in particular it is
+projective. Now, let $\er$ be a field.
+Since $\szerw{\eta}$ is an isomorphism we have
+
+\[ \Dim{\er}{\smerw{\CA}}= \Dim{\er}{\ZA{\szerw A}}.\]
+
+The left-hand-side is independent of $\er$ by projectivity of $\ZA
+A$. Thus by corollary \ref{MA lokal frei} $\MA$ is projective yielding
+(a).
+\end{Pf}
+
+{\bf Example:} Let $\gr=\Z$ and $\nt=\Z^4$. Further let
+\[a:=\left( \begin{array}{cccc}
+0 & 2 & 0 & 0 \\
+0 & 2 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 2 \\
+\end{array} \right)\in \Ed=\End{\Z}{\Z^4}\]
+and $A:=<a>$ be the subalgebra in $\Ed$ generated by $a$. 
+Each field can be considered as a $\Z$-algebra.
+For a field of characteristic different from $2$ the minimum
+polynomial of $\smerw a$ is
+$t^2-2t$, but in characteristic $2$ it is $t^2$. This means that
+the algebra $\szerw A$ is two dimensional for each field $\er$.
+It follows that $A$ is a direct summand in $\Ed$.
+But nevertheless $\MA$ is not projective (free), because in the case
+of a field of characteristic different from $2$
+$\smerw a$ is diagonalisable and one calculates
+$\Dim{\er}{\ZA{\szerw A}}=2^2+2^2=8$, while in the case of characteristic
+$2$ we have $\Dim{\er}{\ZA{\szerw A}}=9$. Therefore $\MA$
+can't be projective in view of corollary \ref{MA lokal frei}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{FRT-Construction}
+
+
+
+The $r$ fold tensor product of $\nt$ is denoted by $\ntrts$. Since
+it is a free $\gr$-module, as well, we may apply all results of
+former sections to a situation where $\nt$ is substituted by $\ntrts$,
+$\Ed$ by $\rEd:=\End{\gr}{\ntrts}$ and $\dEd$ by
+$\rdEd:=\Hom{\gr}{\rEd}{\gr}$. There are
+natural isomorphisms between $\rEd$ and
+$\ts{\Ed}{r}$ and between $\rdEd$ and $\ts{\dEd}{r}$. We will omit
+them in our notation and consider them as identity maps. Set
+$\ntts 0:=\gEd 0:=\gr$.\Ab
+
+Suppose we are given a family 
+$\falg=(\rfalg)_{r \in \N_0}$ of $\gr$-algebras
+such that $\rfalg \subseteq \rEd$. According to lemma \ref{Koideal}
+there is an associated family of coideals $K_r$ in $\rdEd$. 
+
+\begin{eqnarray} \label{homogene Koideale}
+K_r:=\KK{\rfalg}.
+\end{eqnarray}
+
+By the above identification we consider $\tens{\dEd}:=\bigoplus_{r \in
+\N_0}\rdEd$ as the tensor algebra on the $\gr$-module $\dEd$.
+There is a unique coalgebra structure on this tensor algebra, extending
+the one from $\dEd$ and turning $\tens{\dEd}$ into a bialgebra.
+Furthermore the $\rdEd$ are subcoalgebras dual to the algebras
+$\rEd$, i.e.\ the coalgebra structure on $\rdEd$ is the one considered
+above.
+Epimorphic images of this bialgebra are called {\em matric bialgebras}
+(cf. \cite{tak2}).
+Let us investigate under what circumstances the coideal
+\begin{eqnarray} \label{Def. I}
+I:=\oplus_{r \in \N_0 } K_r
+\end{eqnarray}
+becomes an ideal in $\tens{\dEd}$ and thus consequently is a
+biideal. To this claim we consider inclusion maps
+$\gil{r},\gir{r}:\rEd \pfr \gEd{r+1}$ given by
+\[
+\gil r(\mu )=\mu \otimes \id{\nt}, \; \gir r(\mu )=\id{\nt}\otimes \mu ,\; \mu 
+\in \rEd \]
+and focus attention to a special situation, which is general enough
+for our applications.  We start with an arbitrary subset
+$N\subseteq \gEd 2$ and define a family $\falg$ inductively beginning with
+$\gfalg 0:=\gr,\; \gfalg 1:=\gr\cdot\id{\nt}$ and $\gfalg 2$ as the
+algebraic span of $N$ in $\gEd 2$, than continuing by the formula
+\[ \rfalg:=\left<\gil{r-1}(\gfalg{r-1}) +
+\gir{r-1}(\gfalg{r-1})\right>_{\rm Alg} \;\;\mbox{ for } \;\;r>2.\] 
+We call this a {\em by $N$ induced family} of subalgebras of $\rEd$.
+
+\begin{prop} \label{Biideal}
+Let $\falg$ be the family induced by a subset $N\subseteq
+\gEd 2$. Then the coideal $I$ defined in (\ref{Def. I}) is a
+homogenous biideal in $\tens{\dEd}$ generated by the coideal $K_2$.
+\end{prop}
+
+\begin{Pf}
+First we show that $I$ is a homogenous ideal. To this claim take
+$a \in K_r$ and $b \in\gdEd{u}$. We have to show 
+$a \otimes b \in K_{r+u}$ and $b \otimes a \in K_{r+u}$. The choice of the element
+$a$ can be reduced to a generator $a=\kerz\mu {\nu}$ of the $\gr$-module $K_r$
+with $\mu 
+\in\rEd$ and $\nu \in \rfalg$.
+Letting 
+$\hat{\nu}:=\gil{r+u-1} \circ \gil{r+u-2} \circ \ldots \circ \gil{r}(\nu) =
+\nu \otimes \id{\ntts{u}} \in \gfalg{r+u}$ and
+$\hat\mu :=\mu \otimes \bar b$, where $\bar b\in \gEd{u}$ is the preimage of $b$
+under $\isod$ one obtains
+\[ a \otimes b = \kerz\mu {\nu} \otimes b = \kerz{\hat\mu }{\hat{\nu}} \in
+K_{r+u}.\]
+Similary $b \otimes a \in K_{r+u}$ and the first statement is
+established.\Ab
+
+For the second part denote by $J$ the homogenous ideal in
+$\tens{\dEd}$ generated by $K_2$. Since $I$ is a homogenous ideal
+containing $K_2$ we get $J\subseteq I$. For the reverse inclusion we
+show $K_r\subseteq J$ by induction on $r$. Clearly
+$K_0=K_1=(0)$ and $K_2$ are contained in $J$. Now suppose $r>2$.
+Letting $J_r:=J\cap\rdEd$ one obtains $J_r=J_{r-1}\otimes \dEd +\dEd\otimes
+J_{r-1}$. By induction hypothesis we see $K_{r-1} = J_{r-1}$. Therefore
+\[ J_r=K_{r-1}\otimes \dEd + \dEd \otimes K_{r-1}=
+\KK{M} \]
+where $M:=\gil{r-1}(\gfalg{r-1}) + \gir{r-1}(\gfalg{r-1}) \subseteq
+\rEd$. But since $\rfalg$ is generated by $M$ as an algebra
+we finally see from corollary \ref{Verknupfungstreue}
+$K_r =\KK{\rfalg}=\KK M=J_r$.
+\end{Pf}
+
+According to the proposition we may assign a
+{\em graded matric bialgebra} to each subset $N\subseteq \gEd 2$ by
+\begin{eqnarray}  \label{FRT allgemein}
+\frt{N}:=\tens{\dEd}/I
+\end{eqnarray}
+whose homogenous summand are the centralizer coalgebras $\ZK{\rfalg}$.
+This bialgebra will be called the {\em FRT-construction} corresponding
+to the subset $N$. The reader familiar with the ordinary
+FRT-construction will recognize the latter one as the special case
+where $N$ consists of just one element $\beta$ (use the description
+(\ref{frt konkret}) below). In this case we write
+$\frt{\beta}:=\frt{N}$. Usually in the applications this $\beta$ is a
+{\em quantum Yang-Baxter operator} leading to a representation of
+the {\em Artin braid groups} on the modules $\ntrts$. In this situaton
+the algebras $\rfalg$ are just the images of the corresponding
+group algebras (over $\gr$) under this representation.\Ab
+
+An application where $N$ must consist of two elements will be given in
+the next section. Here the $\rfalg$ are images of the {\em Brauer
+  centralizer algebras} under Brauer's representations corresponding
+to the symplectic groups. The bialgebra $\frt{N}$ will turn out to be
+the coordinate ring of a certain {\em symplectic monoid}.
+It is a remarkable fact, that the second operator is only needed
+in the classical situation, whereas in the quantum case it lies in the
+algebraic span of the quantum Yang-Baxter operator (see \cite{doc},
+Bemerkung 2.5.1, 2.5.4). Thus, the ordinary FRT-construction behaves
+singularly (in a certain sense) when specializing the deformation parameter
+to 1, i.e.\ in the classical limit.\Ab
+
+We close this section giving a more convenient description of $\frt
+N$. We denote by
+$\nmind r$ the set of maps from 
+from $\mg r:=\{1, \ldots , r\}$ to
+$\mg n:=\{1, \ldots , n\}$ and call the elements 
+${\bf i} \in \nmind r$ multi-indices writing ${\bf i}=(i_1, \ldots ,
+i_r)$, where $i_j\in \mg n$ for $j\in \mg r$. The residue classes
+of the multiplicative
+generators $\des ij +I$ of $\frt N$ where $i,j\in \mg n$ will be
+denoted by $\xes ij$. For pairs of multi-indices $\ibf i,\ibf j\in
+\nmind r$ we introduce the abbreviation
+
+\[ \xes{\ibf i}{\ibf j}:=\xes{i_1}{j_1}\xes{i_2}{j_2}\ldots
+\xes{i_r}{j_r}. \]
+
+Using the notation introduced in (\ref{Notation End}) we obtain
+a presentation of $\frt N$ by generators and relations given as
+follows
+
+\begin{equation} \label{frt konkret}
+\frt N=\left< \xes ij, \; i,j\in \mg n|\;\; \mu \xes{\ibf i}{\ibf
+    j}=\xes{\ibf i}{\ibf j}\mu,\; \ibf i, \ibf j \in \nmind 2,\;
+  \mu\in N\right>. 
+\end{equation}
+
+The verification of this formula follows from the second statement of
+proposition \ref{Biideal} together with (\ref{Rel MA}).
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Example: Symplectic Monoids}
+
+Let $n=2m$ be even. We will apply the FRT-construction to two 
+endomorphisms $\beta, \gamma \in \gEd
+2=\Ed\otimes \Ed$. In order to define them we have to introduce some notation.
+First consider the involution
+$i':=n-i+1$ on $\mg n$, that is
+
+\[ (1',2', \ldots , n')=(n,n-1, \ldots , 1). \]
+
+Further set $\epsilon_i:=1$ if $i\leq m$ and $\epsilon_i:=-1$ if $i>m$
+and define
+
+\[ \beta :=\sum_{i,j\in \mg n}\es ij \otimes \es ji \]
+\[\gamma :=\sum_{i,j\in \mg n} \epsilon_i \epsilon_j
+\es i{j'} \otimes\es {i'}j.
+\]
+
+The first endomorphism is just the flip operator on $\nt
+\otimes \nt$, whereas the second is an integer multiple of a projection
+map whose kernel is just the kernel of the linear form on
+$\nt \otimes \nt$ corresponding to the canonical skew bilinear form on
+$\nt$ (see below) and whose image is the one dimensional span of a
+skew bivector. Our object of interest will be the FRT-construction
+
+\[ \sAn{\gr} :=\frt{\{\beta, \gamma\}}. \]
+
+
+According to the preceeding section it is a graded matric bialgebra
+whose homogenous summands
+
+\[ \rsAn{\gr} r:=\ZK{\rfalg} \]
+
+are the centralizer coalgebras of algebras $\rfalg$ which are generated by endomorphisms
+
+\[ \beta_i := \id{\ntts{i-1}} \otimes \beta
+\otimes\id{\ntts{r-i-1}},\in \rEd \]
+\[ \gamma_i :=\id{\ntts{i-1}} \otimes \gamma  \otimes\id{\ntts{r-i-1}}
+\in \rEd \]
+
+for $i=1, \ldots , r-1$. Using the notation of \cite{wenzl1} the
+{\em Brauer centralizer algebra} $\br{r}{x}$ ($x$ an element in $\gr$)
+is generated by symbols $g_i$ and $e_i$ for $i=1, \ldots, r-1$ and
+the assignment $g_i\mapsto \beta_i$ and $e_i\mapsto \gamma_i$ defines
+a representation of $\br{r}{-n}$ on $\ntrts$. Thus $\rfalg$ is
+just the image of $\br{r}{-n}$ under this representation, in
+H.\ Wenzl's notation from \cite{wenzl1}: $\rfalg=B_r(\spn n{})$.
+R.\ Brauer showed in \cite{brauer} that this is just the
+centralizer algebra of the symplectic group $\spn n{\C}$
+acting on $\ntrts$
+if $\gr =\C$. One of our
+aims is to generalize this to the case of an arbitrary algebraically
+closed field $K$ instead of $\C$. \Ab
+
+Another problem, connected with the former, is
+to show that the centralizer algebra $\ZA{\rfalg}$ 
+of $\rfalg$ which will turn out
+to be the {\em symplectic Schur algebra} $S_0(n,r)$ defined by
+S.\ Donkin in \cite{donk3} is stable under base changes. In view of
+theorem \ref{starkes Kriterium} this is equivalent to the projectivity
+of the coalgebra $\rsAn{\gr} r$ as an $\gr$-module. For this purpose
+we are going to construct a basis for the latter one. 
+The procedure follows \cite{doc}
+where the more general quantum case is treated. But it will become more
+transparent in the much simpler classical case. First note that there is an
+epimorphism of graded bialgebras from
+
+\[ \An{\gr}:=\gr [\xes 11, \xes 12, \ldots , \xes nn] \]
+
+to $\sAn{\gr}$ leaving the symbols $\xes ij$ fixed (we use $\xes ij$
+as symbols for residue classes of $\des ij$ in all cases of matric bialgebras).
+For $\An{\gr}$ is just the 
+FRT-construction $\frt{\beta}$ where the relations coming from the
+endomorphism $\gamma$ are omitted. This is because 
+$\xes{i_2}{j_1}\xes{i_1}{j_2}=\beta \xes{\ibf i}{\ibf j}=\xes{\ibf
+  i}{\ibf j}\beta=\xes{i_1}{j_2}\xes{i_2}{j_1}$ just give the ordinary
+commutativity relations. The kernel of this bialgebra epimorphism is the ideal
+in $\An{\gr}$ which is generated by the polynomials 
+$\gamma \xes{\ibf i}{\ibf j}=\xes{\ibf
+  i}{\ibf j}\gamma$ where $\ibf i,\ibf j \in \nmind 2$. To write down
+these polynomials explicitly let us fix some notation:
+
+\[f_{ij}:=\sum_{k=1}^n \epsilon_k\xes ik\xes j{k'},\;\;
+\bar f_{ij}:=\sum_{k=1}^n \epsilon_k\xes ki\xes{k'} j \in \rAn{\gr}{2}.\]
+
+Setting $\ibf i=(i,j)$ and $\ibf j=(k,l)$ we obtain
+
+\[ \gamma  \xes{\ibf i}{\ibf j} = \left\{\begin{array}{ll}
+\epsilon_j\bar f_{kl} & i=j' \\
+0 & i \neq j' 
+\end{array} \right .
+\;\;\;\;\mbox{ and } \;\;\;\;
+\xes{\ibf i}{\ibf j}\gamma = \left\{\begin{array}{ll}
+\epsilon_l f_{ij} & k=l' \\
+0 & k \neq l' 
+\end{array} \right .
+\]
+
+Therefore we have 
+
+\begin{equation}\label{sAn epi}\sAn{\gr}=\An{\gr}/{\cal F}\end{equation} 
+
+where 
+${\cal F}$ is the ideal in $\An{\gr}$ generated by the set
+\begin{equation}\label{ideal generator} 
+F:=\{ f_{ij},\bar f_{ij}, f_{ll'}-\bar f_{kk'}|\; 1 \leq i <j\leq n,
+i\neq j', \; 1 \leq l\leq k \leq m\}.
+\end{equation}
+If $\gr=K$ is an algebraically
+closed field we can interpret this in terms of algebraic geometry,
+i.e.\ we can look at the vanishing set of ${\cal F}$ in the 
+monoid $\gmhg nK$ of $n\times n$-matrices. 
+It is easy to see that this is just the closed submonoid 
+
+\[ \gspm nK:= \{ A \in \gmhg nK|\;\exists \;\; d(A)\in K,\;
+A^t\spT A=A\spT A^t=\spq (A)\spT \}\]
+
+in $\gmhg nK$ called the {\em symplectic monoid} by S.\ Doty
+\cite{doty} and which has been  
+considered by D.J.\ Grigor'ev \cite{grig} first.
+Here $\spT$ is the Gram-matrix of the canonical
+skew bilinear form, that is $\spT=(\spT_{ij})_{i,j \in \mg n}$ where
+$\spT_{ij}:=\epsilon_i\delta_{ij'}$. The function $\spq :\gspm nK \pfr K$ is
+called the {\em coefficient of dilation}. It is neccesarily a
+regular function on $\gspm nK$ and already 
+well defined in $\sAn{K}$, explicitly:
+
+\begin{equation}\label{formel d}
+\spq = \epsilon_k f_{kk'}=
+\epsilon_k\bar f_{kk'}
+\in \rsAn{\gr} 2.
+\end{equation}
+
+Note that this is independent of $k\in \mg n$ by the relations in $\sAn K$.
+Furthermore $\spq$ is a group-like element of this bialgebra
+(cf. \cite{doc} 2.1.1). The set $\gln nK \cap \gspm nK$ 
+of invertible elements in $\gspm nK$
+is precisely the group $\gsp nK$
+of {\em symplectic similitudes}. S. Doty showed in \cite{doty} that
+$\gspm nK$  in fact coincides with the Zariski-closure of $\gsp nK$ in
+$\gmhg nK$. We will obtain this as an easy consequence of the results
+presented below.\Ab
+
+To write down a basis for $\rsAn{\gr} r$ we need some combinatorics.
+The set of partitions of $r$ is denoted by $\rprt r$. It contains 
+subsets $\prt lr$ which consist of partitions having not more than $l$ parts.
+We write partitions as $l$-tuples
+$\lambda :=(\lambda_1, \lambda_2, \ldots , \lambda_l)$
+of nonnegative integers $\lambda_i$ in descending order
+$\lambda_1\geq \lambda_2 \geq \ldots \geq \lambda_l\geq 0$ such that
+$\lambda_1 +\ldots +\lambda_l=r$. To each partition one
+associates a {\em Young}-diagram reading row lengths out of the
+components $\lambda_i$. For example
+
+\[ \begin{tableau}{4} \cline{1-3}
+\tline{ & & }{1}{3}
+\tline{ & }{2}{2}
+\tline{ & }{2}{2}
+\tline{}{3}{1}
+\end{tableau}
+\]
+
+
+is associated to $\lambda=(3,2,2,1) \in \prt 48$. The column lengths
+of the diagram lead to another partition $\lambda'\in
+\prt{\lambda_1}{r}$ called the dual of the partition $\lambda$, i.e.\
+$\lambda'_i:=|\{j|\; \lambda_j \geq i\}|$.
+Let $\symg r$ denote the symmetric group on $r$ symbols and
+$\symg{\lambda}$ the {\em standard Young subgroup} of $\symg r$
+corresponding to the partition $\lambda$. This is the subgroup fixing
+the subsets
+$\{1, \ldots , \lambda_1 \}, \; \{\lambda_1+1, \ldots , \lambda_1+\lambda_2\},
+\ldots $ of $\mg r$. In the above example $\lambda=(3,2,2,1)$ the
+standard Young subgroup of $\symg 8$ corresponding to the dual
+partition $\lambda'$ fixes $\{1,2,3,4\},\;\{5,6,7\}$ and $\{8\}$.\Ab
+
+To each partition $\lambda\in \rprt r$ and a pair of multi-indices
+$\ibf i, \ibf j\in \nmind r$
+one defines a {\em bideterminant} $\bidet{\lambda}{\ibf i}{\ibf j}\in
+\rAn{\gr} r$ by
+
+\[
+\bidet{\lambda}{\ibf i}{\ibf j}:=
+\sum_{w \in \symg{\lambda'}} \sign w\xes{\ibf i}{(\ibf jw)}=
+\sum_{w \in \symg{\lambda'}} \sign w\xes{(\ibf iw)\ibf j}.
+\]
+
+where $\ibf iw:=(i_{w(1)}, i_{w(2)}, \ldots , i_{w(r)})$. These are
+products of minor determinants, one factor for each column, the size
+of which
+correspond to the length of the column. By (\ref{sAn epi}) 
+they can be interpreted as
+elements of $\rsAn{\gr} r$, as well. We wish to
+write down a basis of the latter $\gr$-module consisting of such
+bideterminants. Since they are too large in number one needs a criterion
+to single out the right ones. This can be done using
+$\lambda$-tableaux. These are constructed from the diagram of $\lambda$
+by inserting the components of a multi-index column by column into the
+boxes. In the above example:
+
+\[
+\itab{\lambda} i:=
+\begin{tableau}{4}\cline{1-3} 
+\tline{$i_1$ & $i_5$ & $i_8$}{1}{3}
+\tline{$i_2$ & $i_6$}{2}{2}
+\tline{$i_3$ & $i_7$}{2}{2}
+\tline{$i_4$}{3}{1}
+\end{tableau} .
+\]
+
+We put a new order $\ll$ on the set $\mg n$, namely
+$1'\ll 1 \ll 2' \ll 2 \ll \ldots \ll m' \ll m$.
+A multi-index $\ibf i$ is called {\em $\lambda$-column standard} if the
+entries in $\itab{\lambda} i$ are strictly increasing down columns according
+to this order. It is 
+called {\em $\lambda$-row standard} if the
+entries in $\itab{\lambda} i$ are weakly increasing along rows and 
+{\em $\lambda$-standard} if it is both at the same time. We write
+$\asmind{\lambda}$ to denote the subset of $\nmind r$ consisting
+of all multi-indices being $\lambda$-standard. Such a multi-index
+$\ibf i\in \asmind{\lambda}$
+is called {\em $\lambda$-symplectic standard} if for each
+index $i\in \mg m$ the occurences of $i$ as well as $i'$ in
+$\itab{\lambda} i$
+is limited to the first $i$ rows. The corresponding subset of
+$\asmind{\lambda}$ will be denoted by $\symind{\lambda}$.\Ab
+
+
+The notion of {\em symplectic standard tableaux} traces back to 
+R.C.\ King \cite{king} and it has appeard in a lot of work concerning
+symplectic groups and their representation theory (for details see
+\cite{donk1}).\Ab
+
+It is well known from invariant theory (cf. \cite{martin},
+section 2.5) that the collection of all bideterminants
+$\bidet{\lambda}{\ibf i}{\ibf j}$ where $\lambda$ runs through $\prt
+nr$ and $\ibf i, \ibf j$ run through $\asmind{\lambda}$ form a
+basis of $\rAn{\gr} r$. Similarily we will prove in the next section
+
+\begin{thm} \label{Basissatz}
+The $\gr$-module  $\rsAn{\gr} r$ has a basis given by
+
+\[ \B_r:=\{ {\spq}^l\bidet{\lambda}{\ibf i}{\ibf j}|\; 0\leq l \leq 
+\frac r2, \; \lambda \in \prt m{r-2l},\;
+\ibf i,\ibf j \in \symind{\lambda}\}. \]
+\end{thm}
+
+Before proving this let us have a look at some consequences. The first
+one generalizes theorem 9.5 (a) of \cite{doty} avoiding the
+restriction to characteristic zero. Furthermore, it contains corollary
+5.5 (f) of that paper for algebraically closed fields.
+
+\begin{cor} \label{Koordinatenring beliebig}
+Let $K$ be an algebraically close field. Then $\sAn K$ coincides with
+the coordinate ring of the Zariski-closure $\zgsp nK$ 
+of $\gsp nK$ in $\gmhg nK$.
+In particular $\gspm nK$ is identical to $\zgsp nK$. Therefore, a complete set
+of generators of the vanishing ideal of $\zgsp nK$ in $\An K$ is given by the set
+$F$ (defined in equation \ref{ideal generator}).
+\end{cor}
+
+\begin{Pf}
+Let $A_0(n)$ be the  coordinate ring
+of $\zgsp nK$ and $A_0(n,r)$ its $r$-th homogenous summand.
+In \cite{donk3} the symplectic Schur algebra
+$S_0(n,r)$ is defined as the dual algebra to the coalgebra $A_0(n,r)$.
+The dimension of the latter one is given by Weyl's character formula
+and therefore independent of the field $K$ (cf. \cite{donk3} p. 77).
+On the other hand there is an epimorphism of graded bialgebras from
+$\sAn K$ to $A_0(n)$ since $\zgsp nK$ is closed in $\gspm nK$ and
+the latter one has been defined as the vanishing set of the ideal
+${\cal F}$ by which $\sAn K$ is defined. But by our basis theorem
+\ref{Basissatz} the dimension of $\rsAn Kr$ is independent of the
+field $K$, as well. Thus, the proof can be finished looking at the
+case $K=\C$ and using
+Doty's theorem 9.5 (a) or alternately by a direct calculation of
+$|\B_r|=\Dim{\C}{(A_0(n,r))}$ (see proposition \ref{|B_r|} below).
+\end{Pf}
+
+
+By theorem \ref{base extension} we have isomorphisms
+
+\[ K\otimes_{\Z}\rsAn{\Z} r \cong \rsAn Kr,\;\; 
+ K\otimes_{\Z}\sAn{\Z}  \cong \sAn K.\]
+
+Since $\sAn K$ has been recognized to be the
+coordinate ring of $\gspm nK=\zgsp nK$ we may interpret the spectrum of
+the ring $\sAn{\Z}$ as an integral monoid scheme $\gspm n{\Z}$. Accordingly, an integral
+form for the symplectic Schur algebra can be obtained as the
+dual algebra  
+\[ S_{\Z}^{\rm s}(n,r):=\Hom{\Z}{\rsAn{\Z} r}{\Z}\]
+of its homogenous summands. 
+By theorem \ref{starkes Kriterium} and
+\ref{Basissatz}
+this is stable under base change, that is, tensoring by a field $K$
+gives the symplectic Schur algebra $S_{K}^{\rm s}(n,r)=S_0(n,r)=\Hom K{\rsAn Kr} K$
+defined over that field. An
+integral form for symplectic Schur algebras exists, as well, by
+S.\ Donkin's work on {\em generalized Schur algebras} (see \cite{donk3}).
+But his approach is quite different using the theory of Lie algebras in
+particular the {\em Kostant $\Z$-form}.
+In both cases the notion of symplectic Schur algebras can be extended
+to more general integral domains $\gr$ instead of $\Z$ leading to
+identical concepts. In our case this is 
+$S^{\rm s}_{\gr}(n,r):=\Hom{\gr}{\rsAn{\gr} r}{\gr}$.
+By theorem \ref{duale Algebra} we conclude
+
+\begin{cor}
+Over any noetherian integral domain $\gr$
+the symplectic Schur algebra is
+isomorphic to the centralizer algebra
+of the Brauer algebra $\br{r}{-n}$.
+\end{cor}
+
+For a field of characteristic zero this has been proved by S.\ Doty,
+too (\cite{doty} corollary 9.3. (c)). It should be remarked, that the
+basis dual to $\B_r$ together with the anti-involution defined by matrix
+transposition give a {\em cell datum} for the symplectic Schur algebra
+in the sense of J. Graham and G. Lehrer (cf. \cite{doc}, 4.2.5).
+Thus, its representation theory can be developed easily to the extent 
+of the treatment of {\em cellular algebras} in \cite{graham}.
+
+
+
+
+
+
+
+
+
+
+\section{Proof of theorem \ref{Basissatz}}
+
+
+
+Let us first reduce to showing that $\B_r$ is a set of generators for
+the $\gr$-module $\rsAn{\gr} r$. This can be done by the following
+proposition where notations from the proof of corollary
+\ref{Koordinatenring beliebig} are used.
+
+
+\begin{prop} \label{|B_r|}
+$|\B_r|=\Dim{\C}{A_0(n,r)}$.
+\end{prop}
+
+
+\begin{Pf} We use \cite{donk3} p. 74 ff.
+First the reader may check that our definition of $A_0(n)$ and
+$A_0(n,r)$ is identical to the one given there.
+According to
+\cite{donk3} and 2.2c in \cite{donk2} we have
+
+\begin{equation} \label{Dim A_0}
+\Dim {\C}{A_0(n,r)}=
+ \sum_{\lambda\in \pi_0(n,r)} \Dim {\C}{Y_0(\lambda)}^2
+\end{equation}
+
+where $Y_0(\lambda):={\rm Ind}_{B_0}^{\gsp n{\C}}({\C}_{\lambda})$ is the
+irreducible $\gsp n{\C}$ module induced from
+the linear character ${\C}_{\lambda}$
+of the Borel subgroup $B_0$ (notations taken from \cite{donk3}). 
+Here $\lambda$ runs through the set $\pi_0(n,r)$ of dominant weights
+corresponding to the irreducibles occuring in $\ntrts$. If $T_0$ denotes
+the  maximal torus of $\gsp n{\C}$ we may consider the
+weights $\lambda$ as the group-like elements in its coordinate
+ring. More precisely $\lambda\in \pi_0(n,r)$ is of the form
+
+\[ \lambda=\xes 11^{\mu_1}\xes 22^{\mu_2} \ldots \xes mm^{\mu_m} d^l
+\]
+
+as can be seen from the argumentation in \cite{donk3}. Here,
+$\mu:=(\mu_1, \ldots , \mu_m)\in \prt{m}{r-2l}$ is a partition of
+$r-2l$ in not more than $m$ parts and $0\leq l\leq \frac r2$ an
+integer. Restricting to the symplectic group $\spn n{\C}$ we have
+to set the coefficient of dilation $d$ equal to $1$. Thus the restriction of
+$\lambda$ to the maximal torus of $\spn n{\C}$ is just the dominant
+weight
+
+\[ \bar{\lambda}=\xes 11^{\mu_1}\xes 22^{\mu_2} \ldots \xes mm^{\mu_m} 
+\]
+
+
+for the symplectic group itself. Furthermore, it is easy to show that
+restricting the $\gsp n{\C}$-module structure of $Y_0(\lambda)$ to  
+the symplectic group gives
+the module $\bar Y(\bar{\lambda}):=
+{\rm Ind}_{\bar B}^{\spn n{\C}}({\C}_{\bar{\lambda}})$ induced from the linear
+character ${\C}_{\bar{\lambda}}$ of the Borel subgroup 
+$\bar B=B_0\cap \spn n{\C}$ of $\spn n{\C}$ (for details see
+\cite{doc}, 3.3.3). But the dimension of the latter one is known to
+be the cardinality of $\symind{\mu}$ (see \cite{donk1}
+theorem 2.3 b for instance). Thus, we obtain
+
+
+\[ 
+\Dim{\C}{A_0(n,r)}=
+\sum_{0\leq l\leq \frac r2}\sum_{\mu \in\prt m{r-2l}}
+|\symind{\mu} |^2=|\B_r|.
+\]
+
+\end{Pf}
+
+Observe that by theorem \ref{base extension} the proof of \ref{Basissatz}
+can be reduced to the
+case $\gr=\Z$, since the definition of bideterminants over
+$\gr$ and $\Z$ respectively commutes with the isomorphism $\zerw{\mu}{\gr}$
+when $\gr$ is considered as a $\Z$-algebra. 
+Now, suppose we have shown that $\B_r$ generates $\rsAn{\Z}
+r\subseteq \rsAn{\C} r$ as a $\Z$-module. 
+Then the image of $\B_r$ in $A_0(n,r)$ under the epimorphism
+considered in the proof of \ref{Koordinatenring beliebig} is a set of
+generators, too. By the above proposition it must be a basis of
+$A_0(n,r)$. Consequentely, there can't be any relations among the
+elements of $\B_r$, especially none with integer coefficients, giving
+the desired result. \Ab
+
+The proof that $\B_r$ is indeed a set of generators will follow from a
+symplectic version of the famous {\em straightening formula}. For
+convenience of the reader we will first state the algorithm leading to the
+classical straightening formula. To do so, we put an order on the set
+$\rprt r$ of partitions of $r$ writing $\lambda < \mu$ if the dual $\lambda'$
+occurs before the dual $\mu'$ in the lexicographical order.
+In this order the fundamental weight $\omega_r:=(1,1, \ldots , 1)\in
+\prt rr$ is the largest element, whereas $\alpha_r:=(r)\in \prt 1r$ is the
+smallest one. We abbreviate $A:=\rAn{\gr} r$ and define $A(>\lambda)$
+resp.\ $A(\geq \lambda)$ to be the $\gr$-linear span in $A$ of all
+bideterminants $\bidet{\mu}{\ibf i}{\ibf j}$ such that $\mu > \lambda$
+resp.\ $\mu \geq \lambda$. For $\lambda=\omega_r$ we set
+$A(>\omega_r):=0$. Clearly $A=A(\geq \alpha_r)$. 
+
+\begin{prop}[Classical Straightening Algorithm] 
+\label{Straightening Algorithmus 1}
+Let $\lambda \in \rprt r$ be a partition of $r$
+and $\ibf j \in \nmind r \ohne \asmind{\lambda}$. Then to each 
+$\ibf k\in \nmind r$ satisfying $\ibf k=\ibf jw$ 
+\footnote{this is missing in the statement of 2.5.7 in \cite{martin}
+  but can be seen directly from the proof given there}
+for some $w \in \symg
+r$ and
+$\ibf k\ll \ibf j$ there is an element
+$a_{\ibf j\ibf k} \in \gr$ such that
+in $A$ the following congruence  relation holds
+ for all $\ibf i\in \nmind r$:
+
+
+\[
+\bidet{\lambda}{\ibf i}{\ibf j} 
+\equiv \sum_{\ibf k\ll \ibf j} a_{\ibf j\ibf k}
+\bidet{\lambda}{\ibf i}{\ibf k} \; \; \mbox{ mod } \; \; A(>\lambda) .
+\]
+\end{prop}
+
+Here, the order on $\nmind r$ is the lexicographical one according to the
+given order on $\mg n$, in our case $\ll$. A proof of the proposition can be found for
+example in \cite{martin}, 2.5.7.\\
+
+Let us now state the symplectic analogue. First consider the
+algebra
+
+\[ \shAn{\gr}:=\sAn{\gr}/\left<d \right> \]
+
+where $\left< d\right>$ is the ideal in $\sAn{\gr}$ generated by the
+coefficient of dilation. It is graded since $d$ is a homogenous element
+but not a bialgebra because an augmentation map is missing. In fact, it turns
+out that (in the case where $\gr = K$ is an algebraically closed field)
+it is the coordinate ring of the semigroup
+$\mmsp nK:=\gspm nK\ohne \gsp nK$ of 
+noninvertible elements in the symplectic monoid (see remark \ref{de
+  concini}). 
+Let us abbreviate its submodule of homogenous elements of
+degree $r$ by $A':=\rshAn{\gr} r$ and define $A'(>\lambda)$ and
+$A'(\geq \lambda)$ in the same manner as above. Further, 
+define a map $f:\nmind r\pfr \N_0^m$ by $f(\ibf i)=(a_1, \ldots ,
+a_m)$, where 
+
+\[ a_l:=|\{ j\in \mg r|\; i_j=l \;\mbox{ or } \; i_j=l' \}|, \]
+
+and order $\N_0^m$ writing $(a_1,\ldots , a_m)<(b_1, \ldots , b_m)$ 
+if and only if $(b_m, b_{m-1}, \ldots , b_1)$ appears before $(a_m,
+a_{m-1}, \ldots , a_1)$ in the lexicographical order.  Next, we
+obtain an order $\lhd$ on $\N_0^m\times \nmind r$ in a lexicographical way, as
+well:
+
+ \[(a, \ibf i)\lhd (b, \ibf j) :\gdw a < b \mbox{ or }
+(a = b \mbox{ and } \ibf i \ll \ibf j).\]
+
+Finally, this gives a new order $\lhd$ on $\nmind r$ via the embedding
+$\nmind r\hookrightarrow \N_0^m\times \nmind r$ given by $\ibf
+i\mapsto (f(\ibf i), \ibf i)$. Now we are able to state the symplectic
+straightening algorithm:
+
+
+\begin{prop}[Symplectic Straightening Algorithm] 
+\label{Straightening Algorithmus 2}
+Let $\lambda \in \rprt r$ be a partition of $r$
+and $\ibf j \in \nmind r \ohne \symind{\lambda}$. Then to each 
+$\ibf k\in \nmind r$ satisfying $\ibf k\lhd \ibf j$ there is an element
+$a_{\ibf j\ibf k} \in \gr$ such that
+in $A'$ the following congruence relation holds
+ for all $\ibf i\in \nmind r$:
+
+
+\[
+\bidet{\lambda}{\ibf i}{\ibf j} 
+\equiv \sum_{\ibf k\lhd \ibf j} a_{\ibf j\ibf k}
+\bidet{\lambda}{\ibf i}{\ibf k} \; \; \mbox{ mod } \; \; A'(>\lambda) .
+\]
+\end{prop}
+
+
+Before proving this, let us deduce that $\B_r$ is a set of
+generators for $\rsAn{\gr} r$. First note that multiplication by 
+the coefficient of dilation $d$ leads to an exact sequence for $r>1$
+
+\[ \rsAn{\gr}{r-2}\stackrel{\cdot d}{\pfr} \rsAn{\gr} r \pfr \rshAn{\gr} r \pfr 0. \]
+
+Therefore, by induction on $r$ we can reduce to showing that
+
+\[ \{ \bidet{\lambda}{\ibf i}{\ibf j}|\; \lambda \in \prt m{r},\;
+\ibf i,\ibf j \in \symind{\lambda}\} \]
+
+is a set of generators for $A'=\rshAn{\gr} r$. For this claim it is
+enough to show that
+
+\[ \{ \bidet{\lambda}{\ibf i}{\ibf j}|\;\;
+\ibf i,\ibf j \in \symind{\lambda}\} \]
+
+is a set of generators of $A'(\geq \lambda)/A'(>\lambda)$ for each partition
+$\lambda$. This can be deduced from the straightening algorithm
+ \ref{Straightening Algorithmus 2}: Since $\nmind r$
+is a finite set, the elemination of multi-indices $\ibf j$  not being
+ $\lambda$-symplectic standard  in an expression
+$\bidet{\lambda}{\ibf i}{\ibf j}$
+must terminate. This gives the straightening formula
+concerning the right-hand-side argument of $\bidet{\lambda}{\ibf
+  i}{\ibf j}$:
+
+\begin{cor}[Symplectic Straightening Formula] \label{straightening formula}
+Let $\lambda \in \rprt r$ be a partition of $r$ and $\ibf j \in \nmind r$.
+Then, to each $\ibf k\in \symind{\lambda}$ there is an element
+$a_{\ibf j\ibf k} \in \gr$,
+such that in $A'$ we have for all $\ibf i\in \nmind r$:
+
+
+\[
+\bidet{\lambda}{\ibf i}{\ibf j} \equiv \sum_{\ibf k \in \symind{\lambda}}
+a_{\ibf j\ibf k}
+\bidet{\lambda}{\ibf i}{\ibf k} \; \; \mbox{ mod } A'(>\lambda) .
+\]
+\end{cor}
+
+
+
+Now, there is an algebra automorphism $\theta$ on $\An{\gr}$ induced
+by matrix transposition and given by $\theta (\xes ij)=\xes ji$ on
+generators. Of course it is an anti-automorphism of coalgebras. 
+It can be readily seen that $\theta({\cal F})={\cal F}$ and $\theta
+(\spq)=\spq$. Therefore, it factors to an automorphism of $\shAn{\gr}$
+which will be denoted by the same symbol. From the definition of
+bideterminants we see $\theta(\bidet{\lambda}{\ibf i}{\ibf
+  j})=\bidet{\lambda}{\ibf j}{\ibf i}$.\Ab
+
+Applying $\theta$ to the congruence relation in
+\ref{straightening formula} we see that
+a non $\lambda$-symplectic standard entry $\ibf i$ on the left-hand-side
+entry of a bideterminant can be eleminated, too, not
+affecting the right-hand-side entry. Thus, it must be possible to
+write $\bidet{\lambda}{\ibf i}{\ibf j}$ as a sum of bideterminants
+$\bidet{\lambda}{\ibf k}{\ibf l}$ modulo $A'(>\lambda)$ where
+$\ibf k, \ibf l \in \symind{\lambda}$. Therefore, the proof of
+theorem \ref{Basissatz} is finished as soon as proposition
+\ref{Straightening Algorithmus 2} is established.\Ab
+
+\begin{rem} \label{de concini}
+A symplectic straightening formula similar to \ref{straightening
+formula} can be obtained as a special case of a theorem by de Concini
+(\cite{concini}, theorem 2.4)
+where $m=2r$ (in the notation taken from there). 
+The algebra denoted $A$ in that paper
+becomes the coordinate ring of the semigroup denoted $\mmsp nK$ above.
+But, note that this result is not strong enough for our purpose
+since we don't know wether $A=\shAn K$ or not. On the other hand, the latter
+identity follows from theorem \ref{Basissatz} in a similar way to corollary
+\ref{Koordinatenring beliebig} using theorem 3.6 of \cite{concini}.
+\end{rem}
+
+Also, the symplectic straightening formula is related to the treatment
+of symplectic Schur-modules in \cite{donk1} and \cite{iano}, section 6,
+as can be seen from the proof of lemma \ref{Rel nicht symplektisch} below.
+Concerning the latter paper it should be noted 
+that the algebra $A^{sp}_{K}(\overline n)$ defined there
+as the coordinate ring of the symplectic group itself is only filtered by
+$\sum_{t=0}^r A^{sp}_{K}(\overline n,t)$ but not graded by 
+$A^{sp}_{K}(\overline n,r)$. In fact, it can be deduced from the above
+remark that $\shAn{K}$ is the corresponding graded algebra, 
+that is $A^{sp}_{K}(\overline n,r)=\rshAn{K} r$
+as $K$-vector spaces.
+
+
+
+
+
+
+
+
+
+
+
+\section{Proof of proposition \ref{Straightening Algorithmus 2}}
+
+
+
+
+
+First, some considerations about the exterior algebra 
+
+\[\aA:= 
+\tens{\nt}/\left<\bs i\otimes \bs j+\bs j\otimes \bs i, \bs
+  k\otimes \bs k;\; i,j, k\in \mg n \right>
+ \] 
+
+are needed. It is easy to see and well known
+that this graded $\gr$-algebra is a
+{\em comodule algebra} for the bialgebra $\An{\gr}$, i.e.\
+it is an $\An{\gr}$-comodule such that multiplication is a
+morphism of comodules. In fact, the homogenous summands $\raA
+r$ of $\aA$ are comodules for the coalgebras $\rAn{\gr}
+r$. Since $\sAn{\gr}$ is an epimorphic image of $\An{\gr}$ the exterior
+algebra is a comodule algebra for the latter one, as well.\Ab
+
+As usual we write $\bs i\wedge \bs j$ for the residue class of $\bs
+i\otimes \bs j$ in $\aA$ and denote arbitrary multiplications by
+$\wedge$, too. For a subset $I:=\{i_1, \ldots , i_r\}\subseteq \mg n$
+ordered $i_1 \ll i_2 \ll \ldots \ll i_r$ by the given order
+$\ll$ on $\mg n$ (called an ordered subset in the sequel)
+we use the abbreviation $\bs
+I:=\bs{i_1}\wedge\bs{i_2}\wedge\ldots\wedge
+\bs{i_r}$. The elements $\bs I$ give a basis of $\aA$ if $I$ ranges over all
+subsets of $\mg n$. A basis for $\raA r$ is obtained when $I$ ranges over all
+subsets of cardinality $r$, the collection of which will be denoted by
+$\tmg nr$. The comodule structure of $\raA r$ 
+can be described in a
+simple way using bideterminants for the partition
+$\omega_r:=(1^r)=(1,1,\ldots ,1)$. These are just the usual $r\times
+r$-minor determinants.
+Denoting the structure map by
+$\cmd{\wedge}:\aA\pfr \aA\otimes \An{\gr}$ (we will use the same symbol in
+the case $\sAn{\gr}$ later on) we explicitly have
+
+\begin{equation}\label{aA comodul}
+ \cmd{\wedge}(\bs J)=\sum_{I \in \tmg nr}\bs I\otimes\bidet{\omega_r}{\ibf
+i}{\ibf j}
+\end{equation}
+
+where $\ibf i=(i_1, \ldots , i_r)$ and $\ibf j=(j_1, \ldots , j_r)$ 
+are the multi-indices corresponding to the
+ordered subsets $I:=\{i_1, \ldots , i_r\}$ and $J=\{j_1, \ldots , j_r\}$, 
+respectively.
+Define $d_k:=\bs{k'} \wedge \bs{k}$ and
+$d_K:=d_{k_1}\wedge d_{k_2} \wedge \ldots \wedge d_{k_a}$ for a
+subset $K:=\{k_1, \ldots, k_a\}\subseteq\mg m$ of cardinality $a$.
+Again, we write $\tmg ma$ for the collection of all such subsets $K$.
+Note that the $d_k$ are in the center of the exterior algebra and in particular
+commute with each other. Thus $d_K$ is defined
+independent of the order of the elements of $K$. Set
+
+\[ D_a:=\sum_{K\in \tmg ma} d_K \]
+
+and let $N$ be the ideal in $\aA$ generated by the elements
+$D_1, D_2, \ldots , D_m$. One crucial point in the proof of
+proposition \ref{Straightening Algorithmus 2} is to show that
+the elements $D_a$ are invariant under the bialgebra $\sAn{\gr}$.
+%the corresponding group-like elements being the $a$-th powers $d^a$
+%of the coefficient of dilation.
+But first, let us establish a prototype straightening algorithm inside
+the graded algebra $\saA$ with respect to the set 
+$\symind{\omega_r}$. We call an ordered subset $I\in \tmg nr$ {\em
+  symplectic} if the corresponding multi-index $\ibf i$ is
+$\omega_r$-symplectic standard.
+
+\begin{lem} \label{Rel nicht symplektisch}
+Let $I\in \tmg nr$ be non symplectic. Then, to each $J\in \tmg nr$
+such that the inequallity $f(\ibf j)<f(\ibf i)$ holds
+for corresponding multi-indices $\ibf i$ and $\ibf j$ there is 
+$a_{IJ}\in \gr$, such that in $\aA$ the
+following congruence relation holds:
+
+\[ \bs I\equiv
+\sum_{J\in \tmg nr, \; f(\ibf j)<f(\ibf i)}a_{IJ}\bs J  \;\; \mbox{
+  mod }
+\;\; N \]
+
+\end{lem}
+ 
+
+\begin{Pf} We follow \cite{donk1}.
+Clearly, we may reduce to the case $\gr =\Z$ since 
+$\naA{\gr} n\cong \gr \otimes_{\Z} \naA{\Z} n$ and the canonical isomorphism
+therein respects the basis elements $\bs I$ and the ideal $N$.
+If $K\subseteq \mg m$
+then in $\aA$ we calculate as in \cite{donk1}, 2.2.
+
+\begin{equation}
+\label{power a}
+{(\sum_{k \in K}d_k)}^a=a!\sum_{L\in \tmg ma,\; L\subseteq K} d_L
+\end{equation}
+
+In the case $K=\mg m$ this implies $D_1^a=a!D_a$.
+Set $x:=\sum_{k \in K}d_k$ and $y:=D_1 -x$.
+It follows from (\ref{power a}) that the equation 
+\[ x^a=(-1)^ay^a+\sum_{b=1}^a { a \choose b} (-y)^{a-b}b!D_b \]
+is divisible by $a!$.
+Setting $X^K_a:=\sum_{L\in \tmg ma,\; L\subseteq K}d_L$ and $M:=\mg m\ohne K$
+this yields
+\[ X^K_a=(-1)^aX^M_a+\sum_{b=1}^a  (-1)^{a-b}X^M_{a-b}D_b\]
+since $\naA{\Z} n$ is a free $\Z$-module.
+We obtain $X^K_a\equiv (-1)^aX^M_a$ modulo the ideal $N$ and in the
+special case $K \in \tmg ma$
+
+\begin{equation}
+\label{formel d_J}
+d_K\equiv (-1)^a\sum_{L\in \tmg ma,\; L\cap K=\emptyset}d_L \;\;\mbox{
+  mod } N.
+\end{equation}
+
+The proof can be finished now in a similar way to the proof of the
+{\em Symplectic Carter-Lusztig Lemma} in \cite{donk1}:
+Since $I$ is not symplectic there is a number $s\in \mg r$
+such that $I=\{i_1,\ldots , i_r\}$ contains an element $i_s$ satisfying
+$i_s<s$ if $i_s \leq m$ or $i_s'<s$ if $i_s>m$. We assume $s$ to be
+as small as possible with this property.
+Let $k, l\in \mg m$
+be the unique numbers with $\{k, k'\}=\{i_s, i_s'\}$ and
+$\{l, l'\}=\{i_{s-1}, i_{s-1}'\}$. By minimality of $s$ we have $l
+\geq s-1$. On the other hand, $i_{s-1}\ll i_s$ implies $l\leq k$.
+This gives $s-1\leq l \leq k < s$, that is $k=l$ and $s=k+1$.\Ab
+
+Now let $I_s:=\{i_1,\ldots , i_s\}$ be the ordered subset of the first
+$s$ entries of $I$ and
+$K$ be the set of all $p\in \mg m$ such that both $p$ and $p'$
+are contained in $I_s$. Setting $K':=\{p'|\; p\in K\}$ and 
+$H:=I\ohne (K\cup K')$
+we obtain $\bs I=\bs Hd_K$ since the elements $d_p$ are in the
+center of $\naA{\Z} n$. Therefore, by equation (\ref{formel d_J})
+it remains to show that for all subsets $L\in \tmg ma$ which
+do not intersect $K$ we have $f(\ibf j)<f(\ibf i)$ where
+$\ibf j$ is the multi-index corresponding to the ordered set $J:=H\cup L \cup
+L'$. Since $\bs J=\bs Hd_L=0$ if $L$ or $L':=\{p'|\; p \in L\}$ contains an
+element of $H$ we further may assume $H\cap L=H\cap L'=\emptyset$.
+Now, suppose $L\subseteq \mg k$. Let $G$ be the set of all $g \in \mg k\ohne K$
+such that $g$ or $g'$ lies in $I_s$. Since $I_s\ohne (K\cup
+K')\subseteq H$ the intersection of $L$ and $G$ is empty, as well.
+This gives a contradiction
+
+\[ k+1=s=|I_s|=2|K|+|G|=|K|+|L|+|G|=|K\cup L\cup G|\leq k \]
+
+for $K, L$ and $G$ are disjoint subsets of $\mg k$ by assumption on
+$L$. Thus, the largest element $t$ of
+$L$ must be greater than $k$, whereas all
+elements of $K$ are smaller or equal to $k$. If $f(\ibf i)=(b_1,
+\ldots , b_m)$ and $f(\ibf j)=(a_1, \ldots, a_m)$ 
+it follows that $a_t=b_t+2>b_t$ and
+$a_l=b_l$ for $t<l\leq m$. By definition of our order on $\N_0^m$ this
+means $f(\ibf j)<f(\ibf i)$ completing the proof.
+\end{Pf}
+
+
+As mentioned before, the crucial point in the proof of proposition
+\ref{Straightening Algorithmus 2} is contained in the following
+
+\begin{prop} \label{D_a invariant}
+The elements $D_a$ are invariant under the bialgebra $\sAn{\gr}$. The
+corresponding group-like elements in $\sAn{\gr}$ are the $a$-th powers of the
+coefficient of dilation, more precisely:
+
+\[ \cmd{\wedge}(D_a)=D_a\otimes d^a \;\;\;\;\in \;\;
+\nraA{\gr} n{2a} \otimes \rsAn{\gr}{2a}
+\]
+\end{prop}
+
+\begin{Pf}
+In the case $a=1$ this easily follows from (\ref{formel d}) using the
+relations given by the set $F$ defined in (\ref{ideal generator}). If we could divide by
+$a!$, we would be able to finish the proof right now using
+$D_1^a=a!D_a$ and the fact that multiplication is a morphism of
+$\sAn{\gr}$-comodules. But, as this is not possible in general (note,
+that we don't know if $\sAn{\Z}$ is a free $\Z$-module, yet)
+we have to proceed in another way. We set $r=2a$ and
+
+\[ G_{\ibf i}:=\sum_{L\in \tmg ma}\bidet{\omega_r}{\ibf i}{\ibf j(L)}
+\]
+
+where $\ibf j(L)$ is the multi-index corresponding to the ordered
+subset $L\cup L'=\{l,l'|\; l\in L\}$ of $\mg n$. If $\ibf i$ is the
+multi-index corresponding to the ordered subset $I\in \tmg nr$ we also
+write $G_I=G_{\ibf i}$. By (\ref{aA comodul})
+we have
+\[ \cmd{\wedge}(D_a)=\sum_{I\in \tmg nr}\bs I\otimes G_I. \]
+Therefore, it remains to show that $G_I=d^a$ if there is a $K\in \tmg ma$
+such that $I=K\cup K'$ and $G_I=0$ otherwise.\Ab
+
+If $\ibf i=(i_1,\ldots , i_r)$ is a
+multi-index and $l\leq a$ we set $\ibf i^l:=(i_{2l-1},i_{2l})\in
+\nmind 2$. Since the result is clear in the case $a=1$ we know
+
+\[
+G_{\ibf i^l}=\left\{\begin{array}{ll}
+0 & i_{2l-1}'\neq i_{2l} \\
+d &  i_{2l-1}'= i_{2l}\leq m\\
+-d &  i_{2l-1}'= i_{2l}> m
+\end{array} \right. .
+\]
+
+Therefore, the element $G_{\ibf i}':=\prod_{l=1}^a G_{\ibf i^l}$ is zero
+or $\pm d^a$ depending on $\ibf i$. Let us investigate this in more
+detail. If $\sigma\in \symg r$ denotes the involution defined by
+$\sigma (2l-1)=2l, \sigma(2l)=2l-1$ for $l\in \mg a$ and $W$ the
+centralizer of $\sigma$ in $\symg r$, then clearly $G_{\ibf i}'=0$
+if and only if $G_{\ibf iw}'=0$ for all $w \in W$. The group $W$
+is isomorphic to the {\em Weyl group} of type $C_a$. It is
+a semi-direct product of the normal subgroup $W^1$ consisting of all
+$\pi \in W$ which permute neighboured pairs together 
+with $W^0$, the
+subgroup generated by the transpositions $(2l-1,2l)$ for $l\in \mg a$.
+$W^1$ is isomorphic to $\symg a$, whereas the group $W^0$ can be
+identified with $(\Z/2\Z)^a$. Choose a set $H$ of left coset
+representatives for $W$ in $\symg r$ the element representing $W$
+itself being $\id{\mg r}$.\\
+
+%In each left coset $\pi W$ in $\symg r$ there is a unique representative
+%$h$ satisfying $h(2l-1)<h(2l)$ for $l \in \mg a$
+%and $h(1)< h(3) < \ldots < h(2a-1)$. The first condition can be achieved
+%by operating from the right by a transposition $(2l-1, 2l)\in W^0$ for each
+%$l$ with $\pi(2l-1)>\pi(2l)$. To achiev the second condition one has
+%to operate with elements of $W^1$. Uniqueness follows
+%since $h$ is already known by the subset
+%$\{min(\pi(2l-1),\pi(2l))|\; l \in \mg a\}$ of $\mg n$ which just depends
+%on $\pi W$. We denote the set of all such coset representatives by $H$.\Ab
+
+Now, if $\ibf i$ corresponds to an ordered set $I=K\cup K'$ for some $K \in
+\tmg an$ the inequality
+$G_{\ibf i\pi}'\neq 0$ holds for a permutation $\pi\in \symg r$ if and only if
+$\pi \in W$. Thus, for $h\in H$ we have $G_{\ibf ih}'=0$ if $h\neq
+\id{}$ and $G_{\ibf i}'=d^a$. If there is no $K$ such that $I=K\cup K'$ one
+clearly has $G_{\ibf ih}'=0$ for all $h\in H$.
+Therefore, the proof is finished
+as soon as we have shown
+\begin{equation} \label{Formel G_I}
+G_{\ibf i}=\sum_{h \in H}\sign h G_{\ibf ih}'.
+\end{equation}
+To this claim
+let $\mu :=(a,a) \in \prt{2}{r}$ be the partition of $r$ whose diagram
+consists of two rows of length $a$. To a multi-index $\ibf l=(l_1,l_2,
+\ldots , l_a)\in \mmind a$ another multi-index $\ibf j(\ibf l):=(l_1', l_1,
+l_2', l_2, \ldots , l_a', l_a)\in \nmind r$ can be associated.
+Using this notation and reading $\bidet\mu {\ibf{i}}{\ibf j(\ibf l)}$ as a
+product of $a$ $2\times 2$-determinants we obtain the formula
+
+\[ G_{\ibf i}'=
+\sum_{\ibf l \in \mmind a }
+\bidet\mu {\ibf{i}}{\ibf j(\ibf l)}\;\;\;
+ \in \rsAn{\gr} r. \]
+
+
+On the other hand, using {\em Laplace Duality} (see for example
+\cite{martin} 2.5.1) we calculate
+
+\begin{equation}\label{laplace klassisch}
+\bidet{\omega_r}{\ibf i}{\ibf j}=\sum_{h\in H,\;\pi \in W^1}\sign h
+\bidet\mu {\ibf ih\pi}{\ibf j}=
+\sum_{h\in H}\sign h\sum_{\pi \in W^1}
+\bidet\mu {\ibf ih}{\ibf j\pi}.
+\end{equation}
+
+
+Therein, note that $W^0$ is precisely the column stabilizer of the
+basic tableaux $\itab{\mu} b$, whereas the column stabilizer
+of $\itab{\omega_r} b$ is all of $\symg r$ (here $\ibf
+b:=(1',1,2',2,\ldots ,a',a)$). Also, note that $HW^1$ is a set of left
+coset representatives of $W^0$ and that all permutations of $W^1$ are even.
+Furthermore, in the right-hand-side equation we have used the
+commutativity between the $2\times 2$-determinant factors of 
+$\bidet\mu {\ibf ih\pi}{\ibf j}=\bidet\mu {\ibf ih}{\ibf
+  j\pi^{-1}}$. Now, the proof of
+(\ref{Formel G_I}) can be reduced to the verification of
+
+\begin{equation} \label{Formel mu}
+\sum_{L \in \tmg mr}\sum_{\pi \in W^1}\sum_{h \in H} \sign h 
+\bidet\mu {\ibf ih}{\ibf j(L)\pi}=
+\sum_{\ibf l \in \mmind a}
+\sum_{h \in H}\sign h\bidet\mu {\ibf{i}h}{\ibf j(\ibf l)}
+\end{equation}
+
+To this claim we associate to a multi-index $\ibf l\in \mmind a$ its
+contents $|\ibf l|=\lambda =(\lambda_1,\ldots , \lambda_m)$
+which is defined by $\lambda_i:=|\{1\leq t \leq a|\; l_t=i\}|$. It is
+a composition of $a$ into $m$ parts, that is an $m$-tuple of non negative
+integers $\lambda_i$ summing up to $a$. These compositions count the
+set of $\symg a$-orbits in $\mmind a$.
+Denoting the set of all such
+compositions by $\komp ma$ we can write down the right-hand term in
+(\ref{Formel mu}) as a sum of subsums
+$\sum_{\lambda \in \komp mr} \Sigma_{\lambda}$ each of which is given by
+
+\[ \Sigma_{\lambda}:=\sum_{|\ibf l|=\lambda}
+\sum_{h \in H} \sign{h}
+\bidet\mu {\ibf{i}h}{\ibf j(\ibf l)}
+\]
+
+Now, the subsum $\Sigma_{\omega_a}$ (for $\omega_a=(1^a)$)
+is just the left-hand-side in
+(\ref{Formel mu}). Therefore, it remains to show that all other
+subsums are zero. To this claim we denote the cardinality 
+of the standard Young subgroup $\symg{\lambda}$ of $\symg a$
+corresponding to the composition $\lambda \in \komp ma$
+by $k_{\lambda}:=|\symg{\lambda}|$. If
+$\ibf k=(k_1, \ldots ,k_a)\in \mmind a$ is the unique multi-index
+with contents $\lambda$ and $k_1\leq
+k_2\leq \ldots \leq k_r$ (the {\em initial index} corresponding to $\lambda$)
+then $\symg{\lambda}$ is just the stabilizer of
+$\ibf k$ in $\symg a$. Identifying $\symg a$ with $W^1$ it is the stabilizer of
+$\ibf j(\ibf k)\in \nmind r$ in $W^1$.
+Applying (\ref{laplace klassisch}) again we obtain
+
+\[ \bidet{\omega_r}{\ibf i}{\ibf j(\ibf k)}=\sum_{h\in H}\sign{h}
+\sum_{\pi \in W^1}
+\bidet\mu {\ibf ih}{\ibf j(\ibf k)\pi}= \]
+\[
+k_{\lambda}\sum_{h\in H}\sign{h}
+\sum_{|\ibf l|=\lambda}
+\bidet\mu {\ibf ih}{\ibf j(\ibf l)}=
+ k_{\lambda}\Sigma_{\lambda}.
+\]
+
+Now, $\bidet{\omega_r}{\ibf i}{\ibf j(\ibf k)}$ must be zero since 
+$|\ibf k|\neq \omega_a$ implies that $\ibf k$ contains at least one
+number twice. We obtain $k_{\lambda}\Sigma_{\lambda}=0$ and because
+this equation is already valid in the free $\Z$-module $\rAn{\Z} r$
+we conclude $\Sigma_{\lambda}=0$ for all $\lambda \neq \omega_a$
+completing the proof.
+\end{Pf}
+
+Let us prove proposition \ref{Straightening Algorithmus 2} in
+the case $\lambda=\omega_r$ first. Take 
+$\ibf j\in \nmind r\ohne\symind{\omega_r}$. Using the classical
+straighening algorithm \ref{Straightening Algorithmus 1} we may
+assume $\ibf j\in \asmind{\omega_r}\ohne\symind{\omega_r}$
+(observe that $\ibf k=\ibf jw$ implies $f(\ibf k)=f(\ibf j)$). This means,
+that $\ibf j$ is a multi-index corresponding to a non symplectic ordered set
+$J\in\tmg nr$ in the sense of lemma \ref{Rel nicht
+  symplektisch}. Application of the latter one yields
+
+\[ X:=\bs J-
+\sum_{K\in \tmg nr, \; f(\ibf k)<f(\ibf j)}a_{\ibf j\ibf k}\bs K  \;\; \in
+ N \]
+
+According to proposition \ref{D_a invariant}  $\cmd{\wedge}(X)$ must be
+contained in $\aA\otimes <d>$ where $<d>$ denotes the 
+ideal in $\sAn{\gr}$ generated by $d$. Applying (\ref{aA comodul})
+we obtain the following equation in $\raA r\otimes \rshAn{\gr} r$:
+
+\[ \sum_{I\in \tmg nr}\bs I\otimes
+\left(\bidet{\omega_r}{\ibf i}{\ibf j}-\sum_{K\in \tmg nr, \; \ibf k 
+\lhd \ibf j}a_{\ibf j\ibf k}
+\bidet{\omega_r}{\ibf i}{\ibf k}\right)=0.\]
+
+Since $\{\bs I|\; I \in \tmg nr\}$ is a basis of $\raA r$ each
+individual summand in the summation over $\tmg nr$ must be zero.
+This gives the desired result in the case of multi-indices $\ibf i$
+corresponding to ordered subsets $I\in \tmg nr$, that is 
+$\ibf i\in \asmind{\omega_r}$. The general case for $\ibf i$ can be
+deduced from this, easily (see \cite{doc}, 3.11.4).\Ab
+
+Now, lets turn to the general case of $\lambda$. Again, we may assume
+$\ibf j\in \asmind{\lambda}\ohne\symind{\lambda}$ by the classical
+straightening algorithm. Let $\lambda'=(\mu_1, \ldots ,
+\mu_p)$  be the dual partition ($p=\lambda_1$). We spilt $\ibf j$
+into $p$ multi-indices $\ibf j^l\in\nmind{\mu_l}$ where for
+each $l\in \mg p$ the entries of $\ibf j^l$ are taken from the $l$-th
+column of $\itab{\lambda} j$. The same thing can be done with
+$\ibf i$. Since $\ibf j$ is not $\lambda$-symplectic standard but standard
+there must be a column $s$ such that $\ibf j^s$ is not
+$\omega_{\mu_s}$-symplectic standard. Applying the result to the
+known case of $\bidet{\omega_{\mu_s}}{\ibf i^s}{\ibf j^s}$ we obtain
+
+\[ \bidet{\lambda}{\ibf i}{\ibf j}=
+\bidet{\omega_{\mu_1}}{\ibf i^1}{\ibf j^1}
+\bidet{\omega_{\mu_2}}{\ibf i^2}{\ibf j^2} \ldots
+\bidet{\omega_{\mu_s}}{\ibf i^s}{\ibf j^s} \ldots
+\bidet{\omega_{\mu_p}}{\ibf i^p}{\ibf j^p}\]
+
+\[\equiv \sum a_{\ibf j^s\ibf k^s}
+\bidet{\omega_{\mu_1}}{\ibf i^1}{\ibf j^1} \ldots
+\bidet{\omega_{\mu_s}}{\ibf i^s}{\ibf k^s} \ldots
+\bidet{\omega_{\mu_p}}{\ibf i^p}{\ibf j^p}\;\;
+= \;\; \sum a_{\ibf j\ibf k}
+ \bidet{\lambda}{\ibf i}{\ibf k}.\]
+
+Therein, $\ibf k^s\in \nmind{\mu_s}$ satisfies $\ibf k^s\lhd\ibf j^s$,
+$\ibf k\in \nmind r$ is constructed from $\ibf j$ replacing the
+entries of $\ibf j^s$ by that of $\ibf k^s$ and $a_{\ibf j\ibf k}$ is
+the same as $a_{\ibf j^s\ibf k^s}$ for the corresponding $\ibf k^s$.
+One easily checks
+$\ibf k\lhd\ibf j$ and the proof of \ref{Straightening Algorithmus 2}
+is completed.
+
+
+
+
+
+
+
+\addcontentsline{toc}{chapter}{References}
+\begin{thebibliography}{abcd}
+\bibitem[Br]{brauer} Brauer,\ R.: On Algebras which are connected with the
+        semisimple continuous Groups. Annals of Math. Vol. 38, No. 4 (1937),
+        857-871.
+\bibitem[Co]{concini} De Concini C.: Symplectic Standard Tableaux. Advances
+        in Mathematics 34 (1979), 1-27.
+\bibitem[Do1]{donk2} Donkin,\ S.: On Schur Algebras and Related Algebras I,
+        Journal of Algebra 104 (1986), 310-328.
+\bibitem[Do2]{donk3} Donkin,\ S.: Good Filtrations of Rational Modules for
+        Reductive Groups. Arcata Conf. on Repr. of Finite Groups. Proceedings
+        of Symp. in Pure Math., Vol. 47 (1987), 69-80.
+\bibitem[Do3]{donk1} Donkin,\ S.: Representations of symplectic groups and the
+       symplectic tableaux of R.C. King. Linear and Multilinear Algebra, Vol.
+       29  (1991), 113-124.
+\bibitem[Dt]{doty} Doty,\ S.: Polynomial Representations, Algebraic Monoids,
+       and Schur Algebras of Classical Type. J. of 
+       Pure and Applied Algebra 123 (1998), 165-199.
+\bibitem[GL]{graham} Graham,\ J.J., Lehrer,\ G.I.: Cellular Algebras. 
+        Invent. Math. 123 (1996), 1-34.
+\bibitem[Gg]{grig} Grigor'ev,\ D. J.: An Analogue of the Bruhat Decomposition
+       for the Closure of the Cone of a Chevalley Group of the Classical 
+       Series. Soviet Math. Dokl., Vol. 23 (1981), No. 2.
+\bibitem[Ha]{hay4} Hayashi,\ T.: Quantum Deformation of Classical Groups. 
+       Publ.\ RIMS, Kyoto Univ. 28 (1992), 57-81.
+\bibitem[Ia]{iano} Iano-Fletcher,\ M.: Polynomial Representations of
+       Symplectic Groups. Thesis, University of Warwick, 1990.
+\bibitem[Ki]{king} King,\ R.C.: Weight multiplicity for classical groups., 
+       Group Theoretical Methods in Physics (fourth International Colloquium,
+       Nijmegen 1975), Lecture Notes in Physics 50, Springer 1975.
+\bibitem[Ma]{manin} Manin,\ Y.I.: Quantum Groups and Non-Commutative Geometry.
+       CRM, Univesit\`{e} de Montr\`{e}al, 1988.
+\bibitem[Mr]{martin} Martin,\ S.: Schur Algebras and Representation Theory.
+       Cambridge University Press, 1993.
+\bibitem[Oe]{doc} Oehms,\ S.: Symplektische $q$-Schur-Algebren, Thesis, 
+       University of Stuttgart.
+\bibitem[RTF]{frt} Reshetikhin,\ N. Y., Takhtadjian,\ L. A., Faddeev,\ L. D.:
+       Quantization of Lie groups and Lie algebras, Leningrad Math. J. 1
+       (1990), 193-225.
+\bibitem[Su]{Sudbery} Sudbery,\ A.: Matrix-Element Bialgebras Determined by
+       Quadratic Coordinate Algebras. J. of Algebra, Vol 158, (1993), 375-399.
+\bibitem[Ta]{tak2} Takeuchi,\ M.:  Matric Bialgebras and Quantum Groups.
+       Israel J. of Math., Vol. 72, Nos. 1-2, (1990), 232-251.
+\bibitem[We]{wenzl1} Wenzl,\ H.: On the structure of Brauer's centalizer
+       algebras. Annals of Math., 128 (1988), 173-193.
+\end{thebibliography}
+
+
+\end{document}

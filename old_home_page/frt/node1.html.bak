@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-1 (1.67)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Introduction</TITLE>
+<META NAME="description" CONTENT="Introduction">
+<META NAME="keywords" CONTENT="frt">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="frt.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="frt.html">
+<LINK REL="up" HREF="frt.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html23"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html21"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html15"
+  HREF="frt.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html24"
+  HREF="node2.html">Centralizer Coalgebras</A>
+<B> Up:</B> <A NAME="tex2html22"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html16"
+  HREF="frt.html">frt</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00010000000000000000">
+Introduction</A>
+</H1>
+
+<P>
+L. Faddeev, N. Reshetikhin and L. Takhtadjian [<A
+ HREF="node9.html#frt">RTF</A>]
+introduced a construction to obtain quantum deformations of
+coordinate rings of classical groups.
+General considerations about this so called FRT-construction 
+can be found for instance in
+[<A
+ HREF="node9.html#manin">Ma</A>],[<A
+ HREF="node9.html#tak2">Ta</A>], [<A
+ HREF="node9.html#hay4">Ha</A>], [<A
+ HREF="node9.html#Sudbery">Su</A>] 
+and also in many textbooks on quantum groups. 
+Our approach differs from former ones in the following three aspects:
+<BR>
+<P>
+First, we focus attention to the <EM>graded matric bialgebra</EM> which
+arises in the first step of the construction. This means that we
+rather look
+at quantizations of appropriate closed monoids instead of classical groups.
+Especially we look at the <EM>homogenous summands</EM> of these graded bialgebras.
+These are coalgebras which can be defined in a dual way to
+<EM>centralizer algebras</EM> of subsets in an endomorphism ring.
+We therefore call them <EM>centralizer coalgebras</EM> and investigate their
+relationship to the corresponding <EM>centralizer algebras</EM>.
+<BR>
+<P>
+Further, we work over arbitrary noetherian integral domains as base rings. This makes
+sense since all known examples are already well defined
+over rings of integral <EM>Laurent</EM> polynomials, i.e. <!-- MATH
+ ${\mathbb{Z}}[X, X^{-1}]$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="${\mathbb{Z}}[X, X^{-1}]$"> (in the  indeterminate <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$X$">). We will see that there are
+tremendous differences to the theory over fields, especially
+concerning the comparison of centralizer algebras and coalgebras.
+For instance the centralizer coalgebra may have <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-torsion. We present the
+following criterion for <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-projectivity: This property holds if and only if
+the centralizer algebra is stable under base changes. Furthermore, we will see
+that the latter property is always valid for centralizer coalgebras.
+<BR>
+<P>
+Finally, the FRT-construction in the ordinary form depends on exactly
+one endomorphism 
+which usually is a <EM>quantum Yang-Baxter operator</EM> in the applications.
+Here we give another version of the FRT-construction which can be applied to
+sets of endomorphisms. This generalization is necessary to describe
+the coordinate rings of 
+classical symplectic and orthogonal monoids by use of an
+FRT-type construction. We demonstrate this in the symplectic case, giving
+some improvements of
+results by S. Doty [<A
+ HREF="node9.html#doty">Dt</A>]. 
+Furthermore, applying our results on centralizer coalgebras
+we obtain an integral form for the <EM>symplectic Schur algebra</EM> 
+defined by S. Donkin in [<A
+ HREF="node9.html#donk3">Do2</A>]
+without any use of the hyperalgebra or Kostant <IMG
+ WIDTH="17" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="${\mathbb{Z}}$">-form. As an additional incredient
+we need a symplectic version of the straightening formula for bideterminants
+the proof of which covers all of the last two sections.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html23"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html21"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html15"
+  HREF="frt.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html24"
+  HREF="node2.html">Centralizer Coalgebras</A>
+<B> Up:</B> <A NAME="tex2html22"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html16"
+  HREF="frt.html">frt</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2003-03-26
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,915 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Symplectic -Schur algebra</TITLE>
+<META NAME="description" CONTENT="The Symplectic -Schur algebra">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html88"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html84"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html78"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html86"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html89"
+  HREF="node6.html">Tableaux</A>
+<B> Up:</B> <A NAME="tex2html85"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html79"
+  HREF="node4.html">Quantum Coefficient of Dilation</A>
+ &nbsp; <B>  <A NAME="tex2html87"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00050000000000000000"></A>
+<A NAME="qSchur"></A>
+<BR>
+The Symplectic <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-Schur algebra
+</H1>
+
+<P>
+Remember that <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> is a coalgebra for each
+<IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">. Therefore, its dual <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module inherits the structure of an
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-algebra. We define
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{S^{\rm s}_{R,q}(n,r)}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img243.png"
+ ALT="$\displaystyle {S^{\rm s}_{R,q}(n,r)}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.png"
+ ALT="$\displaystyle \mbox{\index{${S^{\rm s}_{R,q}(n,r)}$}}$"><IMG
+ WIDTH="195" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img245.png"
+ ALT="$\displaystyle :={\rm Hom}_{R}{(A^{{\rm s}}_{R,q}(n,r),R)} $">
+</DIV><P></P>
+
+<P>
+and call it the <EM>symplectic <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-Schur algebra</EM>. Two linear forms <!-- MATH
+ $\mu, \nu
+\in S^{\rm s}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="134" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img246.png"
+ ALT="$ \mu, \nu
+\in S^{\rm s}_{R,q}(n,r)$"> are multiplied by convolution, that is
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\mu \nu (a):= (\mu \otimes \nu) \circ \Delta (a)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="199" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img247.png"
+ ALT="$\displaystyle \mu \nu (a):= (\mu \otimes \nu) \circ \Delta (a) $">
+</DIV><P></P>
+
+<P>
+for all <!-- MATH
+ $a \in A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.png"
+ ALT="$ a \in A^{{\rm s}}_{R,q}(n,r)$">.   The reader may verify that 
+one obtains the symplectic Schur algebra in the classical situation
+as defined in [<A
+ HREF="node22.html#ofrt">O2</A>]. This also is identical to the symplectic
+Schur algebra in the sense of <EM>S. Donkin</EM>, respectively <EM>S. Doty</EM>
+([<A
+ HREF="node22.html#donk1">Do2</A>] respectively [<A
+ HREF="node22.html#doty">Dt</A>]). 
+One aim is to show that the construction
+is stable under base changes and that it is a free <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module. 
+Both facts follow when we have shown that <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> is free as 
+an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module.  Further
+we want to initiate the study of the representation theory of this algebra. 
+An easy way to do this is to
+check that the axioms of a <EM>cellular algebra</EM> given by <EM>J. Graham</EM>
+and <EM>G. Lehrer</EM> in [<A
+ HREF="node22.html#graham">GL</A>] hold. These axioms
+are as follows:
+<BR>
+<P>
+Let <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> be an associative unital algebra over a commutative unital ring <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">
+together with a partially ordered finite set
+<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="$ \Lambda$"> and finite sets <!-- MATH
+ $M(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.png"
+ ALT="$ M(\lambda)$"> to each <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> (the 
+set of 
+``<IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-tableaux''). <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> is called a <EM>cellular algebra</EM> if the following
+properties hold:
+
+<P>
+<DL>
+<DT><STRONG>(C1)</STRONG></DT>
+<DD><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> possesses an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-basis 
+<!-- MATH
+ $\{{C^{\lambda}_{S,T}}\mbox{$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img252.png"
+ ALT="$ \{{C^{\lambda}_{S,T}}$"><A NAME="6772"></A><IMG
+ WIDTH="188" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$ \vert\; \lambda \in \Lambda
+, \; S,T \in M(\lambda) \}$">.
+</DD>
+<DT><STRONG>(C2)</STRONG></DT>
+<DD><IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> posesses an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear
+involution <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ ^*$"> which is an algebra anti-automorphism
+such that  <!-- MATH
+ ${C^{\lambda}_{S,T}}^*=
+C^{\lambda}_{T,S}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img256.png"
+ ALT="$ {C^{\lambda}_{S,T}}^*=
+C^{\lambda}_{T,S}$"> holds for all <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> and <!-- MATH
+ $S,T\in M(\lambda)$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ S,T\in M(\lambda)$">.
+</DD>
+<DT><STRONG>(C3)</STRONG></DT>
+<DD>For all <!-- MATH
+ $a \in A, \lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img258.png"
+ ALT="$ a \in A, \lambda \in \Lambda$"> and <!-- MATH
+ $S,T \in M(\lambda)$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ S,T\in M(\lambda)$">
+the congruence relation
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+aC^{\lambda}_{S,T}\equiv \sum_{S'\in M(\lambda)} r_a(S',S)C^{\lambda}_{S',T}
+\; \; \mbox{ mod } {A(<\lambda )}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="254" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.png"
+ ALT="$\displaystyle aC^{\lambda}_{S,T}\equiv \sum_{S'\in M(\lambda)} r_a(S',S)C^{\lambda}_{S',T}
+\; \;$">&nbsp; &nbsp; mod <IMG
+ WIDTH="64" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img260.png"
+ ALT="$\displaystyle {A(&lt;\lambda )}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img261.png"
+ ALT="$\displaystyle \mbox{\index{${A(&lt;\lambda )}$}}$"><IMG
+ WIDTH="10" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.png"
+ ALT="$\displaystyle , $">
+</DIV><P></P>
+
+<P>
+holds, where the elements <!-- MATH
+ $r_a(S',S) \in R$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.png"
+ ALT="$ r_a(S',S) \in R$"> are independent of <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img193.png"
+ ALT="$ T$"> and  <!-- MATH
+ $A(<\lambda)$
+ -->
+<IMG
+ WIDTH="64" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$ A(&lt;\lambda)$">
+is defined as the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear span of basis elements <!-- MATH
+ $C^\mu _{U,V}$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.png"
+ ALT="$ C^\mu _{U,V}$"> where <!-- MATH
+ $\mu < \lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$ \mu &lt; \lambda$">
+and <!-- MATH
+ $U,V \in M(\mu )$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.png"
+ ALT="$ U,V \in M(\mu )$">.
+</DD>
+</DL>
+
+<P>
+Starting with these axioms the representation theory of <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> is developed in
+[<A
+ HREF="node22.html#graham">GL</A>] along the following lines. To each
+<!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> a standard module <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> is defined on a
+free <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-basis <!-- MATH
+ $\{C^{\lambda}_S|\; S \in M(\lambda)\}$
+ -->
+<IMG
+ WIDTH="139" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img269.png"
+ ALT="$ \{C^{\lambda}_S\vert\; S \in M(\lambda)\}$">.
+An element <IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.png"
+ ALT="$ a \in A$"> acts on it via
+<!-- MATH
+ $aC^{\lambda}_S=\sum_{S'\in M(\lambda)}r_a(S',S)C^{\lambda}_{S'}$
+ -->
+<IMG
+ WIDTH="239" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img271.png"
+ ALT="$ aC^{\lambda}_S=\sum_{S'\in M(\lambda)}r_a(S',S)C^{\lambda}_{S'}$">.
+Each <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> possesses a symmetric
+bilinear form <!-- MATH
+ $\phi_{\lambda}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$ \phi_{\lambda}$"> for which the formula
+ <!-- MATH
+ $\phi_{\lambda}(a^*x,y)=\phi_{\lambda}(x,ay)$
+ -->
+<IMG
+ WIDTH="183" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$ \phi_{\lambda}(a^*x,y)=\phi_{\lambda}(x,ay)$"> is valid
+for all <IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img270.png"
+ ALT="$ a \in A$"> and <!-- MATH
+ $x,y \in W(\lambda)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$ x,y \in W(\lambda)$">. In the case where <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> is a field
+and <!-- MATH
+ $\phi_{\lambda}\neq 0$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img275.png"
+ ALT="$ \phi_{\lambda}\neq 0$">,
+the radical of <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> is the same as the radical of the bilinear form
+<!-- MATH
+ $\phi_{\lambda}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$ \phi_{\lambda}$">. The simple head <!-- MATH
+ $L_{\lambda}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$ L_{\lambda}$">
+of <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> then is absolutely
+irreducible. In this way a complete set of pairwise non-isomorphic
+simple <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$">-modules <!-- MATH
+ $\{L_{\lambda}|\;\lambda \in \Lambda_0\}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.png"
+ ALT="$ \{L_{\lambda}\vert\;\lambda \in \Lambda_0\}$"> can be
+obtained. Here we have set
+<!-- MATH
+ $\Lambda_0:=\{\lambda \in \Lambda|\; \phi_{\lambda}\neq 0\}$
+ -->
+<IMG
+ WIDTH="187" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.png"
+ ALT="$ \Lambda_0:=\{\lambda \in \Lambda\vert\; \phi_{\lambda}\neq 0\}$">.
+<BR>
+<P>
+Denoting the multiplicity of  <IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$ L_\mu $"> in <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> by <!-- MATH
+ $d_{\lambda\mu }$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.png"
+ ALT="$ d_{\lambda\mu }$"> to
+each <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> and <!-- MATH
+ $\mu \in \Lambda_0$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img281.png"
+ ALT="$ \mu \in \Lambda_0$"> 
+Graham and Lehrer show that <!-- MATH
+ $d_{\lambda\mu }=0$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img282.png"
+ ALT="$ d_{\lambda\mu }=0$"> for <!-- MATH
+ $\lambda \leq \mu$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img283.png"
+ ALT="$ \lambda \leq \mu $"> and
+<!-- MATH
+ $d_{\lambda\lambda}=1$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img284.png"
+ ALT="$ d_{\lambda\lambda}=1$">. To each order refining the given partial order on
+<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="$ \Lambda$"> the corresponding decomposition matrix
+<!-- MATH
+ $D=(d_{\lambda\mu })_{\lambda \in \Lambda , \mu \in \Lambda_0}$
+ -->
+<IMG
+ WIDTH="151" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img285.png"
+ ALT="$ D=(d_{\lambda\mu })_{\lambda \in \Lambda , \mu \in \Lambda_0}$"> 
+is unitriangular.
+The Cartan-matrix <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img286.png"
+ ALT="$ C$"> can be calculated as
+<IMG
+ WIDTH="82" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img287.png"
+ ALT="$ C=D^tD$">. The theory also supplies a criterion to decide whether <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> is
+semisimple or quasi-hereditary. In the first case we must have
+<!-- MATH
+ ${\rm rad}(\phi_{\lambda})=(0)$
+ -->
+<IMG
+ WIDTH="115" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$ {\rm rad}(\phi_{\lambda})=(0)$"> for all <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> whereas in the
+second case <!-- MATH
+ $\Lambda_0=\Lambda$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$ \Lambda_0=\Lambda$"> will do.
+<BR>
+<P>
+Examples of  cellular algebras are the Brauer centralizer algebras
+<!-- MATH
+ ${\cal B}_{R, x,r}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$ {\cal B}_{R, x,r}$">,
+Ariki-Koike-Hecke-algebras, Temperley-Lieb and Jones algebras ([<A
+ HREF="node22.html#graham">GL</A>]).
+R.M. Green ([<A
+ HREF="node22.html#greenr">GR</A>]) constructs a <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-analogue of the
+<EM>codeterminant basis</EM>  (in the sense of [<A
+ HREF="node22.html#green2">Gr</A>])
+for the classical Schur algebra <!-- MATH
+ $S_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="$ S_{R}(n,r)$">
+which is cellular as well. 
+The corresponding standard modules <!-- MATH
+ $W(\lambda)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="$ W(\lambda)$"> are precisely the
+<IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-Weyl modules in the sense of [<A
+ HREF="node22.html#dj2">DJ2</A>] (see [<A
+ HREF="node22.html#greenr">GR</A>],
+Proposition 5.3.6). <BR>
+<P>
+It should be remarked that the finiteness of <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="$ \Lambda$"> is not postulated in the
+original definition. Since this property is valid in our example we impose this
+restriction to avoid unnecessary trouble (cf. discussion in [<A
+ HREF="node22.html#steffen">KX</A>],
+section 3).
+<BR>
+<P>
+Since we have defined the symplectic <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-Schur algebra as the dual module
+of a coalgebra we now translate the concept of cellular algebras
+to coalgebras:
+<BR>
+<P>
+Let <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img292.png"
+ ALT="$ K$"> be a coalgebra over a commutative unital ring <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">,
+together with a partially ordered finite set 
+<IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="$ \Lambda$"> and finite
+sets  <!-- MATH
+ ${M(\lambda)}\mbox{$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.png"
+ ALT="$ {M(\lambda)}$"><A NAME="6785"></A> for each <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$">. 
+We call <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img292.png"
+ ALT="$ K$"> a <EM>cellular coalgebra</EM>
+if the following properties hold:
+
+<P>
+<DL>
+<DT><STRONG>(C1*)</STRONG></DT>
+<DD><IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img292.png"
+ ALT="$ K$"> possesses an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-basis
+<!-- MATH
+ $\{{D^{\lambda}_{S,T}}\mbox{$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.png"
+ ALT="$ \{{D^{\lambda}_{S,T}}$"><A NAME="6797"></A><IMG
+ WIDTH="188" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$ \vert\; \lambda \in \Lambda
+, \; S,T \in M(\lambda) \}$">.
+</DD>
+<DT><STRONG>(C2*)</STRONG></DT>
+<DD><IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img292.png"
+ ALT="$ K$"> possesses an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear involution <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ ^*$"> which is an
+coalgebra anti-automorphism, such that <!-- MATH
+ ${D^{\lambda}_{S,T}}^*=
+D^{\lambda}_{T,S}$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img296.png"
+ ALT="$ {D^{\lambda}_{S,T}}^*=
+D^{\lambda}_{T,S}$"> holds for all <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> and <!-- MATH
+ $S,T\in M(\lambda)$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ S,T\in M(\lambda)$">.
+</DD>
+<DT><STRONG>(C3*)</STRONG></DT>
+<DD>For all <!-- MATH
+ $\lambda \in \Lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$ \lambda \in \Lambda$"> and <!-- MATH
+ $S,T \in M(\lambda)$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img257.png"
+ ALT="$ S,T\in M(\lambda)$">
+the congruence relation
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Delta (D^{\lambda}_{S,T})\equiv \sum_{S'\in M(\lambda)} h(S',S)
+\otimes D^{\lambda}_{S',T} \; \; 
+\mbox{ mod } K \otimes {K(>\lambda )}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="297" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="$\displaystyle \Delta (D^{\lambda}_{S,T})\equiv \sum_{S'\in M(\lambda)} h(S',S)
+\otimes D^{\lambda}_{S',T} \; \;$">&nbsp; &nbsp; mod <IMG
+ WIDTH="108" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$\displaystyle K \otimes {K(&gt;\lambda )}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img299.png"
+ ALT="$\displaystyle \mbox{\index{${K(&gt;\lambda )}$}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+
+<P>
+holds, where the coalgebra elements  <!-- MATH
+ $h(S',S) \in K$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.png"
+ ALT="$ h(S',S) \in K$"> are independent of <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img193.png"
+ ALT="$ T$"> and
+<!-- MATH
+ $K(>\lambda)$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img301.png"
+ ALT="$ K(&gt;\lambda)$"> is defined as the 
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear span of basis elements <!-- MATH
+ $D^\mu _{U,V}$
+ -->
+<IMG
+ WIDTH="45" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.png"
+ ALT="$ D^\mu _{U,V}$"> where <!-- MATH
+ $\mu > \lambda$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="$ \mu &gt; \lambda$">
+and <!-- MATH
+ $U,V \in M(\mu )$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.png"
+ ALT="$ U,V \in M(\mu )$">.
+</DD>
+</DL>
+
+<P>
+To an arbitrary <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-coalgebra the dual algebra is well defined. The dual
+coalgebra of an algebra <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> is well defined if the algebra is known to be
+projective as an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module, since then <!-- MATH
+ ${(A\otimes A)}^* \simeq
+{A}^* \otimes {A}^*$
+ -->
+<IMG
+ WIDTH="170" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.png"
+ ALT="$ {(A\otimes A)}^* \simeq
+{A}^* \otimes {A}^*$">.
+In the case of a cellular algebra this is
+obviously valid. The connection between the above two concepts is given by
+the following proposition which can be proved straightforwardly using
+structure constants with respect to the bases (cf. [<A
+ HREF="node22.html#doc">O1</A>, 4.2.3]).
+
+<P>
+<P>
+<DIV><A NAME="zell_dual"><B>Proposition  5.1</B></A> &nbsp; 
+<I>The dual algebra of a
+cellular coalgebra
+is a cellular algebra.
+The dual coalgebra of a cellular algebra
+is a cellular coalgebra. In both cases the corresponding bases and involution maps
+can be constructed dual to each other, i.e. in the former case <!-- MATH
+ $C^{\lambda}_{S,T}(D^{\mu}_{U,V})$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$ C^{\lambda}_{S,T}(D^{\mu}_{U,V})$"> 
+is 1 if <!-- MATH
+ $\lambda = \mu,\; S=U$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img306.png"
+ ALT="$ \lambda = \mu,\; S=U$"> and <IMG
+ WIDTH="58" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img307.png"
+ ALT="$ T=V$"> but 0 otherwise and 
+<!-- MATH
+ $C^{\lambda}_{S,T}({D^{\mu}_{U,V}}^*)={C^{\lambda}_{S,T}}^*(D^{\mu}_{U,V})$
+ -->
+<IMG
+ WIDTH="226" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.png"
+ ALT="$ C^{\lambda}_{S,T}({D^{\mu}_{U,V}}^*)={C^{\lambda}_{S,T}}^*(D^{\mu}_{U,V})$">.
+</I>
+<P></DIV><P></P>
+
+<P>
+According to the proposition our next task is to find a cellular basis
+for the coalgebra <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> together with an appropriate involution map
+such that the axioms of the cellular coalgebra hold. As soon as this is done
+the representation theory of <!-- MATH
+ $S^{\rm s}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$ S^{\rm s}_{R,q}(n,r)$"> is developed to the extent
+indicated above. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html88"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html84"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html78"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html86"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html89"
+  HREF="node6.html">Tableaux</A>
+<B> Up:</B> <A NAME="tex2html85"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html79"
+  HREF="node4.html">Quantum Coefficient of Dilation</A>
+ &nbsp; <B>  <A NAME="tex2html87"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Proof of Proposition 12.1</TITLE>
+<META NAME="description" CONTENT="Proof of Proposition 12.1">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node14.html">
+<LINK REL="previous" HREF="node12.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node14.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html184"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html180"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html174"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html182"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html185"
+  HREF="node14.html">Proof of Proposition 12.2</A>
+<B> Up:</B> <A NAME="tex2html181"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html175"
+  HREF="node12.html">Proof of Proposition 8.3</A>
+ &nbsp; <B>  <A NAME="tex2html183"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000130000000000000000">
+Proof of Proposition </A><A HREF="node12.html#Rel_nicht_spiegelsymplektisch">12.1</A>
+</H1>
+
+<P>
+For convenience, in in the following sections we abbreviate <IMG
+ WIDTH="56" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img438.png"
+ ALT="$ y=q^2$"> and
+denote multiplication in <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$">
+by juxtaposition instead of <IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img951.png"
+ ALT="$ \wedge$">.
+Furthermore, to sets <!-- MATH
+ $K, L \subseteq \underline{m}$
+ -->
+<IMG
+ WIDTH="84" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img952.png"
+ ALT="$ K, L \subseteq \underline{m}$"> we associate integers
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{v(K,L)}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img953.png"
+ ALT="$\displaystyle {v(K,L)}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img954.png"
+ ALT="$\displaystyle \mbox{\index{${v(K,L)}$}}$"><IMG
+ WIDTH="233" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img955.png"
+ ALT="$\displaystyle :=\vert\{(k,l)\in K\times L \vert\; k&gt;l\}\vert.$">
+</DIV><P></P> 
+
+<P>
+<P>
+<DIV><A NAME="Formeln_c_d_1"><B>Lemma  13.1</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $a\in \underline{m}$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img956.png"
+ ALT="$ a\in \underline{m}$">. If <!-- MATH
+ $\underline{m}=L\cup M$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img957.png"
+ ALT="$ \underline{m}=L\cup M$"> is a partition of <!-- MATH
+ $\underline{m}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img901.png"
+ ALT="$ \underline{m}$"> into disjoint
+subsets <IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img958.png"
+ ALT="$ L$"> and <IMG
+ WIDTH="25" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img959.png"
+ ALT="$ M$"> then to each <!-- MATH
+ $K \in P({m},{a})$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img960.png"
+ ALT="$ K \in P({m},{a})$"> there is an integer
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img961.png"
+ ALT="$ s(K,L)$"> such that
+</I><!-- MATH
+ \begin{displaymath}
+D_a=\sum_{K \in P({m},{a})}y^{s(K,L)}c_{K\cap L}d_{K\cap M}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="264" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img962.png"
+ ALT="$\displaystyle D_a=\sum_{K \in P({m},{a})}y^{s(K,L)}c_{K\cap L}d_{K\cap M}. $">
+</DIV><P></P><I>
+If <!-- MATH
+ $K\subseteq M$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img963.png"
+ ALT="$ K\subseteq M$">, the integer <IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img961.png"
+ ALT="$ s(K,L)$"> equals <IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img964.png"
+ ALT="$ v(K, L)$">.</I></DIV><P></P>
+
+<P>
+S<SMALL>KETCH OF </SMALL>P<SMALL>ROOF: </SMALL>In order to prove this, one has to use a more general statement
+in which the set <!-- MATH
+ $\underline{m}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img901.png"
+ ALT="$ \underline{m}$"> is substituted by <!-- MATH
+ $\{l, l+1, \ldots ,
+m\}$
+ -->
+<IMG
+ WIDTH="135" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img965.png"
+ ALT="$ \{l, l+1, \ldots ,
+m\}$"> for some <!-- MATH
+ $l\in \underline{m}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img966.png"
+ ALT="$ l\in \underline{m}$">. After this, the results can be proved
+straightforwardly using induction on <IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img967.png"
+ ALT="$ m-l$"> and the relations
+(<A HREF="node11.html#Rel_3">14</A>) and (<A HREF="node11.html#Rel_2">15</A>) of the exterior algebra. 
+For the details we refer to
+appendix <A HREF="node21.html#App_Formeln_c_d">18.3</A>.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+To a set <!-- MATH
+ $I \in P({n},{r})$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img824.png"
+ ALT="$ I\in P({n},{r})$"> we associate the followng subsets of <!-- MATH
+ $\underline{m}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img901.png"
+ ALT="$ \underline{m}$">:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{I^-}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="26" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img968.png"
+ ALT="$\displaystyle {I^-}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img969.png"
+ ALT="$\displaystyle \mbox{\index{${I^-}$}}$"><IMG
+ WIDTH="117" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img970.png"
+ ALT="$\displaystyle :=I\cap \underline{m}, \;\; {I^+}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img971.png"
+ ALT="$\displaystyle \mbox{\index{${I^+}$}}$"><IMG
+ WIDTH="160" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img972.png"
+ ALT="$\displaystyle :=\{ i\in \underline{m}\vert\; i' \in I\}\;\;$"> and <IMG
+ WIDTH="33" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img973.png"
+ ALT="$\displaystyle \;\; {I^0}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img974.png"
+ ALT="$\displaystyle \mbox{\index{${I^0}$}}$"><IMG
+ WIDTH="98" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img975.png"
+ ALT="$\displaystyle :=I^-\cap I^+. $">
+</DIV><P></P>
+
+<P>
+<P>
+<DIV><A NAME="Operation_D_r"><B>Lemma  13.2</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $I \in P({n},{r})$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img824.png"
+ ALT="$ I\in P({n},{r})$"> be such that <!-- MATH
+ $I^0=\emptyset$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img976.png"
+ ALT="$ I^0=\emptyset$"> and <!-- MATH
+ $J \subseteq \underline{m}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img977.png"
+ ALT="$ J \subseteq \underline{m}$">. Set
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img978.png"
+ ALT="$ s =\vert J\vert$"> and
+<!-- MATH
+ $T:=\underline{m} \backslash (I^-\cup I^+)$
+ -->
+<IMG
+ WIDTH="152" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img979.png"
+ ALT="$ T:=\underline{m} \backslash (I^-\cup I^+)$">. If <!-- MATH
+ $J\subseteq T$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img980.png"
+ ALT="$ J\subseteq T$"> and <!-- MATH
+ $a\in \underline{m}$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img956.png"
+ ALT="$ a\in \underline{m}$"> is
+such that <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img981.png"
+ ALT="$ s&lt;a$"> then we have
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+v_{I}d_JD_{a-s}=v_{I}
+\sum_{S \in P({m},{a}), J \subseteq S \subseteq T}y^{v(S\backslash J,I^+\cup J)}d_S.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="356" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img982.png"
+ ALT="$\displaystyle v_{I}d_JD_{a-s}=v_{I}
+\sum_{S \in P({m},{a}), J \subseteq S \subseteq T}y^{v(S\backslash J,I^+\cup J)}d_S.$">
+</DIV><P></P>
+<P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We apply Lemma <A HREF="#Formeln_c_d_1">13.1</A> to <!-- MATH
+ $L:=I^+\cup J$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img983.png"
+ ALT="$ L:=I^+\cup J$"> and
+<!-- MATH
+ $M:=\underline{m}\backslash L$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img984.png"
+ ALT="$ M:=\underline{m}\backslash L$">. Since <!-- MATH
+ $J \subseteq T$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img980.png"
+ ALT="$ J\subseteq T$"> there is an invertible element
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img985.png"
+ ALT="$ b \in R$"> such that <!-- MATH
+ $v_{I}d_J=b d_Jv_{I}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img986.png"
+ ALT="$ v_{I}d_J=b d_Jv_{I}$"> by (<A HREF="node11.html#Rel_1">13</A>). We claim
+that <!-- MATH
+ $v_{I}d_Jc_{K\cap L}d_{K\cap M}$
+ -->
+<IMG
+ WIDTH="126" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img987.png"
+ ALT="$ v_{I}d_Jc_{K\cap L}d_{K\cap M}$">
+vanishes for each <!-- MATH
+ $K\in P({m},{a-s})$
+ -->
+<IMG
+ WIDTH="141" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img988.png"
+ ALT="$ K\in P({m},{a-s})$"> that
+is not contained in <!-- MATH
+ $T\backslash J$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img989.png"
+ ALT="$ T\backslash J$">.
+If <!-- MATH
+ $K \cap J \neq \emptyset$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img990.png"
+ ALT="$ K \cap J \neq \emptyset$"> then <!-- MATH
+ $d_Jc_{K\cap L}=0$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img991.png"
+ ALT="$ d_Jc_{K\cap L}=0$">.
+If <!-- MATH
+ $K \cap I^+ \neq \emptyset$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img992.png"
+ ALT="$ K \cap I^+ \neq \emptyset$"> and <!-- MATH
+ $K \cap J = \emptyset$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img993.png"
+ ALT="$ K \cap J = \emptyset$"> then
+<!-- MATH
+ $v_{I}d_Jc_{K\cap L}=v_{I}c_{K\cap L}d_J=0$
+ -->
+<IMG
+ WIDTH="215" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img994.png"
+ ALT="$ v_{I}d_Jc_{K\cap L}=v_{I}c_{K\cap L}d_J=0$">.
+Finally if <!-- MATH
+ $K \cap I^- \neq \emptyset$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img995.png"
+ ALT="$ K \cap I^- \neq \emptyset$"> and <!-- MATH
+ $K \cap J = \emptyset$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img993.png"
+ ALT="$ K \cap J = \emptyset$"> then
+<!-- MATH
+ $v_{I}d_Jc_{K\cap L}d_{K\cap M}=v_{I}d_{K\cap M} d_J c_{K\cap L}=0$
+ -->
+<IMG
+ WIDTH="307" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img996.png"
+ ALT="$ v_{I}d_Jc_{K\cap L}d_{K\cap M}=v_{I}d_{K\cap M} d_J c_{K\cap L}=0$">.
+Thus the expression is nonzero only if <!-- MATH
+ $K\subseteq T \backslash J$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img997.png"
+ ALT="$ K\subseteq T \backslash J$">.
+A set <!-- MATH
+ $K \subseteq T\backslash J$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img997.png"
+ ALT="$ K\subseteq T \backslash J$"> is obviously contained in <IMG
+ WIDTH="25" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img959.png"
+ ALT="$ M$">, so 
+by the second part of the Lemma we have
+<!-- MATH
+ $s(K,L)=v(K, L)=v(K,I^+\cup J)$
+ -->
+<IMG
+ WIDTH="280" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img998.png"
+ ALT="$ s(K,L)=v(K, L)=v(K,I^+\cup J)$">. Thus, setting <IMG
+ WIDTH="93" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img999.png"
+ ALT="$ S=J\cup K$"> the assertion
+follows.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="summenformel_v_K_L_"><B>Lemma  13.3</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $M\subseteq K \subseteq \underline{m}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1000.png"
+ ALT="$ M\subseteq K \subseteq \underline{m}$"> be fixed. Then
+</I><!-- MATH
+ \begin{displaymath}
+\sum_{L\subseteq K\backslash M} (-1)^{|L|}y^{v(K,L)}=
+\left\{\begin{array}{ll}
+1 & K=M \\
+0 & K \neq M\end{array} \right. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="312" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1001.png"
+ ALT="$\displaystyle \sum_{L\subseteq K\backslash M} (-1)^{\vert L\vert}y^{v(K,L)}=
+\left\{\begin{array}{ll}
+1 &amp; K=M \\
+0 &amp; K \neq M\end{array} \right. $">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Clearly the sum is <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.png"
+ ALT="$ 1$"> if <IMG
+ WIDTH="67" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1002.png"
+ ALT="$ K=M$"> since <!-- MATH
+ $v(K, \emptyset)=0$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1003.png"
+ ALT="$ v(K, \emptyset)=0$">. For <IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1004.png"
+ ALT="$ K\neq M$"> 
+we show by induction on <IMG
+ WIDTH="109" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1005.png"
+ ALT="$ n:=\vert K\vert&gt; 0$"> 
+that the sum is zero.
+Starting with the case <IMG
+ WIDTH="50" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1006.png"
+ ALT="$ n=1$"> we have <!-- MATH
+ $M=\emptyset$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1007.png"
+ ALT="$ M=\emptyset$"> and
+<!-- MATH
+ $\sum_{L\subseteq K} (-1)^{|L|}y^{v(K,L)}=
+y^{v(K, \emptyset)}-y^{v(K,K)}=1-1=0$
+ -->
+<IMG
+ WIDTH="423" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1008.png"
+ ALT="$ \sum_{L\subseteq K} (-1)^{\vert L\vert}y^{v(K,L)}=
+y^{v(K, \emptyset)}-y^{v(K,K)}=1-1=0$">. For the induction step, 
+let <!-- MATH
+ $n > 1, x \in K$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1009.png"
+ ALT="$ n &gt; 1, x \in K$"> be minimal and set <!-- MATH
+ $\widehat K:=K\backslash x$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1010.png"
+ ALT="$ \widehat K:=K\backslash x$">.
+If <!-- MATH
+ $x \not\in M$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1011.png"
+ ALT="$ x \not\in M$"> we calculate
+<!-- MATH
+ \begin{displaymath}
+\sum_{L\subseteq K\backslash M} (-1)^{|L|}y^{v(K,L)}=
+ \sum_{L\subseteq \widehat K\backslash M} (-1)^{|L|}y^{v(K,L)}
++  \sum_{L\subseteq \widehat K\backslash M} (-1)^{|L|+1}y^{v(K,L\cup \{x\})}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="589" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1012.png"
+ ALT="$\displaystyle \sum_{L\subseteq K\backslash M} (-1)^{\vert L\vert}y^{v(K,L)}=
+\...
+...{L\subseteq \widehat K\backslash M} (-1)^{\vert L\vert+1}y^{v(K,L\cup \{x\})}. $">
+</DIV><P></P>
+Since <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1013.png"
+ ALT="$ x$"> is minimal, <!-- MATH
+ $v(K,L)=v(\widehat K, L)$
+ -->
+<IMG
+ WIDTH="154" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1014.png"
+ ALT="$ v(K,L)=v(\widehat K, L)$"> and <!-- MATH
+ $v(K, L\cup\{x\})=
+v(\widehat K,L)+n-1$
+ -->
+<IMG
+ WIDTH="272" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1015.png"
+ ALT="$ v(K, L\cup\{x\})=
+v(\widehat K,L)+n-1$"> if <!-- MATH
+ $L\subseteq \widehat K\backslash M$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1016.png"
+ ALT="$ L\subseteq \widehat K\backslash M$">.
+Now, we may apply the induction hypothesis to <!-- MATH
+ $\widehat K$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="22" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1017.png"
+ ALT="$ \widehat K$"> which results in
+<!-- MATH
+ \begin{displaymath}
+\sum_{L\subseteq K\backslash M} (-1)^{|L|}y^{v(K,L)}=(1-y^{n-1})
+   \sum_{L\subseteq \widehat K\backslash M} (-1)^{|L|}y^{v(\widehat K, L)}=0.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="481" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1018.png"
+ ALT="$\displaystyle \sum_{L\subseteq K\backslash M} (-1)^{\vert L\vert}y^{v(K,L)}=(1-...
+..._{L\subseteq \widehat K\backslash M} (-1)^{\vert L\vert}y^{v(\widehat K, L)}=0.$">
+</DIV><P></P>
+In the case <IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1019.png"
+ ALT="$ x \in M$">, we write <!-- MATH
+ $\widehat M:=M\backslash \{x\}$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1020.png"
+ ALT="$ \widehat M:=M\backslash \{x\}$">. Similarly, we
+calculate
+<!-- MATH
+ \begin{displaymath}
+\sum_{L\subseteq K\backslash M} (-1)^{|L|}y^{v(K,L)}=
+ \sum_{L\subseteq \widehat K\backslash \widehat M} (-1)^{|L|}y^{v(\widehat K,L)}, 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="360" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1021.png"
+ ALT="$\displaystyle \sum_{L\subseteq K\backslash M} (-1)^{\vert L\vert}y^{v(K,L)}=
+\...
+...seteq \widehat K\backslash \widehat M} (-1)^{\vert L\vert}y^{v(\widehat K,L)}, $">
+</DIV><P></P>
+where the right hand side is zero by the induction hypothesis.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="N_r_fuer_r_SPMgt_m"><B>Lemma  13.4</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $I \in P({n},{r})$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img824.png"
+ ALT="$ I\in P({n},{r})$"> with <IMG
+ WIDTH="55" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1022.png"
+ ALT="$ r&gt;m$"> and set <IMG
+ WIDTH="68" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1023.png"
+ ALT="$ a=\vert I^0\vert$">, 
+<!-- MATH
+ $\widehat I:=I\backslash \{i, i'|\; i \in I^0\}$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1024.png"
+ ALT="$ \widehat I:=I\backslash \{i, i'\vert\; i \in I^0\}$"> and
+<!-- MATH
+ $T:=\underline{m} \backslash (I^+ \cup I^-)$
+ -->
+<IMG
+ WIDTH="152" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1025.png"
+ ALT="$ T:=\underline{m} \backslash (I^+ \cup I^-)$">. 
+Then there is an invertible <IMG
+ WIDTH="60" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1026.png"
+ ALT="$ a_I\in R$"> such that the following 
+equation holds:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+v_{\widehat I}\sum_{J\subseteq T} (-1)^{|J|}y^{v(J,(\widehat I^)+\cup J )}
+d_JD_{a-|J|} = a_Iv_{I}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="327" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1027.png"
+ ALT="$\displaystyle v_{\widehat I}\sum_{J\subseteq T} (-1)^{\vert J\vert}y^{v(J,(\widehat I^)+\cup J )}
+d_JD_{a-\vert J\vert} = a_Iv_{I}. $">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Let <!-- MATH
+ $\widehat T=T \cup I^0=\underline{m}\backslash ((\widehat I)^+\cup(\widehat I)^-)$
+ -->
+<IMG
+ WIDTH="253" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1028.png"
+ ALT="$ \widehat T=T \cup I^0=\underline{m}\backslash ((\widehat I)^+\cup(\widehat I)^-)$"> and
+observe that <!-- MATH
+ $(\widehat I)^+=I^+\backslash I^0$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1029.png"
+ ALT="$ (\widehat I)^+=I^+\backslash I^0$">, <!-- MATH
+ $(\widehat I)^0=\emptyset$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1030.png"
+ ALT="$ (\widehat I)^0=\emptyset$">,
+<!-- MATH
+ $(\widehat I)^+\cap J=\emptyset$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1031.png"
+ ALT="$ (\widehat I)^+\cap J=\emptyset$"> and that <!-- MATH
+ $T\cap I^0=\emptyset$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1032.png"
+ ALT="$ T\cap I^0=\emptyset$">.
+Because <IMG
+ WIDTH="55" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1022.png"
+ ALT="$ r&gt;m$">, we must have <IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1033.png"
+ ALT="$ a\geq 1$">. On the other hand 
+<!-- MATH
+ $2a+|\widehat I|=r>m$
+ -->
+<IMG
+ WIDTH="143" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1034.png"
+ ALT="$ 2a+\vert\widehat I\vert=r&gt;m$"> implies <!-- MATH
+ $a>m-|\widehat I|-|I^0|=|T|\geq |J|$
+ -->
+<IMG
+ WIDTH="248" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1035.png"
+ ALT="$ a&gt;m-\vert\widehat I\vert-\vert I^0\vert=\vert T\vert\geq \vert J\vert$"> for a set
+<IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.png"
+ ALT="$ J$"> as in the sum. Therefore we may apply Lemma 
+<A HREF="#Operation_D_r">13.2</A>: 
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="262" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1036.png"
+ ALT="$\displaystyle v_{\widehat I}\sum_{J\subseteq T} (-1)^{\vert J\vert}y^{v(J,(\widehat I)^+\cup J)} d_JD_{a-\vert J\vert}$"></TD>
+<TD NOWRAP ALIGN="LEFT"><IMG
+ WIDTH="452" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1037.png"
+ ALT="$\displaystyle =v_{\widehat I}\sum_{J\subseteq T} (-1)^{\vert J\vert}y^{v(J,(\wi...
+...J \subset S \subseteq \widehat T} y^{v(S\backslash J,(\widehat I)^+\cup J)}d_S$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD>&nbsp;</TD>
+<TD NOWRAP ALIGN="LEFT"><IMG
+ WIDTH="336" HEIGHT="70" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1038.png"
+ ALT="$\displaystyle = v_{\widehat I}\sum_{J\subseteq S \subseteq \widehat T, J\cap I^0=\emptyset} (-1)^{\vert J\vert}y^{v(S,J)+ v(S,(\widehat I)^+)}d_S$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE">
+<TD>&nbsp;</TD>
+<TD NOWRAP ALIGN="LEFT"><IMG
+ WIDTH="324" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1039.png"
+ ALT="$\displaystyle = v_{\widehat I}\sum_{S \subseteq \widehat T} y^{v(S,(\widehat I)^+)}d_S\sum_{J\subseteq S\backslash I^0} (-1)^{\vert J\vert}y^{v(S,J)}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+&nbsp;&nbsp;&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+But by Lemma <A HREF="#summenformel_v_K_L_">13.3</A>, the last term equals
+<!-- MATH
+ $y^{v(I^0,\widehat I^+)}v_{\widehat I}d_{I^0}$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1040.png"
+ ALT="$ y^{v(I^0,\widehat I^+)}v_{\widehat I}d_{I^0}$">. Using relation (<A HREF="node11.html#Rel_1">13</A>)
+of the exterior algebra, this can be transformed into
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1041.png"
+ ALT="$ v_{I}$"> up to some invertible mutiple <IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1042.png"
+ ALT="$ a_I$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+
+<P>
+We are now able to prove Proposition <A HREF="node12.html#Rel_nicht_spiegelsymplektisch">12.1</A> by induction
+on the Lie rank <IMG
+ WIDTH="21" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$ m$">. In  the case where <IMG
+ WIDTH="55" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1043.png"
+ ALT="$ m=1$"> both sets of <!-- MATH
+ $P({2},{1})=\{\{1\},\{2\}\}$
+ -->
+<IMG
+ WIDTH="170" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1044.png"
+ ALT="$ P({2},{1})=\{\{1\},\{2\}\}$"> are reverse symplectic. In <!-- MATH
+ $P({2},{2})$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1045.png"
+ ALT="$ P({2},{2})$"> there is just one set
+namely <IMG
+ WIDTH="86" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1046.png"
+ ALT="$ I=\{1,2\}$">, for which we have
+ <!-- MATH
+ $v_{I}=-qd_1=-qD_1\in N$
+ -->
+<IMG
+ WIDTH="200" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1047.png"
+ ALT="$ v_{I}=-qd_1=-qD_1\in N$">. Thus there is nothing to prove here.
+<BR>
+<P>
+For the induction step we embed <!-- MATH
+ ${\bigwedge}_{R, q}(n-2)$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1048.png"
+ ALT="$ {\bigwedge}_{R, q}(n-2)$"> into <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> sending <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1049.png"
+ ALT="$ v_{i}$"> to
+<IMG
+ WIDTH="36" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1050.png"
+ ALT="$ v_{i+1}$">. It is easy to check that this indeed leads to an embedding of
+algebras. Using the induction hypothesis we may treat the
+case where <!-- MATH
+ $I \subseteq \underline{n}\backslash \{1,n\}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1051.png"
+ ALT="$ I \subseteq \underline{n}\backslash \{1,n\}$"> without much effort.
+Some caution is needed only concerning the difference 
+between the two ideals <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img890.png"
+ ALT="$ N$"> of <!-- MATH
+ ${\bigwedge}_{R, q}(n-2)$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1048.png"
+ ALT="$ {\bigwedge}_{R, q}(n-2)$"> and
+<!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$">. Denote them by <IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1052.png"
+ ALT="$ N(n-2)$"> and <IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1053.png"
+ ALT="$ N(n)$">. A single element <!-- MATH
+ $u \in N(n-2)$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1054.png"
+ ALT="$ u \in N(n-2)$"> can be
+written
+<!-- MATH
+ \begin{displaymath}
+u = \sum_{\{1,n\}\subseteq L \subseteq \underline{n}} a_{\widehat I L}v_{L} \mbox{
+  mod } N(n) 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="160" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1055.png"
+ ALT="$\displaystyle u = \sum_{\{1,n\}\subseteq L \subseteq \underline{n}} a_{\widehat I L}v_{L}$">&nbsp; &nbsp;mod <IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1056.png"
+ ALT="$\displaystyle N(n)
+$">
+</DIV><P></P>
+
+<P>
+where the basis elements <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1057.png"
+ ALT="$ v_{L}$"> all are smaller than <IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1041.png"
+ ALT="$ v_{I}$">, that is <!-- MATH
+ $f({\bf l})<f({\bf i})$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1058.png"
+ ALT="$ f({\bf l})&lt;f({\bf i})$"> for the corresponding multi-indices.
+If <!-- MATH
+ $I\cap \{1,n\}\neq \emptyset$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1059.png"
+ ALT="$ I\cap \{1,n\}\neq \emptyset$"> we may apply the induction hypothesis
+to the
+set <!-- MATH
+ $\widehat I:=I\backslash \{1,n\}$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1060.png"
+ ALT="$ \widehat I:=I\backslash \{1,n\}$"> in case <!-- MATH
+ $\widehat I$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="26" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1061.png"
+ ALT="$ \widehat I$"> 
+is non reverse symplectic too:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+v_{\widehat  I}\equiv
+\sum_{\widehat J\subseteq \underline{n}\backslash \{1,n\}, \; |\widehat I|=|\widehat J|, 
+\; f({\bf\widehat j})<f({\bf\widehat  i})}
+    a_{\widehat I\widehat J}v_{\widehat J} +   
+\sum_{\{1,n\} \subseteq L\subseteq \underline{n}}a_{\widehat IL}v_{L} \;\; 
+\mbox{  mod }\;\; N(n). 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="533" HEIGHT="72" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1062.png"
+ ALT="$\displaystyle v_{\widehat I}\equiv
+\sum_{\widehat J\subseteq \underline{n}\bac...
+...eq L\subseteq \underline{n}}a_{\widehat IL}v_{L} \;\;
+\mbox{ mod }\;\; N(n). $">
+</DIV><P></P>
+
+<P>
+Again, the second sum compensate for 
+the difference between the
+two ideals <IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1052.png"
+ ALT="$ N(n-2)$"> and <IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1053.png"
+ ALT="$ N(n)$">.
+Multiplying this congruence by <IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1063.png"
+ ALT="$ v_{1}$"> from the left (respectively by <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1064.png"
+ ALT="$ v_{n}$">
+from the right,
+respectively by both from both sides) yields the assertion because
+the elements <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1057.png"
+ ALT="$ v_{L}$"> vanish, and <!-- MATH
+ $f({\bf\widehat
+j})<f({\bf\widehat  i})$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1065.png"
+ ALT="$ f({\bf\widehat
+j})&lt;f({\bf\widehat i})$"> implies <!-- MATH
+ $f({\bf j})<f({\bf i})$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img912.png"
+ ALT="$ f({\bf j})&lt;f({\bf i})$">,
+where <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$"> is the multi-index attached to the set <!-- MATH
+ $J=\widehat J\cup
+(I\backslash \widehat I)$
+ -->
+<IMG
+ WIDTH="119" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1066.png"
+ ALT="$ J=\widehat J\cup
+(I\backslash \widehat I)$">.
+<BR>
+<P>
+It remains to prove the assertion in the 
+case where <!-- MATH
+ $\widehat I$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="26" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1061.png"
+ ALT="$ \widehat I$"> is reverse symplectic.
+Here we need the preparations of this section.                      
+By the reverse symplectic condition applied to tableaux of shape <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img911.png"
+ ALT="$ \omega_r$">
+we have  <!-- MATH
+ $\sum_{i=j}^m\lambda_i\leq
+m-j+1$
+ -->
+<IMG
+ WIDTH="173" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1067.png"
+ ALT="$ \sum_{i=j}^m\lambda_i\leq
+m-j+1$"> for all <IMG
+ WIDTH="48" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1068.png"
+ ALT="$ j&gt;1$">, where
+<!-- MATH
+ $(\lambda_1, \ldots , \lambda_m)=f({\bf i})$
+ -->
+<IMG
+ WIDTH="160" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1069.png"
+ ALT="$ (\lambda_1, \ldots , \lambda_m)=f({\bf i})$">.
+Because <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img909.png"
+ ALT="$ I$"> itself is non reverse symplectic we must have
+<!-- MATH
+ $r=|I|=\sum_{i=1}^m\lambda_i>m$
+ -->
+<IMG
+ WIDTH="188" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1070.png"
+ ALT="$ r=\vert I\vert=\sum_{i=1}^m\lambda_i&gt;m$">. According to Lemma <A HREF="#N_r_fuer_r_SPMgt_m">13.4</A> 
+we conclude
+<!-- MATH
+ $v_{I} \in N$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1071.png"
+ ALT="$ v_{I} \in N$">. But this implies the assertion of Proposition
+<A HREF="node12.html#Rel_nicht_spiegelsymplektisch">12.1</A> in the remaining case too.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html184"
+  HREF="node14.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html180"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html174"
+  HREF="node12.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html182"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html185"
+  HREF="node14.html">Proof of Proposition 12.2</A>
+<B> Up:</B> <A NAME="tex2html181"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html175"
+  HREF="node12.html">Proof of Proposition 8.3</A>
+ &nbsp; <B>  <A NAME="tex2html183"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

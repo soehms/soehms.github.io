@@ -1,0 +1,4798 @@
+\batchmode
+\documentclass[twoside,12pt]{article}
+\RequirePackage{ifthen}
+
+
+\usepackage{latexsym,amssymb,amsfonts}
+\topmargin-1.1cm
+\parindent0cm
+\headheight0mm
+\textwidth16.0cm
+\textheight24.5cm
+\tabcolsep-4mm
+\oddsidemargin-2mm
+\evensidemargin-2mm
+\pagestyle{myheadings}
+\markboth{\centerline{Sebastian Oehms}}{\centerline{Symplectic Monoids}}
+
+
+
+\usepackage[dvips]{color}
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+
+\newtheorem{prop}{Proposition}[section]%
+
+
+\newtheorem{thm}[prop]{Theorem}%
+
+
+\newtheorem{cor}[prop]{Corollary}%
+
+
+\newtheorem{lem}[prop]{Lemma}%
+
+
+\newtheorem{Def}[prop]{Definition}%
+
+
+\newtheorem{rem}[prop]{Remark}%
+
+
+\newedenvironment{Pf}{{\sc Proof: }}{$\Box$\\}%
+
+
+\newedenvironment{PfS}{{\sc Sketch of Proof: }}{$\Box$\\}%
+
+
+%
+\providecommand{\N}{{\mathbb N}}%
+
+
+%
+\providecommand{\F}{{\mathbb F}}%
+
+
+%
+\providecommand{\Z}{{\mathbb Z}}%
+
+
+%
+\providecommand{\C}{{\mathbb C}}%
+
+
+%
+\providecommand{\Q}{{\mathbb Q}}%
+
+
+%
+\providecommand{\Ab}{\\[-2mm]}%
+
+
+%
+\providecommand{\pfr}{\rightarrow}%
+
+
+%
+\providecommand{\pfl}{\leftarrow}%
+
+
+%
+\providecommand{\gdw}{\Longleftrightarrow}%
+
+
+%
+\providecommand{\ohne}{\backslash}%
+
+
+%
+\providecommand{\Dim}[2]{{\rm dim}_{#1}{(#2)}}%
+
+
+%
+\providecommand{\Min}[1]{{\rm min}(#1)}%
+
+
+%
+\providecommand{\Char}[1]{{\rm char}(#1)}%
+
+
+%
+\providecommand{\Ker}[1]{{\rm ker}(#1)}%
+
+
+%
+\providecommand{\Ima}[1]{{\rm im}(#1)}%
+
+
+%
+\providecommand{\mg}[1]{\underline{#1}}%
+
+
+%
+\providecommand{\tmg}[2]{P({#1},{#2})}%
+
+
+\newedenvironment{tableau}[1]{\begin{array}{*{#1}{|p{2mm}}|}
+}{\end{array}}%
+
+
+%
+\providecommand{\tline}[3]{#1  &\multicolumn{#2}{c}{} \\\cline{1-#3}}%
+
+
+%
+\providecommand{\kom}{\Delta}%
+
+
+%
+\providecommand{\koe}{\epsilon}%
+
+
+%
+\providecommand{\cmd}[1]{\tau_{#1}}%
+
+
+%
+\providecommand{\id}[1]{{\rm id}_{#1}}%
+
+
+%
+\providecommand{\gr}{R}%
+
+
+%
+\providecommand{\er}{S}%
+
+
+%
+\providecommand{\nt}{V}%
+
+
+%
+\providecommand{\Ed}{{\cal E}}%
+
+
+%
+\providecommand{\rEd}{{\cal E}_r}%
+
+
+%
+\providecommand{\gEd}[1]{{\cal E}_{#1}}%
+
+
+%
+\providecommand{\dual}[1]{{#1}^*}%
+
+
+%
+\providecommand{\dEd}{{{\cal E}}^*}%
+
+
+%
+\providecommand{\rdEd}{{{\cal E}_r}^*}%
+
+
+%
+\providecommand{\gdEd}[1]{{{\cal E}_{#1}}^*}%
+
+
+%
+\providecommand{\bs}[1]{v_{#1}}%
+
+
+%
+\providecommand{\es}[2]{e_{#1}^{ #2}}%
+
+
+%
+\providecommand{\dbs}[1]{{v_{#1}}^*}%
+
+
+%
+\providecommand{\des}[2]{{{e}^*_{#1}}^{#2}}%
+
+
+%
+\providecommand{\isod}{{\vartheta}_{tr}}%
+
+
+%
+\providecommand{\ts}[2]{{#1}^{\otimes #2}}%
+
+
+%
+\providecommand{\ntts}[1]{V^{\otimes #1}}%
+
+
+%
+\providecommand{\ntrts}{V^{\otimes r}}%
+
+
+%
+\providecommand{\End}[2]{{\rm End}_{#1}{(#2)}}%
+
+
+%
+\providecommand{\Hom}[3]{{\rm Hom}_{#1}{(#2,#3)}}%
+
+
+%
+\providecommand{\tr}{tr}%
+
+
+%
+\providecommand{\tens}[1]{{\cal T}(#1)}%
+
+
+%
+\providecommand{\mind}[2]{I(#1,#2)}%
+
+
+%
+\providecommand{\nmind}[1]{I(n,#1)}%
+
+
+%
+\providecommand{\mmind}[1]{I(m,#1)}%
+
+
+%
+\providecommand{\ibf}[1]{{\bf #1}}%
+
+
+%
+\providecommand{\komp}[2]{\Lambda(#1, #2)}%
+
+
+%
+\providecommand{\skomp}[2]{\Lambda^{\rm s}(#1, #2)}%
+
+
+%
+\providecommand{\nkomp}[1]{\Lambda(n, #1)}%
+
+
+%
+\providecommand{\nrkomp}{\Lambda(n, r)}%
+
+
+%
+\providecommand{\prt}[2]{\Lambda^+(#1, #2)}%
+
+
+%
+\providecommand{\sprt}[2]{\Lambda^{{\rm s}+}(#1, #2)}%
+
+
+%
+\providecommand{\nprt}[1]{\Lambda^+(n, #1)}%
+
+
+%
+\providecommand{\nrprt}{\Lambda^+(n, r)}%
+
+
+%
+\providecommand{\rprt}[1]{\Lambda^+(#1)}%
+
+
+%
+\providecommand{\frt}[1]{{\cal M}(#1)}%
+
+
+%
+\providecommand{\gmhg}[2]{{\rm M}_{#2}(#1)}%
+
+
+%
+\providecommand{\gspm}[2]{{\rm SpM}_{#2}(#1)}%
+
+
+%
+\providecommand{\mmsp}[2]{{\rm SpH}_{#2}(#1)}%
+
+
+%
+\providecommand{\gln}[2]{{\rm GL}_{#2}(#1)}%
+
+
+%
+\providecommand{\gsp}[2]{{\rm GSp}_{#2}(#1)}%
+
+
+%
+\providecommand{\zgsp}[2]{\overline{{\rm GSp}_{#2}(#1)}}%
+
+
+%
+\providecommand{\sln}[2]{{\rm SL}_{#2}(#1)}%
+
+
+%
+\providecommand{\spn}[2]{{\rm Sp}_{#2}(#1)}%
+
+
+%
+\providecommand{\symg}[1]{{\cal S}_{#1}}%
+
+
+%
+\providecommand{\zopf}[1]{{\cal Z}_{#1}}%
+
+
+%
+\providecommand{\br}[2]{D_{#1}({#2})}%
+
+
+%
+\providecommand{\falg}{{\cal A}}%
+
+
+%
+\providecommand{\gfalg}[1]{{\cal A}_{#1}}%
+
+
+%
+\providecommand{\rfalg}{{\cal A}_r}%
+
+
+%
+\providecommand{\il}{s}%
+
+
+%
+\providecommand{\ir}{t}%
+
+
+%
+\providecommand{\gil}[1]{s_{#1}}%
+
+
+%
+\providecommand{\gir}[1]{t_{#1}}%
+
+
+%
+\providecommand{\kerz}[2]{{\vartheta}_{tr}([#1,#2])}%
+
+
+%
+\providecommand{\ZK}[1]{M(#1)}%
+
+
+%
+\providecommand{\ZA}[1]{C(#1)}%
+
+
+%
+\providecommand{\KK}[1]{K(#1)}%
+
+
+%
+\providecommand{\KL}[1]{L(#1)}%
+
+
+%
+\providecommand{\MA}{M(A)}%
+
+
+%
+\providecommand{\CA}{C(A)}%
+
+
+%
+\providecommand{\KA}{K(A)}%
+
+
+%
+\providecommand{\comp}[1]{{#1}^{\bot}}%
+
+
+%
+\providecommand{\ausw}[1]{{\rm Ev}_{#1}}%
+
+
+%
+\providecommand{\merw}[2]{{#1}^{#2}}%
+
+
+%
+\providecommand{\smerw}[1]{{#1}^{S}}%
+
+
+%
+\providecommand{\zerw}[2]{{#1}_{#2}}%
+
+
+%
+\providecommand{\szerw}[1]{{#1}_{S}}%
+
+
+%
+\providecommand{\iserw}[1]{\ierw{#1}{S}}%
+
+
+%
+\providecommand{\einb}{J}%
+
+
+%
+\providecommand{\geinb}[1]{J_{#1}}%
+
+
+%
+\providecommand{\seinb}[1]{{J_{#1}}^{S}}%
+
+
+%
+\providecommand{\duerw}[1]{\psi_{#1}}%
+
+
+%
+\providecommand{\An}[1]{A_{#1}(n)}%
+
+
+%
+\providecommand{\rAn}[2]{A_{#1}(n,#2)}%
+
+
+%
+\providecommand{\sAn}[1]{A^{{\rm s}}_{#1}(n)}%
+
+
+%
+\providecommand{\rsAn}[2]{A^{{\rm s}}_{#1}(n,#2)}%
+
+
+%
+\providecommand{\shAn}[1]{A^{{\rm sh}}_{#1}(n)}%
+
+
+%
+\providecommand{\rshAn}[2]{A^{{\rm sh}}_{#1}(n,#2)}%
+
+
+%
+\providecommand{\spT}{J}%
+
+
+%
+\providecommand{\spq}{d}%
+
+
+%
+\providecommand{\naA}[2]{{\bigwedge}_{#1}(#2)}%
+
+
+%
+\providecommand{\nraA}[3]{{\bigwedge}_{#1}(#2,#3)}%
+
+
+%
+\providecommand{\aA}{{\bigwedge}_{R}(n)}%
+
+
+%
+\providecommand{\raA}[1]{{\bigwedge}_{R}(n,#1)}%
+
+
+%
+\providecommand{\snaA}[2]{{\bigwedge}^{\rm s}_{#1}(#2)}%
+
+
+%
+\providecommand{\snraA}[3]{{\bigwedge}^{\rm s}_{#1}(#2,#3)}%
+
+
+%
+\providecommand{\saA}{{\bigwedge}^{\rm s}_{R}(n)}%
+
+
+%
+\providecommand{\sraA}[1]{{\bigwedge}^{\rm s}_{R}(n,#1)}%
+
+
+%
+\providecommand{\gtab}[1]{T^{#1}}%
+
+
+%
+\providecommand{\gsmind}[2]{I_{#1}^{#2}}%
+
+
+%
+\providecommand{\asmind}[1]{I_{#1}^{}}%
+
+
+%
+\providecommand{\symind}[1]{I_{#1}^{\rm sym}}%
+
+
+%
+\providecommand{\itab}[2]{T^{#1}_{{\bf #2}}}%
+
+
+%
+\providecommand{\bidet}[3]{T^{#1}(#2:#3)}%
+
+
+%
+\providecommand{\xes}[2]{x_{#1 #2}}%
+
+
+%
+\providecommand{\B}{{\bf B}}%
+
+
+%
+\providecommand{\sign}[1]{{\rm sign}(#1)}%
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4160}%
+${\mathbb{Z}}[X, X^{-1}]$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4162}%
+$X$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4164}%
+$R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4168}%
+${\mathbb{Z}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4172}%
+$V$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4176}%
+$\{v_{1}, \ldots , v_{n}\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4178}%
+$e_{i}^{ j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4180}%
+${\cal E}:={\rm End}_{R}{(V)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4182}%
+${\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4186}%
+${{\cal E}}^*:={\rm Hom}_{R}{({\cal E},R)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4188}%
+$\Delta $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4190}%
+$\epsilon $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath3998}%
+\begin{displaymath} \Delta ({{e}^*_{i}}^{j})=\sum_{k=1}^n {{e}^*_{i}}^{k}  \otimes {{e}^*_{k}}^{j} ,\; \; \epsilon ({{e}^*_{i}}^{j})
+=\delta_{ij}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4192}%
+${{\cal E}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4196}%
+${\vartheta}_{tr}:{\cal E}\rightarrow {{\cal E}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4200}%
+$tr:{\cal E}\rightarrow R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4202}%
+${\vartheta}_{tr}(\mu)(\nu):= tr(\mu\nu)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4204}%
+${\vartheta}_{tr}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4208}%
+${{e}^*_{j}}^{i}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4210}%
+$A\subseteq {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4212}%
+$L(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4218}%
+$[\nu, \mu ]=\nu\mu-\mu\nu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4220}%
+$\nu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4222}%
+$A$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4224}%
+$\mu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4228}%
+$K(A):={\vartheta}_{tr}(L(A))\subseteq {{\cal E}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4234}%
+$L(\nu)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4236}%
+$K(\nu)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4240}%
+$K(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4248}%
+$A=\{\nu\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4254}%
+$k,l \in \{1,\ldots, n\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath3999}%
+\begin{displaymath} \Delta ({\vartheta}_{tr}([\nu ,e_{k}^{ l}]))=
+\sum_m (
+{{e}^*_{l}}^{m}\otimes{\vartheta}_{tr}([\nu,e_{k}^{ m}]) +
+{\vartheta}_{tr}([\nu, {{e}^*_{m}}^{l}]) \otimes {{e}^*_{m}}^{k},
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4000}%
+\begin{displaymath} \Delta (K(\nu)) \subseteq K(\nu) \otimes {{\cal E}}^*+ {{\cal E}}^*
+\otimes K(\nu). \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4256}%
+$\epsilon (K(\nu))=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4258}%
+$\Box$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4260}%
+$C$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4266}%
+$\tau_{V}:V\rightarrow V\otimes C$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4001}%
+\begin{displaymath} {\rm End}_{C}{(V)}:=\{
+\mu \in {\cal E}|\; \; (\mu \otimes {\rm id}_{C}) \circ \tau_{V}= \tau_{V} 
+\circ \mu \}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4274}%
+$\pi: {{\cal E}}^*\rightarrow C$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4002}%
+\begin{displaymath} \mu \in {\rm End}_{C}{(V)} \Longleftrightarrow K(\mu)  \subseteq {\rm ker}(\pi).
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4276}%
+$M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4280}%
+$\mu , \nu \in {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4282}%
+$K(\mu)  \subseteq M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4284}%
+$K(\nu) \subseteq M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4286}%
+$K(\mu \nu) \subseteq M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4288}%
+$K(\nu\mu ) \subseteq M$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4003}%
+\begin{displaymath}M(A):={{\cal E}}^*/ K(A).\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4004}%
+\begin{displaymath}A \subseteq {\rm End}_{M(A)}{(V)}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4292}%
+$M(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4005}%
+\begin{displaymath} C(A):={\rm End}_{A}{(V)}=\{ \mu \in {\cal E}|\; [\mu , \nu]=0, \;\mbox{ for
+all } \nu \in A\} \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4304}%
+${{e}^*_{i}}^{j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4308}%
+$x_{i j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4310}%
+$i,j\in \underline{n}:=\{1, \ldots , n\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4312}%
+$\mu =\sum_{i,j=1}^n a_{ij}e_{i}^{ j}\in {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath415}%
+\begin{displaymath}
+\mu x_{i j} :=\sum_{k=1}^n a_{ik}x_{kj \}; \; \mbox{ and } \; \;
+x_{i j}\mu :=\sum_{k=1}^n x_{i k}a_{kj}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4314}%
+$N$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath430}%
+\begin{displaymath}
+\mu x_{i j} = x_{i j} \mu \; \; \mbox{ for all } \mu \in N, \;
+i,j \in \underline{n}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4006}%
+\begin{displaymath}
+{U}^{\bot}:=\{f \in {W}^*={\rm Hom}_{R}{(W,R)}| \; f(u)=0 \; \, \forall u \in U\}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4328}%
+$U$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4332}%
+$W$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4007}%
+\begin{displaymath}{\rm Ev}_{W}:W \rightarrow {{W}^*}^*, \;\mbox{ given by }
+{\rm Ev}_{W}(x)(y):=y(x)\; x \in W, \; y \in {W}^*\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4334}%
+${{{W}^*}^*}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath450}%
+\begin{displaymath}
+{\rm Ev}_{{W}^*}({U}^{\bot})={{\rm Ev}_{W}(U)}^{\bot}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4336}%
+$tr(b[x,a])=tr(x[a,b])$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4338}%
+$x, a, b \in {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4340}%
+$tr$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath455}%
+\begin{displaymath}
+{\vartheta}_{tr}([x,a])(b)=tr(b[x,a])=0 \mbox{ for all } x \in{\cal E}\Longleftrightarrow [a,b]=0.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4342}%
+${K(A)}^{\bot} ={\rm Ev}_{{\cal E}}(C(A))$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4344}%
+${{K(A)}^{\bot}}^{\bot} ={\rm Ev}_{{{\cal E}}^*}({C(A)}^{\bot})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4346}%
+${\rm Ev}_{{\cal E}}(b)\in {K(A)}^{\bot}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4348}%
+${\rm Ev}_{{\cal E}}(b)({\vartheta}_{tr}([x,a]))={\vartheta}_{tr}([x,a])(b)=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4350}%
+$x \in {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4352}%
+$a\in A$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4354}%
+$[a,b]=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4358}%
+$b \in C(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4362}%
+${C}^*={\rm Hom}_{R}{(C,R)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4008}%
+\begin{displaymath} \mu \nu :=(\mu \otimes \nu) \circ\Delta \;\;\mbox{ where }
+\mu ,\nu \in {C}^*.
+ \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4366}%
+$\mu \otimes \nu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4368}%
+${C}^* \otimes {C}^* \rightarrow {(C \otimes C)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4370}%
+$C={{\cal E}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4372}%
+${{{\cal E}}^*}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4374}%
+${\rm Ev}_{{\cal E}}:{\cal E}\rightarrow {{{\cal E}}^*}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4380}%
+$K:={\rm ker}(\pi)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4382}%
+$\rho:={\rm Ev}_{{\cal E}}^{-1}\circ {\pi}^*:{C}^*\rightarrow {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4386}%
+${\rm im}(\rho)={\rm Ev}_{{\cal E}}^{-1}({K}^{\bot})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4388}%
+${\pi}^*:{C}^* \rightarrow {{{\cal E}}^*}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4390}%
+${\rm Hom}_{R}{(-,R)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4392}%
+${\pi}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4394}%
+${\rm im}({\pi}^*)={ K}^{\bot}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4396}%
+${\rm Ev}_{{\cal E}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4400}%
+$C(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4402}%
+${M(A)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4404}%
+$\rho$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4412}%
+${J}^*:{{\cal E}}^*\rightarrow {C(A)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4414}%
+$J:C(A)\hookrightarrow {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4416}%
+${\rm Ev}_{{{\cal E}}^*}(U)\subseteq {{U}^{\bot}}^{\bot}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4009}%
+\begin{displaymath}K(A)\subseteq{\rm Ev}_{{{\cal E}}^*}^{-1}({{K(A)}^{\bot}}^{\bot})=
+{\rm Ev}_{{{\cal E}}^*}^{-1}({\rm Ev}_{{{\cal E}}^*}({C(A)}^{\bot}))= {C(A)}^{\bot}
+={\rm ker}({J}^*). \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4420}%
+${J}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4010}%
+\begin{displaymath} \theta :M(A)\rightarrow {C(A)}^*. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4424}%
+$\theta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4430}%
+${\rm Ev}_{{{\cal E}}^*}^{-1}({{K(A)}^{\bot}}^{\bot})/K(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4432}%
+${C(A)}^{\bot}/K(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4440}%
+$K(A)={C(A)}^{\bot}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4446}%
+${\rm Ext}_{R}^1({\cal E}/C(A), R)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4460}%
+${A}^*\otimes {A}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4462}%
+${(A\otimes A)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4474}%
+${C(A)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4476}%
+$\theta:M(A)\rightarrow {C(A)}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4480}%
+$S$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4482}%
+$R\rightarrow S$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath561}%
+\begin{displaymath}
+{W}^{S}:=S\otimes_{R} W \;\;\mbox{ and } \;\;
+ {\alpha}^{S}:={\rm id}_{S} \otimes \alpha:{U}^{S} \rightarrow 
+{W}^{S}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4500}%
+$\alpha:U \rightarrow W$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4011}%
+\begin{displaymath}{{\cal E}}_{S} := {\rm End}_{S}{({V}^{S})},\;\;
+{\zeta}_{S}:{{\cal E}}^{S}\rightarrow {{\cal E}}_{S}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4502}%
+${\zeta}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4504}%
+${\zeta}_{S}(s \otimes e)(t \otimes v):=
+st \otimes e(v)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4506}%
+$s,t \in S, e \in {\rm End}_{R}{(V)}, v \in
+ V$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4508}%
+$J_{A}:A\hookrightarrow {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4012}%
+\begin{displaymath} {A}_{S}:={\rm im}({\zeta}_{S}\circ{J_{A}}^{S})\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4512}%
+${A}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4514}%
+${{\cal E}}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4013}%
+\begin{displaymath}{\eta}_{S}: {C(A)}^{S} \rightarrow C({A}_{S})={\rm End}_{{A}_{S}}{({V}^{S})}\subseteq {{\cal E}}_{S}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4520}%
+${\eta}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4014}%
+\begin{displaymath} J_{C({A}_{S})}\circ {\eta}_{S}={\zeta}_{S} \circ
+{J_{C(A)}}^{S}. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4524}%
+${J_{C(A)}}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4526}%
+$J$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4015}%
+\begin{displaymath} {\mu}_{S} : {M(A)}^{S} \rightarrow M({A}_{S})={({{\cal E}}_{S})}^*/K({A}_{S})\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4544}%
+$A,\; R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4016}%
+\begin{displaymath}{\chi}_{S}:={{{\zeta}_{S}}^*}^{-1}\circ\psi_{{\cal E}}:
+{{{\cal E}}^*}^{S}\rightarrow {({{\cal E}}_{S})}^*
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4548}%
+$\psi_{{\cal E}}:{{{\cal E}}^*}^{S}\rightarrow {{{\cal E}}^{S}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4550}%
+$\psi_{{\cal E}}(s \otimes f)(t \otimes e):=stf(e)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4552}%
+$s,t \in S, \; f \in {{\cal E}}^*
+\; e \in W$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4554}%
+${\chi}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4556}%
+${{{\cal E}}^*}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath625}%
+\begin{displaymath}
+{\chi}_{S}\circ {{\vartheta}_{tr}}^{S}={{\vartheta}_{tr}}_{S}\circ {\zeta}_{S}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4558}%
+${{\vartheta}_{tr}}_{S}:{{\cal E}}_{S}\rightarrow 
+{({{\cal E}}_{S})}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4560}%
+${tr}_{S}:{{\cal E}}_{S}\rightarrow S$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4017}%
+\begin{displaymath}L({A}_{S}):=<[\nu,\mu ]| \nu \in {A}_{S}, \mu \in {{\cal E}}_{S}
+>_{S
+-\mbox{mod}},\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4018}%
+\begin{displaymath} {\rm im}({\zeta}_{S}\circ {J_{L(A)}}^{S})=L({A}_{S}),\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4566}%
+${K(A)}_{S}={{\vartheta}_{tr}}_{S}({L(A)}_{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4568}%
+${\rm im}({J_{K(A)}}^{S})={\rm im}({{\vartheta}_{tr}}^{S}\circ {J_{L(A)}}^{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath651}%
+\begin{displaymath}
+{\rm im}({\chi}_{S}\circ {J_{K(A)}}^{S})=K({A}_{S}).
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4574}%
+$K:= {\rm im}({J_{K(A)}}^{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4580}%
+${M(A)}^{S}\cong {{{\cal E}}^*}^{S}/ K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4582}%
+${\mu}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4019}%
+\begin{displaymath} {\mu}_{S}:S\otimes_{R}M(A)\rightarrow M(S\otimes_{R} A) \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath671}%
+\begin{displaymath}
+{\rm dim}_{S}{(C({A}_{S}))}=
+{\rm dim}_{S}{({M({A}_{S})}^*)}=
+{\rm dim}_{S}{({({M(A)}^{S})}^*)}={\rm dim}_{S}{({M(A)}^{S})}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4614}%
+${W}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4618}%
+$F$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4624}%
+${\rm dim}_{S}{(C({A}_{S}))}={\rm dim}_{F}{(C({A}_{F}))}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4630}%
+$C(A)={\rm End}_{A}{(V)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4020}%
+\begin{displaymath} 0\rightarrow K(A)\rightarrow {{\cal E}}^*\rightarrow M(A)\rightarrow 0 \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4021}%
+\begin{displaymath} 0\rightarrow {M(A)}^*\rightarrow {{{\cal E}}^*}^* \rightarrow {{{\cal E}}^*}^*/{K(A)}^{\bot}\rightarrow 0. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4640}%
+${{{\cal E}}^*}^*/{K(A)}^{\bot}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4642}%
+${\cal E}/C(A)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4660}%
+${\rm im}({\zeta}_{S} \circ{J_{C(A)}}^{S})=
+{\rm im}(J_{C({A}_{S})}\circ {\eta}_{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4662}%
+${C(A)}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4668}%
+${\rm im}({J_{C(A)}}^{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4670}%
+${{\cal E}}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4674}%
+$C({A}_{S})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4676}%
+$G$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4022}%
+\begin{displaymath} {\rm dim}_{G}{({C(A)}^{G})}={\rm dim}_{F}{({C(A)}^{F})}={\rm dim}_{F}{(C({A}_{F}))}=
+{\rm dim}_{G}{(C({A}_{G}))}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4684}%
+${\eta}_{F}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4692}%
+$J_{C(A)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4023}%
+\begin{displaymath} {\rm dim}_{S}{({C(A)}^{S})}= {\rm dim}_{S}{(C({A}_{S}))}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4714}%
+$R={\mathbb{Z}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4716}%
+$V={\mathbb{Z}}^4$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4024}%
+\begin{displaymath}a:=\left( \begin{array}{cccc}
+0 & 2 & 0 & 0 \\
+0 & 2 & 0 & 0 \\
+0 & 0 & 0 & 1 \\
+0 & 0 & 0 & 2 \\
+\end{array} \right)\in {\cal E}={\rm End}_{{\mathbb{Z}}}{({\mathbb{Z}}^4)}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4718}%
+$A:=<a>$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4722}%
+$a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4726}%
+$2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4728}%
+${a}^{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4730}%
+$t^2-2t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4734}%
+$t^2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4736}%
+${A}_{S}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4750}%
+${\rm dim}_{S}{(C({A}_{S}))}=2^2+2^2=8$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4754}%
+${\rm dim}_{S}{(C({A}_{S}))}=9$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4758}%
+$r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4762}%
+$V^{\otimes r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4772}%
+${\cal E}_r:={\rm End}_{R}{(V^{\otimes r})}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4776}%
+${{\cal E}_r}^*:={\rm Hom}_{R}{({\cal E}_r,R)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4778}%
+${\cal E}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4780}%
+${{\cal E}}^{\otimes r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4782}%
+${{\cal E}_r}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4784}%
+${{{\cal E}}^*}^{\otimes r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4786}%
+$V^{\otimes 0}:={\cal E}_{0}:=R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4788}%
+${\cal A}=({\cal A}_r)_{r \in {\mathbb{N}}_0}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4792}%
+${\cal A}_r\subseteq {\cal E}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4794}%
+$K_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8726}%
+$\displaystyle K_r:=K({\cal A}_r).$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4798}%
+${\cal T}({{\cal E}}^*):=\bigoplus_{r \in
+{\mathbb{N}}_0}{{\cal E}_r}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4806}%
+${\cal T}({{\cal E}}^*)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8736}%
+$\displaystyle I:=\oplus_{r \in {\mathbb{N}}_0 } K_r$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4816}%
+$s_{r},t_{r}:{\cal E}_r\rightarrow {\cal E}_{r+1}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4025}%
+\begin{displaymath}
+s_{r}(\mu )=\mu \otimes {\rm id}_{V}, \; t_{r}(\mu )={\rm id}_{V}\otimes \mu ,\; \mu 
+\in {\cal E}_r\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4818}%
+$N\subseteq {\cal E}_{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4820}%
+${\cal A}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4822}%
+${\cal A}_{0}:=R,\; {\cal A}_{1}:=R\cdot{\rm id}_{V}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4824}%
+${\cal A}_{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4828}%
+${\cal E}_{2}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4026}%
+\begin{displaymath} {\cal A}_r:=\left<s_{r-1}({\cal A}_{r-1}) +
+t_{r-1}({\cal A}_{r-1})\right>_{\rm Alg} \;\;\mbox{ for } \;\;r>2.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4838}%
+$I$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4842}%
+$K_2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4846}%
+$a \in K_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4848}%
+$b \in{{\cal E}_{u}}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4850}%
+$a \otimes b \in K_{r+u}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4852}%
+$b \otimes a \in K_{r+u}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4856}%
+$a={\vartheta}_{tr}([\mu,\nu])$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4862}%
+$\mu 
+\in{\cal E}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4864}%
+$\nu \in {\cal A}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4866}%
+$\hat{\nu}:=s_{r+u-1} \circ s_{r+u-2} \circ \ldots \circ s_{r}(\nu) =
+\nu \otimes {\rm id}_{V^{\otimes u}} \in {\cal A}_{r+u}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4868}%
+$\hat\mu :=\mu \otimes \bar b$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4870}%
+$\bar b\in {\cal E}_{u}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4872}%
+$b$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4027}%
+\begin{displaymath} a \otimes b = {\vartheta}_{tr}([\mu,\nu]) \otimes b = {\vartheta}_{tr}([\hat\mu ,\hat{\nu}]) \in
+K_{r+u}.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4888}%
+$J\subseteq I$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4890}%
+$K_r\subseteq J$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4894}%
+$K_0=K_1=(0)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4900}%
+$r>2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4902}%
+$J_r:=J\cap{{\cal E}_r}^*$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4904}%
+$J_r=J_{r-1}\otimes {{\cal E}}^*+{{\cal E}}^*\otimes
+J_{r-1}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4906}%
+$K_{r-1} = J_{r-1}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4028}%
+\begin{displaymath} J_r=K_{r-1}\otimes {{\cal E}}^*+ {{\cal E}}^*\otimes K_{r-1}=
+K(M) \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4908}%
+$M:=s_{r-1}({\cal A}_{r-1}) + t_{r-1}({\cal A}_{r-1}) \subseteq
+{\cal E}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4910}%
+${\cal A}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4914}%
+$K_r =K({\cal A}_r)=K(M)=J_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_indisplay8796}%
+$\displaystyle {\cal M}(N):={\cal T}({{\cal E}}^*)/I$%
+\lthtmlindisplaymathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4920}%
+$M({\cal A}_r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4926}%
+$\beta$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4928}%
+${\cal M}(\beta):={\cal M}(N)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4942}%
+${\cal M}(N)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4946}%
+$I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4948}%
+$\underline{r}:=\{1, \ldots , r\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4950}%
+$\underline{n}:=\{1, \ldots , n\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4952}%
+${\bf i} \in I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4954}%
+${\bf i}=(i_1, \ldots ,
+i_r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4956}%
+$i_j\in \underline{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4958}%
+$j\in \underline{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4960}%
+${{e}^*_{i}}^{j} +I$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4964}%
+$i,j\in \underline{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4968}%
+${\bf i},{\bf j}\in
+ I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4029}%
+\begin{displaymath} x_{{\bf i} {\bf j}}:=x_{i_1 j_1}x_{i_2 j_2}\ldots
+ x_{i_r j_r}. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath856}%
+\begin{displaymath}
+{\cal M}(N)=\left< x_{i j}, \; i,j\in \underline{n}|\;\; \mu x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\mu,\; {\bf i}, {\bf j} \in I(n,2),\;
+  \mu\in N\right>. 
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4972}%
+$n=2m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4974}%
+$\beta, \gamma \in {\cal E}_{2}={\cal E}\otimes {\cal E}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4976}%
+$i':=n-i+1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4978}%
+$\underline{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4030}%
+\begin{displaymath} (1',2', \ldots , n')=(n,n-1, \ldots , 1). \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4980}%
+$\epsilon_i:=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4982}%
+$i\leq m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4984}%
+$\epsilon_i:=-1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4986}%
+$i>m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4031}%
+\begin{displaymath} \beta :=\sum_{i,j\in \underline{n}}e_{i}^{ j} \otimes e_{j}^{ i} \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4032}%
+\begin{displaymath}\gamma :=\sum_{i,j\in \underline{n}} \epsilon_i \epsilon_j
+e_{i}^{ j'} \otimes e_{i'}^{ j}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4988}%
+$V
+\otimes V$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4033}%
+\begin{displaymath} A^{{\rm s}}_{R}(n) :={\cal M}(\{\beta, \gamma\}). \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4034}%
+\begin{displaymath} A^{{\rm s}}_{R}(n,r):=M({\cal A}_r) \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4035}%
+\begin{displaymath} \beta_i := {\rm id}_{V^{\otimes i-1}} \otimes \beta
+\otimes{\rm id}_{V^{\otimes r-i-1}},\in {\cal E}_r\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4036}%
+\begin{displaymath} \gamma_i :={\rm id}_{V^{\otimes i-1}} \otimes \gamma  \otimes{\rm id}_{V^{\otimes r-i-1}}
+\in {\cal E}_r\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4996}%
+$i=1, \ldots , r-1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline4998}%
+$D_{r}({x})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5000}%
+$x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5004}%
+$g_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5006}%
+$e_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5010}%
+$g_i\mapsto \beta_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5012}%
+$e_i\mapsto \gamma_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5014}%
+$D_{r}({-n})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5022}%
+${\cal A}_r=B_r({\rm Sp}_{}(n))$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5024}%
+${\rm Sp}_{{\mathbb{C}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5028}%
+$R={\mathbb{C}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5030}%
+$K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5032}%
+${\mathbb{C}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5034}%
+$C({\cal A}_r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5038}%
+$S_0(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5040}%
+$A^{{\rm s}}_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4037}%
+\begin{displaymath} A_{R}(n):=R[x_{1 1}, x_{1 2}, \ldots , x_{n n}] \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5044}%
+$A^{{\rm s}}_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5052}%
+$A_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5054}%
+${\cal M}(\beta)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5056}%
+$\gamma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5058}%
+$x_{i_2 j_1}x_{i_1 j_2}=\beta x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\beta=x_{i_1 j_2}x_{i_2 j_1}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5062}%
+$\gamma x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\gamma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5064}%
+${\bf i},{\bf j} \in I(n,2)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4038}%
+\begin{displaymath}f_{ij}:=\sum_{k=1}^n \epsilon_kx_{i k}x_{j k'},\;\;
+\bar f_{ij}:=\sum_{k=1}^n \epsilon_kx_{k i}x_{k' j} \in A_{R}(n,2).\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5066}%
+${\bf i}=(i,j)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5068}%
+${\bf j}=(k,l)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4039}%
+\begin{displaymath} \gamma  x_{{\bf i} {\bf j}} = \left\{\begin{array}{ll}
+\epsilon_j\bar f_{kl} & i=j' \\
+0 & i \neq j' 
+\end{array} \right .
+\;\;\;\;\mbox{ and } \;\;\;\;
+x_{{\bf i} {\bf j}}\gamma = \left\{\begin{array}{ll}
+\epsilon_l f_{ij} & k=l' \\
+0 & k \neq l' 
+\end{array} \right .
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath938}%
+\begin{displaymath}
+A^{{\rm s}}_{R}(n)=A_{R}(n)/{\cal F}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5070}%
+${\cal F}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath946}%
+\begin{displaymath}
+F:=\{ f_{ij},\bar f_{ij}, f_{ll'}-\bar f_{kk'}|\; 1 \leq i <j\leq n,
+i\neq j', \; 1 \leq l\leq k \leq m\}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5074}%
+$R=K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5078}%
+${\rm M}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5080}%
+$n\times n$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4040}%
+\begin{displaymath} {\rm SpM}_{K}(n):= \{ A \in {\rm M}_{K}(n)|\;\exists \;\; d(A)\in K,\;
+A^tJA=AJA^t=d(A)J\}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5086}%
+$J=(J_{ij})_{i,j \in \underline{n}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5088}%
+$J_{ij}:=\epsilon_i\delta_{ij'}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5090}%
+$d:{\rm SpM}_{K}(n) \rightarrow K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5092}%
+${\rm SpM}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5094}%
+$A^{{\rm s}}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath963}%
+\begin{displaymath}
+d= \epsilon_k f_{kk'}=
+\epsilon_k\bar f_{kk'}
+\in A^{{\rm s}}_{R}(n,2).
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5096}%
+$k\in \underline{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5100}%
+$d$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5102}%
+${\rm GL}_{K}(n) \cap {\rm SpM}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5106}%
+${\rm GSp}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5118}%
+$\Lambda^+(r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5120}%
+$\Lambda^+(l, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5122}%
+$l$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5126}%
+$\lambda :=(\lambda_1, \lambda_2, \ldots , \lambda_l)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5128}%
+$\lambda_i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5130}%
+$\lambda_1\geq \lambda_2 \geq \ldots \geq \lambda_l\geq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5132}%
+$\lambda_1 +\ldots +\lambda_l=r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4041}%
+\begin{displaymath} \begin{array}{*{4}{|p{2mm}}|}
+ \cline{1-3}
+ & &   &\multicolumn{1}{c}{} \\\cline{1-3}
+ &   &\multicolumn{2}{c}{} \\\cline{1-2}
+ &   &\multicolumn{2}{c}{} \\\cline{1-2}
+  &\multicolumn{3}{c}{} \\\cline{1-1}\end{array}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5136}%
+$\lambda=(3,2,2,1) \in \Lambda^+(4, 8)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5138}%
+$\lambda'\in
+\Lambda^+(\lambda_1, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5140}%
+$\lambda$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5142}%
+$\lambda'_i:=|\{j|\; \lambda_j \geq i\}|$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5144}%
+${\cal S}_{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5148}%
+${\cal S}_{\lambda}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5154}%
+$\{1, \ldots , \lambda_1 \}, \; \{\lambda_1+1, \ldots , \lambda_1+\lambda_2\},
+\ldots $%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5156}%
+$\underline{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5158}%
+$\lambda=(3,2,2,1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5160}%
+${\cal S}_{8}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5162}%
+$\lambda'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5164}%
+$\{1,2,3,4\},\;\{5,6,7\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5166}%
+$\{8\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5168}%
+$\lambda\in \Lambda^+(r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5172}%
+$T^{\lambda}({\bf i}:{\bf j})\in
+ A_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4042}%
+\begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}):=
+\sum_{w \in {\cal S}_{\lambda'}} {\rm sign}(w)x_{{\bf i} ({\bf j}w)}=
+\sum_{w \in {\cal S}_{\lambda'}} {\rm sign}(w)x_{({\bf i}w){\bf j} .}
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5174}%
+${\bf i}w:=(i_{w(1)}, i_{w(2)}, \ldots , i_{w(r)})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4043}%
+\begin{displaymath}
+T^{\lambda}_{{\bf i}}:=
+\begin{array}{*{4}{|p{2mm}}|}
+\cline{1-3} 
+$i_1$\  & $i_5$\  & $i_8$\   &\multicolumn{1}{c}{} \\\cline{1-3}
+$i_2$\  & $i_6$\   &\multicolumn{2}{c}{} \\\cline{1-2}
+$i_3$\  & $i_7$\   &\multicolumn{2}{c}{} \\\cline{1-2}
+$i_4$\   &\multicolumn{3}{c}{} \\\cline{1-1}\end{array}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5200}%
+$\ll$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5204}%
+$1'\ll 1 \ll 2' \ll 2 \ll \ldots \ll m' \ll m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5206}%
+${\bf i}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5210}%
+$T^{\lambda}_{{\bf i}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5218}%
+$I_{\lambda}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5224}%
+${\bf i}\in I_{\lambda}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5228}%
+$i\in \underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5230}%
+$i$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5232}%
+$i'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5240}%
+$I_{\lambda}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5242}%
+$T^{\lambda}({\bf i}:{\bf j})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5246}%
+$\Lambda^+(n, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5248}%
+${\bf i}, {\bf j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5252}%
+$A_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4044}%
+\begin{displaymath} {\bf B}_r:=\{ {d}^lT^{\lambda}({\bf i}:{\bf j})|\; 0\leq l \leq 
+\frac r2, \; \lambda \in \Lambda^+(m, r-2l),\;
+{\bf i},{\bf j} \in I_{\lambda}^{\rm sym}\}. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5262}%
+$\overline{{\rm GSp}_{K}(n)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5274}%
+$A_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5278}%
+$A_0(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5282}%
+$A_0(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5304}%
+$A^{{\rm s}}_{K}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5308}%
+$K={\mathbb{C}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5310}%
+$|{\bf B}_r|={\rm dim}_{{\mathbb{C}}}{((A_0(n,r)))}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4045}%
+\begin{displaymath} K\otimes_{{\mathbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n,r) \cong A^{{\rm s}}_{K}(n,r),\;\; 
+ K\otimes_{{\mathbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n)  \cong A^{{\rm s}}_{K}(n).\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5316}%
+${\rm SpM}_{K}(n)=\overline{{\rm GSp}_{K}(n)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5318}%
+$A^{{\rm s}}_{{\mathbb{Z}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5320}%
+${\rm SpM}_{{\mathbb{Z}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4046}%
+\begin{displaymath} S_{{\mathbb{Z}}}^{\rm s}(n,r):={\rm Hom}_{{\mathbb{Z}}}{(A^{{\rm s}}_{{\mathbb{Z}}}(n,r),{\mathbb{Z}})}\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5324}%
+$S_{K}^{\rm s}(n,r)=S_0(n,r)={\rm Hom}_{K}{(A^{{\rm s}}_{K}(n,r),K)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5332}%
+$S^{\rm s}_{R}(n,r):={\rm Hom}_{R}{(A^{{\rm s}}_{R}(n,r),R)}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5338}%
+${\bf B}_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5346}%
+$|{\bf B}_r|={\rm dim}_{{\mathbb{C}}}{(A_0(n,r))}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1120}%
+\begin{displaymath}
+{\rm dim}_{{\mathbb{C}}}{(A_0(n,r))}=
+ \sum_{\lambda\in \pi_0(n,r)} {\rm dim}_{{\mathbb{C}}}{(Y_0(\lambda))}^2
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5352}%
+$Y_0(\lambda):={\rm Ind}_{B_0}^{{\rm GSp}_{{\mathbb{C}}}(n)}({{\mathbb{C}}}_{\lambda})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5354}%
+${\rm GSp}_{{\mathbb{C}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5356}%
+${{\mathbb{C}}}_{\lambda}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5358}%
+$B_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5362}%
+$\pi_0(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5366}%
+$T_0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5372}%
+$\lambda\in \pi_0(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4047}%
+\begin{displaymath} \lambda=x_{1 1}^{\mu_1}x_{2 2}^{\mu_2} \ldots x_{m m}^{\mu_m} d^l
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5374}%
+$\mu:=(\mu_1, \ldots , \mu_m)\in \Lambda^+(m, r-2l)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5376}%
+$r-2l$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5378}%
+$m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5380}%
+$0\leq l\leq \frac r2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5386}%
+$1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4048}%
+\begin{displaymath} \bar{\lambda}=x_{1 1}^{\mu_1}x_{2 2}^{\mu_2} \ldots x_{m m}^{\mu_m} 
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5394}%
+$Y_0(\lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5396}%
+$\bar Y(\bar{\lambda}):=
+{\rm Ind}_{\bar B}^{{\rm Sp}_{{\mathbb{C}}}(n)}({{\mathbb{C}}}_{\bar{\lambda}})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5398}%
+${{\mathbb{C}}}_{\bar{\lambda}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5400}%
+$\bar B=B_0\cap {\rm Sp}_{{\mathbb{C}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5404}%
+$I_{\mu}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4049}%
+\begin{displaymath} 
+{\rm dim}_{{\mathbb{C}}}{(A_0(n,r))}=
+\sum_{0\leq l\leq \frac r2}\sum_{\mu \in\Lambda^+(m, r-2l)}
+|I_{\mu}^{\rm sym} |^2=|{\bf B}_r|.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5414}%
+${\mu}_{R}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5422}%
+$A^{{\rm s}}_{{\mathbb{Z}}}(n,r)\subseteq A^{{\rm s}}_{{\mathbb{C}}}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5440}%
+$\lambda < \mu$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5444}%
+$\mu'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5446}%
+$\omega_r:=(1,1, \ldots , 1)\in
+\Lambda^+(r, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5448}%
+$\alpha_r:=(r)\in \Lambda^+(1, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5450}%
+$A:=A_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5452}%
+$A(>\lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5454}%
+$A(\geq \lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5460}%
+$T^{\mu}({\bf i}:{\bf j})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5462}%
+$\mu > \lambda$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5464}%
+$\mu \geq \lambda$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5466}%
+$\lambda=\omega_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5468}%
+$A(>\omega_r):=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5470}%
+$A=A(\geq \alpha_r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5476}%
+${\bf j} \in I(n,r) \backslash I_{\lambda}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5478}%
+${\bf k}\in I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5480}%
+${\bf k}={\bf j}w$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5482}%
+$w \in {\cal S}_{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5484}%
+${\bf k}\ll {\bf j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5486}%
+$a_{{\bf j}{\bf k}} \in R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4050}%
+\begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}) 
+\equiv \sum_{{\bf k}\ll {\bf j}} a_{{\bf j}{\bf k}}
+T^{\lambda}({\bf i}:{\bf k}) \; \; \mbox{ mod } \; \; A(>\lambda) .
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4051}%
+\begin{displaymath} A^{{\rm sh}}_{R}(n):=A^{{\rm s}}_{R}(n)/\left<d \right> \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5498}%
+$\left< d\right>$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5506}%
+${\rm SpH}_{K}(n):={\rm SpM}_{K}(n)\backslash {\rm GSp}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5510}%
+$A':=A^{{\rm sh}}_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5512}%
+$A'(>\lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5514}%
+$A'(\geq \lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5516}%
+$f:I(n,r)\rightarrow {\mathbb{N}}_0^m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5518}%
+$f({\bf i})=(a_1, \ldots ,
+a_m)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4052}%
+\begin{displaymath} a_l:=|\{ j\in \underline{r}|\; i_j=l \;\mbox{ or } \; i_j=l' \}|, \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5520}%
+${\mathbb{N}}_0^m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5522}%
+$(a_1,\ldots , a_m)<(b_1, \ldots , b_m)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5524}%
+$(b_m, b_{m-1}, \ldots , b_1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5526}%
+$(a_m,
+a_{m-1}, \ldots , a_1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5528}%
+$\lhd$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5530}%
+${\mathbb{N}}_0^m\times I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4053}%
+\begin{displaymath}(a, {\bf i})\lhd (b, {\bf j}) :\Longleftrightarrow a < b \mbox{ or }
+(a = b \mbox{ and } {\bf i} \ll {\bf j}).\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5536}%
+$I(n,r)\hookrightarrow {\mathbb{N}}_0^m\times I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5538}%
+${\bf i}\mapsto (f({\bf i}), {\bf i})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5544}%
+${\bf j} \in I(n,r) \backslash I_{\lambda}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5548}%
+${\bf k}\lhd {\bf j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5552}%
+$A'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4054}%
+\begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}) 
+\equiv \sum_{{\bf k}\lhd {\bf j}} a_{{\bf j}{\bf k}}
+T^{\lambda}({\bf i}:{\bf k}) \; \; \mbox{ mod } \; \; A'(>\lambda) .
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5562}%
+$r>1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4055}%
+\begin{displaymath} A^{{\rm s}}_{R}(n,r-2)\stackrel{\cdot d}{\rightarrow } A^{{\rm s}}_{R}(n,r) \rightarrow A^{{\rm sh}}_{R}(n,r) \rightarrow 0. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4056}%
+\begin{displaymath} \{ T^{\lambda}({\bf i}:{\bf j})|\; \lambda \in \Lambda^+(m, r),\;
+{\bf i},{\bf j} \in I_{\lambda}^{\rm sym}\} \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5566}%
+$A'=A^{{\rm sh}}_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4057}%
+\begin{displaymath} \{ T^{\lambda}({\bf i}:{\bf j})|\;\;
+{\bf i},{\bf j} \in I_{\lambda}^{\rm sym}\} \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5568}%
+$A'(\geq \lambda)/A'(>\lambda)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5574}%
+${\bf j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5586}%
+${\bf j} \in I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5588}%
+${\bf k}\in I_{\lambda}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4058}%
+\begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}) \equiv \sum_{{\bf k} \in I_{\lambda}^{\rm sym}}
+a_{{\bf j}{\bf k}}
+T^{\lambda}({\bf i}:{\bf k}) \; \; \mbox{ mod } A'(>\lambda) .
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5600}%
+$\theta (x_{i j})=x_{j i}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5602}%
+$\theta({\cal F})={\cal F}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5604}%
+$\theta
+(d)=d$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5606}%
+$A^{{\rm sh}}_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5608}%
+$\theta(T^{\lambda}({\bf i}:{\bf j}))=T^{\lambda}({\bf j}:{\bf i})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5618}%
+$T^{\lambda}({\bf k}:{\bf l})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5622}%
+${\bf k}, {\bf l} \in I_{\lambda}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5624}%
+$m=2r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5628}%
+${\rm SpH}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5630}%
+$A=A^{{\rm sh}}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5632}%
+$A^{sp}_{K}(\overline n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5634}%
+$\sum_{t=0}^r A^{sp}_{K}(\overline n,t)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5636}%
+$A^{sp}_{K}(\overline n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5638}%
+$A^{{\rm sh}}_{K}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5640}%
+$A^{sp}_{K}(\overline n,r)=A^{{\rm sh}}_{K}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4059}%
+\begin{displaymath}{\bigwedge}_{R}(n):= 
+{\cal T}(V)/\left<v_{i}\otimes v_{j}+v_{j}\otimes v_{i}, v_{k}\otimes v_{k};\; i,j, k\in \underline{n} \right>
+ \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5650}%
+${\bigwedge}_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5652}%
+${\bigwedge}_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5660}%
+$v_{i}\wedge v_{j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5662}%
+$v_{i}\otimes v_{j}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5666}%
+$\wedge$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5668}%
+$I:=\{i_1, \ldots , i_r\}\subseteq \underline{n}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5670}%
+$i_1 \ll i_2 \ll \ldots \ll i_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5676}%
+$v_{I}:=v_{i_1}\wedge v_{i_2}\wedge\ldots\wedge
+ v_{i_r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5678}%
+$v_{I}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5692}%
+$P({n},{r})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5696}%
+$\omega_r:=(1^r)=(1,1,\ldots ,1)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5698}%
+$r\times
+r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5700}%
+$\tau_{\wedge}:{\bigwedge}_{R}(n)\rightarrow {\bigwedge}_{R}(n)\otimes A_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1316}%
+\begin{displaymath}
+ \tau_{\wedge}(v_{J})=\sum_{I \in P({n},{r})}v_{I}\otimes T^{\omega_r}({\bf i}:{\bf j})
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5706}%
+${\bf j}=(j_1, \ldots , j_r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5708}%
+$I:=\{i_1, \ldots , i_r\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5710}%
+$J=\{j_1, \ldots , j_r\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5712}%
+$d_k:=v_{k'} \wedge v_{k}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5714}%
+$d_K:=d_{k_1}\wedge d_{k_2} \wedge \ldots \wedge d_{k_a}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5716}%
+$K:=\{k_1, \ldots, k_a\}\subseteq\underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5720}%
+$P({m},{a})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5724}%
+$d_k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5726}%
+$d_K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4060}%
+\begin{displaymath} D_a:=\sum_{K\in P({m},{a})} d_K \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5734}%
+$D_1, D_2, \ldots , D_m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5736}%
+$D_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5740}%
+${\bigwedge}^{\rm s}_{R}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5742}%
+$I_{\omega_r}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5744}%
+$I\in P({n},{r})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5748}%
+$\omega_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5752}%
+$J\in P({n},{r})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5754}%
+$f({\bf j})<f({\bf i})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5760}%
+$a_{IJ}\in R$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4061}%
+\begin{displaymath} v_{I}\equiv
+\sum_{J\in P({n},{r}), \; f({\bf j})<f({\bf i})}a_{IJ}v_{J}  \;\; \mbox{
+  mod }
+\;\; N \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5766}%
+${\bigwedge}_{R}(n)\cong R\otimes_{{\mathbb{Z}}} {\bigwedge}_{{\mathbb{Z}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5772}%
+$K\subseteq \underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1347}%
+\begin{displaymath}
+{(\sum_{k \in K}d_k)}^a=a!\sum_{L\in P({m},{a}),\; L\subseteq K} d_L
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5776}%
+$K=\underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5778}%
+$D_1^a=a!D_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5780}%
+$x:=\sum_{k \in K}d_k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5782}%
+$y:=D_1 -x$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4062}%
+\begin{displaymath} x^a=(-1)^ay^a+\sum_{b=1}^a { a \choose b} (-y)^{a-b}b!D_b \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5784}%
+$a!$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5786}%
+$X^K_a:=\sum_{L\in P({m},{a}),\; L\subseteq K}d_L$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5788}%
+$M:=\underline{m}\backslash K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4063}%
+\begin{displaymath} X^K_a=(-1)^aX^M_a+\sum_{b=1}^a  (-1)^{a-b}X^M_{a-b}D_b\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5790}%
+${\bigwedge}_{{\mathbb{Z}}}(n)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5794}%
+$X^K_a\equiv (-1)^aX^M_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5798}%
+$K \in P({m},{a})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1362}%
+\begin{displaymath}
+d_K\equiv (-1)^a\sum_{L\in P({m},{a}),\; L\cap K=\emptyset}d_L \;\;\mbox{
+  mod } N.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5802}%
+$s\in \underline{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5804}%
+$I=\{i_1,\ldots , i_r\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5806}%
+$i_s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5808}%
+$i_s<s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5810}%
+$i_s \leq m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5812}%
+$i_s'<s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5814}%
+$i_s>m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5816}%
+$s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5818}%
+$k, l\in \underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5820}%
+$\{k, k'\}=\{i_s, i_s'\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5822}%
+$\{l, l'\}=\{i_{s-1}, i_{s-1}'\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5826}%
+$l
+\geq s-1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5828}%
+$i_{s-1}\ll i_s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5830}%
+$l\leq k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5832}%
+$s-1\leq l \leq k < s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5834}%
+$k=l$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5836}%
+$s=k+1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5838}%
+$I_s:=\{i_1,\ldots , i_s\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5846}%
+$p\in \underline{m}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5848}%
+$p$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5850}%
+$p'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5852}%
+$I_s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5854}%
+$K':=\{p'|\; p\in K\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5856}%
+$H:=I\backslash (K\cup K')$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5858}%
+$v_{I}=v_{H}d_K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5860}%
+$d_p$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5864}%
+$L\in P({m},{a})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5872}%
+$J:=H\cup L \cup
+L'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5874}%
+$v_{J}=v_{H}d_L=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5876}%
+$L$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5878}%
+$L':=\{p'|\; p \in L\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5880}%
+$H$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5882}%
+$H\cap L=H\cap L'=\emptyset$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5884}%
+$L\subseteq \underline{k}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5888}%
+$g \in \underline{k}\backslash K$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5890}%
+$g$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5892}%
+$g'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5896}%
+$I_s\backslash (K\cup
+K')\subseteq H$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4064}%
+\begin{displaymath} k+1=s=|I_s|=2|K|+|G|=|K|+|L|+|G|=|K\cup L\cup G|\leq k \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5902}%
+$K, L$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5906}%
+$\underline{k}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5910}%
+$t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5914}%
+$k$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5920}%
+$f({\bf i})=(b_1,
+\ldots , b_m)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5922}%
+$f({\bf j})=(a_1, \ldots, a_m)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5924}%
+$a_t=b_t+2>b_t$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5926}%
+$a_l=b_l$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5928}%
+$t<l\leq m$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4065}%
+\begin{displaymath} \tau_{\wedge}(D_a)=D_a\otimes d^a \;\;\;\;\in \;\;
+{\bigwedge}_{R}(n,2a) \otimes A^{{\rm s}}_{R}(n,2a)
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5944}%
+$a=1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5958}%
+$r=2a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4066}%
+\begin{displaymath} G_{{\bf i}}:=\sum_{L\in P({m},{a})}T^{\omega_r}({\bf i}:{\bf j}(L))
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5960}%
+${\bf j}(L)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5962}%
+$L\cup L'=\{l,l'|\; l\in L\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5970}%
+$G_I=G_{{\bf i}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4067}%
+\begin{displaymath} \tau_{\wedge}(D_a)=\sum_{I\in P({n},{r})}v_{I}\otimes G_I. \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5972}%
+$G_I=d^a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5976}%
+$I=K\cup K'$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5978}%
+$G_I=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5982}%
+$l\leq a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5984}%
+${\bf i}^l:=(i_{2l-1},i_{2l})\in
+ I(n,2)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4068}%
+\begin{displaymath}
+G_{{\bf i}^l}=\left\{\begin{array}{ll}
+0 & i_{2l-1}'\neq i_{2l} \\
+d &  i_{2l-1}'= i_{2l}\leq m\\
+-d &  i_{2l-1}'= i_{2l}> m
+\end{array} \right. .
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5988}%
+$G_{{\bf i}}':=\prod_{l=1}^a G_{{\bf i}^l}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5990}%
+$\pm d^a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5994}%
+$\sigma\in {\cal S}_{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5996}%
+$\sigma (2l-1)=2l, \sigma(2l)=2l-1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline5998}%
+$l\in \underline{a}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6002}%
+$\sigma$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6006}%
+$G_{{\bf i}}'=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6008}%
+$G_{{\bf i}w}'=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6010}%
+$w \in W$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6014}%
+$C_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6016}%
+$W^1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6018}%
+$\pi \in W$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6020}%
+$W^0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6022}%
+$(2l-1,2l)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6028}%
+${\cal S}_{a}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6032}%
+$({\mathbb{Z}}/2{\mathbb{Z}})^a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6042}%
+${\rm id}_{\underline{r}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6048}%
+$K \in
+ P({a},{n})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6050}%
+$G_{{\bf i}\pi}'\neq 0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6052}%
+$\pi\in {\cal S}_{r}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6056}%
+$h\in H$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6058}%
+$G_{{\bf i}h}'=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6060}%
+$h\neq
+{\rm id}_{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6062}%
+$G_{{\bf i}}'=d^a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1424}%
+\begin{displaymath}
+G_{{\bf i}}=\sum_{h \in H}{\rm sign}(h) G_{{\bf i}h}'.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6072}%
+$\mu :=(a,a) \in \Lambda^+(2, r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6078}%
+${\bf l}=(l_1,l_2,
+\ldots , l_a)\in I(m,a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6080}%
+${\bf j}({\bf l}):=(l_1', l_1,
+l_2', l_2, \ldots , l_a', l_a)\in I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6082}%
+$T^{\mu}({\bf i}:{\bf j}({\bf l}))$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6086}%
+$2\times 2$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4069}%
+\begin{displaymath} G_{{\bf i}}'=
+\sum_{{\bf l} \in I(m,a) }
+T^{\mu}({\bf i}:{\bf j}({\bf l}))\;\;\;
+ \in A^{{\rm s}}_{R}(n,r). \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1441}%
+\begin{displaymath}
+T^{\omega_r}({\bf i}:{\bf j})=\sum_{h\in H,\;\pi \in W^1}{\rm sign}(h)
+T^{\mu}({\bf i}h\pi:{\bf j})=
+\sum_{h\in H}{\rm sign}(h)\sum_{\pi \in W^1}
+T^{\mu}({\bf i}h:{\bf j}\pi).
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6090}%
+$T^{\mu}_{{\bf b}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6092}%
+$T^{\omega_r}_{{\bf b}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6096}%
+${\bf b}:=(1',1,2',2,\ldots ,a',a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6098}%
+$HW^1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6106}%
+$T^{\mu}({\bf i}h\pi:{\bf j})=T^{\mu}({\bf i}h:{\bf j}\pi^{-1})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath1461}%
+\begin{displaymath}
+\sum_{L \in P({m},{r})}\sum_{\pi \in W^1}\sum_{h \in H} {\rm sign}(h) 
+T^{\mu}({\bf i}h:{\bf j}(L)\pi)=
+\sum_{{\bf l} \in I(m,a)}
+\sum_{h \in H}{\rm sign}(h)T^{\mu}({\bf i}h:{\bf j}({\bf l}))
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6108}%
+${\bf l}\in I(m,a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6110}%
+$|{\bf l}|=\lambda =(\lambda_1,\ldots , \lambda_m)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6112}%
+$\lambda_i:=|\{1\leq t \leq a|\; l_t=i\}|$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6126}%
+$I(m,a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6128}%
+$\Lambda(m, a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6130}%
+$\sum_{\lambda \in \Lambda(m, r)} \Sigma_{\lambda}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4070}%
+\begin{displaymath} \Sigma_{\lambda}:=\sum_{|{\bf l}|=\lambda}
+\sum_{h \in H} {\rm sign}(h)
+T^{\mu}({\bf i}h:{\bf j}({\bf l}))
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6132}%
+$\Sigma_{\omega_a}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6134}%
+$\omega_a=(1^a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6140}%
+$\lambda \in \Lambda(m, a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6142}%
+$k_{\lambda}:=|{\cal S}_{\lambda}|$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6144}%
+${\bf k}=(k_1, \ldots ,k_a)\in I(m,a)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6148}%
+$k_1\leq
+k_2\leq \ldots \leq k_r$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6154}%
+${\bf k}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6162}%
+${\bf j}({\bf k})\in I(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4071}%
+\begin{displaymath} T^{\omega_r}({\bf i}:{\bf j}({\bf k}))=\sum_{h\in H}{\rm sign}(h)
+\sum_{\pi \in W^1}
+T^{\mu}({\bf i}h:{\bf j}({\bf k})\pi)= \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4072}%
+\begin{displaymath}
+k_{\lambda}\sum_{h\in H}{\rm sign}(h)
+\sum_{|{\bf l}|=\lambda}
+T^{\mu}({\bf i}h:{\bf j}({\bf l}))=
+ k_{\lambda}\Sigma_{\lambda}.
+\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6166}%
+$T^{\omega_r}({\bf i}:{\bf j}({\bf k}))$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6168}%
+$|{\bf k}|\neq \omega_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6172}%
+$k_{\lambda}\Sigma_{\lambda}=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6176}%
+$A_{{\mathbb{Z}}}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6178}%
+$\Sigma_{\lambda}=0$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6180}%
+$\lambda \neq \omega_a$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6186}%
+${\bf j}\in I(n,r)\backslash I_{\omega_r}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6188}%
+${\bf j}\in I_{\omega_r}^{}\backslash I_{\omega_r}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6192}%
+$f({\bf k})=f({\bf j})$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4073}%
+\begin{displaymath} X:=v_{J}-
+\sum_{K\in P({n},{r}), \; f({\bf k})<f({\bf j})}a_{{\bf j}{\bf k}}v_{K}  \;\; \in
+ N \end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6198}%
+$\tau_{\wedge}(X)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6200}%
+${\bigwedge}_{R}(n)\otimes <d>$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6202}%
+$<d>$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6208}%
+${\bigwedge}_{R}(n,r)\otimes A^{{\rm sh}}_{R}(n,r)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4074}%
+\begin{displaymath} \sum_{I\in P({n},{r})}v_{I}\otimes
+\left(T^{\omega_r}({\bf i}:{\bf j})-\sum_{K\in P({n},{r}), \; {\bf k} 
+\lhd {\bf j}}a_{{\bf j}{\bf k}}
+T^{\omega_r}({\bf i}:{\bf k})\right)=0.\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6210}%
+$\{v_{I}|\; I \in P({n},{r})\}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6220}%
+${\bf i}\in I_{\omega_r}^{}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6226}%
+${\bf j}\in I_{\lambda}^{}\backslash I_{\lambda}^{\rm sym}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6228}%
+$\lambda'=(\mu_1, \ldots ,
+\mu_p)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6230}%
+$p=\lambda_1$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6236}%
+${\bf j}^l\in I(n,\mu_l)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6238}%
+$l\in \underline{p}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6240}%
+${\bf j}^l$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6244}%
+$T^{\lambda}_{{\bf j}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6254}%
+${\bf j}^s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6256}%
+$\omega_{\mu_s}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6258}%
+$T^{\omega_{\mu_s}}({\bf i}^s:{\bf j}^s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4075}%
+\begin{displaymath} T^{\lambda}({\bf i}:{\bf j})=
+T^{\omega_{\mu_1}}({\bf i}^1:{\bf j}^1)
+T^{\omega_{\mu_2}}({\bf i}^2:{\bf j}^2) \ldots
+ T^{\omega_{\mu_s}}({\bf i}^s:{\bf j}^s) \ldots
+ T^{\omega_{\mu_p}}({\bf i}^p:{\bf j}^p)\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmldisplayA{displaymath4076}%
+\begin{displaymath}\equiv \sum a_{{\bf j}^s{\bf k}^s}
+T^{\omega_{\mu_1}}({\bf i}^1:{\bf j}^1) \ldots
+ T^{\omega_{\mu_s}}({\bf i}^s:{\bf k}^s) \ldots
+ T^{\omega_{\mu_p}}({\bf i}^p:{\bf j}^p)\;\;
+= \;\; \sum a_{{\bf j}{\bf k}}
+ T^{\lambda}({\bf i}:{\bf k}).\end{displaymath}%
+\lthtmldisplayZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6260}%
+${\bf k}^s\in I(n,\mu_s)$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6262}%
+${\bf k}^s\lhd{\bf j}^s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6270}%
+${\bf k}^s$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6272}%
+$a_{{\bf j}{\bf k}}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6274}%
+$a_{{\bf j}^s{\bf k}^s}$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline6280}%
+$q$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

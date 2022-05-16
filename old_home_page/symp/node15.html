@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Finishing the proof of Theorem 7.1</TITLE>
+<META NAME="description" CONTENT="Finishing the proof of Theorem 7.1">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node16.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node16.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html208"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html204"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html198"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html206"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html209"
+  HREF="node16.html">Quasi-Heredity of the Symplectic</A>
+<B> Up:</B> <A NAME="tex2html205"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html199"
+  HREF="node14.html">Proof of Proposition 12.2</A>
+ &nbsp; <B>  <A NAME="tex2html207"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000150000000000000000">
+Finishing the proof of Theorem </A><A HREF="node7.html#Basissatz">7.1</A>
+</H1>
+
+<P>
+Let us briefly recall what we have done so far. With respect to the
+proof that <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$ {\bf B}_r$"> is a basis, we have reduced the fact that it is a set
+of generators
+in section <A HREF="node8.html#st_formula">8</A> to the verification of Proposition 
+<A HREF="node8.html#straightening_formula">8.1</A>, which we just have completed.
+Further we already know from section <A HREF="node6.html#basisdefinition">6</A>
+that the axiom <IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1241.png"
+ ALT="$ (C2^*)$"> of a cellular coalgebra
+is valid. It remains to show axiom
+<IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1242.png"
+ ALT="$ (C3^*)$"> and the fact that <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$ {\bf B}_r$"> is linearly independent.
+<BR>
+<P>
+Let us start with the latter task. It is clearly enough to
+consider the case where <!-- MATH
+ $R={\cal Z}={\mathbb{Z}}\,[q,q^{-1}]$
+ -->
+<IMG
+ WIDTH="155" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1243.png"
+ ALT="$ R={\cal Z}={\mathbb{Z}}\,[q,q^{-1}]$">. 
+Let <!-- MATH
+ ${\mathbb{K}}\,$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1244.png"
+ ALT="$ {\mathbb{K}}\,$"> be the field of fractions on <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1245.png"
+ ALT="$ {\cal Z}$"> and let <IMG
+ WIDTH="12" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img377.png"
+ ALT="$ \epsilon $"> be the
+image of <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$"> under the embedding of <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1245.png"
+ ALT="$ {\cal Z}$"> into <!-- MATH
+ ${\mathbb{K}}\,$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1244.png"
+ ALT="$ {\mathbb{K}}\,$">.
+Any relation among elements of
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$ {\bf B}_r$"> with coefficients from <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1245.png"
+ ALT="$ {\cal Z}$"> is a relation
+with coefficients from the field <!-- MATH
+ ${\mathbb{K}}\,$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1244.png"
+ ALT="$ {\mathbb{K}}\,$"> too.
+Thus, we only have to show <!-- MATH
+ $|{\bf B}_r|=\dim_{{\mathbb{K}}\,} A^{{\rm s}}_{{\mathbb{K}}\,, \epsilon}(n,r)$
+ -->
+<IMG
+ WIDTH="189" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1246.png"
+ ALT="$ \vert{\bf B}_r\vert=\dim_{{\mathbb{K}}\,} A^{{\rm s}}_{{\mathbb{K}}\,, \epsilon}(n,r)$">.
+Now, <!-- MATH
+ $A^{{\rm s}}_{{\mathbb{K}}\,,\epsilon}(n,r)$
+ -->
+<IMG
+ WIDTH="84" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1247.png"
+ ALT="$ A^{{\rm s}}_{{\mathbb{K}}\,,\epsilon}(n,r)$"> is the centralizer
+coalgebra of the algebra <!-- MATH
+ ${\cal A}_{r}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1248.png"
+ ALT="$ {\cal A}_{r}$"> generated by the endomorphisms
+<IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.png"
+ ALT="$ \beta_i$"> and <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img358.png"
+ ALT="$ \gamma_i$"> acting on <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> in the sense of [<A
+ HREF="node22.html#ofrt">O2</A>, Section 2].
+Consequently, by the comparison theorem [<A
+ HREF="node22.html#ofrt">O2</A>, Theorem 3.3]
+the dimension in question is the same as the dimension of the
+centralizer algebra of  <!-- MATH
+ ${\cal A}_{r}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1248.png"
+ ALT="$ {\cal A}_{r}$"> acting on <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">.
+<BR>
+<P>
+The latter dimension
+can be deduced from well-known results from the theory of quantum groups.
+We will use [<A
+ HREF="node22.html#charipr">CP</A>, Theorem 10.2.5 ii, second statement].
+The operator called <!-- MATH
+ $I_{\epsilon}^{ii+1}$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1249.png"
+ ALT="$ I_{\epsilon}^{ii+1}$"> there equals our
+<!-- MATH
+ $\epsilon^{-1}\beta_i$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1250.png"
+ ALT="$ \epsilon^{-1}\beta_i$">
+thus <!-- MATH
+ $\epsilon I_{\epsilon}^{ii+1}=\beta_i$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1251.png"
+ ALT="$ \epsilon I_{\epsilon}^{ii+1}=\beta_i$">. The application of the theorem
+shows that the centralizer of our algebra <!-- MATH
+ ${\cal A}_{r}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1248.png"
+ ALT="$ {\cal A}_{r}$"> is identical to the
+image of the <EM>quantized universal enveloping algebra</EM> (QUE) corresponding to
+the Dynkin diagram <IMG
+ WIDTH="31" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1252.png"
+ ALT="$ C_m$"> under its action on <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">.
+Now,  by [<A
+ HREF="node22.html#charipr">CP</A>, Proposition 10.1.13 and Theorem 10.1.14], 
+the tensor space <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> 
+decomposes into irreducibles as a QUE-module because <!-- MATH
+ $\epsilon \in  {\mathbb{K}}\,$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1253.png"
+ ALT="$ \epsilon \in {\mathbb{K}}\,$"> is
+transcendental over <!-- MATH
+ ${\mathbb{Q}}\,$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1254.png"
+ ALT="$ {\mathbb{Q}}\,$">.
+These irreducibles are indexed
+by the highest weights of the symplectic group and their
+dimensions are the same as in the classical case. 
+The weights occurring are the same as for the
+symplectic group as well and correspond precisely to the elements of the
+set <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img249.png"
+ ALT="$ \Lambda$"> from the definition of <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$ {\bf B}_r$"> (cf. [<A
+ HREF="node22.html#ofrt">O2</A>, 7.1]).
+It follows from work of R.C. King  that the dimensions of the irreducibles are 
+just <!-- MATH
+ $|M(\lambda)|$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1255.png"
+ ALT="$ \vert M(\lambda)\vert$"> ([<A
+ HREF="node22.html#king">Ki</A>],cf. [<A
+ HREF="node22.html#donk1">Do2</A>]).
+Consequently, we obtain the required identity:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\dim_{{\mathbb{K}}\,}{A^{{\rm s}}_{{\mathbb{K}}\,, \epsilon}(n,r)} =\sum_{\lambda \in \Lambda} |M(\lambda )|^2 = |{\bf B}_r
+|. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="314" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1256.png"
+ ALT="$\displaystyle \dim_{{\mathbb{K}}\,}{A^{{\rm s}}_{{\mathbb{K}}\,, \epsilon}(n,r)} =\sum_{\lambda \in \Lambda} \vert M(\lambda )\vert^2 = \vert{\bf B}_r
+\vert. $">
+</DIV><P></P>
+
+<P>
+We now verify axiom <IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1242.png"
+ ALT="$ (C3^*)$">.
+We abbreviate  <!-- MATH
+ ${\cal K}:=A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1257.png"
+ ALT="$ {\cal K}:=A^{{\rm s}}_{R,q}(n,r)$">. Let
+<!-- MATH
+ $D^{\underline{\lambda}}_{{\bf i}, {\bf j}}\in {\bf B}_r$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1258.png"
+ ALT="$ D^{\underline{\lambda}}_{{\bf i}, {\bf j}}\in {\bf B}_r$"> where <!-- MATH
+ ${\underline{\lambda}}\mbox{ :=(\lambda, l)\in \Lambda$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1259.png"
+ ALT="$ {\underline{\lambda}}$"><A NAME="9903"></A><IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1260.png"
+ ALT="$ :=(\lambda, l)\in \Lambda$"> and 
+<!-- MATH
+ ${\bf i}, {\bf j}\in M(\lambda)$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1261.png"
+ ALT="$ {\bf i}, {\bf j}\in M(\lambda)$">. As <IMG
+ WIDTH="22" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1262.png"
+ ALT="$ d_q^l$"> is grouplike and 
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img374.png"
+ ALT="$ \Delta $"> a homomorphism of algebras we calculate using 
+(<A HREF="node11.html#bidet_kom">20</A>) that
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Delta (D^{\underline{\lambda}}_{{\bf i}, {\bf j}})=(d_q^l\otimes d_q^l)
+\Delta (T^{\lambda}_q({\bf i}: {\bf j}))=
+\sum_{{\bf h}\in I_{\lambda}^{<}} D^{\underline{\lambda}}_{{\bf i}, {\bf h}}\otimes
+D^{\underline{\lambda}}_{{\bf h}, {\bf j}}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="414" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1263.png"
+ ALT="$\displaystyle \Delta (D^{\underline{\lambda}}_{{\bf i}, {\bf j}})=(d_q^l\otimes...
+...mbda}}_{{\bf i}, {\bf h}}\otimes
+D^{\underline{\lambda}}_{{\bf h}, {\bf j}}.
+$">
+</DIV><P></P>
+
+<P>
+Here, as in section <A HREF="node11.html#aussere_Algebra">11</A>, 
+ <!-- MATH
+ $I_{\lambda}^{<}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1264.png"
+ ALT="$ I_{\lambda}^{&lt;}$"> is the set of multi-indices that are
+<IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-column-standard with respect to the usual order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img572.png"
+ ALT="$ &lt;$">
+on <!-- MATH
+ $\underline{n}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \underline{n}$"> (see section <A HREF="node8.html#st_formula">8</A>). Now, according to the straightening
+formula <A HREF="node8.html#straightening_formula">8.1</A>
+(after application of <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ ^*$">)
+to each <!-- MATH
+ ${\bf h}\in I_{\lambda}^{<}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1265.png"
+ ALT="$ {\bf h}\in I_{\lambda}^{&lt;} $"> and <!-- MATH
+ ${\bf k}\in M(\lambda)$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1266.png"
+ ALT="$ {\bf k}\in M(\lambda)$">
+there is an element <!-- MATH
+ $a_{{\bf h}{\bf k}}\in R$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1267.png"
+ ALT="$ a_{{\bf h}{\bf k}}\in R$"> (unique by the
+linear independence of <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img356.png"
+ ALT="$ {\bf B}_r$">) such that
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Def_equation_ahk"></A><!-- MATH
+ \begin{equation}
+D^{\underline{\lambda}}_{{\bf h}, {\bf j}}\equiv\sum_{{\bf k}\in M(\lambda)}
+a_{{\bf h}{\bf k}}D^{\underline{\lambda}}_{{\bf k}, {\bf j}}\;\;
+\mbox{ mod } \;\; {\cal K}(>\underline{\lambda}).
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="188" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1268.png"
+ ALT="$\displaystyle D^{\underline{\lambda}}_{{\bf h}, {\bf j}}\equiv\sum_{{\bf k}\in M(\lambda)} a_{{\bf h}{\bf k}}D^{\underline{\lambda}}_{{\bf k}, {\bf j}}\;\;$">&nbsp; &nbsp; mod <IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1269.png"
+ ALT="$\displaystyle \;\; {\cal K}(&gt;\underline{\lambda}).$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(29)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+We set
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+h({\bf k},{\bf i}):=\sum_{{\bf h}\in I_{\lambda}^{<}  }
+D^{\underline{\lambda}}_{{\bf i}, {\bf h}} a_{{\bf h}{\bf k}}\;\; \in {\cal K}(\geq\underline{\lambda})
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="279" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1270.png"
+ ALT="$\displaystyle h({\bf k},{\bf i}):=\sum_{{\bf h}\in I_{\lambda}^{&lt;} }
+D^{\unde...
+...\bf i}, {\bf h}} a_{{\bf h}{\bf k}}\;\; \in {\cal K}(\geq\underline{\lambda})
+$">
+</DIV><P></P>
+
+<P>
+and obtain
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\Delta (D^{\underline{\lambda}}_{{\bf i},{\bf j}})\equiv\sum_{{\bf k}\in M(\lambda)}
+h({\bf k}, {\bf i})\otimes D^{\underline{\lambda}}_{{\bf k}, {\bf j}}
+\mbox{ mod } \;\; {\cal K}(\geq\underline{\lambda})\otimes {\cal K}(>\underline{\lambda}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="250" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1271.png"
+ ALT="$\displaystyle \Delta (D^{\underline{\lambda}}_{{\bf i},{\bf j}})\equiv\sum_{{\b...
+...lambda)}
+h({\bf k}, {\bf i})\otimes D^{\underline{\lambda}}_{{\bf k}, {\bf j}}$">&nbsp; &nbsp; mod <IMG
+ WIDTH="164" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1272.png"
+ ALT="$\displaystyle \;\; {\cal K}(\geq\underline{\lambda})\otimes {\cal K}(&gt;\underline{\lambda}).
+$">
+</DIV><P></P>
+
+<P>
+This completes the verification of axiom <IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1242.png"
+ ALT="$ (C3^*)$"> and hence the proof of
+Theorem <A HREF="node7.html#Basissatz">7.1</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html208"
+  HREF="node16.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html204"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html198"
+  HREF="node14.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html206"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html209"
+  HREF="node16.html">Quasi-Heredity of the Symplectic</A>
+<B> Up:</B> <A NAME="tex2html205"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html199"
+  HREF="node14.html">Proof of Proposition 12.2</A>
+ &nbsp; <B>  <A NAME="tex2html207"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

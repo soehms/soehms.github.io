@@ -1,0 +1,1404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Weak Straightening Algorithm</TITLE>
+<META NAME="description" CONTENT="The Weak Straightening Algorithm">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html148"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html144"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html138"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html146"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html149"
+  HREF="node11.html">Quantum Symplectic Exterior Algebra</A>
+<B> Up:</B> <A NAME="tex2html145"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html139"
+  HREF="node9.html">Arithmetic of Bideterminants</A>
+ &nbsp; <B>  <A NAME="tex2html147"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000100000000000000000">
+The Weak Straightening Algorithm</A>
+</H1>
+
+<P>
+We are now able to give the proof of the following weak form of the straightening
+algorithm. 
+
+<P>
+<P>
+<DIV><A NAME="Straightening_Algorithmus_1"><B>Proposition  10.1</B></A> (Weak Quantum Symplectic Straightening Algorithm)  &nbsp; 
+<I>Let 
+<BR>
+<!-- MATH
+ $\lambda \in \Lambda^+(r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img396.png"
+ ALT="$ \lambda \in \Lambda^+(r)$"> be a partition of <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">
+and <!-- MATH
+ ${\bf j} \in I(n,r) \backslash I_{\lambda}^{}$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img650.png"
+ ALT="$ {\bf j} \in I(n,r) \backslash I_{\lambda}^{}$">. Then to each 
+<!-- MATH
+ ${\bf k}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$ {\bf k}\in I(n,r)$"> satisfying 
+<!-- MATH
+ ${\bf k}\lhd {\bf j}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img433.png"
+ ALT="$ {\bf k}\lhd {\bf j}$"> there is an element
+<!-- MATH
+ $a_{{\bf j}{\bf k}} \in R$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img399.png"
+ ALT="$ a_{{\bf j}{\bf k}} \in R$"> such that
+in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$"> the following congruence relation holds
+ for all <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">:
+</I><!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})
+\equiv \sum_{{\bf k}\lhd{\bf j}} a_{{\bf j}{\bf k}}
+T^{\lambda}_q({\bf i}:{\bf k}) \; \; \mbox{\rm mod } \; \; {\cal K}(>\lambda) .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="230" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img434.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})
+\equiv \sum_{{\bf k}\lhd {\bf j}} a_{{\bf j}{\bf k}}
+T^{\lambda}_q({\bf i}:{\bf k}) \; \;$">&nbsp; &nbsp;mod <IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img435.png"
+ ALT="$\displaystyle \; \; {\cal K}(&gt;\lambda) .
+$">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We divide into the following two cases
+
+<P>
+
+<OL>
+<LI><IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$"> is not <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-column standard.
+</LI>
+<LI><IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$"> is <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-column standard but not <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-row standard.
+</LI>
+</OL>
+
+<P>
+<EM>Case 1:</EM> <BR>
+<P>
+By assumption there are two consecutive indices <IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img651.png"
+ ALT="$ j_l$"> and <IMG
+ WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img652.png"
+ ALT="$ j_{l+1}$"> in
+<!-- MATH
+ ${\bf j}=(j_1, \ldots , j_r)$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img653.png"
+ ALT="$ {\bf j}=(j_1, \ldots , j_r)$"> such that <!-- MATH
+ $j_l\succeq  j_{l+1}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img654.png"
+ ALT="$ j_l\succeq j_{l+1}$"> and 
+<!-- MATH
+ $s_l=(l, l+1)\in
+{\cal S}_{\lambda '}$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img655.png"
+ ALT="$ s_l=(l, l+1)\in
+{\cal S}_{\lambda '}$">. If
+<!-- MATH
+ $j_l=j_{l+1}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.png"
+ ALT="$ j_l=j_{l+1}$">, we have <!-- MATH
+ $T^{\lambda}_q({\bf i}:{\bf j})=0$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img656.png"
+ ALT="$ T^{\lambda}_q({\bf i}:{\bf j})=0$">
+by Corollary <A HREF="node9.html#qdet_Null">9.2</A>, implying our assertion.
+In the case
+<!-- MATH
+ $j_{l+1} \succ j_{l}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img657.png"
+ ALT="$ j_{l+1} \succ j_{l}$"> we apply Corollary <A HREF="node9.html#Operation_Spaltenstabil">9.12</A>:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})
+=a_{{\bf j}}(s_l)T^{\lambda}_q({\bf i}:{\bf j}s_l)
+\; +\; \sum a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="409" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img658.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})
+=a_{{\bf j}}(s_l)T^{\lambda}_q({\...
+...{\bf j}s_l)
+\; +\; \sum a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k}).$">
+</DIV><P></P>
+
+<P>
+The multi-indices <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img659.png"
+ ALT="$ {\bf k}$"> 
+in the sum satisfy <!-- MATH
+ $f({\bf k})<f({\bf j})$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ f({\bf k}) &lt; f({\bf j})$"> and consequently
+<!-- MATH
+ ${\bf k} \lhd {\bf j}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img433.png"
+ ALT="$ {\bf k}\lhd {\bf j}$">. Finally, since
+<!-- MATH
+ $f({\bf j})=f({\bf j}s_l)$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img660.png"
+ ALT="$ f({\bf j})=f({\bf j}s_l)$"> and <!-- MATH
+ ${\bf j}s_l$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img661.png"
+ ALT="$ {\bf j}s_l$"> occurs before <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$"> in the
+lexicographic order on <IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$ I(n,r)$"> we have <!-- MATH
+ ${\bf j}s_l\lhd {\bf j}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img662.png"
+ ALT="$ {\bf j}s_l\lhd {\bf j}$"> as well.
+<BR>
+<P>
+<EM>Case 2:</EM>
+<BR>
+<P>
+In principle we follow the lines of the proof of [<A
+ HREF="node22.html#martin">Ma</A>, 2.5.7].
+But since <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$"> is not commutative we have to
+work with a fixed basic tableau. The change of 
+basic tableaux in  [<A
+ HREF="node22.html#martin">Ma</A>, 2.5.7] can be compensated for by 
+Lemma <A HREF="node9.html#praebidet">9.8</A>.
+<BR>
+<P>
+To start, let <!-- MATH
+ $l\in \underline{r}$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img581.png"
+ ALT="$ l \in \underline{r}$"> be the
+smallest index such that <IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img651.png"
+ ALT="$ j_l$"> is larger than its right hand neighbour
+<IMG
+ WIDTH="22" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img663.png"
+ ALT="$ j_{l'}$"> in the  <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">-tableau of <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$">.
+Assume that the entry <IMG
+ WIDTH="17" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img651.png"
+ ALT="$ j_l$"> lies in the <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.png"
+ ALT="$ s$">-th column <!-- MATH
+ ${\bf j}^{s}_{\lambda}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img665.png"
+ ALT="$ {\bf j}^{s}_{\lambda}$">
+and that <IMG
+ WIDTH="22" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img663.png"
+ ALT="$ j_{l'}$"> lies in the <IMG
+ WIDTH="46" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img666.png"
+ ALT="$ s+1$">-th column <!-- MATH
+ ${\bf j}^{s+1}_{\lambda}$
+ -->
+<IMG
+ WIDTH="36" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img667.png"
+ ALT="$ {\bf j}^{s+1}_{\lambda}$">,
+where <!-- MATH
+ $1 \leq s < \lambda_1$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img668.png"
+ ALT="$ 1 \leq s &lt; \lambda_1$">. Clearly, <!-- MATH
+ $l'=l+\lambda'_s$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img669.png"
+ ALT="$ l'=l+\lambda'_s$">.
+Let <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img542.png"
+ ALT="$ t$"> be the index of the row containing both entries. We picture this
+by
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}_{{\bf j}} = \ldots \begin{array}{|c|c|c}
+\multicolumn{1}{c}{{\bf j}^{s}_{\lambda}}  & 
+\multicolumn{1}{c}{{\bf j}^{s+1}_{\lambda}} & 
+\multicolumn{1}{c}{}\\
+\vdots   & \vdots &\\
+j_{l-1} &  j_{l'-1} & t-1\\\cline{1-1}
+\multicolumn{1}{|c}{\rule[-3mm]{0mm}{7mm} j_{l}} &  
+\multicolumn{1}{c}{j_{l'}} & 
+\multicolumn{1}{|c}{t}\\\cline{2-2}
+j_{l+1} &    j_{l'+1} & t+1 \\
+\vdots &  \vdots
+\end{array} \ldots .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="262" HEIGHT="181" ALIGN="MIDDLE" BORDER="0"
+ SRC="img670.png"
+ ALT="$\displaystyle T^{\lambda}_{{\bf j}} = \ldots \begin{array}{\vert c\vert c\vert ...
+...cline{2-2}
+j_{l+1} &amp; j_{l'+1} &amp; t+1 \\
+\vdots &amp; \vdots
+\end{array} \ldots .$">
+</DIV><P></P>
+
+<P>
+By assumption we have <!-- MATH
+ $\ldots \prec j_{l'-1}\prec j_{l'} \prec j_l \prec
+j_{l+1} \prec \ldots $
+ -->
+<IMG
+ WIDTH="270" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img671.png"
+ ALT="$ \ldots \prec j_{l'-1}\prec j_{l'} \prec j_l \prec
+j_{l+1} \prec \ldots $">. Now, we refine the dual partition 
+ <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img384.png"
+ ALT="$ \lambda'$"> of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$"> to a 
+composition <!-- MATH
+ $\eta \in \Lambda(p+2, r)$
+ -->
+<IMG
+ WIDTH="124" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img672.png"
+ ALT="$ \eta \in \Lambda(p+2, r)$">, where <!-- MATH
+ $p:=\lambda_1$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img673.png"
+ ALT="$ p:=\lambda_1$">
+is the number of columns of the diagram of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">. More
+precisely, we split the
+<IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.png"
+ ALT="$ s$">-th and <IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img674.png"
+ ALT="$ (s+1)$">-th column in front of and below the <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img542.png"
+ ALT="$ t$">-th row:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\eta_i:=\left\{ \begin{array}{ll}
+\lambda'_i & i < s \\
+t-1 & i=s \\
+\lambda'_s-t+1 & i=s+1 \\
+t & i=s+2 \\
+\lambda'_{s+1}-t & i=s+3 \\
+\lambda'_{i-2} & i > s+3
+\end{array} \right. , \; \; \; \; \;
+\mu _i:=\left\{ \begin{array}{ll}
+\eta_i & i \leq  s \\
+\eta_{s+1}+\eta_{s+2} & i=s+1 \\
+\eta_{i+1} & i > s+2
+\end{array} \right. .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="558" HEIGHT="157" ALIGN="MIDDLE" BORDER="0"
+ SRC="img675.png"
+ ALT="$\displaystyle \eta_i:=\left\{ \begin{array}{ll}
+\lambda'_i &amp; i &lt; s \\
+t-1 &amp; ...
+...eta_{s+1}+\eta_{s+2} &amp; i=s+1 \\
+\eta_{i+1} &amp; i &gt; s+2
+\end{array} \right. .
+$">
+</DIV><P></P>
+
+<P>
+Obviously, this <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img676.png"
+ ALT="$ \eta$"> is the coarsest refinement of the partition <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img384.png"
+ ALT="$ \lambda'$">
+and the composition
+<!-- MATH
+ $\mu \in \Lambda(p+1, r)$
+ -->
+<IMG
+ WIDTH="126" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img677.png"
+ ALT="$ \mu \in \Lambda(p+1, r)$"> defined above. Let us split the multi-index <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$">
+according to <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img676.png"
+ ALT="$ \eta$"> as follows:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\bf j}^{s}_{\eta}=(j_h, \ldots , j_{l-1}), \;\;\;
+{\bf j}^{s+1}_{\eta}=(j_l, \ldots , j_{h+k-1}), 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="353" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img678.png"
+ ALT="$\displaystyle {\bf j}^{s}_{\eta}=(j_h, \ldots , j_{l-1}), \;\;\;
+{\bf j}^{s+1}_{\eta}=(j_l, \ldots , j_{h+k-1}), $">
+</DIV><P></P>
+<!-- MATH
+ \begin{displaymath}
+{\bf j}^{s+2}_{\eta}=(j_{h+k}, \ldots , j_{l'}), \;\;\;
+{\bf j}^{s+3}_{\eta}=(j_{l'+1}, \ldots , j_{h+k+k'-1}). 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="418" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img679.png"
+ ALT="$\displaystyle {\bf j}^{s+2}_{\eta}=(j_{h+k}, \ldots , j_{l'}), \;\;\;
+{\bf j}^{s+3}_{\eta}=(j_{l'+1}, \ldots , j_{h+k+k'-1}). $">
+</DIV><P></P>
+
+<P>
+Here, <!-- MATH
+ $h:=l-t+1=\lambda'_1+\ldots +\lambda'_{s-1}+1$
+ -->
+<IMG
+ WIDTH="293" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img680.png"
+ ALT="$ h:=l-t+1=\lambda'_1+\ldots +\lambda'_{s-1}+1$"> is the index of the
+first entry of the <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.png"
+ ALT="$ s$">-th column  and <!-- MATH
+ $k:=\lambda'_s$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img681.png"
+ ALT="$ k:=\lambda'_s$">
+(resp. <!-- MATH
+ $k':=\lambda'_{s+1}$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img682.png"
+ ALT="$ k':=\lambda'_{s+1}$">) are the lengths of both columns in question.
+We have
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\bf j}^{s}_{\lambda}={\bf j}^{s}_{\eta} +{\bf j}^{s+1}_{\eta}, \; \; \;
+ {\bf j}^{s+1}_{\lambda}={\bf j}^{s+2}_{\eta} +{\bf j}^{s+3}_{\eta} \; \;
+\mbox{ and set } \; \;
+{\bf j}^{s+1}_{\mu} :={\bf j}^{s+1}_{\eta} +{\bf j}^{s+2}_{\eta}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="289" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img683.png"
+ ALT="$\displaystyle {\bf j}^{s}_{\lambda}={\bf j}^{s}_{\eta} +{\bf j}^{s+1}_{\eta}, \; \; \;
+{\bf j}^{s+1}_{\lambda}={\bf j}^{s+2}_{\eta} +{\bf j}^{s+3}_{\eta} \; \;$">&nbsp; &nbsp; and set <IMG
+ WIDTH="167" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img684.png"
+ ALT="$\displaystyle \; \;
+{\bf j}^{s+1}_{\mu} :={\bf j}^{s+1}_{\eta} +{\bf j}^{s+2}_{\eta}. $">
+</DIV><P></P>
+
+<P>
+In order to apply <EM>Laplace Duality</EM>  <A HREF="node9.html#Laplace_1">9.7</A> to the pair
+<!-- MATH
+ $(\lambda´, \mu)$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img685.png"
+ ALT="$ (\lambda´, \mu)$"> of compositions
+we have to choose coset representatives of
+<!-- MATH
+ ${\cal S}_{\eta}={\cal S}_{\lambda'}\cap {\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img686.png"
+ ALT="$ {\cal S}_{\eta}={\cal S}_{\lambda'}\cap {\cal S}_{\mu} $"> in
+<!-- MATH
+ ${\cal S}_{\lambda'}$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img687.png"
+ ALT="$ {\cal S}_{\lambda'}$"> and <!-- MATH
+ ${\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img532.png"
+ ALT="$ {\cal S}_{\mu} $"> carefully. From the theory of
+parabolic subgroups of reflection groups it is known that each right coset
+of <!-- MATH
+ ${\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img688.png"
+ ALT="$ {\cal S}_{\eta}$"> in
+<!-- MATH
+ ${\cal S}_{\mu} \cong {\cal S}_{\mu _1}\times \ldots \times {\cal S}_{\mu _{p+1}}$
+ -->
+<IMG
+ WIDTH="189" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img689.png"
+ ALT="$ {\cal S}_{\mu} \cong {\cal S}_{\mu _1}\times \ldots \times {\cal S}_{\mu _{p+1}}$">
+contains a unique element of minimal length called the distinguished
+right coset representative, in fact one looks for coset representatives of
+<!-- MATH
+ ${\cal S}_{\eta_{s+1}}\times {\cal S}_{\eta_{s+2}}$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img690.png"
+ ALT="$ {\cal S}_{\eta_{s+1}}\times {\cal S}_{\eta_{s+2}}$"> in
+<!-- MATH
+ ${\cal S}_{\mu _{s+1}}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img691.png"
+ ALT="$ {\cal S}_{\mu _{s+1}}$">. We choose these for our set <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img531.png"
+ ALT="$ X$">. The property
+<!-- MATH
+ $l(wu)=l(w)+l(u)$
+ -->
+<IMG
+ WIDTH="163" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img554.png"
+ ALT="$ l(wu)=l(w)+l(u)$"> for <IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img692.png"
+ ALT="$ u\in X$"> and
+<!-- MATH
+ $w \in {\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img693.png"
+ ALT="$ w \in {\cal S}_{\eta}$"> follows from
+that theory as well. Similarily, one finds a set <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img529.png"
+ ALT="$ Y$"> of distinguished
+left coset representatives of <!-- MATH
+ ${\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img688.png"
+ ALT="$ {\cal S}_{\eta}$"> in
+<!-- MATH
+ ${\cal S}_{\lambda'}$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img687.png"
+ ALT="$ {\cal S}_{\lambda'}$"> satisfying <!-- MATH
+ $l(vw)=l(v)+l(w)$
+ -->
+<IMG
+ WIDTH="162" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img533.png"
+ ALT="$ l(vw)=l(v)+l(w)$"> for <!-- MATH
+ $w \in
+{\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img693.png"
+ ALT="$ w \in {\cal S}_{\eta}$"> and <IMG
+ WIDTH="53" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img694.png"
+ ALT="$ v \in Y$">.
+<BR>
+<P>
+We will not apply Laplace Duality to the original index pair
+<!-- MATH
+ ${\bf i}, {\bf j}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img695.png"
+ ALT="$ {\bf i}, {\bf j}$">, for we must handle the transition from the
+order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img572.png"
+ ALT="$ &lt;$"> to <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$">. Instead of <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$">
+we rather consider <!-- MATH
+ ${\bf j'}:={\bf j}w$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img696.png"
+ ALT="$ {\bf j'}:={\bf j}w$"> where
+<!-- MATH
+ $w\in {\cal S}_{\mu _{s+1}}\subseteq{\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img697.png"
+ ALT="$ w\in {\cal S}_{\mu _{s+1}}\subseteq{\cal S}_{r}$"> is chosen in such a way
+that <!-- MATH
+ $j'_l<j'_{l+1}<\ldots < j'_{l'-1} < j'_{l'}$
+ -->
+<IMG
+ WIDTH="222" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img698.png"
+ ALT="$ j'_l&lt;j'_{l+1}&lt;\ldots &lt; j'_{l'-1} &lt; j'_{l'}$"> and <IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img699.png"
+ ALT="$ j'_i=j_i$"> for
+<!-- MATH
+ $1\leq i <l$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img700.png"
+ ALT="$ 1\leq i &lt;l$"> and <!-- MATH
+ $l'<i\leq r$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img701.png"
+ ALT="$ l'&lt;i\leq r$"> (the embedding of <!-- MATH
+ ${\cal S}_{\mu_{s+1}}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img691.png"
+ ALT="$ {\cal S}_{\mu _{s+1}}$"> is
+understood according to the composition <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ \mu$">). This <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$"> exists uniquely
+since <!-- MATH
+ ${\bf j}^{s+1}_{\mu} =(j_l, \ldots , j_{l'})$
+ -->
+<IMG
+ WIDTH="147" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img702.png"
+ ALT="$ {\bf j}^{s+1}_{\mu} =(j_l, \ldots , j_{l'})$"> contains exactly
+<!-- MATH
+ $\mu_{s+1}=\lambda_s'+1$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img703.png"
+ ALT="$ \mu_{s+1}=\lambda_s'+1$"> elements by the assumption 
+<!-- MATH
+ $j_{h+k}\prec j_{h-k+1} \prec
+\ldots \prec j_{l'}\prec j_l \prec \ldots \prec j_{h+k-1}$
+ -->
+<IMG
+ WIDTH="368" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img704.png"
+ ALT="$ j_{h+k}\prec j_{h-k+1} \prec
+\ldots \prec j_{l'}\prec j_l \prec \ldots \prec j_{h+k-1}$"> on <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$">.
+Now, by Laplace-Duality we obtain
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="lapl"></A><!-- MATH
+ \begin{equation}
+\sum_{u \in X}
+(-y)^{-l(u)}
+T^{\lambda}_q({\bf i}:{\bf j'})\wr \beta(u)=
+\sum_{v \in Y}(-y)^{-l(v)}\beta(v)\wr t_q^{\mu}({\bf i}:{\bf j'}).
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="470" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img705.png"
+ ALT="$\displaystyle \sum_{u \in X} (-y)^{-l(u)} T^{\lambda}_q({\bf i}:{\bf j'})\wr \beta(u)= \sum_{v \in Y}(-y)^{-l(v)}\beta(v)\wr t_q^{\mu}({\bf i}:{\bf j'}).$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(12)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+With help of Lemma <A HREF="node9.html#praebidet">9.8</A> the right hand side of this equation
+can be written as a linear combination of
+bideterminants <!-- MATH
+ $T^{\mu '}_q({\bf k}:{\bf l})$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img706.png"
+ ALT="$ T^{\mu '}_q({\bf k}:{\bf l})$">. Thus the right hand side
+is seen to lie in <!-- MATH
+ ${\cal K}(>\lambda)$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img390.png"
+ ALT="$ {\cal K}(&gt;\lambda)$"> as soon we have shown that
+<!-- MATH
+ $\mu '>\lambda$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img707.png"
+ ALT="$ \mu '&gt;\lambda$">. But that follows since the longest column
+being removed from the diagram of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$"> to obtain the diagram of <IMG
+ WIDTH="20" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img385.png"
+ ALT="$ \mu'$">
+has length <!-- MATH
+ $\lambda_s'$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img708.png"
+ ALT="$ \lambda_s'$">, whereas a column of length <!-- MATH
+ $\mu_{s+1}=\lambda_s'+1$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img703.png"
+ ALT="$ \mu_{s+1}=\lambda_s'+1$">
+has to be added to the diagram of <IMG
+ WIDTH="20" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img385.png"
+ ALT="$ \mu'$">. On the left hand side of 
+(<A HREF="#lapl">12</A>) we may apply Corollary <A HREF="node9.html#Garnir_Vorbereit">9.14</A> by construction
+of the multi-index <IMG
+ WIDTH="16" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img709.png"
+ ALT="$ {\bf j'}$">:
+<!-- MATH
+ \begin{displaymath}
+(-y)^{-l(u)}
+T^{\lambda}_q({\bf i}:{\bf j'})\wr \beta(u)={\rm sign}(u)
+h_{{\bf j'}}(u^{-1})T^{\lambda}_q({\bf i}:{\bf j'}u^{-1})
+\; +\; \sum (-y)^{-l(u)}a'_{{\bf j'}{\bf k}}(u)T^{\lambda}_q({\bf i}:{\bf k}),
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="702" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img710.png"
+ ALT="$\displaystyle (-y)^{-l(u)}
+T^{\lambda}_q({\bf i}:{\bf j'})\wr \beta(u)={\rm si...
+...; +\; \sum (-y)^{-l(u)}a'_{{\bf j'}{\bf k}}(u)T^{\lambda}_q({\bf i}:{\bf k}),
+$">
+</DIV><P></P>
+
+<P>
+the sum running over all <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img659.png"
+ ALT="$ {\bf k}$"> satisfying <!-- MATH
+ $f({\bf k})<f({\bf j}')=f({\bf j})$
+ -->
+<IMG
+ WIDTH="161" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img711.png"
+ ALT="$ f({\bf k})&lt;f({\bf j}')=f({\bf j})$">.
+Now, for all <IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img692.png"
+ ALT="$ u\in X$"> we have <!-- MATH
+ $\tilde u:=uw^{-1}\in {\cal S}_{\mu _{s+1}}$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img712.png"
+ ALT="$ \tilde u:=uw^{-1}\in {\cal S}_{\mu _{s+1}}$"> since
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$"> lies in <!-- MATH
+ ${\cal S}_{\mu _{s+1}}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img691.png"
+ ALT="$ {\cal S}_{\mu _{s+1}}$">. Furthermore, there is a unique
+coset representative <IMG
+ WIDTH="63" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img713.png"
+ ALT="$ u_0\in X$"> satisfying
+<!-- MATH
+ ${\cal S}_{\eta}u_0={\cal S}_{\eta}w$
+ -->
+<IMG
+ WIDTH="101" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img714.png"
+ ALT="$ {\cal S}_{\eta}u_0={\cal S}_{\eta}w$"> and this is the only one for 
+which the corresponding
+<IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img715.png"
+ ALT="$ \tilde{u}$"> lies in <!-- MATH
+ ${\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img688.png"
+ ALT="$ {\cal S}_{\eta}$">. Therefore, in the case
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img716.png"
+ ALT="$ u\neq u_0$"> there is an <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img717.png"
+ ALT="$ e$"> such that <!-- MATH
+ $l\leq e<h+k$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img718.png"
+ ALT="$ l\leq e&lt;h+k$"> and
+<!-- MATH
+ $h+k\leq \tilde u^{-1}(e)\leq l'$
+ -->
+<IMG
+ WIDTH="162" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img719.png"
+ ALT="$ h+k\leq \tilde u^{-1}(e)\leq l'$">. 
+Choose such an <IMG
+ WIDTH="13" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img717.png"
+ ALT="$ e$"> for each <IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img692.png"
+ ALT="$ u\in X$">. In doing so, we are assigning a
+transposition <!-- MATH
+ $\hat{u}:=(l,e)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img720.png"
+ ALT="$ \hat{u}:=(l,e)$"> to each <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img721.png"
+ ALT="$ u$"> that is contained
+in <!-- MATH
+ ${\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img688.png"
+ ALT="$ {\cal S}_{\eta}$">. In the case of <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img722.png"
+ ALT="$ u_0$"> we set
+<!-- MATH
+ $\hat{u_0}:=\tilde{u_0}\in {\cal S}_{\eta}$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img723.png"
+ ALT="$ \hat{u_0}:=\tilde{u_0}\in {\cal S}_{\eta}$">.
+Applying Corollary <A HREF="node9.html#Operation_Spaltenstabil">9.12</A> to <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img724.png"
+ ALT="$ \hat u$"> one calculates
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j'}u^{-1})=
+T^{\lambda}_q({\bf i}:{\bf j}\tilde u^{-1})=a_{{\bf j}\tilde u^{-1}}(\hat{u})
+T^{\lambda}_q({\bf i}:{\bf j}\tilde u^{-1}\hat{u})
++\sum a_{({\bf j}\tilde u^{-1}){\bf k}}(\hat{u})
+T^{\lambda}_q({\bf i}:{\bf k}), 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="625" HEIGHT="49" ALIGN="MIDDLE" BORDER="0"
+ SRC="img725.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j'}u^{-1})=
+T^{\lambda}_q({\bf i}:{\b...
+...um a_{({\bf j}\tilde u^{-1}){\bf k}}(\hat{u})
+T^{\lambda}_q({\bf i}:{\bf k}), $">
+</DIV><P></P>
+
+<P>
+where the sum runs over all  <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img659.png"
+ ALT="$ {\bf k}$"> satisfying 
+<!-- MATH
+ $f({\bf k})< f({\bf j}\tilde u^{-1})=
+f({\bf j})$
+ -->
+<IMG
+ WIDTH="186" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img726.png"
+ ALT="$ f({\bf k})&lt; f({\bf j}\tilde u^{-1})=
+f({\bf j})$">, again. For these <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img659.png"
+ ALT="$ {\bf k}$"> we set
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\bar a_{{\bf j}{\bf k}}:=
+\sum_{u\in X} (-y)^{-l(u)}a'_{{\bf j'}{\bf k}}(u)+
+{\rm sign}(u) h_{{\bf j'}}(u^{-1})a_{({\bf j}\tilde u^{-1}){\bf k}}(\hat{u}), 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="446" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img727.png"
+ ALT="$\displaystyle \bar a_{{\bf j}{\bf k}}:=
+\sum_{u\in X} (-y)^{-l(u)}a'_{{\bf j'}...
+...
+{\rm sign}(u) h_{{\bf j'}}(u^{-1})a_{({\bf j}\tilde u^{-1}){\bf k}}(\hat{u}), $">
+</DIV><P></P>
+
+<P>
+whereas in the case  <!-- MATH
+ $f({\bf k})=f({\bf j})$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img728.png"
+ ALT="$ f({\bf k})=f({\bf j})$"> we write
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\bar a_{{\bf j}{\bf k}}:=\left\{ \begin{array}{cl}
+{\rm sign}(u) h_{{\bf j'}}(u^{-1})a_{{\bf j}\tilde u^{-1}}(\hat{u}) & \mbox{ if there
+  exist }\;  u \in X,\;
+{\bf k}={\bf j}\tilde u^{-1}\hat{u}\\
+0 & \mbox{ otherwise }.
+\end{array} 
+\right. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="559" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img729.png"
+ ALT="$\displaystyle \bar a_{{\bf j}{\bf k}}:=\left\{ \begin{array}{cl}
+{\rm sign}(u)...
+...{\bf j}\tilde u^{-1}\hat{u}\\
+0 &amp; \mbox{ otherwise }.
+\end{array}
+\right. $">
+</DIV><P></P>
+
+<P>
+Observe that <!-- MATH
+ $\bar a_{{\bf j}{\bf j}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$ \bar a_{{\bf j}{\bf j}}$"> occurs in the latter 
+definition for <IMG
+ WIDTH="59" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img731.png"
+ ALT="$ u=u_0$">.
+We assert that for <IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img716.png"
+ ALT="$ u\neq u_0$">, the multi-index
+<!-- MATH
+ ${\bf k}:={\bf j}\tilde u^{-1}\hat{u}$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img732.png"
+ ALT="$ {\bf k}:={\bf j}\tilde u^{-1}\hat{u}$"> occurs before  <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$"> in the 
+lexicographic order with respect to <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$">.
+For by construction of <IMG
+ WIDTH="15" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img733.png"
+ ALT="$ \tilde u$"> and <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img734.png"
+ ALT="$ \hat{u}$"> we have
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+k_l=j_{\tilde u^{-1}\hat{u}(l)}=j_{\tilde u^{-1}(e)} \in
+\{j_{h+k}, j_{h+k+1} ,\ldots , j_{l'} \}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="369" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img735.png"
+ ALT="$\displaystyle k_l=j_{\tilde u^{-1}\hat{u}(l)}=j_{\tilde u^{-1}(e)} \in
+\{j_{h+k}, j_{h+k+1} ,\ldots , j_{l'} \}$">
+</DIV><P></P>
+
+<P>
+and consequently <!-- MATH
+ $k_l \prec j_l$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img736.png"
+ ALT="$ k_l \prec j_l$">. But this implies <!-- MATH
+ ${\bf k} \prec {\bf j}$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img737.png"
+ ALT="$ {\bf k} \prec {\bf j}$">,
+since <IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img738.png"
+ ALT="$ k_i=j_i$"> for <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img739.png"
+ ALT="$ i&lt;l$">. Thus we obtain
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+-\bar a_{{\bf j}{\bf j}}T^{\lambda}_q({\bf i}:{\bf j})
+\equiv \sum_{{\bf k}\lhd {\bf j}} \bar a_{{\bf j}{\bf k}}
+T^{\lambda}_q({\bf i}:{\bf k}) \; \; \mbox{ mod } \; \; {\cal K}(>\lambda).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="265" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img740.png"
+ ALT="$\displaystyle -\bar a_{{\bf j}{\bf j}}T^{\lambda}_q({\bf i}:{\bf j})
+\equiv \...
+...f k}\lhd {\bf j}} \bar a_{{\bf j}{\bf k}}
+T^{\lambda}_q({\bf i}:{\bf k}) \; \;$">&nbsp; &nbsp; mod <IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img435.png"
+ ALT="$\displaystyle \; \; {\cal K}(&gt;\lambda) .
+$">
+</DIV><P></P>
+
+<P>
+Since the coefficient <!-- MATH
+ $-\bar a_{{\bf j}{\bf j}}$
+ -->
+<IMG
+ WIDTH="40" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img741.png"
+ ALT="$ -\bar a_{{\bf j}{\bf j}}$"> is invertible,
+the asserted congruence relation holds as well.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+It should be remarked that the proof works with any other
+order on <!-- MATH
+ $\underline{n}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \underline{n}$"> instead of <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$ \prec$">, as well. The proof of the
+strong part of the algorithm (Proposition <A HREF="node8.html#Straightening_Algorithmus_2">8.3</A>)
+can be given right now in the (initial)
+case <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$"> and we are going to do this not only because it is
+very instructive, but also because we will need a basis of <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img742.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,2)$">
+in order to proceed to the general case.
+<BR>
+<P>
+If <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$"> there are exactly two partitions in <!-- MATH
+ $\Lambda^+(m, 2)$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img743.png"
+ ALT="$ \Lambda^+(m, 2)$"> for <IMG
+ WIDTH="56" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img744.png"
+ ALT="$ m\geq 2$">,
+namely <IMG
+ WIDTH="33" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img745.png"
+ ALT="$ 2\omega_1$"> and <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img746.png"
+ ALT="$ \omega_2$">, where <!-- MATH
+ $\omega_1=(1)$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img747.png"
+ ALT="$ \omega_1=(1)$"> and <!-- MATH
+ $\omega_2=(1,1)$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img748.png"
+ ALT="$ \omega_2=(1,1)$">
+are the fundamental weights (see section <A HREF="node3.html#bideterminanten">3</A>).
+In the first case we have
+<!-- MATH
+ $I_{2\omega_1}^{}=I_{2\omega_1}^{\rm mys}$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img749.png"
+ ALT="$ I_{2\omega_1}^{}=I_{2\omega_1}^{\rm mys}$">, that is, the weak and the strong
+form of the straightening algorithm coincide. Turning to <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img746.png"
+ ALT="$ \omega_2$"> there is exactly
+one element in <!-- MATH
+ $I_{\omega_2}^{}\backslash I_{\omega_2}^{\rm mys}$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img750.png"
+ ALT="$ I_{\omega_2}^{}\backslash I_{\omega_2}^{\rm mys}$">,
+namely <!-- MATH
+ ${\bf j}=(m,m')$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img751.png"
+ ALT="$ {\bf j}=(m,m')$">.
+By (<A HREF="node4.html#g_und_qdet">4.3</A>) we obtain in <!-- MATH
+ ${\cal K}=A^{{\rm sh}}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img752.png"
+ ALT="$ {\cal K}=A^{{\rm sh}}_{R,q}(n,2)$">
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+T^{\omega_2}_q({\bf i}:(m,m'))=
+-q^m\sum_{i=1}^{m-1}q^{-i}T^{\omega_2}_q({\bf i}:(i,i'))
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="359" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img753.png"
+ ALT="$\displaystyle T^{\omega_2}_q({\bf i}:(m,m'))=
+-q^m\sum_{i=1}^{m-1}q^{-i}T^{\omega_2}_q({\bf i}:(i,i'))
+$">
+</DIV><P></P>
+
+<P>
+yielding Proposition <A HREF="node8.html#Straightening_Algorithmus_2">8.3</A> in the case <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$">
+since <!-- MATH
+ $(i,i')\lhd (m, m')$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img754.png"
+ ALT="$ (i,i')\lhd (m, m')$"> for all <IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img755.png"
+ ALT="$ i &lt;m$">.
+
+<P>
+<P>
+<DIV><B>Remark  10.2</B> &nbsp; If we had used the notion of symplectic standard tableau
+instead of the reverse version we would have to consider
+<IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img756.png"
+ ALT="$ (1',1)$"> instead of <IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img757.png"
+ ALT="$ (m,m')$"> in the last step above. This would force us
+to work with a reverse version of the order choosen on <!-- MATH
+ ${\mathbb{N}}\,_0^m$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.png"
+ ALT="$ {\mathbb{N}}\,_0^m$">
+(as in [<A
+ HREF="node22.html#ofrt">O2</A>, section 7]). But this would cause some trouble
+concerning Lemma <A HREF="node9.html#Formel_W_i">9.9</A>. One way out could be a manipulation of
+the Yang-Baxter operator <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$"> conjugating it by the twofold tensor product
+of the appropriate permutation on <!-- MATH
+ $\underline{n}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \underline{n}$">. Thus, one has to decide between
+working with the familiar version of <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$"> or following the familiar
+notion of tableaux.</DIV><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html148"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html144"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html138"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html146"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html149"
+  HREF="node11.html">Quantum Symplectic Exterior Algebra</A>
+<B> Up:</B> <A NAME="tex2html145"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html139"
+  HREF="node9.html">Arithmetic of Bideterminants</A>
+ &nbsp; <B>  <A NAME="tex2html147"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

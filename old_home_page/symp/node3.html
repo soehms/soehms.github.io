@@ -1,0 +1,685 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quantum Symplectic Bideterminants</TITLE>
+<META NAME="description" CONTENT="Quantum Symplectic Bideterminants">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html64"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html60"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html54"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html62"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html65"
+  HREF="node4.html">Quantum Coefficient of Dilation</A>
+<B> Up:</B> <A NAME="tex2html61"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html55"
+  HREF="node2.html">Quantum Symplectic Monoids</A>
+ &nbsp; <B>  <A NAME="tex2html63"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00030000000000000000"></A>
+<A NAME="bideterminanten"></A>
+<BR>
+Quantum Symplectic Bideterminants
+</H1>
+
+<P>
+Let <!-- MATH
+ $p,r\in{\mathbb{N}}\,$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img140.png"
+ ALT="$ p,r\in{\mathbb{N}}\,$"> be positive integers and <!-- MATH
+ ${\Lambda(p, r)}\mbox{$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img141.png"
+ ALT="$ {\Lambda(p, r)}$"><A NAME="6419"></A> 
+denote the set of
+compositions of <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$"> into <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.png"
+ ALT="$ p$"> parts. These are <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img142.png"
+ ALT="$ p$">-tuples <!-- MATH
+ $\lambda
+=(\lambda_1,\ldots , \lambda_p)$
+ -->
+<IMG
+ WIDTH="134" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$ \lambda
+=(\lambda_1,\ldots , \lambda_p)$"> of non-negative integers
+<!-- MATH
+ $\lambda_i\in{\mathbb{N}}\,_0$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img144.png"
+ ALT="$ \lambda_i\in{\mathbb{N}}\,_0$"> summing up to <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">. To each composition <!-- MATH
+ $\lambda \in
+\Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$ \lambda \in
+\Lambda(p, r)$"> there corresponds a parabolic subgroup in the symmetric
+group <!-- MATH
+ ${{\cal S}_{r}}\mbox{$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img146.png"
+ ALT="$ {{\cal S}_{r}}$"><A NAME="6424"></A>, called the <EM>standard Young</EM>
+subgroup. We will denote it by <!-- MATH
+ ${{\cal S}_{\lambda}}\mbox{$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img147.png"
+ ALT="$ {{\cal S}_{\lambda}}$"><A NAME="6438"></A>. It is the subgroup
+fixing the sets <!-- MATH
+ $\{1, 2, \ldots, \lambda_1\},\; \{\lambda_1+1,
+\lambda_1 +2, \ldots, \lambda_1+\lambda_2\},\ldots $
+ -->
+<IMG
+ WIDTH="386" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img148.png"
+ ALT="$ \{1, 2, \ldots, \lambda_1\},\; \{\lambda_1+1,
+\lambda_1 +2, \ldots, \lambda_1+\lambda_2\},\ldots $">.
+Now, let <!-- MATH
+ $w \in {\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$ w \in {\cal S}_{r}$"> be given by a  reduced expression
+<!-- MATH
+ $w=s_{i_1}s_{i_2}\ldots s_{i_t}$
+ -->
+<IMG
+ WIDTH="133" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img150.png"
+ ALT="$ w=s_{i_1}s_{i_2}\ldots s_{i_t}$">, where  the <!-- MATH
+ ${s_i}\mbox{=(i,i+1)$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img151.png"
+ ALT="$ {s_i}$"><A NAME="6449"></A><IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img152.png"
+ ALT="$ =(i,i+1)$"> 
+are the simple
+transpositions. We define endomorphisms
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\beta (w)}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="45" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img153.png"
+ ALT="$\displaystyle {\beta (w)}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img154.png"
+ ALT="$\displaystyle \mbox{\index{${\beta (w)}$}}$"><IMG
+ WIDTH="362" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img155.png"
+ ALT="$\displaystyle :=
+\beta_{i_1}\beta_{i_2} \cdots \beta_{i_t} \in {\rm End}_{R}{(V^{\otimes r})}:={\rm End}_{R}{(V^{\otimes r})}
+$">
+</DIV><P></P>
+
+<P>
+for <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ r&gt;1$"> and set <!-- MATH
+ $\beta (w)={\rm id}_{V} \in {\cal E}$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img156.png"
+ ALT="$ \beta (w)={\rm id}_{V} \in {\cal E}$"> for <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img157.png"
+ ALT="$ r=1$">. It is easy
+to see that this definition is independent of the choice of the
+reduced expression for <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$"> since any two of them
+can be transformed into each other using the braid relations. But
+<IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$"> satisfies the <EM>quantum
+Yang-Baxter equation</EM> which is just the second type braid relation 
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta_i\beta_{i+1}\beta_i=\beta_{i+1}\beta_i\beta_{i+1}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="177" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img159.png"
+ ALT="$\displaystyle \beta_i\beta_{i+1}\beta_i=\beta_{i+1}\beta_i\beta_{i+1} $">
+</DIV><P></P>
+
+<P>
+in the case <IMG
+ WIDTH="46" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img160.png"
+ ALT="$ i=1$">. The latter one obviously implies the relations for <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img161.png"
+ ALT="$ i&gt;1$">,
+whereas the first type braid relations <!-- MATH
+ $\beta_i\beta_j=\beta_j\beta_i$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img162.png"
+ ALT="$ \beta_i\beta_j=\beta_j\beta_i$"> for
+<IMG
+ WIDTH="88" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img163.png"
+ ALT="$ \vert i-j\vert&gt;1$"> hold trivially. Observe that
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta (ww') =\beta (w)\beta (w') \;\;\mbox{ if } \;\; l(ww')=l(w)+l(w').
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="183" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\displaystyle \beta (ww') =\beta (w)\beta (w') \;\;$"> if <IMG
+ WIDTH="195" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$\displaystyle \;\; l(ww')=l(w)+l(w').$">
+</DIV><P></P>
+
+<P>
+where <!-- MATH
+ ${l(w)}\mbox{$
+ -->
+<IMG
+ WIDTH="39" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img166.png"
+ ALT="$ {l(w)}$"><A NAME="6468"></A> denotes the length of <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$">, that is the number 
+of transpositions
+in a reduced expression. Setting <!-- MATH
+ ${y}\mbox{:=q^2$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img167.png"
+ ALT="$ {y}$"><A NAME="6472"></A><IMG
+ WIDTH="46" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img168.png"
+ ALT="$ :=q^2$"> and using our notation 
+(<A HREF="node2.html#Notation_End">2</A>) we associate a <EM>quantum symplectic bideterminant</EM>
+to each triple consisting of a composition <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$"> of <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$"> and a pair of
+multi-indices <!-- MATH
+ ${\bf i}, {\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$"> by
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="def_qbidet"></A><!-- MATH
+ \begin{equation}
+{t_q^{\lambda}({\bf i}:{\bf j})}\mbox{
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="63" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.png"
+ ALT="$\displaystyle {t_q^{\lambda}({\bf i}:{\bf j})}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img170.png"
+ ALT="$\displaystyle \mbox{\index{${t_q^{\lambda}({\bf i}:{\bf j})}$}}$"><IMG
+ WIDTH="429" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img171.png"
+ ALT="$\displaystyle := \sum_{w \in {\cal S}_{\lambda}} (-y)^{-l(w)}\beta (w)\wr x_{{...
+...sum_{w \in {\cal S}_{\lambda}} (-y)^{-l(w)}x_{{\bf i} {\bf j}}\wr  \beta (w) .$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(6)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The equality therein follows from (<A HREF="node2.html#Rel_MA">5</A>) applied to
+<!-- MATH
+ $\mu=\beta (w)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.png"
+ ALT="$ \mu=\beta (w)$">. Using the abbreviation
+<!-- MATH
+ ${\kappa_{\lambda}}\mbox{$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.png"
+ ALT="$ {\kappa_{\lambda}}$"><A NAME="6517"></A><IMG
+ WIDTH="327" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img174.png"
+ ALT="$ :=\sum_{w \in {\cal S}_{\lambda}} (-y)^{-l(w)}\beta
+(w)\;\; \in {\rm End}_{R}{(V^{\otimes r})}$"> we also may write
+<!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})=\kappa_{\lambda}\wr x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\wr \kappa_{\lambda}$
+ -->
+<IMG
+ WIDTH="221" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img175.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})=\kappa_{\lambda}\wr x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\wr \kappa_{\lambda}$">. If <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$"> is set to <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.png"
+ ALT="$ 1$">, we obtain
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+x_{{\bf i} {\bf j}}\wr \beta (w)=x_{{\bf i} ({\bf j}w^{-1})}\;
+\mbox{ and } \; \beta (w) \wr x_{{\bf i} {\bf j}}=x_{({\bf i}w) {\bf j}} 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="166" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img177.png"
+ ALT="$\displaystyle x_{{\bf i} {\bf j}}\wr \beta (w)=x_{{\bf i} ({\bf j}w^{-1})}\;$">&nbsp; &nbsp; and <IMG
+ WIDTH="151" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img178.png"
+ ALT="$\displaystyle \; \beta (w) \wr x_{{\bf i} {\bf j}}=x_{({\bf i}w) {\bf j}} $">
+</DIV><P></P>
+
+<P>
+since then <!-- MATH
+ $\beta (w)_{{\bf k}{\bf j}}=\delta_{{\bf k}{\bf j}w^{-1}}=
+\delta_{{\bf k}w\;{\bf j}}$
+ -->
+<IMG
+ WIDTH="193" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.png"
+ ALT="$ \beta (w)_{{\bf k}{\bf j}}=\delta_{{\bf k}{\bf j}w^{-1}}=
+\delta_{{\bf k}w\;{\bf j}}$">. Therefore, in this case our quantum
+symplectic bideterminants coincide with ordinary bideterminants which
+are defined as products of minor <!-- MATH
+ $\lambda_i\times \lambda_i$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.png"
+ ALT="$ \lambda_i\times \lambda_i$">-determinants,
+one factor for each entry
+<IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.png"
+ ALT="$ \lambda_i$"> of the composition <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">. According to familar notation
+we write for a partition <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">
+<!-- MATH
+ \begin{displaymath}
+{T^{\lambda}_q({\bf i}:{\bf j})}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="70" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img182.png"
+ ALT="$\displaystyle {T^{\lambda}_q({\bf i}:{\bf j})}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="$\displaystyle \mbox{\index{${T^{\lambda}_q({\bf i}:{\bf j})}$}}$"><IMG
+ WIDTH="97" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img184.png"
+ ALT="$\displaystyle :=
+t_q^{\lambda'}({\bf i}:{\bf j}). $">
+</DIV><P></P>
+By a partition we mean a composition
+<!-- MATH
+ $\lambda=(\lambda_1, \ldots ,\lambda_p)$
+ -->
+<IMG
+ WIDTH="134" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img143.png"
+ ALT="$ \lambda
+=(\lambda_1,\ldots , \lambda_p)$"> ordered decreasingly (<!-- MATH
+ $\lambda_1\geq
+\lambda_2 \geq \ldots \geq \lambda_p\geq 0$
+ -->
+<IMG
+ WIDTH="193" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$ \lambda_1\geq
+\lambda_2 \geq \ldots \geq \lambda_p\geq 0$">). The subset of <!-- MATH
+ $\Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.png"
+ ALT="$ \Lambda(p, r)$"> 
+consisting of all partitions will be denoted by <!-- MATH
+ ${\Lambda^+(p, r)}\mbox{$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.png"
+ ALT="$ {\Lambda^+(p, r)}$"><A NAME="6582"></A>.
+By <!-- MATH
+ ${\lambda'}\mbox{$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img188.png"
+ ALT="$ {\lambda'}$"><A NAME="6586"></A> we denote
+the dual of the partition <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">, 
+that is <!-- MATH
+ $\lambda'=(\lambda_1', \ldots, \lambda_s')$
+ -->
+<IMG
+ WIDTH="138" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$ \lambda'=(\lambda_1', \ldots, \lambda_s')$"> where <!-- MATH
+ $s=\lambda_1$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="$ s=\lambda_1$">
+and <!-- MATH
+ $\lambda'_i:=|\{j|\; \lambda_j \geq i\}|$
+ -->
+<IMG
+ WIDTH="150" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="$ \lambda'_i:=\vert\{j\vert\; \lambda_j \geq i\}\vert$">. Using this notation 
+one obtains precisely the classical
+bideterminant <!-- MATH
+ $T^{\lambda}({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$ T^{\lambda}({\bf i}:{\bf j})$"> (as defined
+in [<A
+ HREF="node22.html#martin">Ma</A>, 2.4] for instance) when <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$"> is set to <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img176.png"
+ ALT="$ 1$">.
+Observe that the capital <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img193.png"
+ ALT="$ T$"> notation is more restricted since
+not all compositions occur as duals of partitions. This makes it necessary
+to consider <!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})$"> as well for technical 
+reasons.
+<BR>
+<P>
+It should be remarked that the well known quantum determinants
+corresponding to the general linear groups
+(see for example [<A
+ HREF="node22.html#dd">DD</A>, 4.1.2, 4.1.7],
+[<A
+ HREF="node22.html#charipr">CP</A>, p. 236], [<A
+ HREF="node22.html#tak">Tk</A>, p. 152], [<A
+ HREF="node22.html#hay1">Ha1</A>, p. 157])
+can be defined in a similar
+way using the quantum Yang-Baxter operator of type <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> instead of our
+<IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$">. In contrast, explicit expressions for 
+quantum symplectic bideterminants become very complicated for <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.png"
+ ALT="$ r &gt; 2$">
+(apart from the case <!-- MATH
+ $\lambda =\alpha_r:=(r)\in \Lambda^+(1, r)$
+ -->
+<IMG
+ WIDTH="203" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$ \lambda =\alpha_r:=(r)\in \Lambda^+(1, r)$"> in which case the
+bideterminants <!-- MATH
+ $T^{\alpha_r}_q({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="$ T^{\alpha_r}_q({\bf i}:{\bf j})$">
+just are the monomials <!-- MATH
+ $x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$ x_{{\bf i} {\bf j}}$">). 
+Denoting the fundamental weights
+by <!-- MATH
+ $\omega_r:=(1,1, \ldots , 1)\in \Lambda^+(r, r)$
+ -->
+<IMG
+ WIDTH="234" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.png"
+ ALT="$ \omega_r:=(1,1, \ldots , 1)\in \Lambda^+(r, r)$">
+one obtains a single <IMG
+ WIDTH="46" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.png"
+ ALT="$ r\times r$">-minor determinant. If <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$">,  explicit
+expressions are for example
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left| \begin{array}{cc} x_{k i} & x_{k j} \\
+x_{l i} & x_{l j}
+\end{array} \right|_q:=  T^{\omega_2}_q((k,l):(i,j))=
+x_{k i}x_{l j}-q^{-1}x_{k j}x_{l i}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="438" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$\displaystyle \left\vert \begin{array}{cc} x_{k i} &amp; x_{k j} \\
+x_{l i} &amp; x_{...
+...ght\vert _q:= T^{\omega_2}_q((k,l):(i,j))=
+x_{k i}x_{l j}-q^{-1}x_{k j}x_{l i}$">
+</DIV><P></P> 
+
+<P>
+if <!-- MATH
+ $k<l, i<j, i\neq j'=n-j+1$
+ -->
+<IMG
+ WIDTH="248" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.png"
+ ALT="$ k&lt;l, i&lt;j, i\neq j'=n-j+1$"> and
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\left| \begin{array}{cc} x_{k i} & x_{k i'} \\
+x_{l i} & x_{l i'}
+\end{array} \right|_q:= T^{\omega_2}_q((k,l):(i,i'))=
+x_{k i}x_{l i'}-q^{-2}x_{k i'}x_{l i}
+-(q^{-2}-1)\sum_{j=1}^{i-1}q^{j-i}x_{k j'}x_{l j},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="665" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$\displaystyle \left\vert \begin{array}{cc} x_{k i} &amp; x_{k i'} \\
+x_{l i} &amp; x_...
+...i'}-q^{-2}x_{k i'}x_{l i}
+-(q^{-2}-1)\sum_{j=1}^{i-1}q^{j-i}x_{k j'}x_{l j},
+$">
+</DIV><P></P>
+
+<P>
+in the cases <!-- MATH
+ $k<l, i\leq m$
+ -->
+<IMG
+ WIDTH="103" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$ k&lt;l, i\leq m$">. The calculation of
+<!-- MATH
+ $T^{\omega_3}_q((j,k,l):(i,i',i))$
+ -->
+<IMG
+ WIDTH="175" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$ T^{\omega_3}_q((j,k,l):(i,i',i))$"> for <!-- MATH
+ $j<k<l, i\leq m$
+ -->
+<IMG
+ WIDTH="137" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$ j&lt;k&lt;l, i\leq m$">
+is really hard work. Note that such a bideterminant might be
+different from
+zero even if it contains two identical columns. 
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html64"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html60"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html54"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html62"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html65"
+  HREF="node4.html">Quantum Coefficient of Dilation</A>
+<B> Up:</B> <A NAME="tex2html61"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html55"
+  HREF="node2.html">Quantum Symplectic Monoids</A>
+ &nbsp; <B>  <A NAME="tex2html63"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

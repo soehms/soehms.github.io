@@ -1,0 +1,1547 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-1 (1.67)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Example: Symplectic Monoids</TITLE>
+<META NAME="description" CONTENT="Example: Symplectic Monoids">
+<META NAME="keywords" CONTENT="frt">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="frt.css">
+
+<LINK REL="next" HREF="node7.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="frt.html">
+<LINK REL="next" HREF="node7.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html73"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html71"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html65"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html74"
+  HREF="node7.html">Proof of theorem 6.1</A>
+<B> Up:</B> <A NAME="tex2html72"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html66"
+  HREF="node5.html">FRT-Construction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00060000000000000000">
+Example: Symplectic Monoids</A>
+</H1>
+
+<P>
+Let <IMG
+ WIDTH="67" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img243.png"
+ ALT="$n=2m$"> be even. We will apply the FRT-construction to two 
+endomorphisms <!-- MATH
+ $\beta, \gamma \in {\cal E}_{2}={\cal E}\otimes {\cal E}$
+ -->
+<IMG
+ WIDTH="148" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img244.png"
+ ALT="$\beta, \gamma \in {\cal E}_{2}={\cal E}\otimes {\cal E}$">. In order to define them we have to introduce some notation.
+First consider the involution
+<IMG
+ WIDTH="119" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img245.png"
+ ALT="$i':=n-i+1$"> on <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img246.png"
+ ALT="$\underline{n}$">, that is
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+(1',2', \ldots , n')=(n,n-1, \ldots , 1).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="412" HEIGHT="33" BORDER="0"
+ SRC="img247.png"
+ ALT="\begin{displaymath}(1',2', \ldots , n')=(n,n-1, \ldots , 1). \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Further set <IMG
+ WIDTH="57" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img248.png"
+ ALT="$\epsilon_i:=1$"> if <IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img249.png"
+ ALT="$i\leq m$"> and <!-- MATH
+ $\epsilon_i:=-1$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img250.png"
+ ALT="$\epsilon_i:=-1$"> if <IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img251.png"
+ ALT="$i&gt;m$">
+and define
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\beta :=\sum_{i,j\in \underline{n}}e_{i}^{ j} \otimes e_{j}^{ i}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="345" HEIGHT="55" BORDER="0"
+ SRC="img252.png"
+ ALT="\begin{displaymath}\beta :=\sum_{i,j\in \underline{n}}e_{i}^{ j} \otimes e_{j}^{ i} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\gamma :=\sum_{i,j\in \underline{n}} \epsilon_i \epsilon_j
+e_{i}^{ j'} \otimes e_{i'}^{ j}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="364" HEIGHT="55" BORDER="0"
+ SRC="img253.png"
+ ALT="\begin{displaymath}\gamma :=\sum_{i,j\in \underline{n}} \epsilon_i \epsilon_j
+e_{i}^{ j'} \otimes e_{i'}^{ j}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+The first endomorphism is just the flip operator on <IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$V
+\otimes V$">, whereas the second is an integer multiple of a projection
+map whose kernel is just the kernel of the linear form on
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img254.png"
+ ALT="$V
+\otimes V$"> corresponding to the canonical skew bilinear form on
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$V$"> (see below) and whose image is the one dimensional span of a
+skew bivector. Our object of interest will be the FRT-construction
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+A^{{\rm s}}_{R}(n) :={\cal M}(\{\beta, \gamma\}).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="365" HEIGHT="33" BORDER="0"
+ SRC="img255.png"
+ ALT="\begin{displaymath}A^{{\rm s}}_{R}(n) :={\cal M}(\{\beta, \gamma\}). \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+According to the preceeding section it is a graded matric bialgebra
+whose homogenous summands
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+A^{{\rm s}}_{R}(n,r):=M({\cal A}_r)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="355" HEIGHT="33" BORDER="0"
+ SRC="img256.png"
+ ALT="\begin{displaymath}A^{{\rm s}}_{R}(n,r):=M({\cal A}_r) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+are the centralizer coalgebras of algebras <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> which are generated by endomorphisms
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\beta_i := {\rm id}_{V^{\otimes i-1}} \otimes \beta
+\otimes{\rm id}_{V^{\otimes r-i-1}},\in {\cal E}_r
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="417" HEIGHT="32" BORDER="0"
+ SRC="img257.png"
+ ALT="\begin{displaymath}\beta_i := {\rm id}_{V^{\otimes i-1}} \otimes \beta
+\otimes{\rm id}_{V^{\otimes r-i-1}},\in {\cal E}_r\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\gamma_i :={\rm id}_{V^{\otimes i-1}} \otimes \gamma  \otimes{\rm id}_{V^{\otimes r-i-1}}
+\in {\cal E}_r
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="414" HEIGHT="32" BORDER="0"
+ SRC="img258.png"
+ ALT="\begin{displaymath}\gamma_i :={\rm id}_{V^{\otimes i-1}} \otimes \gamma \otimes{\rm id}_{V^{\otimes r-i-1}}
+\in {\cal E}_r\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+for <!-- MATH
+ $i=1, \ldots , r-1$
+ -->
+<IMG
+ WIDTH="129" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.png"
+ ALT="$i=1, \ldots , r-1$">. Using the notation of [<A
+ HREF="node9.html#wenzl1">We</A>] the
+<EM>Brauer centralizer algebra</EM> <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img260.png"
+ ALT="$D_{r}({x})$"> (<IMG
+ WIDTH="15" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img261.png"
+ ALT="$x$"> an element in <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">)
+is generated by symbols <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img262.png"
+ ALT="$g_i$"> and <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img263.png"
+ ALT="$e_i$"> for <!-- MATH
+ $i=1, \ldots, r-1$
+ -->
+<IMG
+ WIDTH="129" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img259.png"
+ ALT="$i=1, \ldots , r-1$"> and
+the assignment <!-- MATH
+ $g_i\mapsto \beta_i$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img264.png"
+ ALT="$g_i\mapsto \beta_i$"> and <!-- MATH
+ $e_i\mapsto \gamma_i$
+ -->
+<IMG
+ WIDTH="64" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img265.png"
+ ALT="$e_i\mapsto \gamma_i$"> defines
+a representation of <IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$D_{r}({-n})$"> on <IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img178.png"
+ ALT="$V^{\otimes r}$">. Thus <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> is
+just the image of <IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$D_{r}({-n})$"> under this representation, in
+H. Wenzl's notation from [<A
+ HREF="node9.html#wenzl1">We</A>]: <!-- MATH
+ ${\cal A}_r=B_r({\rm Sp}_{}(n))$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img267.png"
+ ALT="${\cal A}_r=B_r({\rm Sp}_{}(n))$">.
+R. Brauer showed in [<A
+ HREF="node9.html#brauer">Br</A>] that this is just the
+centralizer algebra of the symplectic group <!-- MATH
+ ${\rm Sp}_{{\mathbb{C}}}(n)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img268.png"
+ ALT="${\rm Sp}_{{\mathbb{C}}}(n)$">
+acting on <IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img178.png"
+ ALT="$V^{\otimes r}$">
+if <!-- MATH
+ $R={\mathbb{C}}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img269.png"
+ ALT="$R={\mathbb{C}}$">. One of our
+aims is to generalize this to the case of an arbitrary algebraically
+closed field <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$K$"> instead of <IMG
+ WIDTH="18" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img271.png"
+ ALT="${\mathbb{C}}$">. <BR>
+<P>
+Another problem, connected with the former, is
+to show that the centralizer algebra <IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img272.png"
+ ALT="$C({\cal A}_r)$"> 
+of <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> which will turn out
+to be the <EM>symplectic Schur algebra</EM> <IMG
+ WIDTH="67" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$S_0(n,r)$"> defined by
+S. Donkin in [<A
+ HREF="node9.html#donk3">Do2</A>] is stable under base changes. In view of
+theorem <A HREF="node4.html#starkes_Kriterium">4.3</A> this is equivalent to the projectivity
+of the coalgebra <!-- MATH
+ $A^{{\rm s}}_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$A^{{\rm s}}_{R}(n,r)$"> as an <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module. For this purpose
+we are going to construct a basis for the latter one. 
+The procedure follows [<A
+ HREF="node9.html#doc">Oe</A>]
+where the more general quantum case is treated. But it will become more
+transparent in the much simpler classical case. First note that there is an
+epimorphism of graded bialgebras from
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+A_{R}(n):=R[x_{1 1}, x_{1 2}, \ldots , x_{n n}]
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="394" HEIGHT="33" BORDER="0"
+ SRC="img275.png"
+ ALT="\begin{displaymath}A_{R}(n):=R[x_{1 1}, x_{1 2}, \ldots , x_{n n}] \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+to <!-- MATH
+ $A^{{\rm s}}_{R}(n)$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img276.png"
+ ALT="$A^{{\rm s}}_{R}(n)$"> leaving the symbols <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$x_{i j}$"> fixed (we use <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$x_{i j}$">
+as symbols for residue classes of <!-- MATH
+ ${{e}^*_{i}}^{j}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="${{e}^*_{i}}^{j}$"> in all cases of matric bialgebras).
+For <IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.png"
+ ALT="$A_{R}(n)$"> is just the 
+FRT-construction <!-- MATH
+ ${\cal M}(\beta)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img278.png"
+ ALT="${\cal M}(\beta)$"> where the relations coming from the
+endomorphism <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img279.png"
+ ALT="$\gamma$"> are omitted. This is because 
+<!-- MATH
+ $x_{i_2 j_1}x_{i_1 j_2}=\beta x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\beta=x_{i_1 j_2}x_{i_2 j_1}$
+ -->
+<IMG
+ WIDTH="283" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img280.png"
+ ALT="$x_{i_2 j_1}x_{i_1 j_2}=\beta x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\beta=x_{i_1 j_2}x_{i_2 j_1}$"> just give the ordinary
+commutativity relations. The kernel of this bialgebra epimorphism is the ideal
+in <IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.png"
+ ALT="$A_{R}(n)$"> which is generated by the polynomials 
+<!-- MATH
+ $\gamma x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\gamma$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img281.png"
+ ALT="$\gamma x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\gamma$"> where <!-- MATH
+ ${\bf i},{\bf j} \in I(n,2)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img282.png"
+ ALT="${\bf i},{\bf j} \in I(n,2)$">. To write down
+these polynomials explicitly let us fix some notation:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+f_{ij}:=\sum_{k=1}^n \epsilon_kx_{i k}x_{j k'},\;\;
+\bar f_{ij}:=\sum_{k=1}^n \epsilon_kx_{k i}x_{k' j} \in A_{R}(n,2).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="487" HEIGHT="62" BORDER="0"
+ SRC="img283.png"
+ ALT="\begin{displaymath}f_{ij}:=\sum_{k=1}^n \epsilon_kx_{i k}x_{j k'},\;\;
+\bar f_{ij}:=\sum_{k=1}^n \epsilon_kx_{k i}x_{k' j} \in A_{R}(n,2).\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Setting <IMG
+ WIDTH="74" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img284.png"
+ ALT="${\bf i}=(i,j)$"> and <IMG
+ WIDTH="76" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img285.png"
+ ALT="${\bf j}=(k,l)$"> we obtain
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\gamma  x_{{\bf i} {\bf j}} = \left\{\begin{array}{ll}
+\epsilon_j\bar f_{kl} & i=j' \\
+0 & i \neq j' 
+\end{array} \right .
+\;\;\;\;\mbox{ and } \;\;\;\;
+x_{{\bf i} {\bf j}}\gamma = \left\{\begin{array}{ll}
+\epsilon_l f_{ij} & k=l' \\
+0 & k \neq l' 
+\end{array} \right .
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="498" HEIGHT="53" BORDER="0"
+ SRC="img286.png"
+ ALT="\begin{displaymath}\gamma x_{{\bf i} {\bf j}} = \left\{\begin{array}{ll}
+\epsilo...
+...psilon_l f_{ij} &amp; k=l' \\
+0 &amp; k \neq l'
+\end{array} \right .
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Therefore we have 
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+A^{{\rm s}}_{R}(n)=A_{R}(n)/{\cal F}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="sAn_epi"></A><IMG
+ WIDTH="356" HEIGHT="33" BORDER="0"
+ SRC="img287.png"
+ ALT="\begin{displaymath}
+A^{{\rm s}}_{R}(n)=A_{R}(n)/{\cal F}\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(13)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P> 
+
+<P>
+where 
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img288.png"
+ ALT="${\cal F}$"> is the ideal in <IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img277.png"
+ ALT="$A_{R}(n)$"> generated by the set
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+F:=\{ f_{ij},\bar f_{ij}, f_{ll'}-\bar f_{kk'}|\; 1 \leq i <j\leq n,
+i\neq j', \; 1 \leq l\leq k \leq m\}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="ideal_generator"></A><IMG
+ WIDTH="534" HEIGHT="34" BORDER="0"
+ SRC="img289.png"
+ ALT="\begin{displaymath}
+F:=\{ f_{ij},\bar f_{ij}, f_{ll'}-\bar f_{kk'}\vert\; 1 \leq i &lt;j\leq n,
+i\neq j', \; 1 \leq l\leq k \leq m\}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(14)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+If <IMG
+ WIDTH="61" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img290.png"
+ ALT="$R=K$"> is an algebraically
+closed field we can interpret this in terms of algebraic geometry,
+i.e. we can look at the vanishing set of <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img288.png"
+ ALT="${\cal F}$"> in the 
+monoid <!-- MATH
+ ${\rm M}_{K}(n)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="${\rm M}_{K}(n)$"> of <IMG
+ WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.png"
+ ALT="$n\times n$">-matrices. 
+It is easy to see that this is just the closed submonoid 
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\rm SpM}_{K}(n):= \{ A \in {\rm M}_{K}(n)|\;\exists \;\; d(A)\in K,\;
+A^tJA=AJA^t=d(A)J\}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="547" HEIGHT="33" BORDER="0"
+ SRC="img293.png"
+ ALT="\begin{displaymath}{\rm SpM}_{K}(n):= \{ A \in {\rm M}_{K}(n)\vert\;\exists \;\; d(A)\in K,\;
+A^tJA=AJA^t=d(A)J\}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+in <!-- MATH
+ ${\rm M}_{K}(n)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="${\rm M}_{K}(n)$"> called the <EM>symplectic monoid</EM> by S. Doty
+[<A
+ HREF="node9.html#doty">Dt</A>] and which has been  
+considered by D.J. Grigor'ev [<A
+ HREF="node9.html#grig">Gg</A>] first.
+Here <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$J$"> is the Gram-matrix of the canonical
+skew bilinear form, that is <!-- MATH
+ $J=(J_{ij})_{i,j \in \underline{n}}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img294.png"
+ ALT="$J=(J_{ij})_{i,j \in \underline{n}}$"> where
+<!-- MATH
+ $J_{ij}:=\epsilon_i\delta_{ij'}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img295.png"
+ ALT="$J_{ij}:=\epsilon_i\delta_{ij'}$">. The function <!-- MATH
+ $d:{\rm SpM}_{K}(n) \rightarrow K$
+ -->
+<IMG
+ WIDTH="154" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img296.png"
+ ALT="$d:{\rm SpM}_{K}(n) \rightarrow K$"> is
+called the <EM>coefficient of dilation</EM>. It is neccesarily a
+regular function on <!-- MATH
+ ${\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="${\rm SpM}_{K}(n)$"> and already 
+well defined in <!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$">, explicitly:
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+d= \epsilon_k f_{kk'}=
+\epsilon_k\bar f_{kk'}
+\in A^{{\rm s}}_{R}(n,2).
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="formel_d"></A><IMG
+ WIDTH="402" HEIGHT="33" BORDER="0"
+ SRC="img299.png"
+ ALT="\begin{displaymath}
+d= \epsilon_k f_{kk'}=
+\epsilon_k\bar f_{kk'}
+\in A^{{\rm s}}_{R}(n,2).
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(15)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Note that this is independent of <!-- MATH
+ $k\in \underline{n}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.png"
+ ALT="$k\in \underline{n}$"> by the relations in <!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$">.
+Furthermore <IMG
+ WIDTH="14" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img301.png"
+ ALT="$d$"> is a group-like element of this bialgebra
+(cf. [<A
+ HREF="node9.html#doc">Oe</A>] 2.1.1). The set <!-- MATH
+ ${\rm GL}_{K}(n) \cap {\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="168" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img302.png"
+ ALT="${\rm GL}_{K}(n) \cap {\rm SpM}_{K}(n)$"> 
+of invertible elements in <!-- MATH
+ ${\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="${\rm SpM}_{K}(n)$">
+is precisely the group <!-- MATH
+ ${\rm GSp}_{K}(n)$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="${\rm GSp}_{K}(n)$">
+of <EM>symplectic similitudes</EM>. S. Doty showed in [<A
+ HREF="node9.html#doty">Dt</A>] that
+<!-- MATH
+ ${\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="${\rm SpM}_{K}(n)$"> in fact coincides with the Zariski-closure of <!-- MATH
+ ${\rm GSp}_{K}(n)$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="${\rm GSp}_{K}(n)$"> in
+<!-- MATH
+ ${\rm M}_{K}(n)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="${\rm M}_{K}(n)$">. We will obtain this as an easy consequence of the results
+presented below.
+<BR>
+<P>
+To write down a basis for <!-- MATH
+ $A^{{\rm s}}_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$A^{{\rm s}}_{R}(n,r)$"> we need some combinatorics.
+The set of partitions of <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.png"
+ ALT="$r$"> is denoted by <IMG
+ WIDTH="52" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.png"
+ ALT="$\Lambda^+(r)$">. It contains 
+subsets <!-- MATH
+ $\Lambda^+(l, r)$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img305.png"
+ ALT="$\Lambda^+(l, r)$"> which consist of partitions having not more than <IMG
+ WIDTH="11" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img306.png"
+ ALT="$l$"> parts.
+We write partitions as <IMG
+ WIDTH="11" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img306.png"
+ ALT="$l$">-tuples
+<!-- MATH
+ $\lambda :=(\lambda_1, \lambda_2, \ldots , \lambda_l)$
+ -->
+<IMG
+ WIDTH="164" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img307.png"
+ ALT="$\lambda :=(\lambda_1, \lambda_2, \ldots , \lambda_l)$">
+of nonnegative integers <IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.png"
+ ALT="$\lambda_i$"> in descending order
+<!-- MATH
+ $\lambda_1\geq \lambda_2 \geq \ldots \geq \lambda_l\geq 0$
+ -->
+<IMG
+ WIDTH="191" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img309.png"
+ ALT="$\lambda_1\geq \lambda_2 \geq \ldots \geq \lambda_l\geq 0$"> such that
+<!-- MATH
+ $\lambda_1 +\ldots +\lambda_l=r$
+ -->
+<IMG
+ WIDTH="141" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img310.png"
+ ALT="$\lambda_1 +\ldots +\lambda_l=r$">. To each partition one
+associates a <EM>Young</EM>-diagram reading row lengths out of the
+components <IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img308.png"
+ ALT="$\lambda_i$">. For example
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{*{4}{|p{2mm}}|}
+ \cline{1-3}
+ & &   &\multicolumn{1}{c}{} \\\cline{1-3}
+ &   &\multicolumn{2}{c}{} \\\cline{1-2}
+ &   &\multicolumn{2}{c}{} \\\cline{1-2}
+  &\multicolumn{3}{c}{} \\\cline{1-1}\end{array}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="310" HEIGHT="99" BORDER="0"
+ SRC="img311.png"
+ ALT="\begin{displaymath}\begin{array}{*{4}{\vert p{2mm}}\vert}
+\cline{1-3}
+&amp; &amp; &amp;\mu...
+...\ \cline{1-2}
+&amp;\multicolumn{3}{c}{} \ \cline{1-1}\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+is associated to <!-- MATH
+ $\lambda=(3,2,2,1) \in \Lambda^+(4, 8)$
+ -->
+<IMG
+ WIDTH="207" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.png"
+ ALT="$\lambda=(3,2,2,1) \in \Lambda^+(4, 8)$">. The column lengths
+of the diagram lead to another partition <!-- MATH
+ $\lambda'\in
+\Lambda^+(\lambda_1, r)$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\lambda'\in
+\Lambda^+(\lambda_1, r)$"> called the dual of the partition <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">, i.e. <!-- MATH
+ $\lambda'_i:=|\{j|\; \lambda_j \geq i\}|$
+ -->
+<IMG
+ WIDTH="150" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img315.png"
+ ALT="$\lambda'_i:=\vert\{j\vert\; \lambda_j \geq i\}\vert$">.
+Let <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="${\cal S}_{r}$"> denote the symmetric group on <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.png"
+ ALT="$r$"> symbols and
+<!-- MATH
+ ${\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img317.png"
+ ALT="${\cal S}_{\lambda}$"> the <EM>standard Young subgroup</EM> of <IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img316.png"
+ ALT="${\cal S}_{r}$">
+corresponding to the partition <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">. This is the subgroup fixing
+the subsets
+<!-- MATH
+ $\{1, \ldots , \lambda_1 \}, \; \{\lambda_1+1, \ldots , \lambda_1+\lambda_2\},
+\ldots$
+ -->
+<IMG
+ WIDTH="309" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$\{1, \ldots , \lambda_1 \}, \; \{\lambda_1+1, \ldots , \lambda_1+\lambda_2\},
+\ldots $"> of <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img319.png"
+ ALT="$\underline{r}$">. In the above example <!-- MATH
+ $\lambda=(3,2,2,1)$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img320.png"
+ ALT="$\lambda=(3,2,2,1)$"> the
+standard Young subgroup of <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img321.png"
+ ALT="${\cal S}_{8}$"> corresponding to the dual
+partition <IMG
+ WIDTH="20" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img322.png"
+ ALT="$\lambda'$"> fixes <!-- MATH
+ $\{1,2,3,4\},\;\{5,6,7\}$
+ -->
+<IMG
+ WIDTH="164" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img323.png"
+ ALT="$\{1,2,3,4\},\;\{5,6,7\}$"> and <IMG
+ WIDTH="33" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$\{8\}$">.
+<BR>
+<P>
+To each partition <!-- MATH
+ $\lambda\in \Lambda^+(r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img325.png"
+ ALT="$\lambda\in \Lambda^+(r)$"> and a pair of multi-indices
+<!-- MATH
+ ${\bf i}, {\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img240.png"
+ ALT="${\bf i},{\bf j}\in
+I(n,r)$">
+one defines a <EM>bideterminant</EM> <!-- MATH
+ $T^{\lambda}({\bf i}:{\bf j})\in
+ A_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="161" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$T^{\lambda}({\bf i}:{\bf j})\in
+A_{R}(n,r)$"> by
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}):=
+\sum_{w \in {\cal S}_{\lambda'}} {\rm sign}(w)x_{{\bf i} ({\bf j}w)}=
+\sum_{w \in {\cal S}_{\lambda'}} {\rm sign}(w)x_{({\bf i}w){\bf j} .}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="484" HEIGHT="56" BORDER="0"
+ SRC="img327.png"
+ ALT="\begin{displaymath}
+T^{\lambda}({\bf i}:{\bf j}):=
+\sum_{w \in {\cal S}_{\lambda...
+... \in {\cal S}_{\lambda'}} {\rm sign}(w)x_{({\bf i}w){\bf j} .}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+where <!-- MATH
+ ${\bf i}w:=(i_{w(1)}, i_{w(2)}, \ldots , i_{w(r)})$
+ -->
+<IMG
+ WIDTH="223" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img328.png"
+ ALT="${\bf i}w:=(i_{w(1)}, i_{w(2)}, \ldots , i_{w(r)})$">. These are
+products of minor determinants, one factor for each column, the size
+of which
+correspond to the length of the column. By (<A HREF="node6.html#sAn_epi">13</A>) 
+they can be interpreted as
+elements of <!-- MATH
+ $A^{{\rm s}}_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$A^{{\rm s}}_{R}(n,r)$">, as well. We wish to
+write down a basis of the latter <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module consisting of such
+bideterminants. Since they are too large in number one needs a criterion
+to single out the right ones. This can be done using
+<IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-tableaux. These are constructed from the diagram of <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">
+by inserting the components of a multi-index column by column into the
+boxes. In the above example:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}_{{\bf i}}:=
+\begin{array}{*{4}{|p{2mm}}|}
+\cline{1-3} 
+$i_1$\  & $i_5$\  & $i_8$\   &\multicolumn{1}{c}{} \\\cline{1-3}
+$i_2$\  & $i_6$\   &\multicolumn{2}{c}{} \\\cline{1-2}
+$i_3$\  & $i_7$\   &\multicolumn{2}{c}{} \\\cline{1-2}
+$i_4$\   &\multicolumn{3}{c}{} \\\cline{1-1}\end{array}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="353" HEIGHT="99" BORDER="0"
+ SRC="img329.png"
+ ALT="\begin{displaymath}
+T^{\lambda}_{{\bf i}}:=
+\begin{array}{*{4}{\vert p{2mm}}\ver...
+...e{1-2}
+$i_4$ &amp;\multicolumn{3}{c}{} \ \cline{1-1}\end{array}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+We put a new order <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.png"
+ ALT="$\ll$"> on the set <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img246.png"
+ ALT="$\underline{n}$">, namely
+<!-- MATH
+ $1'\ll 1 \ll 2' \ll 2 \ll \ldots \ll m' \ll m$
+ -->
+<IMG
+ WIDTH="288" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img331.png"
+ ALT="$1'\ll 1 \ll 2' \ll 2 \ll \ldots \ll m' \ll m$">.
+A multi-index <IMG
+ WIDTH="11" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img332.png"
+ ALT="${\bf i}$"> is called <EM><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-column standard</EM> if the
+entries in <!-- MATH
+ $T^{\lambda}_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.png"
+ ALT="$T^{\lambda}_{{\bf i}}$"> are strictly increasing down columns according
+to this order. It is 
+called <EM><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-row standard</EM> if the
+entries in <!-- MATH
+ $T^{\lambda}_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.png"
+ ALT="$T^{\lambda}_{{\bf i}}$"> are weakly increasing along rows and 
+<EM><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-standard</EM> if it is both at the same time. We write
+<!-- MATH
+ $I_{\lambda}^{}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.png"
+ ALT="$I_{\lambda}^{}$"> to denote the subset of <IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.png"
+ ALT="$I(n,r)$"> consisting
+of all multi-indices being <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-standard. Such a multi-index
+<!-- MATH
+ ${\bf i}\in I_{\lambda}^{}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.png"
+ ALT="${\bf i}\in I_{\lambda}^{}$">
+is called <EM><IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$">-symplectic standard</EM> if for each
+index <!-- MATH
+ $i\in \underline{m}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img336.png"
+ ALT="$i\in \underline{m}$"> the occurences of <IMG
+ WIDTH="11" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img337.png"
+ ALT="$i$"> as well as <IMG
+ WIDTH="15" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img338.png"
+ ALT="$i'$"> in
+<!-- MATH
+ $T^{\lambda}_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.png"
+ ALT="$T^{\lambda}_{{\bf i}}$">
+is limited to the first <IMG
+ WIDTH="11" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img337.png"
+ ALT="$i$"> rows. The corresponding subset of
+<!-- MATH
+ $I_{\lambda}^{}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.png"
+ ALT="$I_{\lambda}^{}$"> will be denoted by <!-- MATH
+ $I_{\lambda}^{\rm sym}$
+ -->
+<IMG
+ WIDTH="39" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img339.png"
+ ALT="$I_{\lambda}^{\rm sym}$">.
+<BR>
+<P>
+The notion of <EM>symplectic standard tableaux</EM> traces back to 
+R.C. King [<A
+ HREF="node9.html#king">Ki</A>] and it has appeard in a lot of work concerning
+symplectic groups and their representation theory (for details see
+[<A
+ HREF="node9.html#donk1">Do3</A>]).
+<BR>
+<P>
+It is well known from invariant theory (cf. [<A
+ HREF="node9.html#martin">Mr</A>],
+section 2.5) that the collection of all bideterminants
+<!-- MATH
+ $T^{\lambda}({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img340.png"
+ ALT="$T^{\lambda}({\bf i}:{\bf j})$"> where <IMG
+ WIDTH="16" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img314.png"
+ ALT="$\lambda$"> runs through <!-- MATH
+ $\Lambda^+(n, r)$
+ -->
+<IMG
+ WIDTH="72" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.png"
+ ALT="$\Lambda^+(n, r)$"> and <!-- MATH
+ ${\bf i}, {\bf j}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img342.png"
+ ALT="${\bf i}, {\bf j}$"> run through <!-- MATH
+ $I_{\lambda}^{}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.png"
+ ALT="$I_{\lambda}^{}$"> form a
+basis of <IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img343.png"
+ ALT="$A_{R}(n,r)$">. Similarily we will prove in the next section
+
+<P>
+<P>
+<DIV><A NAME="Basissatz"><B>Theorem  6.1</B></A> &nbsp; 
+The <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module  <!-- MATH
+ $A^{{\rm s}}_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$A^{{\rm s}}_{R}(n,r)$"> has a basis given by
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\bf B}_r:=\{ {d}^lT^{\lambda}({\bf i}:{\bf j})|\; 0\leq l \leq 
+\frac r2, \; \lambda \in \Lambda^+(m, r-2l),\;
+{\bf i},{\bf j} \in I_{\lambda}^{\rm sym}\}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="528" HEIGHT="41" BORDER="0"
+ SRC="img344.png"
+ ALT="\begin{displaymath}{\bf B}_r:=\{ {d}^lT^{\lambda}({\bf i}:{\bf j})\vert\; 0\leq ...
+...bda^+(m, r-2l),\;
+{\bf i},{\bf j} \in I_{\lambda}^{\rm sym}\}. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P></DIV><P></P>
+
+<P>
+Before proving this let us have a look at some consequences. The first
+one generalizes theorem 9.5 (a) of [<A
+ HREF="node9.html#doty">Dt</A>] avoiding the
+restriction to characteristic zero. Furthermore, it contains corollary
+5.5 (f) of that paper for algebraically closed fields.
+
+<P>
+<P>
+<DIV><A NAME="Koordinatenring_beliebig"><B>Corollary  6.2</B></A> &nbsp; 
+Let <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$K$"> be an algebraically close field. Then <!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$"> coincides with
+the coordinate ring of the Zariski-closure <!-- MATH
+ $\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\overline{{\rm GSp}_{K}(n)}$"> 
+of <!-- MATH
+ ${\rm GSp}_{K}(n)$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img303.png"
+ ALT="${\rm GSp}_{K}(n)$"> in <!-- MATH
+ ${\rm M}_{K}(n)$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="${\rm M}_{K}(n)$">.
+In particular <!-- MATH
+ ${\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="${\rm SpM}_{K}(n)$"> is identical to <!-- MATH
+ $\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\overline{{\rm GSp}_{K}(n)}$">. Therefore, a complete set
+of generators of the vanishing ideal of <!-- MATH
+ $\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\overline{{\rm GSp}_{K}(n)}$"> in <IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$A_{K}(n)$"> is given by the set
+<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img148.png"
+ ALT="$F$"> (defined in equation <A HREF="node6.html#ideal_generator">14</A>).</DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Let <IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.png"
+ ALT="$A_0(n)$"> be the  coordinate ring
+of <!-- MATH
+ $\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\overline{{\rm GSp}_{K}(n)}$"> and <IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.png"
+ ALT="$A_0(n,r)$"> its <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.png"
+ ALT="$r$">-th homogenous summand.
+In [<A
+ HREF="node9.html#donk3">Do2</A>] the symplectic Schur algebra
+<IMG
+ WIDTH="67" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img273.png"
+ ALT="$S_0(n,r)$"> is defined as the dual algebra to the coalgebra <IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.png"
+ ALT="$A_0(n,r)$">.
+The dimension of the latter one is given by Weyl's character formula
+and therefore independent of the field <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$K$"> (cf. [<A
+ HREF="node9.html#donk3">Do2</A>] p. 77).
+On the other hand there is an epimorphism of graded bialgebras from
+<!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$"> to <IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.png"
+ ALT="$A_0(n)$"> since <!-- MATH
+ $\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\overline{{\rm GSp}_{K}(n)}$"> is closed in <!-- MATH
+ ${\rm SpM}_{K}(n)$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img297.png"
+ ALT="${\rm SpM}_{K}(n)$"> and
+the latter one has been defined as the vanishing set of the ideal
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img288.png"
+ ALT="${\cal F}$"> by which <!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$"> is defined. But by our basis theorem
+<A HREF="node6.html#Basissatz">6.1</A> the dimension of <!-- MATH
+ $A^{{\rm s}}_{K}(n,r)$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.png"
+ ALT="$A^{{\rm s}}_{K}(n,r)$"> is independent of the
+field <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$K$">, as well. Thus, the proof can be finished looking at the
+case <!-- MATH
+ $K={\mathbb{C}}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img350.png"
+ ALT="$K={\mathbb{C}}$"> and using
+Doty's theorem 9.5 (a) or alternately by a direct calculation of
+<!-- MATH
+ $|{\bf B}_r|={\rm dim}_{{\mathbb{C}}}{((A_0(n,r)))}$
+ -->
+<IMG
+ WIDTH="198" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img351.png"
+ ALT="$\vert{\bf B}_r\vert={\rm dim}_{{\mathbb{C}}}{((A_0(n,r)))}$"> (see proposition <A HREF="node7.html#_B_r_">7.1</A> below).<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="$\Box$">
+<BR><P>
+By theorem <A HREF="node4.html#base_extension">4.1</A> we have isomorphisms
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+K\otimes_{{\mathbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n,r) \cong A^{{\rm s}}_{K}(n,r),\;\; 
+ K\otimes_{{\mathbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n)  \cong A^{{\rm s}}_{K}(n).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="485" HEIGHT="33" BORDER="0"
+ SRC="img352.png"
+ ALT="\begin{displaymath}K\otimes_{{\mathbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n,r) \cong ...
+...hbb{Z}}}A^{{\rm s}}_{{\mathbb{Z}}}(n) \cong A^{{\rm s}}_{K}(n).\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Since <!-- MATH
+ $A^{{\rm s}}_{K}(n)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img298.png"
+ ALT="$A^{{\rm s}}_{K}(n)$"> has been recognized to be the
+coordinate ring of <!-- MATH
+ ${\rm SpM}_{K}(n)=\overline{{\rm GSp}_{K}(n)}$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img353.png"
+ ALT="${\rm SpM}_{K}(n)=\overline{{\rm GSp}_{K}(n)}$"> we may interpret the spectrum of
+the ring <!-- MATH
+ $A^{{\rm s}}_{{\mathbb{Z}}}(n)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img354.png"
+ ALT="$A^{{\rm s}}_{{\mathbb{Z}}}(n)$"> as an integral monoid scheme <!-- MATH
+ ${\rm SpM}_{{\mathbb{Z}}}(n)$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img355.png"
+ ALT="${\rm SpM}_{{\mathbb{Z}}}(n)$">. Accordingly, an integral
+form for the symplectic Schur algebra can be obtained as the
+dual algebra  
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+S_{{\mathbb{Z}}}^{\rm s}(n,r):={\rm Hom}_{{\mathbb{Z}}}{(A^{{\rm s}}_{{\mathbb{Z}}}(n,r),{\mathbb{Z}})}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="400" HEIGHT="33" BORDER="0"
+ SRC="img356.png"
+ ALT="\begin{displaymath}S_{{\mathbb{Z}}}^{\rm s}(n,r):={\rm Hom}_{{\mathbb{Z}}}{(A^{{\rm s}}_{{\mathbb{Z}}}(n,r),{\mathbb{Z}})}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+of its homogenous summands. 
+By theorem <A HREF="node4.html#starkes_Kriterium">4.3</A> and
+<A HREF="node6.html#Basissatz">6.1</A>
+this is stable under base change, that is, tensoring by a field <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img270.png"
+ ALT="$K$">
+gives the symplectic Schur algebra <!-- MATH
+ $S_{K}^{\rm s}(n,r)=S_0(n,r)={\rm Hom}_{K}{(A^{{\rm s}}_{K}(n,r),K)}$
+ -->
+<IMG
+ WIDTH="347" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.png"
+ ALT="$S_{K}^{\rm s}(n,r)=S_0(n,r)={\rm Hom}_{K}{(A^{{\rm s}}_{K}(n,r),K)}$">
+defined over that field. An
+integral form for symplectic Schur algebras exists, as well, by
+S. Donkin's work on <EM>generalized Schur algebras</EM> (see [<A
+ HREF="node9.html#donk3">Do2</A>]).
+But his approach is quite different using the theory of Lie algebras in
+particular the <EM>Kostant <IMG
+ WIDTH="17" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="${\mathbb{Z}}$">-form</EM>.
+In both cases the notion of symplectic Schur algebras can be extended
+to more general integral domains <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$"> instead of <IMG
+ WIDTH="17" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="${\mathbb{Z}}$"> leading to
+identical concepts. In our case this is 
+<!-- MATH
+ $S^{\rm s}_{R}(n,r):={\rm Hom}_{R}{(A^{{\rm s}}_{R}(n,r),R)}$
+ -->
+<IMG
+ WIDTH="256" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img358.png"
+ ALT="$S^{\rm s}_{R}(n,r):={\rm Hom}_{R}{(A^{{\rm s}}_{R}(n,r),R)}$">.
+By theorem <A HREF="node3.html#duale_Algebra">3.3</A> we conclude
+
+<P>
+<P>
+<DIV><B>Corollary  6.3</B> &nbsp; 
+Over any noetherian integral domain <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">
+the symplectic Schur algebra is
+isomorphic to the centralizer algebra
+of the Brauer algebra <IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img266.png"
+ ALT="$D_{r}({-n})$">.</DIV><P></P>
+
+<P>
+For a field of characteristic zero this has been proved by S. Doty,
+too ([<A
+ HREF="node9.html#doty">Dt</A>] corollary 9.3. (c)). It should be remarked, that the
+basis dual to <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img359.png"
+ ALT="${\bf B}_r$"> together with the anti-involution defined by matrix
+transposition give a <EM>cell datum</EM> for the symplectic Schur algebra
+in the sense of J. Graham and G. Lehrer (cf. [<A
+ HREF="node9.html#doc">Oe</A>], 4.2.5).
+Thus, its representation theory can be developed easily to the extent 
+of the treatment of <EM>cellular algebras</EM> in [<A
+ HREF="node9.html#graham">GL</A>].
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html73"
+  HREF="node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html71"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html65"
+  HREF="node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html74"
+  HREF="node7.html">Proof of theorem 6.1</A>
+<B> Up:</B> <A NAME="tex2html72"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html66"
+  HREF="node5.html">FRT-Construction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2003-03-26
+</ADDRESS>
+</BODY>
+</HTML>

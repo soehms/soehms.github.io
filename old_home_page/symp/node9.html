@@ -1,0 +1,2637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Arithmetic of Bideterminants</TITLE>
+<META NAME="description" CONTENT="Arithmetic of Bideterminants">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html136"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html132"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html126"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html134"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html137"
+  HREF="node10.html">The Weak Straightening Algorithm</A>
+<B> Up:</B> <A NAME="tex2html133"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html127"
+  HREF="node8.html">The Quantum Symplectic Straightening</A>
+ &nbsp; <B>  <A NAME="tex2html135"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00090000000000000000">
+Arithmetic of Bideterminants</A>
+</H1>
+
+<P>
+The calculus of bideterminants is needed inside <!-- MATH
+ ${\cal K}=A^{{\rm sh}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img405.png"
+ ALT="$ {\cal K}=A^{{\rm sh}}_{R,q}(n,r)$">.
+Unless otherwise stated the rules hold in <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$">
+too.  Recall the definition of <!-- MATH
+ $\kappa_{\lambda}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img437.png"
+ ALT="$ \kappa_{\lambda}$"> from 
+section <A HREF="node3.html#bideterminanten">3</A>.
+
+<P>
+<P>
+<DIV><A NAME="1-ybetai_Formel"><B>Lemma  9.1</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $\lambda\in \Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$ \lambda \in
+\Lambda(p, r)$"> be a composition and <IMG
+ WIDTH="56" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img438.png"
+ ALT="$ y=q^2$">.
+Then to each <IMG
+ WIDTH="45" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img439.png"
+ ALT="$ i&lt;r$"> such that the simple transposition <!-- MATH
+ $s_i=(i,i+1)$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img440.png"
+ ALT="$ s_i=(i,i+1)$"> is 
+contained in the standard Young-subgroup
+<!-- MATH
+ ${\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$ {\cal S}_{\lambda}$">, there are
+endomorphisms <!-- MATH
+ $\mu_{\lambda,i}, \mu'_{\lambda,i}\in {\rm End}_{R}{(V^{\otimes r})}$
+ -->
+<IMG
+ WIDTH="185" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img442.png"
+ ALT="$ \mu_{\lambda,i}, \mu'_{\lambda,i}\in {\rm End}_{R}{(V^{\otimes r})}$">
+satisfying
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+\kappa_{\lambda}=({\rm id}_{V^{\otimes r}}-y^{-1}\beta_i)\mu_{\lambda ,i}=
+\mu'_{\lambda,i}({\rm id}_{V^{\otimes r}}-y^{-1}\beta_i).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="386" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img443.png"
+ ALT="$\displaystyle \kappa_{\lambda}=({\rm id}_{V^{\otimes r}}-y^{-1}\beta_i)\mu_{\lambda ,i}=
+\mu'_{\lambda,i}({\rm id}_{V^{\otimes r}}-y^{-1}\beta_i).$">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Let us first reduce to the case <!-- MATH
+ $\lambda =\alpha_r=(r)$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img444.png"
+ ALT="$ \lambda =\alpha_r=(r)$">. Setting
+<!-- MATH
+ $\kappa_r:=\kappa_{\alpha_r}$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img445.png"
+ ALT="$ \kappa_r:=\kappa_{\alpha_r}$">, <!-- MATH
+ $k_s:=\lambda_1 + \ldots +  \lambda_{s-1}$
+ -->
+<IMG
+ WIDTH="173" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img446.png"
+ ALT="$ k_s:=\lambda_1 + \ldots + \lambda_{s-1}$">,
+<!-- MATH
+ $\mu_{r,i}:=\mu_{\alpha_r,i}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img447.png"
+ ALT="$ \mu_{r,i}:=\mu_{\alpha_r,i}$">, <!-- MATH
+ $\mu'_{r,i}:=\mu'_{\alpha_r,i}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$ \mu'_{r,i}:=\mu'_{\alpha_r,i}$"> 
+and 
+<!-- MATH
+ \begin{displaymath}
+\kappa_{\lambda}^s:={\rm id}_{V^{\otimes k_s}}
+\otimes \kappa_{\lambda_s}\otimes{\rm id}_{V^{\otimes r-\lambda_s-k_s}},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="270" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img449.png"
+ ALT="$\displaystyle \kappa_{\lambda}^s:={\rm id}_{V^{\otimes k_s}}
+\otimes \kappa_{\lambda_s}\otimes{\rm id}_{V^{\otimes r-\lambda_s-k_s}},$">
+</DIV><P></P>
+we can extend the definition to arbitrary <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$">
+by using the formula 
+<!-- MATH
+ $\kappa_{\lambda}=\kappa_{\lambda}^1\kappa_{\lambda}^2\ldots
+\kappa_{\lambda}^p$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img450.png"
+ ALT="$ \kappa_{\lambda}=\kappa_{\lambda}^1\kappa_{\lambda}^2\ldots
+\kappa_{\lambda}^p$"> in which the factors commute.
+Now, using standard reduced expressions for permutations <!-- MATH
+ $w \in {\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$ w \in {\cal S}_{r}$">
+one easily verifies the following recursion rules for <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ r&gt;1$">:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\kappa_r=\kappa_{r-1}({\rm id}_{V^{\otimes r}}+
+\sum_{l=1}^{r-1}(-y)^{l-r}\beta_{r-1}\beta_{r-2}
+\ldots \beta_l)=
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="386" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img451.png"
+ ALT="$\displaystyle \kappa_r=\kappa_{r-1}({\rm id}_{V^{\otimes r}}+
+\sum_{l=1}^{r-1}(-y)^{l-r}\beta_{r-1}\beta_{r-2}
+\ldots \beta_l)=$">
+</DIV><P></P> <!-- MATH
+ \begin{displaymath}
+({\rm id}_{V^{\otimes r}}+
+\sum_{l=1}^{r-1}(-y)^{l-r}\beta_l\beta_{l+1}
+\ldots \beta_{r-1})\kappa_{r-1}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="326" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img452.png"
+ ALT="$\displaystyle ({\rm id}_{V^{\otimes r}}+
+\sum_{l=1}^{r-1}(-y)^{l-r}\beta_l\beta_{l+1}
+\ldots \beta_{r-1})\kappa_{r-1}. $">
+</DIV><P></P>
+
+<P>
+We proceed by induction on <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">, the case  <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$"> being clear.
+The case <IMG
+ WIDTH="78" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img453.png"
+ ALT="$ i&lt;r-1$"> can be handled immediately with the help of the
+above recursion formula. If <IMG
+ WIDTH="78" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img454.png"
+ ALT="$ i=r-1$"> we calculate
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\kappa_r = \kappa_{r-1}({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-1})+
+\mu'_{r-1,r-2}({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-2})
+\sum_{l=1}^{r-2}(-y)^{l-r}\beta_{r-1}\beta_{r-2}
+\ldots \beta_l.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="666" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img455.png"
+ ALT="$\displaystyle \kappa_r = \kappa_{r-1}({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-1...
+...eta_{r-2})
+\sum_{l=1}^{r-2}(-y)^{l-r}\beta_{r-1}\beta_{r-2}
+\ldots \beta_l.
+$">
+</DIV><P></P>
+
+<P>
+But by the braid relations we get
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-2})(-y)^{l-r}\beta_{r-1}\beta_{r-2}\ldots
+\beta_l=
+(-y)^{l-r}\beta_{r-1}\beta_{r-2}\ldots \beta_l({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-1}),
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="671" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img456.png"
+ ALT="$\displaystyle ({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-2})(-y)^{l-r}\beta_{r-1}...
+...a_{r-1}\beta_{r-2}\ldots \beta_l({\rm id}_{V^{\otimes r}}-y^{-1}\beta_{r-1}),
+$">
+</DIV><P></P>
+
+<P>
+yielding the right hand side factorization of <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img457.png"
+ ALT="$ \kappa_r$">. The other formula
+is obtained similarly.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="qdet_Null"><B>Corollary  9.2</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.png"
+ ALT="$ {\bf j} \in I(n,r)$"> be a multi-index
+possessing two identical neighbouring indices
+<!-- MATH
+ $j_l=j_{l+1}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img458.png"
+ ALT="$ j_l=j_{l+1}$"> and <!-- MATH
+ $\lambda\in \Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$ \lambda \in
+\Lambda(p, r)$"> such that the transposition
+<IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img459.png"
+ ALT="$ s_l$"> is contained in <!-- MATH
+ ${\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$ {\cal S}_{\lambda}$">. Then 
+<!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})=t_q^{\lambda}({\bf j}:{\bf i})=0$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img460.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})=t_q^{\lambda}({\bf j}:{\bf i})=0$">
+holds for all <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>By assumption, <!-- MATH
+ $v_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img461.png"
+ ALT="$ v_{{\bf j}}$"> lies in the kernel of 
+<!-- MATH
+ $({\rm id}_{V^{\otimes r}}-y^{-1}\beta_l)$
+ -->
+<IMG
+ WIDTH="129" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img462.png"
+ ALT="$ ({\rm id}_{V^{\otimes r}}-y^{-1}\beta_l)$">. Consequently the assertion concerning
+<!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})$"> follows immediately from 
+Lemma <A HREF="#1-ybetai_Formel">9.1</A> since <!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})=
+x_{{\bf i} {\bf j}}\wr \kappa_{\lambda}$
+ -->
+<IMG
+ WIDTH="142" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img463.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})=
+x_{{\bf i} {\bf j}}\wr \kappa_{\lambda}$">.
+Using the matrix transposition map <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ ^*$"> introduced in
+section <A HREF="node8.html#st_formula">8</A>, the formula for exchanged multi-indices follows
+as well.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+
+<P>
+Next, we investigate the transition from <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">
+to its epimorphic image <!-- MATH
+ $A^{{\rm sh}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img375.png"
+ ALT="$ A^{{\rm sh}}_{R,q}(n)$">.
+For this purpose
+denote by <!-- MATH
+ ${{\cal G}_{r}}\mbox{$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img464.png"
+ ALT="$ {{\cal G}_{r}}$"><A NAME="7368"></A> the ideal 
+generated by <!-- MATH
+ $G:=\gamma_1=\gamma\otimes
+{\rm id}_{V^{\otimes r-2}}$
+ -->
+<IMG
+ WIDTH="184" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img465.png"
+ ALT="$ G:=\gamma_1=\gamma\otimes
+{\rm id}_{V^{\otimes r-2}}$">
+in the algebraic span <!-- MATH
+ ${\cal A}_r$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ {\cal A}_r$"> of the endomorphisms <IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img357.png"
+ ALT="$ \beta_i$"> and
+<IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img358.png"
+ ALT="$ \gamma_i$">. By equation (<A HREF="node2.html#gamma_and_beta">1</A>) the realtion
+<!-- MATH
+ $\beta^2=(q^2-1)\beta + q^2{\rm id}_{V^{\otimes r}2}$
+ -->
+<IMG
+ WIDTH="214" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img466.png"
+ ALT="$ \beta^2=(q^2-1)\beta + q^2{\rm id}_{V^{\otimes r}2}$"> holds in <!-- MATH
+ ${\cal A}_r/ {\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img467.png"
+ ALT="$ {\cal A}_r/ {\cal G}_{r}$">. By the
+braid relations
+<!-- MATH
+ $\beta_i\beta_{i+1}\beta_i=\beta_{i+1}\beta_i\beta_{i+1}$
+ -->
+<IMG
+ WIDTH="177" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img468.png"
+ ALT="$ \beta_i\beta_{i+1}\beta_i=\beta_{i+1}\beta_i\beta_{i+1}$"> the relations
+<!-- MATH
+ $\beta_i^2=(q^2-1)\beta_i + q^2{\rm id}_{V^{\otimes r}2}$
+ -->
+<IMG
+ WIDTH="218" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img469.png"
+ ALT="$ \beta_i^2=(q^2-1)\beta_i + q^2{\rm id}_{V^{\otimes r}2}$"> and <!-- MATH
+ $\gamma_i = 0$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img470.png"
+ ALT="$ \gamma_i = 0$"> must hold 
+in <!-- MATH
+ ${\cal A}_r/ {\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img467.png"
+ ALT="$ {\cal A}_r/ {\cal G}_{r}$"> for all <IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img327.png"
+ ALT="$ i$"> as well. 
+The Iwahori-Hecke algebra <!-- MATH
+ ${{\cal H}_q(r)}\mbox{$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img471.png"
+ ALT="$ {{\cal H}_q(r)}$"><A NAME="7393"></A> of type <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> is defined
+on generators <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img472.png"
+ ALT="$ T_{s_i}$"> for <!-- MATH
+ $i \in \{1, \cdots, r-1\}$
+ -->
+<IMG
+ WIDTH="150" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img473.png"
+ ALT="$ i \in \{1, \cdots, r-1\}$"> by relations 
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rll}
+ T_{s_i}T_{s_j} & = T_{s_j}T_{s_i}  & \mbox{ where } |i-j| > 1, \\
+ T_{s_i}T_{s_{i+1}}T_{s_i} & = T_{s_{i+1}}T_{s_i}T_{s_{i+1}} & \mbox{ where }
+ i < r-1, \\
+ T_{s_i}^2 & = (q^2-1)T_{s_1} + q^2 & \mbox{ where } i < r.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="412" HEIGHT="86" BORDER="0"
+ SRC="img474.png"
+ ALT="\begin{displaymath}
+\begin{array}{rll}
+T_{s_i}T_{s_j} &amp; = T_{s_j}T_{s_i} &amp; \m...
+...&amp; = (q^2-1)T_{s_1} + q^2 &amp; \mbox{ where } i &lt; r.
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+
+<P>
+Therefore, 
+there is an epimorphism from <!-- MATH
+ ${\cal H}_q(r)$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img475.png"
+ ALT="$ {\cal H}_q(r)$"> to 
+the quotient <!-- MATH
+ ${\cal A}_r/{\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img467.png"
+ ALT="$ {\cal A}_r/ {\cal G}_{r}$"> sending the generator <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img476.png"
+ ALT="$ T_{s_l}$"> to
+<!-- MATH
+ $\beta_l +{\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img477.png"
+ ALT="$ \beta_l +{\cal G}_{r}$"> (notation as in [<A
+ HREF="node22.html#dd">DD</A>]).
+
+<P>
+<P>
+<DIV><A NAME="Reduktion_Hecke"><B>Lemma  9.3</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $A, B\in {\cal A}_r$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img478.png"
+ ALT="$ A, B\in {\cal A}_r$"> be endomorphisms of <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> such that
+<IMG
+ WIDTH="59" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img479.png"
+ ALT="$ A\equiv B$"> modulo <!-- MATH
+ ${\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img480.png"
+ ALT="$ {\cal G}_{r}$">. Then, the equation
+<!-- MATH
+ $x_{{\bf i} {\bf j}}\wr A=x_{{\bf i} {\bf j}}\wr B$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img481.png"
+ ALT="$ x_{{\bf i} {\bf j}}\wr A=x_{{\bf i} {\bf j}}\wr B$"> 
+holds in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$">. </I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We have to show that <!-- MATH
+ $x_{{\bf i} {\bf j}}\wr A=0$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img482.png"
+ ALT="$ x_{{\bf i} {\bf j}}\wr A=0$">
+for all <!-- MATH
+ $A\in {\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img483.png"
+ ALT="$ A\in {\cal G}_{r}$">. Let <!-- MATH
+ $F,H\in {\cal A}_r$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img484.png"
+ ALT="$ F,H\in {\cal A}_r$"> be such
+that <IMG
+ WIDTH="90" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img485.png"
+ ALT="$ A=FGH$">. From the defining equation of the quantum coefficient
+of dilation <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.png"
+ ALT="$ d_q$"> from section <A HREF="node4.html#dilatationskoeffizient">4</A> we have
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+x_{{\bf i} {\bf j}}\wr G=
+\left\{ \begin{array}{ll}
+0 & j_1'\neq j_2 \mbox{ or } i_1'\neq i_2, \\
+-q^{\rho_{i_1}+\rho_{j_1}}\epsilon_{i_1}\epsilon_{j_1}\; d_q\;
+x_{i_3 j_3}\ldots x_{i_r j_r} & j_1'=j_2 \mbox{ and } i_1'=i_2.\\
+\end{array} \right.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="522" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img486.png"
+ ALT="$\displaystyle x_{{\bf i} {\bf j}}\wr G=
+\left\{ \begin{array}{ll}
+0 &amp; j_1'\ne...
+...}\ldots x_{i_r j_r} &amp; j_1'=j_2 \mbox{ and } i_1'=i_2.\\
+\end{array} \right.
+$">
+</DIV><P></P>
+
+<P>
+This means <!-- MATH
+ $x_{{\bf i} {\bf j}}\wr G=0$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img487.png"
+ ALT="$ x_{{\bf i} {\bf j}}\wr G=0$"> in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$"> for all
+<!-- MATH
+ ${\bf i},{\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$">. By (<A HREF="node2.html#Rel_MA">5</A>) we have  
+<!-- MATH
+ $x_{{\bf i} {\bf j}}\wr F=F\wr x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img488.png"
+ ALT="$ x_{{\bf i} {\bf j}}\wr F=F\wr x_{{\bf i} {\bf j}}$"> and therefore,
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+x_{{\bf i} {\bf j}}\wr FGH=\sum_{{\bf k},{\bf l},{\bf s} \in I(n,r)}
+x_{{\bf i} {\bf k}}f_{{\bf k}{\bf l}}g_{{\bf l}{\bf s}}h_{{\bf s}{\bf j}}=
+\sum_{{\bf k},{\bf l},{\bf s} \in I(n,r)}
+f_{{\bf i}{\bf k}}x_{{\bf k} {\bf l}}g_{{\bf l}{\bf s}}h_{{\bf s}{\bf j}}=
+\sum_{{\bf k},{\bf s} \in I(n,r)}
+f_{{\bf i}{\bf k}}(x_{{\bf k} {\bf s}}\wr G)h_{{\bf s}{\bf j}}= 0.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="705" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img489.png"
+ ALT="$\displaystyle x_{{\bf i} {\bf j}}\wr FGH=\sum_{{\bf k},{\bf l},{\bf s} \in I(n,...
+...\in I(n,r)}
+f_{{\bf i}{\bf k}}(x_{{\bf k} {\bf s}}\wr G)h_{{\bf s}{\bf j}}= 0.$">
+</DIV><P></P>
+
+<P>
+where <!-- MATH
+ $(f_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img490.png"
+ ALT="$ (f_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$">,
+<!-- MATH
+ $(g_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img491.png"
+ ALT="$ (g_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$"> and
+<!-- MATH
+ $(h_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img492.png"
+ ALT="$ (h_{{\bf i}{\bf j}})_{{\bf i}, {\bf j} \in I(n,r)}$">
+are the coefficient matrices of <IMG
+ WIDTH="46" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img493.png"
+ ALT="$ F, \; G$"> and <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img494.png"
+ ALT="$ H$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+We extend the notation introduced in
+(<A HREF="node2.html#Notation_End">2</A>). Let <!-- MATH
+ $\mu \in {\rm End}_{R}{(V^{\otimes r})}$
+ -->
+<IMG
+ WIDTH="131" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img495.png"
+ ALT="$ \mu \in {\rm End}_{R}{(V^{\otimes r})}$"> be an endomorphism of <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">. Set
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Notation_no_Ext"></A><!-- MATH
+ \begin{equation}
+\begin{array}{rl}
+t_q^{\lambda}({\bf i}:{\bf j})\wr \mbox{
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="398" HEIGHT="67" BORDER="0"
+ SRC="img496.png"
+ ALT="\begin{displaymath}\begin{array}{rl} t_q^{\lambda}({\bf i}:{\bf j})\wr \mbox{\i...
+...})=(\mu\kappa_{\lambda}) \wr x_{{\bf i} {\bf j}}. \end{array}\end{displaymath}"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Similar expressions are used with respect to the capital <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img193.png"
+ ALT="$ T$">
+notation for bideterminants.
+
+<P>
+<P>
+<DIV><A NAME="inverse_Formel"><B>Lemma  9.4</B></A> &nbsp; 
+<I><A NAME="Formel_in_mSp"></A>
+For all <!-- MATH
+ ${\bf i}, {\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$"> and <!-- MATH
+ $w \in {\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img497.png"
+ ALT="$ w \in {\cal S}_{\lambda}$"> the
+following equations hold in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$">;
+</I><!-- MATH
+ \begin{displaymath}
+\beta (w)\wr t_q^{\lambda}({\bf i}:{\bf j})=
+\beta (w)^{-1}\wr t_q^{\lambda}({\bf i}:{\bf j})=
+(-1)^{l(w)}t_q^{\lambda}({\bf i}:{\bf j})
+=t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (w)^{-1}
+=t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (w) 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="709" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img498.png"
+ ALT="$\displaystyle \beta (w)\wr t_q^{\lambda}({\bf i}:{\bf j})=
+\beta (w)^{-1}\wr t...
+...bf i}:{\bf j})\wr \beta (w)^{-1}
+=t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (w) $">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Modulo <!-- MATH
+ ${\cal G}_{r}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img480.png"
+ ALT="$ {\cal G}_{r}$"> we have
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta (w)\kappa_{\lambda}=\beta (w)^{-1}\kappa_{\lambda}=
+(-1)^{l(w)}\kappa_{\lambda} =
+\kappa_{\lambda} \beta (w)^{-1}=\kappa_{\lambda} \beta (w)
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="463" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img499.png"
+ ALT="$\displaystyle \beta (w)\kappa_{\lambda}=\beta (w)^{-1}\kappa_{\lambda}=
+(-1)^{...
+...kappa_{\lambda} =
+\kappa_{\lambda} \beta (w)^{-1}=\kappa_{\lambda} \beta (w)
+$">
+</DIV><P></P>
+
+<P>
+since the corresponding equations (where <IMG
+ WIDTH="45" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img500.png"
+ ALT="$ \beta (w)$"> is replaced by
+<IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img501.png"
+ ALT="$ T_w$">)
+hold in the Iwahori-Hecke algebra <!-- MATH
+ ${\cal H}_q(r)$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img475.png"
+ ALT="$ {\cal H}_q(r)$">. 
+Thus the assertion follows from Lemma <A HREF="#Reduktion_Hecke">9.3</A>.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+
+<P>
+Let <!-- MATH
+ ${{\cal J}}\mbox{$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img502.png"
+ ALT="$ {{\cal J}}$"><A NAME="7546"></A> denote the ideal in the tensor algebra <!-- MATH
+ ${\cal T}(V)=
+\bigoplus_{r \in {\mathbb{N}}\,_0} V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img503.png"
+ ALT="$ {\cal T}(V)=
+\bigoplus_{r \in {\mathbb{N}}\,_0} V^{\otimes r}$"> generated by the twofold invariant
+tensor <!-- MATH
+ ${J}^*=\sum_{i=1}^n\epsilon_iq^{\rho_i}v_{i}\otimes v_{i'}
+\in V\otimes V$
+ -->
+<IMG
+ WIDTH="263" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img504.png"
+ ALT="$ {J}^*=\sum_{i=1}^n\epsilon_iq^{\rho_i}v_{i}\otimes v_{i'}
+\in V\otimes V$"> and let <!-- MATH
+ ${{{\cal J}}_{r}}\mbox{$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img505.png"
+ ALT="$ {{{\cal J}}_{r}}$"><A NAME="7558"></A><IMG
+ WIDTH="100" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img506.png"
+ ALT="$ :={\cal J}\cap V^{\otimes r}$"> be 
+its <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">-th homogeneous summand.
+
+<P>
+<P>
+<DIV><A NAME="Jr"><B>Lemma  9.5</B></A> &nbsp; 
+<I>Let <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img507.png"
+ ALT="$ U$"> be the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear span of all elements <!-- MATH
+ $\gamma_l(v_{{\bf i}})$
+ -->
+<IMG
+ WIDTH="48" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img508.png"
+ ALT="$ \gamma_l(v_{{\bf i}})$">
+where <!-- MATH
+ $1 \leq l<r$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img509.png"
+ ALT="$ 1 \leq l&lt;r$"> and <!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">. Then <!-- MATH
+ $U={{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img510.png"
+ ALT="$ U={{\cal J}}_{r}$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Since <!-- MATH
+ $\gamma(v_{k}v_{k'})=-\epsilon_kq^{\rho_k}{J}^*$
+ -->
+<IMG
+ WIDTH="168" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img511.png"
+ ALT="$ \gamma(v_{k}v_{k'})=-\epsilon_kq^{\rho_k}{J}^*$"> and <!-- MATH
+ $\gamma(v_{k}v_{l})
+=0$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img512.png"
+ ALT="$ \gamma(v_{k}v_{l})
+=0$"> for all <!-- MATH
+ $k, l \in \underline{r}$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img513.png"
+ ALT="$ k, l \in \underline{r}$"> with <IMG
+ WIDTH="51" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img514.png"
+ ALT="$ k \neq l'$">
+by section <A HREF="node4.html#dilatationskoeffizient">4</A> it follows that <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img507.png"
+ ALT="$ U$"> is contained in
+<!-- MATH
+ ${{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img515.png"
+ ALT="$ {{\cal J}}_{r}$">. The verification of the opposite inclusion can be reduced to consider
+elements of the form <!-- MATH
+ $v_{{\bf i}}{J}^*v_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img516.png"
+ ALT="$ v_{{\bf i}}{J}^*v_{{\bf j}}$"> with <!-- MATH
+ ${\bf i} \in I(n,l-1), {\bf j} \in I(n,r-l-1)$
+ -->
+<IMG
+ WIDTH="270" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img517.png"
+ ALT="$ {\bf i} \in I(n,l-1), {\bf j} \in I(n,r-l-1)$"> for some <!-- MATH
+ $1 \leq l < r$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img509.png"
+ ALT="$ 1 \leq l&lt;r$">. But such an element can be
+written as <!-- MATH
+ $-\epsilon_kq^{-\rho_k}\gamma_{l}(v_{{\bf i}}v_{k}v_{k'}v_{{\bf j}})$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img518.png"
+ ALT="$ -\epsilon_kq^{-\rho_k}\gamma_{l}(v_{{\bf i}}v_{k}v_{k'}v_{{\bf j}})$"> for some <!-- MATH
+ $k\in \underline{r}$
+ -->
+<IMG
+ WIDTH="47" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img519.png"
+ ALT="$ k\in \underline{r}$">. Thus the assertion follows.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><B>Lemma  9.6</B> &nbsp; 
+<I><A NAME="I_cqT_r"></A>
+Let <!-- MATH
+ $a_{{\bf j}} \in R$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img520.png"
+ ALT="$ a_{{\bf j}} \in R$"> be such that
+<!-- MATH
+ $\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}} \in {{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="152" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img521.png"
+ ALT="$ \sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}} \in {{\cal J}}_{r}$">. Then, for 
+all <!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> and all compositions <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$"> of <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$"> we have
+in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$">
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+\sum_{{\bf j}\in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf j}}=0, \;\;
+\mbox{ and }\;\;
+ \sum_{{\bf j}\in I(n,r)} a_{{\bf j}}t_q^{\lambda}({\bf i}:{\bf j})=0. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="144" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img522.png"
+ ALT="$\displaystyle \sum_{{\bf j}\in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf j}}=0, \;\;$">&nbsp; &nbsp; and <IMG
+ WIDTH="181" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img523.png"
+ ALT="$\displaystyle \;\;
+\sum_{{\bf j}\in I(n,r)} a_{{\bf j}}t_q^{\lambda}({\bf i}:{\bf j})=0. $">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>First, note that the second equation follows from the first one by definition
+of bideterminants. 
+By the above lemma we can reduce to the case
+<!-- MATH
+ $\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}} =\gamma_l(v_{{\bf k}})$
+ -->
+<IMG
+ WIDTH="181" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img524.png"
+ ALT="$ \sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}} =\gamma_l(v_{{\bf k}})$">
+where <!-- MATH
+ ${\bf k} \in I(n,r), 1 \leq l < r$
+ -->
+<IMG
+ WIDTH="175" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img525.png"
+ ALT="$ {\bf k} \in I(n,r), 1 \leq l &lt; r$"> and
+<!-- MATH
+ $a_{{\bf j}}=(\gamma_l)_{{\bf j}{\bf k}}$
+ -->
+<IMG
+ WIDTH="88" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img526.png"
+ ALT="$ a_{{\bf j}}=(\gamma_l)_{{\bf j}{\bf k}}$">. Thus we get
+<!-- MATH
+ $\sum_{{\bf j}\in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf j}}=
+x_{{\bf i} {\bf k}}\wr \gamma_l=0.$
+ -->
+<IMG
+ WIDTH="232" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img527.png"
+ ALT="$ \sum_{{\bf j}\in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf j}}=
+x_{{\bf i} {\bf k}}\wr \gamma_l=0.$"><IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+Next, we give a quantum symplectic version of <EM>Laplace duality</EM>. The
+corresponding classical result can be found in [<A
+ HREF="node22.html#martin">Ma</A>, 2.5.1], for
+instance.
+
+<P>
+<P>
+<DIV><A NAME="Laplace_1"><B>Proposition  9.7</B></A> (Laplace Duality)  &nbsp; 
+<I>Let <!-- MATH
+ $\lambda,\mu  \in\Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img528.png"
+ ALT="$ \lambda,\mu \in\Lambda(p, r)$"> be compositions, 
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img529.png"
+ ALT="$ Y$"> a set of left coset representatives of <!-- MATH
+ ${\cal S}_{\lambda}\cap {\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img530.png"
+ ALT="$ {\cal S}_{\lambda}\cap {\cal S}_{\mu} $">
+in <!-- MATH
+ ${\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$ {\cal S}_{\lambda}$"> and <IMG
+ WIDTH="22" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img531.png"
+ ALT="$ X$"> a set of right coset representatives of
+<!-- MATH
+ ${\cal S}_{\lambda}\cap {\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img530.png"
+ ALT="$ {\cal S}_{\lambda}\cap {\cal S}_{\mu} $">
+in <!-- MATH
+ ${\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img532.png"
+ ALT="$ {\cal S}_{\mu} $">, such that <!-- MATH
+ $l(vw)=l(v)+l(w)$
+ -->
+<IMG
+ WIDTH="162" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img533.png"
+ ALT="$ l(vw)=l(v)+l(w)$"> and <!-- MATH
+ $l(wu)=l(u)+l(w)$
+ -->
+<IMG
+ WIDTH="163" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img534.png"
+ ALT="$ l(wu)=l(u)+l(w)$"> holds
+for all <!-- MATH
+ $v \in Y, u \in X$
+ -->
+<IMG
+ WIDTH="109" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img535.png"
+ ALT="$ v \in Y, u \in X$"> and <!-- MATH
+ $w \in {\cal S}_{\lambda}\cap {\cal S}_{\mu}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img536.png"
+ ALT="$ w \in {\cal S}_{\lambda}\cap {\cal S}_{\mu} $">.
+Then for all <!-- MATH
+ ${\bf i}, {\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$"> the following equation holds:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+\sum_{u \in X}(-y)^{-l(u)}t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (u)=
+\sum_{v \in Y}(-y)^{-l(v)}\beta (v)\wr t_q^{\mu}({\bf i}:{\bf j}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="454" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img537.png"
+ ALT="$\displaystyle \sum_{u \in X}(-y)^{-l(u)}t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (u)=
+\sum_{v \in Y}(-y)^{-l(v)}\beta (v)\wr t_q^{\mu}({\bf i}:{\bf j}).
+$">
+</DIV><P></P>
+<P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Using the disjoint union
+<!-- MATH
+ \begin{displaymath}
+Z:={\cal S}_{\lambda}{\cal S}_{\mu} =
+\bigcup_{u\in X}{\cal S}_{\lambda}u=\bigcup_{v\in Y}v{\cal S}_{\mu} , 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="269" HEIGHT="59" ALIGN="MIDDLE" BORDER="0"
+ SRC="img538.png"
+ ALT="$\displaystyle Z:={\cal S}_{\lambda}{\cal S}_{\mu} =
+\bigcup_{u\in X}{\cal S}_{\lambda}u=\bigcup_{v\in Y}v{\cal S}_{\mu} , $">
+</DIV><P></P>
+
+<P>
+and the fact <!-- MATH
+ $\beta(w)\beta(u)=\beta(wu)$
+ -->
+<IMG
+ WIDTH="157" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img539.png"
+ ALT="$ \beta(w)\beta(u)=\beta(wu)$">, <!-- MATH
+ $\beta(v)\beta(w)=\beta(vw)$
+ -->
+<IMG
+ WIDTH="155" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img540.png"
+ ALT="$ \beta(v)\beta(w)=\beta(vw)$">
+which holds by length additivity
+we calculate
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rl}
+\sum_{u \in X}(-y)^{-l(u)}t_q^{\lambda}({\bf i}:{\bf j})\wr \beta (u) & =
+\sum_{u\in X} \sum_{w \in {\cal S}_{\lambda}}
+(-y)^{-l(u)-l(w)}x_{{\bf i} {\bf j}}\wr \beta (w)\beta (u)\\
+ & =
+\sum_{z \in Z}(-y)^{-l(z)}x_{{\bf i} {\bf j}}\wr \beta (z)\\
+ & = 
+\sum_{z \in Z}(-y)^{-l(z)}\beta (z) \wr x_{{\bf i} {\bf j}}\\
+ & =
+\sum_{v\in Y} \sum_{w \in {\cal S}_{\mu} }
+(-y)^{-l(v)-l(w)}\beta (v)\beta (w)\wr x_{{\bf i} {\bf j}} \\
+& =
+\sum_{v\in Y} (-y)^{-l(v)}\beta (v)\wr t_q^{\mu}({\bf i}:{\bf j}).
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="605" HEIGHT="138" ALIGN="MIDDLE" BORDER="0"
+ SRC="img541.png"
+ ALT="$\displaystyle \begin{array}{rl}
+\sum_{u \in X}(-y)^{-l(u)}t_q^{\lambda}({\bf i...
+...um_{v\in Y} (-y)^{-l(v)}\beta (v)\wr t_q^{\mu}({\bf i}:{\bf j}).
+\end{array}
+$">
+</DIV><P></P><IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+The next result is needed for the transition from 
+<IMG
+ WIDTH="11" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img542.png"
+ ALT="$ t$">-bideterminants of compositions
+to <IMG
+ WIDTH="18" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img193.png"
+ ALT="$ T$">-bideterminants of
+partitions.
+
+<P>
+<P>
+<DIV><A NAME="praebidet"><B>Lemma  9.8</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $\lambda\in \Lambda(p, r)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img145.png"
+ ALT="$ \lambda \in
+\Lambda(p, r)$"> be a composition and <!-- MATH
+ ${\bf i}, {\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$">. 
+Then the bideterminant <!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j})$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img194.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j})$"> can be written
+as a linear combination of bideterminants
+<!-- MATH
+ $T^{\lambda '}_q({\bf k}:{\bf l})$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img543.png"
+ ALT="$ T^{\lambda '}_q({\bf k}:{\bf l})$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>First, there is a permutation <!-- MATH
+ $\pi \in {\cal S}_{p}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img544.png"
+ ALT="$ \pi \in {\cal S}_{p}$">, such that
+<!-- MATH
+ $\bar{\lambda}=(\lambda_{\pi(1)}, \ldots , \lambda_{\pi(p)})\in \Lambda^+(p, r)$
+ -->
+<IMG
+ WIDTH="260" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img545.png"
+ ALT="$ \bar{\lambda}=(\lambda_{\pi(1)}, \ldots , \lambda_{\pi(p)})\in \Lambda^+(p, r)$">
+is a partition. This <!-- MATH
+ $\bar{\lambda}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img546.png"
+ ALT="$ \bar{\lambda}$"> is uniquely determined by <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.png"
+ ALT="$ \lambda$"> 
+(but <IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img547.png"
+ ALT="$ \pi$"> only under the restriction to be of minimal length).
+Clearly the parabolic subgroups <!-- MATH
+ ${\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img441.png"
+ ALT="$ {\cal S}_{\lambda}$"> and
+<!-- MATH
+ ${\cal S}_{\bar{\lambda}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img548.png"
+ ALT="$ {\cal S}_{\bar{\lambda}}$"> in <!-- MATH
+ ${\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ {\cal S}_{r}$"> are conjugate to each other. Thus, there
+is an element <!-- MATH
+ $v \in {\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img549.png"
+ ALT="$ v \in {\cal S}_{r}$"> 
+such that <!-- MATH
+ $v{\cal S}_{\lambda}={\cal S}_{\bar{\lambda}}v$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.png"
+ ALT="$ v{\cal S}_{\lambda}={\cal S}_{\bar{\lambda}}v$">. Furthermore, it is known
+from the theory of parabolic subgroups that in the left coset
+<!-- MATH
+ $v{\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img551.png"
+ ALT="$ v{\cal S}_{\lambda}$"> and in the right coset
+<!-- MATH
+ ${\cal S}_{\bar{\lambda}}v$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img552.png"
+ ALT="$ {\cal S}_{\bar{\lambda}}v$"> there are unique representatives <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$"> (resp. <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img553.png"
+ ALT="$ \bar w$">)
+of minimal length. Since we have
+<!-- MATH
+ $l(wu)=l(w)+l(u)$
+ -->
+<IMG
+ WIDTH="163" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img554.png"
+ ALT="$ l(wu)=l(w)+l(u)$"> for all <!-- MATH
+ $u \in {\cal S}_{\lambda}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img555.png"
+ ALT="$ u \in {\cal S}_{\lambda}$"> and <!-- MATH
+ $l(u\bar w)=l(u)+
+l(\bar w)$
+ -->
+<IMG
+ WIDTH="163" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img556.png"
+ ALT="$ l(u\bar w)=l(u)+
+l(\bar w)$"> for all <!-- MATH
+ $u \in {\cal S}_{\bar{\lambda}}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img557.png"
+ ALT="$ u \in {\cal S}_{\bar{\lambda}}$">, we have
+<!-- MATH
+ $\beta(w)\kappa_{\lambda}=\kappa_{\bar{\lambda}}\beta(\bar w)$
+ -->
+<IMG
+ WIDTH="149" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img558.png"
+ ALT="$ \beta(w)\kappa_{\lambda}=\kappa_{\bar{\lambda}}\beta(\bar w)$">.
+By the definition of bideterminants 
+(<!-- MATH
+ $t_q^{\lambda}({\bf i}:{\bf j}):=\kappa_{\lambda}x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="133" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img559.png"
+ ALT="$ t_q^{\lambda}({\bf i}:{\bf j}):=\kappa_{\lambda}x_{{\bf i} {\bf j}}$">), 
+the relations (<A HREF="node2.html#Rel_MA">5</A>) 
+holding inside <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> and the calculus for the symbol <IMG
+ WIDTH="10" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img560.png"
+ ALT="$ \wr $"> given in
+(<A HREF="node2.html#SchlangeRegeln">3</A>) we obtain
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta(w)\wr t_q^{\lambda}({\bf i}:{\bf j})=
+t_q^{\bar{\lambda}}({\bf i}:{\bf j})\wr \beta(\bar w)=
+T^{\bar{\lambda}'}_q({\bf i}:{\bf j})\wr \beta(\bar w). 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="408" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img561.png"
+ ALT="$\displaystyle \beta(w)\wr t_q^{\lambda}({\bf i}:{\bf j})=
+t_q^{\bar{\lambda}}(...
+...j})\wr \beta(\bar w)=
+T^{\bar{\lambda}'}_q({\bf i}:{\bf j})\wr \beta(\bar w). $">
+</DIV><P></P>
+
+<P>
+Since <!-- MATH
+ $\bar{\lambda}'=\lambda '$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img562.png"
+ ALT="$ \bar{\lambda}'=\lambda '$"> this results in
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+t_q^{\lambda}({\bf i}:{\bf j})=
+\beta(w)^{-1}\wr T^{\lambda '}_q({\bf i}:{\bf j})\wr \beta(\bar w) =
+\sum_{{\bf k}, {\bf l} \in I(n,r)}\beta (w)^{-1}_{{\bf i}{\bf k}}
+T^{\lambda '}_q({\bf k}:{\bf l}) \beta (\bar w)_{{\bf l}{\bf j}}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="557" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img563.png"
+ ALT="$\displaystyle t_q^{\lambda}({\bf i}:{\bf j})=
+\beta(w)^{-1}\wr T^{\lambda '}_q...
+... i}{\bf k}}
+T^{\lambda '}_q({\bf k}:{\bf l}) \beta (\bar w)_{{\bf l}{\bf j}}. $">
+</DIV><P></P><IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+Next, we introduce a calculus for our bideterminants bringing
+our special order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img422.png"
+ ALT="$ \lhd$"> on <IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$ I(n,r)$"> into the picture. First,
+some new notation has to be explained. The sum of two
+multi-indices  <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> and <!-- MATH
+ ${\bf j}\in I(n,s)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img564.png"
+ ALT="$ {\bf j}\in I(n,s)$"> is
+defined by juxtaposition, that is
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{{\bf i}+{\bf j}}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="40" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img565.png"
+ ALT="$\displaystyle {{\bf i}+{\bf j}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img566.png"
+ ALT="$\displaystyle \mbox{\index{${{\bf i}+{\bf j}}$}}$"><IMG
+ WIDTH="318" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img567.png"
+ ALT="$\displaystyle :=(i_1,\ldots , i_r, j_1, \ldots , j_s) \;\in \;I(n,r+s). $">
+</DIV><P></P>
+
+<P>
+Note that the map <!-- MATH
+ $f:I(n,r) \rightarrow {\mathbb{N}}\,_0^m$
+ -->
+<IMG
+ WIDTH="144" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$ f:I(n,r)\rightarrow {\mathbb{N}}\,_0^m$"> occurring in
+Theorem <A HREF="node8.html#Straightening_Algorithmus_2">8.3</A>
+is additive in the sense <!-- MATH
+ $f({\bf i}+{\bf j})=
+f({\bf i})+f({\bf j})$
+ -->
+<IMG
+ WIDTH="178" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img568.png"
+ ALT="$ f({\bf i}+{\bf j})=
+f({\bf i})+f({\bf j})$">. This implies
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Additivitat"></A><!-- MATH
+ \begin{equation}
+f({\bf i} +{\bf j})< f({\bf i}+{\bf k})\;\;\mbox{ and }\;\;
+ f({\bf j} +{\bf i})<f({\bf k}+{\bf i})\;\;\mbox{ if }\;\;
+f({\bf j})<f({\bf k})
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="168" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img569.png"
+ ALT="$\displaystyle f({\bf i} +{\bf j})&lt; f({\bf i}+{\bf k})\;\;$"> and <IMG
+ WIDTH="178" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img570.png"
+ ALT="$\displaystyle \;\; f({\bf j} +{\bf i})&lt;f({\bf k}+{\bf i})\;\;$"> if <IMG
+ WIDTH="110" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img571.png"
+ ALT="$\displaystyle \;\; f({\bf j})&lt;f({\bf k})$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(11)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+with respect to the lexicographic order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img572.png"
+ ALT="$ &lt;$"> on <!-- MATH
+ ${\mathbb{N}}\,_0^m$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.png"
+ ALT="$ {\mathbb{N}}\,_0^m$">. 
+To a  multi-index
+<!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> we consider the following <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-spans
+in <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{W_{{\bf i}}}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img573.png"
+ ALT="$\displaystyle {W_{{\bf i}}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img574.png"
+ ALT="$\displaystyle \mbox{\index{${W_{{\bf i}}}$}}$"><IMG
+ WIDTH="266" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img575.png"
+ ALT="$\displaystyle :=
+\left&lt; v_{{\bf j}}\vert\;{\bf j} \in I(n,r) , \; f({\bf j})&lt;
+f({\bf i})\right&gt; \; \;$"> and <IMG
+ WIDTH="41" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img576.png"
+ ALT="$\displaystyle \;\;
+{\overline W_{{\bf i}}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img577.png"
+ ALT="$\displaystyle \mbox{\index{${\overline W_{{\bf i}}}$}}$"><IMG
+ WIDTH="264" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img578.png"
+ ALT="$\displaystyle :=
+\left&lt; v_{{\bf j}}\vert\;{\bf j} \in I(n,r) , \; f({\bf j}) \leq
+f({\bf i})\right&gt;.
+$">
+</DIV><P></P>
+
+<P>
+Furthermore, we set
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+h_{ij}:= \left\{ \begin{array}{ll}
+q^{-1} & \mbox{ if } j\neq i, i', \\
+1 & \mbox{ if } j=i \mbox{ or }  j=i' \mbox{ where } i'>m, \\
+q^{-2} & \mbox{ if } j=i'\leq m,
+\end{array} \right. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="390" HEIGHT="88" ALIGN="MIDDLE" BORDER="0"
+ SRC="img579.png"
+ ALT="$\displaystyle h_{ij}:= \left\{ \begin{array}{ll}
+q^{-1} &amp; \mbox{ if } j\neq i,...
+...ox{ where } i'&gt;m, \\
+q^{-2} &amp; \mbox{ if } j=i'\leq m,
+\end{array} \right.
+$">
+</DIV><P></P>
+
+<P>
+and denote the simple transpositions by <!-- MATH
+ $s_l=(l,l+1)$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img580.png"
+ ALT="$ s_l=(l,l+1)$">, as before.
+The following lemma is the key concerning calculations with bideterminants.
+Again we set <IMG
+ WIDTH="56" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img438.png"
+ ALT="$ y=q^2$">.
+
+<P>
+<P>
+<DIV><A NAME="Formel_W_i"><B>Lemma  9.9</B></A> &nbsp; 
+<I>For all <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> and <!-- MATH
+ $l \in \underline{r}$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img581.png"
+ ALT="$ l \in \underline{r}$"> the following formulas
+hold in <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> modulo the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module <!-- MATH
+ $W_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img582.png"
+ ALT="$ W_{{\bf i}}$">:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+\beta_l(v_{{\bf i}})\equiv \left\{ \begin{array}{ll}
+yh_{i_{l+1}i_{l}}v_{{\bf i}s_l} + (y-1)
+({\rm id}_{V^{\otimes r}}-\gamma_l)(v_{{\bf i}}) & \mbox{\rm if } i_l > i_{l+1}, \\
+yh_{i_{l+1}i_{l}}v_{{\bf i}s_l}  & \mbox{\rm if } i_l \leq i_{l+1},
+\end{array} \right. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="494" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img583.png"
+ ALT="$\displaystyle \beta_l(v_{{\bf i}})\equiv \left\{ \begin{array}{ll}
+yh_{i_{l+1}...
+...1}i_{l}}v_{{\bf i}s_l} &amp; \mbox{\rm if } i_l \leq i_{l+1},
+\end{array} \right. $">
+</DIV><P></P>
+<P><!-- MATH
+ \begin{displaymath}
+\beta_l^{-1}(v_{{\bf i}})\equiv \left\{ \begin{array}{ll}
+h_{i_{l+1}i_{l}}v_{{\bf i}s_l} + (y^{-1}-1)
+({\rm id}_{V^{\otimes r}}-\gamma_l)(v_{{\bf i}}) & \mbox{\rm if } i_l \leq i_{l+1}, \\
+h_{i_{l+1}i_{l}}v_{{\bf i}s_l}  & \mbox{\rm if } i_l > i_{l+1}.
+\end{array} \right. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="517" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img584.png"
+ ALT="$\displaystyle \beta_l^{-1}(v_{{\bf i}})\equiv \left\{ \begin{array}{ll}
+h_{i_{...
+...{l+1}i_{l}}v_{{\bf i}s_l} &amp; \mbox{\rm if } i_l &gt; i_{l+1}.
+\end{array} \right. $">
+</DIV><P></P>
+<P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>The congruence relation for <!-- MATH
+ $\beta_l^{-1}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img585.png"
+ ALT="$ \beta_l^{-1}$"> follows from the one for <IMG
+ WIDTH="20" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img586.png"
+ ALT="$ \beta_l$"> 
+because <!-- MATH
+ $y\beta^{-1}=\beta+(y-1)(\gamma-{\rm id}_{V^{\otimes 2}})$
+ -->
+<IMG
+ WIDTH="253" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img587.png"
+ ALT="$ y\beta^{-1}=\beta+(y-1)(\gamma-{\rm id}_{V^{\otimes 2}})$"> 
+by (<A HREF="node2.html#gamma_and_beta">1</A>).
+Therefore, it is enough to prove the first assertion.
+<BR>
+<P>
+First, consider the case <!-- MATH
+ $i_l > i_{l+1}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img588.png"
+ ALT="$ i_l &gt; i_{l+1}$">. If <!-- MATH
+ $i_l\neq i_{l+1}'$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img589.png"
+ ALT="$ i_l\neq i_{l+1}'$">, 
+the asserted congruence relation is also an equation, as can be seen directly
+from the definition of <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$">. Turning to the case
+<!-- MATH
+ $i_l=i_{l+1}'=:j\leq m$
+ -->
+<IMG
+ WIDTH="151" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img590.png"
+ ALT="$ i_l=i_{l+1}'=:j\leq m$">, we split <IMG
+ WIDTH="11" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img322.png"
+ ALT="$ {\bf i}$"> into three summands
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\bf i}^1=(i_1, \ldots , i_{l-1}), \; \;
+{\bf i}^2=(j',j), \; \;
+{\bf i}^3=(i_{l+1}, \ldots , i_r) .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="407" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img591.png"
+ ALT="$\displaystyle {\bf i}^1=(i_1, \ldots , i_{l-1}), \; \;
+{\bf i}^2=(j',j), \; \;
+{\bf i}^3=(i_{l+1}, \ldots , i_r) .$">
+</DIV><P></P>
+
+<P>
+To <!-- MATH
+ $k \in \underline{n}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img592.png"
+ ALT="$ k \in \underline{n}$"> we set <!-- MATH
+ ${\bf i}(k):={\bf i}^1 + (k,k') + {\bf i}^3$
+ -->
+<IMG
+ WIDTH="187" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img593.png"
+ ALT="$ {\bf i}(k):={\bf i}^1 + (k,k') + {\bf i}^3$"> and calculate
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta_l(v_{{\bf i}}) = v_{{\bf i}s_l} + (y-1)v_{{\bf i}}
+ -(y-1)\sum_{k>j}q^{\rho_k-\rho_j}\epsilon_k
+v_{{\bf i}(k)} .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="408" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img594.png"
+ ALT="$\displaystyle \beta_l(v_{{\bf i}}) = v_{{\bf i}s_l} + (y-1)v_{{\bf i}}
+-(y-1)\sum_{k&gt;j}q^{\rho_k-\rho_j}\epsilon_k
+v_{{\bf i}(k)} .$">
+</DIV><P></P>
+
+<P>
+Since
+<!-- MATH
+ $(y-1)\sum_{k=1}^nq^{\rho_k-\rho_j}\epsilon_k\epsilon_j
+v_{{\bf i}(k)} =(y-1)\gamma_l(v_{{\bf i}})$
+ -->
+<IMG
+ WIDTH="349" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img595.png"
+ ALT="$ (y-1)\sum_{k=1}^nq^{\rho_k-\rho_j}\epsilon_k\epsilon_j
+v_{{\bf i}(k)} =(y-1)\gamma_l(v_{{\bf i}})$"> we obtain the equation
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta_l(v_{{\bf i}}) =
+v_{{\bf i}s_l} + (y-1)({\rm id}_{V^{\otimes r}}-\gamma_l)(v_{{\bf i}})
+ +(y-1)\sum_{k\leq j}q^{\rho_k-\rho_j}
+v_{{\bf i}(k)} .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="502" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img596.png"
+ ALT="$\displaystyle \beta_l(v_{{\bf i}}) =
+v_{{\bf i}s_l} + (y-1)({\rm id}_{V^{\oti...
+...\gamma_l)(v_{{\bf i}})
++(y-1)\sum_{k\leq j}q^{\rho_k-\rho_j}
+v_{{\bf i}(k)} .$">
+</DIV><P></P>
+
+<P>
+But  <!-- MATH
+ ${\bf i}(j)={\bf i}s_l$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img597.png"
+ ALT="$ {\bf i}(j)={\bf i}s_l$"> and
+<!-- MATH
+ \begin{displaymath}
+f({\bf i}(k))=f({\bf i}^1) + f((k,k')) +
+f({\bf i}^3)  <  f({\bf i}^1) + f((j',j)) +
+f({\bf i}^3)  =f({\bf i}(j'))=f({\bf i})
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="643" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img598.png"
+ ALT="$\displaystyle f({\bf i}(k))=f({\bf i}^1) + f((k,k')) +
+f({\bf i}^3) &lt; f({\bf i}^1) + f((j',j)) +
+f({\bf i}^3) =f({\bf i}(j'))=f({\bf i})$">
+</DIV><P></P>
+
+<P>
+for all <IMG
+ WIDTH="49" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img599.png"
+ ALT="$ k &lt; j$"> by (<A HREF="#Additivitat">11</A>), yielding the asserted congruence
+modulo <!-- MATH
+ $W_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img582.png"
+ ALT="$ W_{{\bf i}}$">. If <!-- MATH
+ $i_l<i_{l+1}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img600.png"
+ ALT="$ i_l&lt;i_{l+1}$"> the interesting case is
+<!-- MATH
+ $i_{l+1}'=i_l=:j\leq m$
+ -->
+<IMG
+ WIDTH="151" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img601.png"
+ ALT="$ i_{l+1}'=i_l=:j\leq m$">. Here the assertion immediately follows from
+the calculation
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta_l(v_{{\bf i}}) = v_{{\bf i}s_l}
+ -(y-1)\sum_{k>j'}q^{\rho_k+\rho_j}
+v_{{\bf i}(k)} ,
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="299" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img602.png"
+ ALT="$\displaystyle \beta_l(v_{{\bf i}}) = v_{{\bf i}s_l}
+-(y-1)\sum_{k&gt;j'}q^{\rho_k+\rho_j}
+v_{{\bf i}(k)} ,$">
+</DIV><P></P>
+
+<P>
+because <!-- MATH
+ $f({\bf i}(k))<f({\bf i})$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img603.png"
+ ALT="$ f({\bf i}(k))&lt;f({\bf i})$"> for all <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img604.png"
+ ALT="$ k&gt;j'$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><B>Remark  9.10</B> &nbsp; <A NAME="Invarianz_W_i"></A>
+By Lemma <A HREF="#Jr">9.5</A> the above lemma implies that <!-- MATH
+ $\overline W_{{\bf i}}+{{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img605.png"
+ ALT="$ \overline W_{{\bf i}}+{{\cal J}}_{r}$"> is invariant
+under <!-- MATH
+ ${\cal A}_r$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ {\cal A}_r$">.
+But, <!-- MATH
+ $W_{{\bf i}}=\sum_{f({\bf j})<f({\bf i})}\overline W_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="159" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img606.png"
+ ALT="$ W_{{\bf i}}=\sum_{f({\bf j})&lt;f({\bf i})}\overline W_{{\bf j}}$"> and thus,
+<!-- MATH
+ $W_{{\bf i}}+{{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img607.png"
+ ALT="$ W_{{\bf i}}+{{\cal J}}_{r}$"> must be invariant as well.</DIV><P></P>
+
+<P>
+<P>
+<DIV><A NAME="Wirkung_Nachbartausch"><B>Corollary  9.11</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.png"
+ ALT="$ {\bf j} \in I(n,r)$"> and  <!-- MATH
+ $l \in \underline{r}$
+ -->
+<IMG
+ WIDTH="43" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img581.png"
+ ALT="$ l \in \underline{r}$">.
+Then to each
+<!-- MATH
+ ${\bf k} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$ {\bf k}\in I(n,r)$"> satisfying <!-- MATH
+ $f({\bf k}) < f({\bf j})$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ f({\bf k}) &lt; f({\bf j})$"> there is
+<!-- MATH
+ $a_{{\bf j}{\bf k}}(s_l)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img609.png"
+ ALT="$ a_{{\bf j}{\bf k}}(s_l)$"> in <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> (possibly zero)
+such that the following equations hold
+in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$"> for all <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})\wr \beta_l^{-1}=
+h_{j_{l+1}j_l}T^{\lambda}_q({\bf i}:{\bf j}s_l)
+\; +\; \sum_{f({\bf k})<f({\bf j})} 
+a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k})
+\;\; \mbox{ if } j_l > j_{l+1},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="493" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img610.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})\wr \beta_l^{-1}=
+h_{j_{l+1}j_l}T^...
+...f k})&lt;f({\bf j})}
+a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k})
+\;\;$">&nbsp; &nbsp; if <IMG
+ WIDTH="78" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img611.png"
+ ALT="$\displaystyle j_l &gt; j_{l+1},$">
+</DIV><P></P><!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})\wr \beta_l=
+yh_{j_{l+1}j_l}T^{\lambda}_q({\bf i}:{\bf j}s_l)
+\; +\; \sum_{f({\bf k})<f({\bf j})} 
+a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k})
+\;\; \mbox{ if } j_l \leq  j_{l+1}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="489" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img612.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})\wr \beta_l=
+yh_{j_{l+1}j_l}T^{\la...
+...f k})&lt;f({\bf j})}
+a_{{\bf j}{\bf k}}(s_l)T^{\lambda}_q({\bf i}:{\bf k})
+\;\;$">&nbsp; &nbsp; if <IMG
+ WIDTH="78" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img613.png"
+ ALT="$\displaystyle j_l \leq j_{l+1}.$">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Note that <!-- MATH
+ $(\beta_l^{-1})_{{\bf k} {\bf j}}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img614.png"
+ ALT="$ (\beta_l^{-1})_{{\bf k} {\bf j}}$"> is the 
+coefficient of <!-- MATH
+ $v_{{\bf k}}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img615.png"
+ ALT="$ v_{{\bf k}}$"> in the
+expression <!-- MATH
+ $\beta_l^{-1}(v_{{\bf j}})$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img616.png"
+ ALT="$ \beta_l^{-1}(v_{{\bf j}})$">.
+By definition of bideterminants and the conventions (<A HREF="#Notation_no_Ext">10</A>)
+about <IMG
+ WIDTH="10" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img560.png"
+ ALT="$ \wr $">, the result follows immediately from the lemma.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="Operation_Spaltenstabil"><B>Corollary  9.12</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.png"
+ ALT="$ {\bf j} \in I(n,r)$"> and  <!-- MATH
+ $w\in {\cal S}_{\lambda'}$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img617.png"
+ ALT="$ w\in {\cal S}_{\lambda'}$">.
+Then there is an invertible element <!-- MATH
+ $a_{{\bf j}}(w) \in R$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img618.png"
+ ALT="$ a_{{\bf j}}(w) \in R$"> and
+to each <!-- MATH
+ ${\bf k} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$ {\bf k}\in I(n,r)$"> satisfying <!-- MATH
+ $f({\bf k})< f({\bf j})$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ f({\bf k}) &lt; f({\bf j})$"> another
+element <!-- MATH
+ $a_{{\bf j}{\bf k}}(w)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img619.png"
+ ALT="$ a_{{\bf j}{\bf k}}(w)$"> in <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> 
+such that the following equations hold
+in <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$"> for all <!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})=
+a_{{\bf j}}(w)T^{\lambda}_q({\bf i}:{\bf j}w)
+\; +\; \sum_{f({\bf k})<f({\bf j})} 
+a_{{\bf j}{\bf k}}(w)T^{\lambda}_q({\bf i}:{\bf k}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="442" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img620.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})=
+a_{{\bf j}}(w)T^{\lambda}_q({\bf...
+...f({\bf k})&lt;f({\bf j})}
+a_{{\bf j}{\bf k}}(w)T^{\lambda}_q({\bf i}:{\bf k}).
+$">
+</DIV><P></P>
+<P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We use induction on the length of <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img158.png"
+ ALT="$ w$">. 
+If this is zero there is nothing to prove.
+If not, we write
+<IMG
+ WIDTH="76" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img621.png"
+ ALT="$ w=w's_l$"> where <!-- MATH
+ $w', s_l \in {\cal S}_{\lambda'}$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img622.png"
+ ALT="$ w', s_l \in {\cal S}_{\lambda'}$"> and <!-- MATH
+ $l(w')=l(w)-1$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img623.png"
+ ALT="$ l(w')=l(w)-1$">.
+By the induction hypothesis we have
+<!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})=
+a_{{\bf j}}(w')T^{\lambda}_q({\bf i}:{\bf j}w')
+\; +\; \sum_{f({\bf k})<f({\bf j})} a_{{\bf j}{\bf k}}(w')
+T^{\lambda}_q({\bf i}:{\bf k}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="455" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img624.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})=
+a_{{\bf j}}(w')T^{\lambda}_q({\b...
+...({\bf k})&lt;f({\bf j})} a_{{\bf j}{\bf k}}(w')
+T^{\lambda}_q({\bf i}:{\bf k}).
+$">
+</DIV><P></P>
+But by Lemma
+<A HREF="#Formel_in_mSp">9.4</A> we have <!-- MATH
+ $T^{\lambda}_q({\bf i}:{\bf j}w')=
+-T^{\lambda}_q({\bf i}:{\bf j}w')\wr \beta_l^{-1}$
+ -->
+<IMG
+ WIDTH="255" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img625.png"
+ ALT="$ T^{\lambda}_q({\bf i}:{\bf j}w')=
+-T^{\lambda}_q({\bf i}:{\bf j}w')\wr \beta_l^{-1}$"> as well as
+<!-- MATH
+ $T^{\lambda}_q({\bf i}:{\bf j}w')=
+-T^{\lambda}_q({\bf i}:{\bf j}w')\wr \beta_l$
+ -->
+<IMG
+ WIDTH="241" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img626.png"
+ ALT="$ T^{\lambda}_q({\bf i}:{\bf j}w')=
+-T^{\lambda}_q({\bf i}:{\bf j}w')\wr \beta_l$">. Thus, the assertion follows
+from the preceding corollary and the fact that
+<!-- MATH
+ $f({\bf j})=f({\bf j}w')$
+ -->
+<IMG
+ WIDTH="113" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img627.png"
+ ALT="$ f({\bf j})=f({\bf j}w')$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="Formel_ibf_i_geordnet"><B>Lemma  9.13</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> satisfy <!-- MATH
+ $i_1\leq i_2 \leq \ldots \leq i_r$
+ -->
+<IMG
+ WIDTH="144" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img628.png"
+ ALT="$ i_1\leq i_2 \leq \ldots \leq i_r$">
+and let <!-- MATH
+ $w\in {\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$ w \in {\cal S}_{r}$"> be arbitrary. Then the following
+congruence relation holds in <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> modulo the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-submodule 
+<!-- MATH
+ $W'_{{\bf i}}=W_{{\bf i}}+{{\cal J}}_{r}$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img629.png"
+ ALT="$ W'_{{\bf i}}=W_{{\bf i}}+{{\cal J}}_{r}$">:
+</I>
+<P><!-- MATH
+ \begin{displaymath}
+\beta(w^{-1})(v_{{\bf i}})\equiv y^{l(w)}h_{{\bf i}}(w)v_{{\bf i}w} .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="226" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img630.png"
+ ALT="$\displaystyle \beta(w^{-1})(v_{{\bf i}})\equiv y^{l(w)}h_{{\bf i}}(w)v_{{\bf i}w} .$">
+</DIV><P></P>
+<P>
+<I>Here we have set
+<!-- MATH
+ $h_{{\bf i}}(w):=\prod h_{i_{w(k)}i_{w(j)}}$
+ -->
+<IMG
+ WIDTH="171" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img631.png"
+ ALT="$ h_{{\bf i}}(w):=\prod h_{i_{w(k)}i_{w(j)}}$">,
+where the product runs over all pairs <!-- MATH
+ $1\leq j < k \leq r$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img632.png"
+ ALT="$ 1\leq j &lt; k \leq r$"> such that
+<IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img633.png"
+ ALT="$ w(j)&gt;w(k)$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We use induction on <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">, the case <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img157.png"
+ ALT="$ r=1$"> being trivial. 
+For <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ r&gt;1$"> we embed <!-- MATH
+ ${\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img634.png"
+ ALT="$ {\cal S}_{r-1}$"> as the parabolic subgroup of <!-- MATH
+ ${\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ {\cal S}_{r}$">
+generated by <!-- MATH
+ $s_1, \ldots ,s_{r-2}$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img635.png"
+ ALT="$ s_1, \ldots ,s_{r-2}$">, which fix <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">. 
+If <!-- MATH
+ $w\in {\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img636.png"
+ ALT="$ w\in {\cal S}_{r-1}$"> there is nothing to prove by the induction
+hypothesis. Otherwise, we write
+<IMG
+ WIDTH="71" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img637.png"
+ ALT="$ w=w's$"> where <!-- MATH
+ $w'\in {\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="82" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img638.png"
+ ALT="$ w'\in {\cal S}_{r-1}$"> and <!-- MATH
+ $s:=s_{r-1}
+s_{r-2}\ldots s_{j+1}s_j$
+ -->
+<IMG
+ WIDTH="188" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img639.png"
+ ALT="$ s:=s_{r-1}
+s_{r-2}\ldots s_{j+1}s_j$"> for an appropriate <IMG
+ WIDTH="48" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img640.png"
+ ALT="$ j &lt; r$">, thus
+<!-- MATH
+ $l(w)=l(w')+r-j$
+ -->
+<IMG
+ WIDTH="167" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img641.png"
+ ALT="$ l(w)=l(w')+r-j$">. By the induction hypothesis, Lemma <A HREF="#Formel_W_i">9.9</A> 
+and Remark <A HREF="#Invarianz_W_i">9.10</A> we calculate
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rl}
+\beta(w^{-1})(v_{{\bf i}}) & \equiv
+\beta(s^{-1})(y^{l(w')}h_{{\bf i}}(w')v_{{\bf i}w'}) \\
+& =
+y^{l(w')}h_{{\bf i}}(w')\beta_j\beta_{j+1} \ldots \beta_{r-1}(v_{{\bf i}w'}) \\
+& \equiv 
+ y^{l(w')}y^{r-j}h_{{\bf i}}(w')h_{i_{w'(r)}i_{w'(r-1)}}
+h_{i_{w'(r)}i_{w'(r-2)}}\ldots h_{i_{w'(r)}i_{w'(j)}} v_{{\bf i}w's} \\
+& =
+y^{l(w)}h_{{\bf i}}(w)v_{{\bf i}w}.
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="583" HEIGHT="114" ALIGN="MIDDLE" BORDER="0"
+ SRC="img642.png"
+ ALT="$\displaystyle \begin{array}{rl}
+\beta(w^{-1})(v_{{\bf i}}) &amp; \equiv
+\beta(s^{...
+...)}} v_{{\bf i}w's} \\
+&amp; =
+y^{l(w)}h_{{\bf i}}(w)v_{{\bf i}w}.
+\end{array}
+$">
+</DIV><P></P>
+
+<P>
+<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><A NAME="Garnir_Vorbereit"><B>Corollary  9.14</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.png"
+ ALT="$ {\bf j} \in I(n,r)$"> satisfy <!-- MATH
+ $j_l \leq j_{l+1}
+\leq \ldots \leq j_{k-1} \leq j_k$
+ -->
+<IMG
+ WIDTH="220" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img643.png"
+ ALT="$ j_l \leq j_{l+1}
+\leq \ldots \leq j_{k-1} \leq j_k$"> for some
+<!-- MATH
+ $1\leq l < k \leq r$
+ -->
+<IMG
+ WIDTH="115" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img644.png"
+ ALT="$ 1\leq l &lt; k \leq r$"> and <!-- MATH
+ $w \in {\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img149.png"
+ ALT="$ w \in {\cal S}_{r}$">
+satisfy <IMG
+ WIDTH="71" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img645.png"
+ ALT="$ w(i)=i$"> for <!-- MATH
+ $1\leq i \leq l$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img646.png"
+ ALT="$ 1\leq i \leq l$"> or <!-- MATH
+ $k< i \leq r$
+ -->
+<IMG
+ WIDTH="81" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img647.png"
+ ALT="$ k&lt; i \leq r$">. Then, to each
+<!-- MATH
+ ${\bf k} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$ {\bf k}\in I(n,r)$"> satisfying <!-- MATH
+ $f({\bf k}) < f({\bf j})$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img608.png"
+ ALT="$ f({\bf k}) &lt; f({\bf j})$"> there is an element
+<!-- MATH
+ $a'_{{\bf j}{\bf k}}(w)$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img648.png"
+ ALT="$ a'_{{\bf j}{\bf k}}(w)$"> in <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> such that the following equations hold in
+<IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img392.png"
+ ALT="$ {\cal K}$"> for all
+<!-- MATH
+ ${\bf i}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$">:
+</I><!-- MATH
+ \begin{displaymath}
+T^{\lambda}_q({\bf i}:{\bf j})\wr \beta(w)=
+y^{l(w)}h_{{\bf j}}(w^{-1})T^{\lambda}_q({\bf i}:{\bf j}w^{-1})
+\; +\; \sum_{f({\bf k})<f({\bf j})} 
+a'_{{\bf j}{\bf k}}(w)T^{\lambda}_q({\bf i}:{\bf k}).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="565" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img649.png"
+ ALT="$\displaystyle T^{\lambda}_q({\bf i}:{\bf j})\wr \beta(w)=
+y^{l(w)}h_{{\bf j}}(...
+...{f({\bf k})&lt;f({\bf j})}
+a'_{{\bf j}{\bf k}}(w)T^{\lambda}_q({\bf i}:{\bf k}).$">
+</DIV><P></P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>As for the proof of Corollary <A HREF="#Wirkung_Nachbartausch">9.11</A>, this follows
+easily from the preceding lemma, Lemma <A HREF="#I_cqT_r"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/lib/latex2html/icons/crossref.png"></A>
+and the definition of bideterminants.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html136"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html132"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html126"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html134"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html137"
+  HREF="node10.html">The Weak Straightening Algorithm</A>
+<B> Up:</B> <A NAME="tex2html133"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html127"
+  HREF="node8.html">The Quantum Symplectic Straightening</A>
+ &nbsp; <B>  <A NAME="tex2html135"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

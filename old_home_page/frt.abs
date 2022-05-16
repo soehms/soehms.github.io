@@ -1,0 +1,50 @@
+\section{Introduction}
+
+L.\ Faddeev, N.\ Reshetikhin und L.\ Takhtadjian \cite{frt}
+introduced a construction to obtain quantum deformations of
+coordinate rings of classical groups.
+General considerations about this so called FRT-construction 
+can be found for instance in
+\cite{manin},\cite{tak2}, \cite{hay4}, \cite{Sudbery} 
+and also in many textbooks on quantumgroups. 
+Our approach differs from former ones in the following three aspects:\Ab
+
+First, we focus attention to the {\em graded matric bialgebra} which
+arises in the first step of the construction. This means that we
+rather look
+at quantizations of appropriate closed monoids instead of classical groups.
+Especially we look at the {\em homogenous summands} of these graded bialgebras.
+These are coalgebras which can be defined in a dual way to
+{\em centralizer algebras} of subsets in an endomorphism ring.
+We therefore call them {\em centralizer coalgebras} and investigate their
+relationship to the corresponding {\em centralizer algebras}.\Ab
+
+Further, we work over arbitrary noetherian integral domains as base rings. This makes
+sense since all known examples are allready welldefined
+over rings of integral {\em Laurent} polynomials, i.e.\
+$\Z[X, X^{-1}]$ (in the  indeterminant $X$). We will see that there are
+tremendous differences to the theory over fields, especially
+concerning the comparison of centralizer algebras and coalgebras.
+For instance the centralizer coalgebra may have $\gr$-torsion. We present the
+following criterion for $\gr$-projectivity: This property holds if and only if
+the centralizer algebra is stable under base changes. Furthermore, we will see
+that the latter property is allways valid for centralizer coalgebras.
+\Ab
+
+Finally, the FRT-construction in the ordinary form depends on exactly
+one endomorphism 
+which usually is a {\em quantum Yang-Baxter operator} in the applications.
+Here we give another version of the FRT-construction which can be applied to
+sets of endomorphisms. This generalization is neccessary to describe
+the coordinate rings of 
+classical symplectic and orthogonal monoids by use of an
+FRT-type construction. We demonstrate this in the symplectic case, giving
+some improvements of
+results by S.\ Doty \cite{doty}. 
+Furthermore, applying our results on centralizer coalgebras
+we obtain an integral form for the {\em symplectic Schur algebra} 
+defined by S.\ Donkin in \cite{donk3}
+without any use of the hyperalgebra or Kostant $\Z$-form. As an additional incredience
+we need a symplectic version of the straightening formula for bideterminants
+the proof of which covers all of the last two sections.
+

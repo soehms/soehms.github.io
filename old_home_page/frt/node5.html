@@ -1,0 +1,848 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-1 (1.67)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>FRT-Construction</TITLE>
+<META NAME="description" CONTENT="FRT-Construction">
+<META NAME="keywords" CONTENT="frt">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="frt.css">
+
+<LINK REL="next" HREF="node6.html">
+<LINK REL="previous" HREF="node4.html">
+<LINK REL="up" HREF="frt.html">
+<LINK REL="next" HREF="node6.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html63"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html61"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html55"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html64"
+  HREF="node6.html">Example: Symplectic Monoids</A>
+<B> Up:</B> <A NAME="tex2html62"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html56"
+  HREF="node4.html">Change of Base Rings</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00050000000000000000">
+FRT-Construction</A>
+</H1>
+
+<P>
+The <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.png"
+ ALT="$r$"> fold tensor product of <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$V$"> is denoted by <IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img178.png"
+ ALT="$V^{\otimes r}$">. Since
+it is a free <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module, as well, we may apply all results of
+former sections to a situation where <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$V$"> is substituted by <IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img178.png"
+ ALT="$V^{\otimes r}$">,
+<IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> by <!-- MATH
+ ${\cal E}_r:={\rm End}_{R}{(V^{\otimes r})}$
+ -->
+<IMG
+ WIDTH="144" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img179.png"
+ ALT="${\cal E}_r:={\rm End}_{R}{(V^{\otimes r})}$"> and <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> by
+<!-- MATH
+ ${{\cal E}_r}^*:={\rm Hom}_{R}{({\cal E}_r,R)}$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img180.png"
+ ALT="${{\cal E}_r}^*:={\rm Hom}_{R}{({\cal E}_r,R)}$">. There are
+natural isomorphisms between <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.png"
+ ALT="${\cal E}_r$"> and
+<!-- MATH
+ ${{\cal E}}^{\otimes r}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img182.png"
+ ALT="${{\cal E}}^{\otimes r}$"> and between <!-- MATH
+ ${{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="${{\cal E}_r}^*$"> and <!-- MATH
+ ${{{\cal E}}^*}^{\otimes r}$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="21" ALIGN="BOTTOM" BORDER="0"
+ SRC="img184.png"
+ ALT="${{{\cal E}}^*}^{\otimes r}$">. We will omit
+them in our notation and consider them as identity maps. Set
+<!-- MATH
+ $V^{\otimes 0}:={\cal E}_{0}:=R$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img185.png"
+ ALT="$V^{\otimes 0}:={\cal E}_{0}:=R$">.
+<BR>
+<P>
+Suppose we are given a family 
+<!-- MATH
+ ${\cal A}=({\cal A}_r)_{r \in {\mathbb{N}}_0}$
+ -->
+<IMG
+ WIDTH="114" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img186.png"
+ ALT="${\cal A}=({\cal A}_r)_{r \in {\mathbb{N}}_0}$"> of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-algebras
+such that <!-- MATH
+ ${\cal A}_r\subseteq {\cal E}_r$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img187.png"
+ ALT="${\cal A}_r\subseteq {\cal E}_r$">. According to lemma <A HREF="node2.html#Koideal">2.1</A>
+there is an associated family of coideals <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$K_r$"> in <!-- MATH
+ ${{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="${{\cal E}_r}^*$">. 
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="homogene_Koideale"></A>
+<!-- MATH
+ \begin{eqnarray}
+K_r:=K({\cal A}_r).
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img189.png"
+ ALT="$\displaystyle K_r:=K({\cal A}_r).$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(9)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+By the above identification we consider <!-- MATH
+ ${\cal T}({{\cal E}}^*):=\bigoplus_{r \in
+{\mathbb{N}}_0}{{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img190.png"
+ ALT="${\cal T}({{\cal E}}^*):=\bigoplus_{r \in
+{\mathbb{N}}_0}{{\cal E}_r}^*$"> as the tensor algebra on the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$">.
+There is a unique coalgebra structure on this tensor algebra, extending
+the one from <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> and turning <!-- MATH
+ ${\cal T}({{\cal E}}^*)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="${\cal T}({{\cal E}}^*)$"> into a bialgebra.
+Furthermore the <!-- MATH
+ ${{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="${{\cal E}_r}^*$"> are subcoalgebras dual to the algebras
+<IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.png"
+ ALT="${\cal E}_r$">, i.e. the coalgebra structure on <!-- MATH
+ ${{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img183.png"
+ ALT="${{\cal E}_r}^*$"> is the one considered
+above.
+Epimorphic images of this bialgebra are called <EM>matric bialgebras</EM>
+(cf. [<A
+ HREF="node9.html#tak2">Ta</A>]).
+Let us investigate under what circumstances the coideal
+<BR>
+<DIV ALIGN="CENTER"><A NAME="Def._I"></A>
+<!-- MATH
+ \begin{eqnarray}
+I:=\oplus_{r \in {\mathbb{N}}_0 } K_r
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="115" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img192.png"
+ ALT="$\displaystyle I:=\oplus_{r \in {\mathbb{N}}_0 } K_r$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+becomes an ideal in <!-- MATH
+ ${\cal T}({{\cal E}}^*)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="${\cal T}({{\cal E}}^*)$"> and thus consequently is a
+biideal. To this claim we consider inclusion maps
+<!-- MATH
+ $s_{r},t_{r}:{\cal E}_r\rightarrow {\cal E}_{r+1}$
+ -->
+<IMG
+ WIDTH="141" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img193.png"
+ ALT="$s_{r},t_{r}:{\cal E}_r\rightarrow {\cal E}_{r+1}$"> given by
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+s_{r}(\mu )=\mu \otimes {\rm id}_{V}, \; t_{r}(\mu )={\rm id}_{V}\otimes \mu ,\; \mu 
+\in {\cal E}_r
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="446" HEIGHT="33" BORDER="0"
+ SRC="img194.png"
+ ALT="\begin{displaymath}
+s_{r}(\mu )=\mu \otimes {\rm id}_{V}, \; t_{r}(\mu )={\rm id}_{V}\otimes \mu ,\; \mu
+\in {\cal E}_r\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+and focus attention to a special situation, which is general enough
+for our applications.  We start with an arbitrary subset
+<!-- MATH
+ $N\subseteq {\cal E}_{2}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.png"
+ ALT="$N\subseteq {\cal E}_{2}$"> and define a family <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.png"
+ ALT="${\cal A}$"> inductively beginning with
+<!-- MATH
+ ${\cal A}_{0}:=R,\; {\cal A}_{1}:=R\cdot{\rm id}_{V}$
+ -->
+<IMG
+ WIDTH="194" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="${\cal A}_{0}:=R,\; {\cal A}_{1}:=R\cdot{\rm id}_{V}$"> and <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img198.png"
+ ALT="${\cal A}_{2}$"> as the
+algebraic span of <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$"> in <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.png"
+ ALT="${\cal E}_{2}$">, than continuing by the formula
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\cal A}_r:=\left<s_{r-1}({\cal A}_{r-1}) +
+t_{r-1}({\cal A}_{r-1})\right>_{\rm Alg} \;\;\mbox{ for } \;\;r>2.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="475" HEIGHT="36" BORDER="0"
+ SRC="img200.png"
+ ALT="\begin{displaymath}{\cal A}_r:=\left&lt;s_{r-1}({\cal A}_{r-1}) +
+t_{r-1}({\cal A}_{r-1})\right&gt;_{\rm Alg} \;\;\mbox{ for } \;\;r&gt;2.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+We call this a <EM>by <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$"> induced family</EM> of subalgebras of <IMG
+ WIDTH="22" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img181.png"
+ ALT="${\cal E}_r$">.
+
+<P>
+<P>
+<DIV><A NAME="Biideal"><B>Proposition  5.1</B></A> &nbsp; 
+Let <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img196.png"
+ ALT="${\cal A}$"> be the family induced by a subset <!-- MATH
+ $N\subseteq
+{\cal E}_{2}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.png"
+ ALT="$N\subseteq {\cal E}_{2}$">. Then the coideal <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$I$"> defined in (<A HREF="node5.html#Def._I">10</A>) is a
+homogenous biideal in <!-- MATH
+ ${\cal T}({{\cal E}}^*)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="${\cal T}({{\cal E}}^*)$"> generated by the coideal <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$K_2$">.</DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>First we show that <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$I$"> is a homogenous ideal. To this claim take
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img203.png"
+ ALT="$a \in K_r$"> and <!-- MATH
+ $b \in{{\cal E}_{u}}^*$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img204.png"
+ ALT="$b \in{{\cal E}_{u}}^*$">. We have to show 
+<!-- MATH
+ $a \otimes b \in K_{r+u}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$a \otimes b \in K_{r+u}$"> and <!-- MATH
+ $b \otimes a \in K_{r+u}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$b \otimes a \in K_{r+u}$">. The choice of the element
+<IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img169.png"
+ ALT="$a$"> can be reduced to a generator <!-- MATH
+ $a={\vartheta}_{tr}([\mu,\nu])$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$a={\vartheta}_{tr}([\mu,\nu])$"> of the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img188.png"
+ ALT="$K_r$">
+with <!-- MATH
+ $\mu 
+\in{\cal E}_r$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.png"
+ ALT="$\mu
+\in{\cal E}_r$"> and <!-- MATH
+ $\nu \in {\cal A}_r$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.png"
+ ALT="$\nu \in {\cal A}_r$">.
+Letting 
+<!-- MATH
+ $\hat{\nu}:=s_{r+u-1} \circ s_{r+u-2} \circ \ldots \circ s_{r}(\nu) =
+\nu \otimes {\rm id}_{V^{\otimes u}} \in {\cal A}_{r+u}$
+ -->
+<IMG
+ WIDTH="433" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.png"
+ ALT="$\hat{\nu}:=s_{r+u-1} \circ s_{r+u-2} \circ \ldots \circ s_{r}(\nu) =
+\nu \otimes {\rm id}_{V^{\otimes u}} \in {\cal A}_{r+u}$"> and
+<!-- MATH
+ $\hat\mu :=\mu \otimes \bar b$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img211.png"
+ ALT="$\hat\mu :=\mu \otimes \bar b$">, where <!-- MATH
+ $\bar b\in {\cal E}_{u}$
+ -->
+<IMG
+ WIDTH="55" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$\bar b\in {\cal E}_{u}$"> is the preimage of <IMG
+ WIDTH="13" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img213.png"
+ ALT="$b$">
+under <!-- MATH
+ ${\vartheta}_{tr}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="${\vartheta}_{tr}$"> one obtains
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+a \otimes b = {\vartheta}_{tr}([\mu,\nu]) \otimes b = {\vartheta}_{tr}([\hat\mu ,\hat{\nu}]) \in
+K_{r+u}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="453" HEIGHT="33" BORDER="0"
+ SRC="img214.png"
+ ALT="\begin{displaymath}a \otimes b = {\vartheta}_{tr}([\mu,\nu]) \otimes b = {\vartheta}_{tr}([\hat\mu ,\hat{\nu}]) \in
+K_{r+u}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Similary <!-- MATH
+ $b \otimes a \in K_{r+u}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$b \otimes a \in K_{r+u}$"> and the first statement is
+established.
+<BR>
+<P>
+For the second part denote by <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$J$"> the homogenous ideal in
+<!-- MATH
+ ${\cal T}({{\cal E}}^*)$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img191.png"
+ ALT="${\cal T}({{\cal E}}^*)$"> generated by <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$K_2$">. Since <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$I$"> is a homogenous ideal
+containing <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$K_2$"> we get <IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img215.png"
+ ALT="$J\subseteq I$">. For the reverse inclusion we
+show <!-- MATH
+ $K_r\subseteq J$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img216.png"
+ ALT="$K_r\subseteq J$"> by induction on <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img177.png"
+ ALT="$r$">. Clearly
+<IMG
+ WIDTH="126" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img217.png"
+ ALT="$K_0=K_1=(0)$"> and <IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$K_2$"> are contained in <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$J$">. Now suppose <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img218.png"
+ ALT="$r&gt;2$">.
+Letting <!-- MATH
+ $J_r:=J\cap{{\cal E}_r}^*$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img219.png"
+ ALT="$J_r:=J\cap{{\cal E}_r}^*$"> one obtains <!-- MATH
+ $J_r=J_{r-1}\otimes {{\cal E}}^*+{{\cal E}}^*\otimes
+J_{r-1}$
+ -->
+<IMG
+ WIDTH="226" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img220.png"
+ ALT="$J_r=J_{r-1}\otimes {{\cal E}}^*+{{\cal E}}^*\otimes
+J_{r-1}$">. By induction hypothesis we see <!-- MATH
+ $K_{r-1} = J_{r-1}$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img221.png"
+ ALT="$K_{r-1} = J_{r-1}$">. Therefore
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+J_r=K_{r-1}\otimes {{\cal E}}^*+ {{\cal E}}^*\otimes K_{r-1}=
+K(M)
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="432" HEIGHT="33" BORDER="0"
+ SRC="img222.png"
+ ALT="\begin{displaymath}J_r=K_{r-1}\otimes {{\cal E}}^*+ {{\cal E}}^*\otimes K_{r-1}=
+K(M) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+where <!-- MATH
+ $M:=s_{r-1}({\cal A}_{r-1}) + t_{r-1}({\cal A}_{r-1}) \subseteq
+{\cal E}_r$
+ -->
+<IMG
+ WIDTH="294" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img223.png"
+ ALT="$M:=s_{r-1}({\cal A}_{r-1}) + t_{r-1}({\cal A}_{r-1}) \subseteq
+{\cal E}_r$">. But since <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> is generated by <IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.png"
+ ALT="$M$"> as an algebra
+we finally see from corollary <A HREF="node2.html#Verknupfungstreue">2.3</A>
+<!-- MATH
+ $K_r =K({\cal A}_r)=K(M)=J_r$
+ -->
+<IMG
+ WIDTH="227" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img225.png"
+ ALT="$K_r =K({\cal A}_r)=K(M)=J_r$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="$\Box$">
+<BR><P>
+According to the proposition we may assign a
+<EM>graded matric bialgebra</EM> to each subset <!-- MATH
+ $N\subseteq {\cal E}_{2}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img195.png"
+ ALT="$N\subseteq {\cal E}_{2}$"> by
+<BR>
+<DIV ALIGN="CENTER"><A NAME="FRT_allgemein"></A>
+<!-- MATH
+ \begin{eqnarray}
+{\cal M}(N):={\cal T}({{\cal E}}^*)/I
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="158" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img226.png"
+ ALT="$\displaystyle {\cal M}(N):={\cal T}({{\cal E}}^*)/I$"></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(11)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+whose homogenous summand are the centralizer coalgebras <IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img227.png"
+ ALT="$M({\cal A}_r)$">.
+This bialgebra will be called the <EM>FRT-construction</EM> corresponding
+to the subset <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$">. The reader familiar with the ordinary
+FRT-construction will recognize the latter one as the special case
+where <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$"> consists of just one element <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.png"
+ ALT="$\beta$"> (use the description
+(<A HREF="node5.html#frt_konkret">12</A>) below). In this case we write
+<!-- MATH
+ ${\cal M}(\beta):={\cal M}(N)$
+ -->
+<IMG
+ WIDTH="139" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img229.png"
+ ALT="${\cal M}(\beta):={\cal M}(N)$">. Usually in the applications this <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img228.png"
+ ALT="$\beta$"> is a
+<EM>quantum Yang-Baxter operator</EM> leading to a representation of
+the <EM>Artin braid groups</EM> on the modules <IMG
+ WIDTH="37" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img178.png"
+ ALT="$V^{\otimes r}$">. In this situaton
+the algebras <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> are just the images of the corresponding
+group algebras (over <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">) under this representation.
+<BR>
+<P>
+An application where <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$"> must consist of two elements will be given in
+the next section. Here the <IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="${\cal A}_r$"> are images of the <EM>Brauer
+  centralizer algebras</EM> under Brauer's representations corresponding
+to the symplectic groups. The bialgebra <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="${\cal M}(N)$"> will turn out to be
+the coordinate ring of a certain <EM>symplectic monoid</EM>.
+It is a remarkable fact, that the second operator is only needed
+in the classical situation, whereas in the quantum case it lies in the
+algebraic span of the quantum Yang-Baxter operator (see [<A
+ HREF="node9.html#doc">Oe</A>],
+Bemerkung 2.5.1, 2.5.4). Thus, the ordinary FRT-construction behaves
+singularly (in a certain sense) when specializing the deformation parameter
+to 1, i.e. in the classical limit.
+<BR>
+<P>
+We close this section giving a more convenient description of <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="${\cal M}(N)$">. We denote by
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img231.png"
+ ALT="$I(n,r)$"> the set of maps from 
+from <!-- MATH
+ $\underline{r}:=\{1, \ldots , r\}$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img232.png"
+ ALT="$\underline{r}:=\{1, \ldots , r\}$"> to
+<!-- MATH
+ $\underline{n}:=\{1, \ldots , n\}$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img233.png"
+ ALT="$\underline{n}:=\{1, \ldots , n\}$"> and call the elements 
+<!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img234.png"
+ ALT="${\bf i} \in I(n,r)$"> multi-indices writing <!-- MATH
+ ${\bf i}=(i_1, \ldots ,
+i_r)$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img235.png"
+ ALT="${\bf i}=(i_1, \ldots ,
+i_r)$">, where <!-- MATH
+ $i_j\in \underline{n}$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$i_j\in \underline{n}$"> for <!-- MATH
+ $j\in \underline{r}$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img237.png"
+ ALT="$j\in \underline{r}$">. The residue classes
+of the multiplicative
+generators <!-- MATH
+ ${{e}^*_{i}}^{j} +I$
+ -->
+<IMG
+ WIDTH="61" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img238.png"
+ ALT="${{e}^*_{i}}^{j} +I$"> of <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="${\cal M}(N)$"> where <!-- MATH
+ $i,j\in \underline{n}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img239.png"
+ ALT="$i,j\in \underline{n}$"> will be
+denoted by <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$x_{i j}$">. For pairs of multi-indices <!-- MATH
+ ${\bf i},{\bf j}\in
+ I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img240.png"
+ ALT="${\bf i},{\bf j}\in
+I(n,r)$"> we introduce the abbreviation
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+x_{{\bf i} {\bf j}}:=x_{i_1 j_1}x_{i_2 j_2}\ldots
+ x_{i_r j_r}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="373" HEIGHT="34" BORDER="0"
+ SRC="img241.png"
+ ALT="\begin{displaymath}x_{{\bf i} {\bf j}}:=x_{i_1 j_1}x_{i_2 j_2}\ldots
+x_{i_r j_r}. \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Using the notation introduced in (<A HREF="node2.html#Notation_End">1</A>) we obtain
+a presentation of <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img230.png"
+ ALT="${\cal M}(N)$"> by generators and relations given as
+follows
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+{\cal M}(N)=\left< x_{i j}, \; i,j\in \underline{n}|\;\; \mu x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\mu,\; {\bf i}, {\bf j} \in I(n,2),\;
+  \mu\in N\right>.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="frt_konkret"></A><IMG
+ WIDTH="517" HEIGHT="34" BORDER="0"
+ SRC="img242.png"
+ ALT="\begin{displaymath}
+{\cal M}(N)=\left&lt; x_{i j}, \; i,j\in \underline{n}\vert\;\;...
+...bf j}}\mu,\; {\bf i}, {\bf j} \in I(n,2),\;
+\mu\in N\right&gt;.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(12)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The verification of this formula follows from the second statement of
+proposition <A HREF="node5.html#Biideal">5.1</A> together with (<A HREF="node2.html#Rel_MA">2</A>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html63"
+  HREF="node6.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html61"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html55"
+  HREF="node4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html64"
+  HREF="node6.html">Example: Symplectic Monoids</A>
+<B> Up:</B> <A NAME="tex2html62"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html56"
+  HREF="node4.html">Change of Base Rings</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<a href="../index.html">Sebastian Oehms</a>
+2003-03-26
+</ADDRESS>
+</BODY>
+</HTML>

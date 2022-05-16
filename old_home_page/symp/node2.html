@@ -1,0 +1,1183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quantum Symplectic Monoids</TITLE>
+<META NAME="description" CONTENT="Quantum Symplectic Monoids">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html52"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html48"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html42"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html50"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html53"
+  HREF="node3.html">Quantum Symplectic Bideterminants</A>
+<B> Up:</B> <A NAME="tex2html49"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html43"
+  HREF="node1.html">Introduction</A>
+ &nbsp; <B>  <A NAME="tex2html51"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000"></A>
+<A NAME="symp_monoids"></A>
+<BR>
+Quantum Symplectic Monoids
+</H1>
+
+<P>
+Let <!-- MATH
+ ${R}\mbox{$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.png"
+ ALT="$ {R}$"><A NAME="5934"></A>
+be a noetherian integral domain and <!-- MATH
+ ${q}\mbox{\in R$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$ {q}$"><A NAME="5938"></A><IMG
+ WIDTH="37" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$ \in R$"> 
+an invertible
+element.   Let <!-- MATH
+ ${V}\mbox{$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$ {V}$"><A NAME="5942"></A> be a free
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module of rank <IMG
+ WIDTH="67" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$ n=2m$">. Fix a basis <!-- MATH
+ $\{v_{1}, \ldots , v_{n}\}
+\mbox{$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$ \{v_{1}, \ldots , v_{n}\}$">&nbsp; &nbsp;<A NAME="5947"></A> and let
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$ e_{ij}$"> denote the corresponding basis of matrix units for
+<!-- MATH
+ ${{\cal E}}\mbox{$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img28.png"
+ ALT="$ {{\cal E}}$"><A NAME="5953"></A><IMG
+ WIDTH="104" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$ :={\rm End}_{R}{(V)}$">. 
+We will define two endomorphisms <!-- MATH
+ ${\beta}\mbox{$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$ {\beta}$"><A NAME="5962"></A> and 
+<!-- MATH
+ ${\gamma}\mbox{$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$ {\gamma}$"><A NAME="5966"></A> on
+<!-- MATH
+ $V\otimes V$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ V\otimes V$"> identifying <!-- MATH
+ ${\rm End}_{R}{(V\otimes V)}$
+ -->
+<IMG
+ WIDTH="117" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.png"
+ ALT="$ {\rm End}_{R}{(V\otimes V)}$"> with
+<!-- MATH
+ ${\cal E}\otimes{\cal E}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$ {\cal E}\otimes{\cal E}$"> (we write simply <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.png"
+ ALT="$ \otimes$"> instead of <!-- MATH
+ $\otimes_{R}$
+ -->
+<IMG
+ WIDTH="31" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.png"
+ ALT="$ \otimes_{R}$"> if no
+ambiguity can arise). Some additional notation is needed. We set
+<!-- MATH
+ \begin{displaymath}
+(\rho_1, \ldots , \rho_n)=(m, m-1, \ldots, 1, -1,\ldots ,-(m-1),
+-m) \mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="454" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$\displaystyle (\rho_1, \ldots , \rho_n)=(m, m-1, \ldots, 1, -1,\ldots ,-(m-1),
+-m)$">&nbsp; &nbsp;<IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img38.png"
+ ALT="$\displaystyle \mbox{\index{${\rho_i}$}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.png"
+ ALT="$\displaystyle $">
+</DIV><P></P>
+
+<P>
+and  <!-- MATH
+ ${\epsilon_i}\mbox{:=sign(\rho_i).$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img40.png"
+ ALT="$ {\epsilon_i}$"><A NAME="5978"></A><IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.png"
+ ALT="$ :=sign(\rho_i).$">
+Further, <!-- MATH
+ ${i'}\mbox{:=n-i+1$
+ -->
+<IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.png"
+ ALT="$ {i'}$"><A NAME="5982"></A><IMG
+ WIDTH="103" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$ :=n-i+1$"> 
+defines an involution on <!-- MATH
+ ${\underline{n}}\mbox{$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$ {\underline{n}}$"><A NAME="5986"></A><IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$ :=\{1,\ldots ,
+n\}$">. Thus
+<!-- MATH
+ \begin{displaymath}
+(1',2', \ldots , n')=(n,n-1, \ldots , 1).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="272" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$\displaystyle (1',2', \ldots , n')=(n,n-1, \ldots , 1). $">
+</DIV><P></P>
+
+<P>
+The following definition is taken from [<A
+ HREF="node22.html#hay2">Ha2</A>, Equation (4.3),(4.5)]
+(resp. [<A
+ HREF="node22.html#hay1">Ha1</A>, section 5]) using the transformation <!-- MATH
+ $\beta=
+q^2\beta_{q^{-1}}(C_m)$
+ -->
+<IMG
+ WIDTH="132" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img47.png"
+ ALT="$ \beta=
+q^2\beta_{q^{-1}}(C_m)$"> and <!-- MATH
+ $\gamma=\iota_q$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img48.png"
+ ALT="$ \gamma=\iota_q$">.
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\beta:=\sum_{1\leq i\leq n} (q^2e_{ii} \otimes e_{ii}
++e_{ii'} \otimes
+e_{i'i}) + q\sum_{1\leq i\neq j,j'\leq n} e_{ij} \otimes
+e_{ji} + 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="459" HEIGHT="63" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$\displaystyle \beta:=\sum_{1\leq i\leq n} (q^2e_{ii} \otimes e_{ii}
++e_{ii'} \otimes
+e_{i'i}) + q\sum_{1\leq i\neq j,j'\leq n} e_{ij} \otimes
+e_{ji} + $">
+</DIV><P></P> <!-- MATH
+ \begin{displaymath}
++(q^2-1)\sum_{1\leq j < i\leq n} (e_{ii} \otimes e_{jj}
+-q^{\rho_i -\rho_j}\epsilon_i\epsilon_j  e_{ij'} \otimes
+e_{i'j}),
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="396" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img50.png"
+ ALT="$\displaystyle +(q^2-1)\sum_{1\leq j &lt; i\leq n} (e_{ii} \otimes e_{jj}
+-q^{\rho_i -\rho_j}\epsilon_i\epsilon_j e_{ij'} \otimes
+e_{i'j}),
+$">
+</DIV><P></P>
+and
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\gamma: =\sum_{1\leq i,j\leq n} q^{\rho_i -\rho_j}\epsilon_i\epsilon_j
+e_{ij'} \otimes e_{i'j},
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="250" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="$\displaystyle \gamma: =\sum_{1\leq i,j\leq n} q^{\rho_i -\rho_j}\epsilon_i\epsilon_j
+e_{ij'} \otimes e_{i'j},
+$">
+</DIV><P></P>
+
+<P>
+There are slightly more general versions of these endomorphisms
+involving additional parameters. We may omit them without loss
+of generality (see [<A
+ HREF="node22.html#doc">O1</A>, Satz 2.5.8]).
+The operators <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$"> and <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \gamma$"> are related to each other by the
+equation (cf. [<A
+ HREF="node22.html#hay2">Ha2</A>, Equation (4.4)])
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="gamma_and_beta"></A><!-- MATH
+ \begin{equation}
+(q^2-1)(\gamma -{\rm id}_{V^{\otimes 2}})=q^2\beta^{-1} -\beta
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="266" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$\displaystyle (q^2-1)(\gamma -{\rm id}_{V^{\otimes 2}})=q^2\beta^{-1} -\beta$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(1)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+For <!-- MATH
+ $r\in {\mathbb{N}}\,$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$ r\in {\mathbb{N}}\,$"> write <!-- MATH
+ $\underline{r}:=\{1, \ldots , r\}$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img56.png"
+ ALT="$ \underline{r}:=\{1, \ldots , r\}$">. A <EM>multi-index</EM> is a 
+map <!-- MATH
+ ${{\bf i}}\mbox{$
+ -->
+<IMG
+ WIDTH="11" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img57.png"
+ ALT="$ {{\bf i}}$"><A NAME="6009"></A><IMG
+ WIDTH="65" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img58.png"
+ ALT="$ :\underline{r}\rightarrow \underline{n}$"> 
+frequently denoted as an <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">-tuple
+<!-- MATH
+ ${\bf i}=(i_1, \ldots , i_r)$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$ {\bf i}=(i_1, \ldots , i_r)$"> where <!-- MATH
+ $i_j\in \underline{n}$
+ -->
+<IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img60.png"
+ ALT="$ i_j\in \underline{n}$">. The set of
+all such multi-indices will be denoted by <!-- MATH
+ ${I(n,r)}\mbox{$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img61.png"
+ ALT="$ {I(n,r)}$"><A NAME="6019"></A>. 
+We define
+<!-- MATH
+ \begin{displaymath}
+{v_{{\bf i}}}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img62.png"
+ ALT="$\displaystyle {v_{{\bf i}}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img63.png"
+ ALT="$\displaystyle \mbox{\index{${v_{{\bf i}}}$}}$"><IMG
+ WIDTH="414" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img64.png"
+ ALT="$\displaystyle :=v_{i_1}\otimes v_{i_2} \otimes \ldots \otimes
+v_{i_r} \in \und...
+...otimes V}_{
+r\mbox{-times}}=: {V^{\otimes r}}\mbox{\index{${V^{\otimes r}}$}}.$">
+</DIV><P></P>
+An endomorphism <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ \mu$"> of <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> may be given by its coefficients
+<!-- MATH
+ $\mu_{{\bf i}{\bf j}}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img66.png"
+ ALT="$ \mu_{{\bf i}{\bf j}}$"> 
+with respect to the basis
+<!-- MATH
+ $\{ v_{{\bf i}}|\; {\bf i} \in I(n,r)\}$
+ -->
+<IMG
+ WIDTH="131" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img67.png"
+ ALT="$ \{ v_{{\bf i}}\vert\; {\bf i} \in I(n,r)\}$"> of <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">, that is
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\mu (v_{{\bf j}}) = \sum_{{\bf i}\in I(n,r)}\mu_{{\bf i}{\bf j}}v_{{\bf i}}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="163" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img68.png"
+ ALT="$\displaystyle \mu (v_{{\bf j}}) = \sum_{{\bf i}\in I(n,r)}\mu_{{\bf i}{\bf j}}v_{{\bf i}}. $">
+</DIV><P></P>
+
+<P>
+Let <!-- MATH
+ ${F_{R}(n)}\mbox{\rangle$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img69.png"
+ ALT="$ {F_{R}(n)}$"><A NAME="6067"></A><IMG
+ WIDTH="202" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img70.png"
+ ALT="$ :=R\langle X_{1 1},X_{1 2}, \ldots , X_{n n}\rangle$">
+be the
+free algebra generated by the <IMG
+ WIDTH="23" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img71.png"
+ ALT="$ n^2$"> symbols <IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$ X_{i j}$"> for <!-- MATH
+ $i,j \in
+\underline{n}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img73.png"
+ ALT="$ i,j \in
+\underline{n}$">. This is a graded algebra; 
+an <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-basis of the <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">-th homogeneous part 
+<!-- MATH
+ $F_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.png"
+ ALT="$ F_{R}(n,r)$"> is the set
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\{ X_{{\bf i} {\bf j}}:=X_{i_1 j_1}\cdots X_{i_2 j_2}\cdots
+X_{i_r j_r}|\; \; {\bf i},{\bf j} \in I(n,r)\}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="374" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img75.png"
+ ALT="$\displaystyle \{ X_{{\bf i} {\bf j}}:=X_{i_1 j_1}\cdots X_{i_2 j_2}\cdots
+X_{i_r j_r}\vert\; \; {\bf i},{\bf j} \in I(n,r)\}. $">
+</DIV><P></P>
+
+<P>
+To simplify notation we introduce a new convention to write down 
+frequently used
+elements of <IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.png"
+ ALT="$ F_{R}(n)$"> and its quotients in a convenient way.
+For an endomorphism <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img65.png"
+ ALT="$ \mu$"> on <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> we write
+
+<P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Notation_End"></A><!-- MATH
+ \begin{equation}
+\mu \wr X_{{\bf i} {\bf j}} :=\sum_{{\bf k}\in I(n,r)}
+\mbox{
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="139" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img77.png"
+ ALT="$\displaystyle \mu \wr X_{{\bf i} {\bf j}} :=\sum_{{\bf k}\in I(n,r)}$">&nbsp; &nbsp;<IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img78.png"
+ ALT="$\displaystyle \mbox{\index{${-\wr -}$}}$"><IMG
+ WIDTH="69" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img79.png"
+ ALT="$\displaystyle \mu_{{\bf i}{\bf k}}X_{{\bf k} {\bf j}} \; \;$">&nbsp; &nbsp; and <IMG
+ WIDTH="211" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img80.png"
+ ALT="$\displaystyle \; \; X_{{\bf i} {\bf j}}\wr \mu :=\sum_{{\bf k}\in I(n,r)} X_{{\bf i} {\bf k}}\mu_{{\bf k}{\bf j}}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P> 
+
+<P>
+This definition can be linearly extended to all of <!-- MATH
+ $F_{R}(n,r)$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img74.png"
+ ALT="$ F_{R}(n,r)$">. The
+following rules are easily checked.
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="SchlangeRegeln"></A><!-- MATH
+ \begin{equation}
+\begin{array}{rl}
+1\wr X_{{\bf i} {\bf j}} & = X_{{\bf i} {\bf j}}\\
+&  = X_{{\bf i} {\bf j}} \wr 1 \\
+\mu \wr (\nu\wr X_{{\bf i} {\bf j}}) & = (\nu\mu)\wr X_{{\bf i} {\bf j}} \\
+(\mu \wr X_{{\bf i} {\bf j}})\wr \nu  & = \nu\wr (X_{{\bf i} {\bf j}}\wr \nu )
+\end{array}
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="211" HEIGHT="109" BORDER="0"
+ SRC="img81.png"
+ ALT="\begin{displaymath}\begin{array}{rl} 1\wr X_{{\bf i} {\bf j}} &amp; = X_{{\bf i} {\...
+...})\wr \nu &amp; = \nu\wr (X_{{\bf i} {\bf j}}\wr \nu ) \end{array}\end{displaymath}"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(3)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+We will denote the residue classes of <IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$ X_{i j}$"> in any quotient of
+<IMG
+ WIDTH="54" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img76.png"
+ ALT="$ F_{R}(n)$"> by <!-- MATH
+ ${x_{i j}}\mbox{$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$ {x_{i j}}$"><A NAME="6129"></A>. The
+residue class <!-- MATH
+ ${x_{{\bf i} {\bf j}}}\mbox{$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img83.png"
+ ALT="$ {x_{{\bf i} {\bf j}}}$"><A NAME="6143"></A> 
+of <!-- MATH
+ ${X_{{\bf i} {\bf j}}}\mbox{$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img84.png"
+ ALT="$ {X_{{\bf i} {\bf j}}}$"><A NAME="6163"></A> 
+then clearly has a similar expression in the 
+<IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.png"
+ ALT="$ x_{i j}$"> as the <!-- MATH
+ $X_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.png"
+ ALT="$ X_{{\bf i} {\bf j}}$"> 
+do in the <IMG
+ WIDTH="32" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img72.png"
+ ALT="$ X_{i j}$">. The above introduced convention will be used
+for <!-- MATH
+ $x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$ x_{{\bf i} {\bf j}}$"> accordingly.
+<BR>
+<P>
+The object of our investigations is given by the following definition:
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{A^{{\rm s}}_{R,q}(n)}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img88.png"
+ ALT="$\displaystyle {A^{{\rm s}}_{R,q}(n)}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img89.png"
+ ALT="$\displaystyle \mbox{\index{${A^{{\rm s}}_{R,q}(n)}$}}$"><IMG
+ WIDTH="490" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img90.png"
+ ALT="$\displaystyle :=
+F_{R}(n)/\left&lt; \beta\wr X_{{\bf i} {\bf j}}-X_{{\bf i} {\bf ...
+...}}-X_{{\bf i} {\bf j}}\wr \gamma \vert\; \; {\bf i},{\bf j} \in I(n,2)\right&gt;. $">
+</DIV><P></P>
+
+<P>
+Here the brackets <!-- MATH
+ $\langle\rangle$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$ \langle\rangle$"> denote the ideal generated by the enclosed
+elements and <!-- MATH
+ $\beta, \gamma$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img92.png"
+ ALT="$ \beta, \gamma$"> are the endomorphisms on <!-- MATH
+ $V\otimes
+V$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img32.png"
+ ALT="$ V\otimes V$"> defined above.
+Since this ideal in the definition is homogeneous, the algebra 
+<!-- MATH
+ $A^{{\rm s}}_{R,q}(n)=\bigoplus_{r\in {\mathbb{N}}\,_0} A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="228" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img93.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)=\bigoplus_{r\in {\mathbb{N}}\,_0} A^{{\rm s}}_{R,q}(n,r)$"> is again graded.
+Here, <!-- MATH
+ ${ A^{{\rm s}}_{R,q}(n,r)}\mbox{$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img94.png"
+ ALT="$ { A^{{\rm s}}_{R,q}(n,r)}$"><A NAME="6227"></A> is the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear span of the elements
+<!-- MATH
+ $x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$ x_{{\bf i} {\bf j}}$"> for <!-- MATH
+ ${\bf i},{\bf j}\in I(n,r)$
+ -->
+<IMG
+ WIDTH="102" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img95.png"
+ ALT="$ {\bf i},{\bf j}\in I(n,r)$">. 
+The algebra <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$"> can be identified
+with a generalized <IMG
+ WIDTH="47" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.png"
+ ALT="$ FRT$">-construction with respect to the subset
+<!-- MATH
+ $N:=\{\beta, \gamma\} \subseteq {\cal E}\otimes {\cal E}$
+ -->
+<IMG
+ WIDTH="174" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img98.png"
+ ALT="$ N:=\{\beta, \gamma\} \subseteq {\cal E}\otimes {\cal E}$"> denoted
+<!-- MATH
+ ${\cal  M}_{R}(N)$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$ {\cal M}_{R}(N)$"> in [<A
+ HREF="node22.html#ofrt">O2</A>, section 5].
+It has been pointed out there
+that it possesses the
+structure of a bialgebra where comultiplication and augmentation 
+on the generators <!-- MATH
+ $x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img87.png"
+ ALT="$ x_{{\bf i} {\bf j}}$"> are given by
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="kom_koe"></A><!-- MATH
+ \begin{equation}
+\Delta \mbox{
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="20" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img100.png"
+ ALT="$\displaystyle \Delta$">&nbsp; &nbsp;<IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img101.png"
+ ALT="$\displaystyle \mbox{\index{${\Delta (-)}$}}$"><IMG
+ WIDTH="219" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$\displaystyle (x_{{\bf i} {\bf j}})=\sum_{{\bf k}\in I(n,r)}  x_{{\bf i} {\bf k}} \otimes x_{{\bf k} {\bf j}} ,\; \; \epsilon$">&nbsp; &nbsp;<IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img103.png"
+ ALT="$\displaystyle \mbox{\index{${\epsilon (-) }$}}$"><IMG
+ WIDTH="88" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img104.png"
+ ALT="$\displaystyle (x_{{\bf i} {\bf j}}) =\delta_{{\bf i}{\bf j}}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+In particular, the homogeneous summands <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> are subcoalgebras.
+Furthermore, the tensor space <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$"> is an 
+<!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$"> (resp. <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$">)-(right-)comodule. The structure map
+<!-- MATH
+ $\mbox{(n,r)$
+ -->
+<A NAME="6281"></A><IMG
+ WIDTH="233" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img107.png"
+ ALT="$ \tau_{r}:V^{\otimes r}\rightarrow V^{\otimes r}\otimes A^{{\rm s}}_{R,q}(n,r)$"> 
+is defined by
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\tau_{r} (v_{{\bf j}})=\sum_{{\bf i}\in I(n,r)}
+v_{{\bf i}}\otimes x_{{\bf i} {\bf j}}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="190" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img108.png"
+ ALT="$\displaystyle \tau_{r} (v_{{\bf j}})=\sum_{{\bf i}\in I(n,r)}
+v_{{\bf i}}\otimes x_{{\bf i} {\bf j}}. $">
+</DIV><P></P>
+
+<P>
+Now, if <IMG
+ WIDTH="54" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$ q^2-1$"> is an invertible element in <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">, the endomorphism
+<IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$ \gamma$"> is known to be in the algebraic span of <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$">; explicitly
+one has 
+<!-- MATH
+ \begin{displaymath}
+\gamma=\frac{q^2\beta^{-1}-\beta}{q^2-1}+{\rm id}_{V^{\otimes 2}}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="197" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img110.png"
+ ALT="$\displaystyle \gamma=\frac{q^2\beta^{-1}-\beta}{q^2-1}+{\rm id}_{V^{\otimes 2}}.$">
+</DIV><P></P>
+Thus, by
+[<A
+ HREF="node22.html#ofrt">O2</A>, Corollary 2.3] the relations <!-- MATH
+ $\gamma\wr x_{{\bf i} {\bf j}}=
+x_{{\bf i} {\bf j}}\wr \gamma$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$ \gamma\wr x_{{\bf i} {\bf j}}=
+x_{{\bf i} {\bf j}}\wr \gamma$"> are redundant in this case. The reader may
+check that under these circumstances
+our bialgebra <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$"> is identical to the matrix bialgebra of the
+usual FRT-construction 
+<!-- MATH
+ $F_{R}(n)/\left< \beta\wr X_{{\bf i} {\bf j}}-X_{{\bf i} {\bf j}}\wr \beta,\;\; {\bf i},{\bf j} \in I(n,2)\right>$
+ -->
+<IMG
+ WIDTH="322" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img112.png"
+ ALT="$ F_{R}(n)/\left&lt; \beta\wr X_{{\bf i} {\bf j}}-X_{{\bf i} {\bf j}}\wr \beta,\;\; {\bf i},{\bf j} \in I(n,2)\right&gt;$">
+connected with the symplectic group for example denoted 
+ <!-- MATH
+ ${\cal F}_{\beta}(M_n)$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img113.png"
+ ALT="$ {\cal F}_{\beta}(M_n)$"> in [<A
+ HREF="node22.html#charipr">CP</A>, 7.3 c].
+<BR>
+<P>
+On the other hand, if <IMG
+ WIDTH="54" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img109.png"
+ ALT="$ q^2-1$"> is not invertible we really need to add the
+relations <!-- MATH
+ $\gamma \wr x_{{\bf i} {\bf j}}=x_{{\bf i} {\bf j}}\wr \gamma$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img111.png"
+ ALT="$ \gamma\wr x_{{\bf i} {\bf j}}=
+x_{{\bf i} {\bf j}}\wr \gamma$">.
+For instance, it has been proved in [<A
+ HREF="node22.html#ofrt">O2</A>, Corollary 6.2] that,
+setting <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ q=1$">, the bialgebra <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">
+is the coordinate ring of the symplectic monoid scheme <!-- MATH
+ ${\rm SpM}_{n}(R)$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img114.png"
+ ALT="$ {\rm SpM}_{n}(R)$">
+which is defined by
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{{\rm SpM}_{n}(R)}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="80" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img115.png"
+ ALT="$\displaystyle {{\rm SpM}_{n}(R)}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img116.png"
+ ALT="$\displaystyle \mbox{\index{${{\rm SpM}_{n}(R)}$}}$"><IMG
+ WIDTH="460" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img117.png"
+ ALT="$\displaystyle :=
+\{ A \in {\rm M}_{n}(R)\vert\;\exists \;\; d(A)\in {R},\;
+A^tJA=AJA^t=d(A)J\}.$">
+</DIV><P></P>
+
+<P>
+Here, <IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img118.png"
+ ALT="$ J$"> is the Gram-matrix of the canonical
+skew bilinear form, that is <!-- MATH
+ $J=(J_{ij})_{i,j \in \underline{n}}$
+ -->
+<IMG
+ WIDTH="111" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img119.png"
+ ALT="$ J=(J_{ij})_{i,j \in \underline{n}}$"> where
+<!-- MATH
+ $J_{ij}:=\epsilon_i\delta_{ij'}$
+ -->
+<IMG
+ WIDTH="94" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img120.png"
+ ALT="$ J_{ij}:=\epsilon_i\delta_{ij'}$">. The regular 
+function <!-- MATH
+ ${d}\mbox{$
+ -->
+<IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.png"
+ ALT="$ {d}$"><A NAME="6350"></A><IMG
+ WIDTH="135" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img122.png"
+ ALT="$ :{\rm SpM}_{n}(R) \rightarrow {R}$"> is
+called the <EM>coefficient of dilation</EM> (cf. [<A
+ HREF="node22.html#doty">Dt</A>]). 
+On the other hand,
+in this case the bialgebra of the usual FRT-construction 
+equals <!-- MATH
+ $A_{R}(n)=R[x_{1 1}, x_{1 2}, \ldots , x_{n n}]$
+ -->
+<IMG
+ WIDTH="233" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img123.png"
+ ALT="$ A_{R}(n)=R[x_{1 1}, x_{1 2}, \ldots , x_{n n}]$">, the
+commutative polynomial ring in the <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img85.png"
+ ALT="$ x_{i j}$">, which is just the
+coordinate ring of the  monoid scheme <!-- MATH
+ ${\rm M}_{n}(R)$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img124.png"
+ ALT="$ {\rm M}_{n}(R)$"> of <!-- MATH
+ $n \times n$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img125.png"
+ ALT="$ n \times n$">-matrices.
+Consequently the bialgebra of the usual FRT-construction 
+contains <IMG
+ WIDTH="68" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img126.png"
+ ALT="$ (q^2-1)$">-torsion elements considered over the 
+ground ring <!-- MATH
+ $R={\mathbb{Z}}\,[q,q^{-1}]$
+ -->
+<IMG
+ WIDTH="115" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img127.png"
+ ALT="$ R={\mathbb{Z}}\,[q,q^{-1}]$"> of integer 
+Laurent polynomials in <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">.
+<BR>
+<P>
+Let us write down a couple of consequent relations holding in <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">.
+For this purpose the algebraic span of the <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">-endomorphisms
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{\beta_i}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="21" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img128.png"
+ ALT="$\displaystyle {\beta_i}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img129.png"
+ ALT="$\displaystyle \mbox{\index{${\beta_i}$}}$"><IMG
+ WIDTH="227" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img130.png"
+ ALT="$\displaystyle := {\rm id}_{V^{\otimes i-1}} \otimes \beta
+\otimes{\rm id}_{V^{\otimes r-i-1}}\;\;$"> and <IMG
+ WIDTH="30" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img131.png"
+ ALT="$\displaystyle \;\;
+{\gamma_i}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img132.png"
+ ALT="$\displaystyle \mbox{\index{${\gamma_i}$}}$"><IMG
+ WIDTH="350" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img133.png"
+ ALT="$\displaystyle :={\rm id}_{V^{\otimes i-1}} \otimes \gamma
+\otimes{\rm id}_{V^{\otimes r-i-1}}\;\; i=1, \ldots , r-1
+$">
+</DIV><P></P>
+
+<P>
+in <!-- MATH
+ ${\rm End}_{R}{(V^{\otimes r})}$
+ -->
+<IMG
+ WIDTH="97" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img134.png"
+ ALT="$ {\rm End}_{R}{(V^{\otimes r})}$"> will be denoted by <!-- MATH
+ ${{\cal A}_r}\mbox{$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img135.png"
+ ALT="$ {{\cal A}_r}$"><A NAME="6396"></A> 
+(for all <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ r&gt;1$">). 
+According to [<A
+ HREF="node22.html#ofrt">O2</A>, section 1, 5]
+in <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$"> the following relations hold for all <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img136.png"
+ ALT="$ r&gt;1$">:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Rel_MA"></A><!-- MATH
+ \begin{equation}
+\mu \wr x_{{\bf i} {\bf j}} = x_{{\bf i} {\bf j}} \wr \mu \; \;
+\mbox{ for all } \mu \in {\cal A}_r, \;
+{\bf i},{\bf j} \in I(n,r).
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="132" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img137.png"
+ ALT="$\displaystyle \mu \wr x_{{\bf i} {\bf j}} = x_{{\bf i} {\bf j}} \wr \mu \; \;$">&nbsp; &nbsp; for all <IMG
+ WIDTH="178" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img138.png"
+ ALT="$\displaystyle \mu \in {\cal A}_r, \; {\bf i},{\bf j} \in I(n,r).$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The reader should also note that by [<A
+ HREF="node22.html#ofrt">O2</A>, Lemma 2.2] all elements
+of <!-- MATH
+ ${\cal A}_r$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img139.png"
+ ALT="$ {\cal A}_r$"> must be  morphisms of <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img105.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,r)$">-comodules.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html52"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html48"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html42"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html50"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html53"
+  HREF="node3.html">Quantum Symplectic Bideterminants</A>
+<B> Up:</B> <A NAME="tex2html49"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html43"
+  HREF="node1.html">Introduction</A>
+ &nbsp; <B>  <A NAME="tex2html51"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>

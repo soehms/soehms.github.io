@@ -1,0 +1,1593 @@
+\batchmode
+\documentclass[12pt]{article}
+\makeatletter
+\usepackage{latexsym,amssymb,amsfonts}
+\topmargin-0.7cm
+\parindent0cm
+\headheight0mm
+\textwidth16.0cm
+\textheight24.3cm
+\tabcolsep-4mm
+\oddsidemargin-2mm
+\evensidemargin-2mm
+
+
+\newtheorem {prop}{Proposition}[section]
+
+\newtheorem {theo}[prop]{Theorem}
+
+\newtheorem {cor}[prop]{Corollary}
+
+\newtheorem {lem}[prop]{Lemma}
+
+\newtheorem {Def}[prop]{Definition}
+
+\newtheorem {rem}[prop]{Remark}
+
+\newenvironment {Bew}{{\sc Proof: }}{$\Box$\\ }
+
+\newcommand {\N}{{\mathbb N}}
+
+\newcommand {\F}{{\mathbb F}}
+
+\newcommand {\Z}{{\mathbb Z}}
+
+\newcommand {\C}{{\mathbb C}}
+
+\newcommand {\Q}{{\mathbb Q}}
+
+\newcommand {\X}{{\mathbb X}}
+
+\newcommand {\Sk}{{\mathbb S}}
+
+\newcommand {\Y}{{\mathbb Y}}
+
+\newcommand {\I}{{\mathbb I}}
+
+\newcommand {\Ab}{\\ [-2mm]}
+
+\newcommand {\pfr}{\rightarrow}
+
+\newcommand {\pfl}{\leftarrow}
+
+\newcommand {\gdw}{\Longleftrightarrow}
+
+\newcommand {\ohne}{\backslash}
+
+\newcommand {\id}[1]{{\rm id}_{#1}}
+
+\newcommand {\End}[2]{{\rm End}_{#1}{(#2)}}
+
+\newcommand {\Hom}[3]{{\rm Hom}_{#1}{(#2,#3)}}
+
+\newcommand {\Dim}[2]{{\rm dim}_{#1}{(#2)}}
+
+\newcommand {\Min}[1]{{\rm min}(#1)}
+
+\newcommand {\Char}[1]{{\rm char}(#1)}
+
+\newcommand {\Ker}[1]{{\rm ker}(#1)}
+
+\newcommand {\Ima}[1]{{\rm im}(#1)}
+
+\newcommand {\res}[1]{{\rm res}_{#1}}
+
+\newcommand {\Res}[1]{{\rm Res}_{#1}}
+
+\newcommand {\stan}[2]{\bigtriangleup_{#1}(#2)}
+
+\newcommand {\cstan}[2]{\bigtriangledown_{#1}(#2)}
+
+\newcommand {\simp}[2]{L_{#1}(#2)}
+
+\newcommand {\cok}[2]{T_{#1}(#2)}
+
+\newcommand {\dec}[2]{d_{#1}^{#2}}
+
+\newcommand {\sLambda}[1]{\Lambda_{#1}}
+
+\newcommand {\mod}[1]{{\rm mod}_{#1}}
+
+\newcommand {\skel}[1]{{\Sk}_{#1}}
+
+\newcommand {\unzer}[1]{{\Y}_{#1}}
+
+\newcommand {\zyk}[1]{{\X}_{#1}}
+
+\newcommand {\fields}[1]{{\F}_{#1}}
+
+\newcommand {\irrsum}[1]{{\I}_{#1}}
+
+\newcommand {\grot}[1]{\underline{#1}}
+
+\newcommand {\fgrot}[1]{\widetilde{\grot{#1}}}
+
+\newcommand {\kgrot}[1]{{\rm G}_0(#1)}
+
+\newcommand {\xgrot}[1]{\grot{#1}^x}
+
+\newcommand {\ngrot}[1]{\grot{#1}^0}
+
+\newcommand {\ugrot}[1]{\grot{#1}^{\infty}}
+
+\newcommand {\vgrot}[2]{\grot{#1}^{#2}}
+
+\newcommand {\Span}{{\cal L}}
+
+\newcommand {\uspan}{\Span}
+
+\newcommand {\vspan}[1]{\Span^{#1}}
+
+\newcommand {\uuspan}{{\uspan}^+}
+
+\newcommand {\heck}[1]{{\cal H}_{#1}}
+
+\newcommand {\symg}[1]{{\cal S}_{#1}}
+
+\newenvironment {tableau}[1]{\begin{array}{*{#1}{|p{2mm}}|}
+}{\end{array}}
+
+\newcommand {\tline}[3]{#1  &\multicolumn{#2}{c}{} \\  \cline{1-#3}}
+
+\newcommand {\fR}{\grot R^{\Lambda}}
+
+\newcommand {\tker}{{\cal K}_{\tau}}
+
+\newcommand {\sker}{{\cal K}_{\sigma}}
+
+\makeatother
+\newenvironment{tex2html_wrap}{}{}
+\newwrite\lthtmlwrite
+\def\lthtmltypeout#1{{\let\protect\string\immediate\write\lthtmlwrite{#1}}}%
+\newbox\sizebox
+\textheight 50cm
+\begin{document}
+\pagestyle{empty}
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2209: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangledown_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2211: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2213: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\Lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2215: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_K:=(K\otimes_RA$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2227: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{K}(\lambda)
+:=K\otimes_R\bigtriangleup_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2229: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{K}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2231: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_K$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2233: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{K}^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2235: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{K}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2237: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{K}(\mu)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2241: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal S}_{3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2253: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal S}_{4}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2255: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2257: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\mathbb Z}{\cal S}_{4}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2265: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm mod}_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2293: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm mod}_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2297: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2307: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2309: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$u,v \in {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2317: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U, V\in {\rm mod}_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2319: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U\otimes_R V$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2321: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U\otimes_R M$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2333: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{R}}:={\mathbb Z}{{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2343: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{A}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2347: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{R}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2355: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I_R$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2359: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U,
+U',U''\in {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2365: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}0\rightarrow U'\rightarrow U\rightarrow U''\rightarrow 0. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{R}:=\widetilde{\underline{R}}/I_R. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I_A$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2381: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}0\rightarrow M'\rightarrow M\rightarrow M''\rightarrow 0 \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}I_RI_A \subseteq I_A. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{A}:=\widetilde{\underline{A}}/I_A \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2393: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb Y} }_{R}\subseteq
+{{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2395: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb X} }_{R}\subseteq {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2399: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb X} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2409: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb Y} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2427: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb Y} }_{R}\backslash\{0\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2433: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb Y} }_{R}\subseteq {{\mathbb X} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2437: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$p\in R$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2441: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l\in {\mathbb N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2443: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$R/(p^l)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2447: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p^l]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2449: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(p,l)\neq (q,k)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2451: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p^l]\neq [q^{k}]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2453: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{equation}\label{mult}
+ [p^l][q^{k}]=\left\{\begin{array}{cl} 0 & \mbox{ if }p\neq q \\ 
+\mbox{[$p^{{\rm min}(l,k)}$]} & \mbox{ if } p=q \end{array} \right. .
+\end{equation}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$0\in {{\mathbb Y} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2473: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$n\in R$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2485: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[n]=[p_1^{l_1}]+[p_2^{l_2}]+ \ldots +
+[p_k^{l_k}]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2487: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$n=p_1^{l_1}p_2^{l_2}\ldots p_k^{l_k}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2489: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2501: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm G}_0(A)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2503: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M\in {\rm mod}_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2511: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb I} }_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2533: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\varphi:R\rightarrow S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2579: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\varphi:=S\otimes_R -:{\rm mod}_{R} \rightarrow {\rm mod}_{S} \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{\varphi}:{{\mathbb S} }_{R}\rightarrow {{\mathbb S} }_{S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2581: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{\varphi}(U)=V$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2583: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$V\cong S\otimes_R U$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2585: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{\varphi}}:\widetilde{\underline{R}} \rightarrow \widetilde{\underline{S}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2587: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I_S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2591: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\varphi}:\underline{R} \rightarrow \underline{S}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M\in {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2599: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\varphi}([M])={\rm dim}_{S}{(S\otimes_R M)}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}(1)=1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2601: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{equation}\label{special}
+ \underline{\varphi}([p^l])=\left\{\begin{array}{cl} 0 & 
+\mbox{ if } (p)\neq {\rm ker}(R\rightarrow S) \\ 
+1 & \mbox{ if } (p)={\rm ker}(R\rightarrow S) \end{array} \right. .
+\end{equation}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_S:=S\otimes_RA$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2605: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\psi:=S\otimes_R -:{\rm mod}_{A} \rightarrow {\rm mod}_{A_S} \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{\psi}:{{\mathbb S} }_{A}\rightarrow {{\mathbb S} }_{A_S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2607: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{\psi}}:\widetilde{\underline{A}} \rightarrow \widetilde{\underline{A_S}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2611: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\widetilde{\underline{\psi}}(I_A)\subseteq I_{A_S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2613: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\psi}:\underline{A} \rightarrow \underline{A_S}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb S} }_{\psi}(UM)={{\mathbb S} }_{\varphi}(U){{\mathbb S} }_{\psi}(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2621: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U\in {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2623: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M\in {{\mathbb S} }_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2625: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\psi}(ra)=\underline{\varphi}(r)\underline{\psi}(a)\;\;\mbox{ for all }
+r \in \underline{R}, \; a \in \underline{A} \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2627: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2631: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{prop}\label{grot map}
+There is an $\underline{S}$-module homomorphism
+
+\begin{displaymath} \underline{\psi}_S: \underline{S}\otimes_{\underline{R}}\underline{A} \rightarrow \underline{A_S} \end{displaymath}
+
+given by $\underline{\psi}_S(s\otimes a):=s\underline{\psi}(a)$ for all $s\in 
+\underline{S}$ and $a\in \underline{A}$.
+\end{prop}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\varphi':{\rm mod}_{S}\rightarrow {\rm mod}_{R}, \;\; \psi':{\rm mod}_{A_S}\rightarrow {\rm mod}_{A} \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2643: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\varphi'}:\underline{S}\rightarrow \underline{R}, \;\;
+\underline{\psi'}:\underline{A_S}\rightarrow \underline{A}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$R\rightarrow S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2657: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\varphi\circ\varphi'(U)\cong U$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2659: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\psi\circ\psi'(M)\cong M$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2661: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\varphi}\circ \underline{\varphi'}={\rm id}_{\underline{S}}\;\;\mbox{ and } \;\;
+\underline{\psi}\circ \underline{\psi'}={\rm id}_{\underline{A_S}}.\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l_S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2689: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{prop}% latex2html id marker 263
+\label{S epi}
+Suppose that the $R$-algebra structure map $R\rightarrow S$ on $S$ is
+surjective. Then $\underline{\psi'}$ gives an embedding of
+$\underline{A_S}$ into $\underline{A}$ as a direct summand, and
+you have
+
+\begin{displaymath} \underline{\psi'}\circ \underline{\psi}=l_S. \end{displaymath}
+
+Furthermore, the $\underline{S}$-module homomorphism $\underline{\psi}_S$ of
+Proposition \ref{grot map} is an isomorphism with inverse
+given by $\underline{\psi}_S^{-1}(a):=1_{\underline{S}}\otimes \underline{\psi'}(a)$.
+\end{prop}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\kappa(a):=1_{\underline{S}}\otimes \underline{\psi'}(a)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2715: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\psi}_S\circ \kappa={\rm id}_{}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2719: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\kappa\circ\underline{\psi}_S={\rm id}_{}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2721: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\Box$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2725: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb Y} }_{R}\cap {{\mathbb X} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2727: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb F} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2733: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$F\in {{\mathbb F} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2745: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A_F}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2749: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_F$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2751: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[F]\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2755: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}I^0:=\{ a\in \underline{A}|\; [F]a=0 \; \forall F\in {{\mathbb F} }_{R}\}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l_F$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2759: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\psi}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2765: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2767: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^0_S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2769: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A_S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2771: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\rho:R\rightarrow S$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2775: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau:{{\mathbb F} }_{S}\rightarrow {{\mathbb F} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2777: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau(F):=[R/\rho^{-1}(I)]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2781: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[\tau(F)]a=[F]\underline{\psi}(a)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2783: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$F\in {{\mathbb F} }_{S}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2785: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$a \in \underline{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2787: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{A}^0:=\underline{A}/I^0 \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\psi}^0:\underline{A}^0\rightarrow \underline{A_S}^0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2791: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\mathbb F} }_{S}=\{1\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2795: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I_S^0=\{0\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2797: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A}^0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2799: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm G}_0(A_S)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2801: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$C\in {{\mathbb X} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2825: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}:{{\mathbb S} }_{R}\rightarrow {{\mathbb S} }_{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2829: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}U\rightarrow (R/I)\otimes_R U, \;\; u\mapsto 1\otimes u, \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}(U)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2841: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2847: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2857: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}:\underline{A}\rightarrow \underline{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2861: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{C}^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2865: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}N^i:=\{a \in \underline{A}|\; {\rm res}_{F}^i(a)\in I^0 \;\;\forall F \in
+{{\mathbb F} }_{R}\}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{F}^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2875: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^0\supseteq
+I^1\supseteq \ldots$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2881: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2889: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^{i-1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2891: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^{i-1}\cap N^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2893: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}I^{\infty}:=\bigcap_{i=0}^{\infty}I^i \;\;\mbox{ and } \;\;
+\underline{A}^{i}:=\underline{A}/I^i,\;\;\; \underline{A}^{\infty}:=\underline{A}/I^{\infty}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}:={\rm res}_{F}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2903: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$q^l$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2911: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{equation}\label{res}
+{\rm res}_{p}([q^l])=\left\{\begin{array}{cl}
+\mbox{[$q^l$]} & \mbox{ if } p\neq q \\ 
+\mbox{[$q^{l-1}$]} & \mbox{ if } p=q \;\; \mbox{ and } \;\; l>1\\ 
+0 & \mbox{ if } p=q \;\; \mbox{ and } \;\; l=1
+\end{array} \right .
+. 
+\end{equation}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2925: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}(ra)={\rm res}_{p}(r){\rm res}_{p}(a)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2927: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$r, a\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2929: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$N^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2933: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$I^i=I^{i-1}\cap N^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2937: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A}^{\infty}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2941: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$i\in \N_0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2943: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$p,q\in
+R$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2945: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[q]{\rm res}_{p}^i(a)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2947: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}^0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2949: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[q]{\rm res}_{p}(a)=[q]a$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2951: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$q\neq p$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2953: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^i(a)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2955: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{lem}% latex2html id marker 322
+\label{res serie}
+Let $R$ be a principal ideal domain.
+Two elements $a,b$ of
+$\underline{A}$ coincide in $\underline{A}^{\infty}$ iff they have identical
+{\em residual series} for all primes $p$.
+The latter one is for $x\in \underline{A}$
+defined by
+
+\begin{displaymath} {\rm Res}_{p}(x):=([p]{\rm res}_{p}^0(x),[p]{\rm res}_{p}^1(x),[p]{\rm res}_{p}^2(x),\ldots ) \end{displaymath}
+
+A similar statement holds with respect to
+$\underline{A}^{i}$ and the first $i$ entries of both series.
+\end{lem}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{F}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2981: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$R:={\mathbb Z}[x,x^{-1}]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2983: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$F:=R/(p,x-1)
+\cong GF(p)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2989: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$p\in {\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2991: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U:=R/(x-1)\cong {\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2995: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$V:=R/(p)\cong GF(p)[x,x^{-1}]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline2997: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{F}(U)\cong U$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3001: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{F}(V)\cong V$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3003: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$U\otimes_R V\cong F$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3005: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}{\rm res}_{F}([U]){\rm res}_{F}([V])=[F] \neq 0={\rm res}_{F}([U][V]). \end{displaymath}}\hbox{}\vfil
+
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda \in
+\Lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3045: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{}(\lambda), \bigtriangledown_{}(\lambda) \in {\rm mod}_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3047: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}f_{\lambda}:\bigtriangleup_{}(\lambda) \rightarrow \bigtriangledown_{}(\lambda).
+\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\psi:=S\otimes_R-$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3063: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{}(\lambda),\bigtriangledown_{}(\lambda),
+f_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3065: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{S}(\lambda),\bigtriangledown_{S}(\lambda),
+f_{S,\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3067: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{K,\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3077: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda\neq \mu$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3085: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{K,\lambda}\neq 0\neq f_{K,\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3087: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\mu\in\Lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3095: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{K,\mu}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3097: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{K}^{\mu\mu}=1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3105: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{K}^{\lambda\mu}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3107: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda \leq \mu$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3109: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$W(\lambda)^*$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3119: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\bigtriangledown_{}(\lambda):={\rm Hom}_{R}{(\bigtriangleup_{}(\lambda),R)} \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(la)(d):=l(da^*)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3123: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l \in
+{\rm Hom}_{R}{(\bigtriangleup_{}(\lambda),R)}, \; a\in A$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3125: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d\in \bigtriangleup_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3127: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$W(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3133: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\phi_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3135: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\phi_{\lambda}(a^*x,y)=\phi_{\lambda}(x , ay)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3137: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\phi_{\lambda}(xa, y)=\phi_{\lambda}(x, ya^*)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3147: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3157: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{\lambda}(x)(y):=\phi_{\lambda}(x,y)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3159: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\psi$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3161: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{K,\lambda}=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3193: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\Lambda_{p}:=\{\lambda\in \Lambda|\; f_{F,\lambda}\neq 0\},\;\;\;
+\Lambda_{p}^-:=\Lambda \backslash \Lambda_{p}, \;\;\;
+P_{\lambda}:=\{ p\in R|\; p\mbox{ prim, }\lambda \in \Lambda_{p}^-\}.
+\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{K,\lambda}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3205: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\Lambda_{p}^-=\emptyset$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3211: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A}, \underline{A}^{i}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3221: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3225: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}L_{}(\lambda):=\bigtriangledown_{}(\lambda)-T_{}(\lambda)\;\;\in \underline{A}. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3229: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm G}_0(A_K)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3241: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal L} $}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3243: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal L}  =\underline{A}^{\infty}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3253: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$r\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3257: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{R}^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3265: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${{\cal L}  }^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3267: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\{L_{}(\lambda)|\;\lambda
+\in \Lambda\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3271: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$x\in \underline{R}^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3275: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$x\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3281: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Res}_{p}(x):=([p]{\rm res}_{p}^i(x), [p]{\rm res}_{p}^1(x),
+\ldots )$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3283: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{lem}% latex2html id marker 438
+\label{Torsionsmodul}
+Let $A$ be cellular and $M$ a right $A$-module. If $M$ is an 
+$R$-torsion module, then you have $M\in {{\cal L}  }^+$ as elements
+of $\underline{A}^{\infty}$.
+\end{lem}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$x\in M$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3305: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$a\in A$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3311: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Res}_{q}(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3327: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Res}_{p}(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3329: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda\in \Lambda_{p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3333: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{F,\lambda}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3335: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{F}(\lambda)=[p]L_{}(\lambda)\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3337: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$k^i_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3343: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[p]{\rm res}_{p}^i(M)=
+\sum_{\lambda \in \Lambda_{p}}k^i_{\lambda}[p]L_{}(\lambda).\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[p]{\rm res}_{p}^{l-1}(M)=p^{l-1}M/p^{l}M\rightarrow
+p^lM/p^{l+1}M=[p]{\rm res}_{p}^l(M) \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$k^i_{\lambda}-k^{i+1}_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3351: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}^l(M)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3355: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l\geq j$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3357: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}N:=\sum_{\lambda\in \Lambda_{p}}(\sum_{i=1}^j (k^{i-1}_{\lambda}-
+k^{i}_{\lambda})[p^i])L_{}(\lambda). \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Res}_{q}(M)={\rm Res}_{q}(N)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3363: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm res}_{p}^i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3371: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[p]{\rm res}_{p}^i(\sum_{i=1}^j (k^{i-1}_{\lambda}-
+k^{i}_{\lambda})[p^i])=k^i_{\lambda}[p] \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{cor}% latex2html id marker 476
+\label{cstan}
+For a generic semisimple cellular algebra $A$ all costandard
+modules $\bigtriangledown_{}(\lambda)$ are contained in ${{\cal L}  }^+$ as elements
+of $\underline{A}^{\infty}$.
+\end{cor}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{lem}\label{free}
+Let $Q$ be the field of fractions on $R$, $M$ and $N$ two full
+$A$-lattices in the same $A_Q$-module $V$. Then in $\underline{A}^{\infty}$ the
+identity $M=N$ holds.
+\end{lem}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^i(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3417: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^{i+1}(M)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3419: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M\subseteq N$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3435: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$R_p$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3437: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M':=R_pM$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3441: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$N':=R_pN$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3443: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{R_p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3451: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$F=R_P/(p)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3453: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{A_{R_p}}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3455: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm G}_0(A_F)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3461: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangledown_{Q}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3469: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{cor}% latex2html id marker 507
+\label{stan cstan}
+For a generic semisimple cellular algebra $A$
+corresponding standard
+and costandard modules $\bigtriangleup_{}(\lambda)$ and $\bigtriangledown_{}(\lambda)$
+coincide in $\underline{A}^{\infty}$ for all $\lambda \in \Lambda$.
+\end{cor}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{theo}% latex2html id marker 514
+Let $A$ be a generic semisimple cellular algebra. Then each right $A$-module 
+$M\in {\rm mod}_{A}$ is contained in ${{\cal L}  }^+$ as an element of $\underline{A}^{\infty}$.
+In particular $\underline{A}^{\infty}={\cal L} $.
+\end{theo}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M=M_f+M_t$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3499: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M_f$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3501: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M_t$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3503: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M_Q:=Q\otimes_RM$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3515: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{Q}(\lambda)=\bigtriangleup_{Q}(\lambda)=\bigtriangledown_{Q}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3517: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$N\in {\rm mod}_{A}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3519: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$M_Q$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3527: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$N\in {{\cal L}  }^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3533: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$P_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3539: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$z_{\lambda}:=1-\sum_{p\in P_{\lambda}}[p^{l_p}]\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3543: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$l_p$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3545: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p^{l_p}]L_{}(\lambda)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3547: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{prop}% latex2html id marker 533
+\label{def dec}
+There are uniquely determined elements $d_{}^{\lambda\mu}\in \underline{R}$
+assigned to each pair $\lambda,\mu \in \Lambda$ which satisfy the
+following conditions:
+
+\begin{itemize} 
+\item[(a)] $d_{}^{\lambda\mu} \in \underline{R}^+$ for all $\lambda\neq
+  \mu$ and $d_{}^{\lambda\lambda}=z_{\lambda}$
+\item[(b)] $[p]d_{}^{\lambda\mu}=0$ for all $\mu \in \Lambda_{p}^-$
+\item[(c)] $\bigtriangledown_{}(\lambda)=\sum_{\mu \in \Lambda}d_{}^{\lambda\mu}
+L_{}(\mu)$ holds in $\underline{A}^{\infty}$.
+\end{itemize}
+\end{prop}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$g^{\lambda\mu}\in \underline{R}^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3567: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda)=\sum_{\mu\in \Lambda}g^{\lambda\mu}L_{}(\mu)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3569: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]g^{\lambda\mu}=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3571: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\mu \in \Lambda_{p}^-$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3573: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangledown_{}(\lambda)=L_{}(\lambda)+T(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3577: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]\bigtriangledown_{}(\lambda)=\bigtriangledown_{F}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3581: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]L_{}(\lambda)=L_{F}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3583: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p](g^{\lambda\lambda}+1)=[p]d_{F}^{\lambda\lambda}=[p]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3585: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]g^{\lambda\lambda}=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3587: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$g^{\lambda\lambda}\in \underline{R}^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3589: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$g^{\lambda\lambda}=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3591: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{}^{\lambda\lambda}:=z_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3595: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{}^{\lambda\mu}:=g^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3597: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$L_{}(\lambda)=z_{\lambda}L_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3603: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(d_{}^{\lambda\mu})'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3605: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{}^{\lambda\lambda}=(d_{}^{\lambda\lambda})'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3607: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]d_{}^{\lambda\mu}=[p](d_{}^{\lambda\mu})'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3613: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]d_{}^{\lambda\mu}=[p]d_{F}^{\lambda\mu}=[p](d_{}^{\lambda\mu})'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3621: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\mu\in \Lambda_{p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3623: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{F}^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3625: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{F}(\lambda)=
+[p]\bigtriangleup_{}(\lambda)=[p]\bigtriangledown_{}(\lambda)
+=\bigtriangledown_{F}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3629: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}(d_{}^{\lambda\mu})=
+d_{K}^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3637: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}:\underline{R}\rightarrow \underline{K}={\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3639: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{prop}\label{ungleichung}
+If $\lambda\neq \mu$ then $d_{}^{\lambda\mu}\neq 0$
+implies $\lambda < \mu$.
+\end{prop}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$0\neqd_{}^{\lambda\mu}\in \underline{R}^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3651: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]d_{}^{\lambda\mu}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3655: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{F}^{\lambda\mu}\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3657: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$D:=(d_{}^{\lambda\mu})_{\lambda,\mu \in \Lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3665: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$e^{\lambda\lambda}:=1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3667: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$e^{\lambda\mu}:=d_{}^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3669: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$E:=(e^{\lambda\mu})_{\lambda,\mu \in \Lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3673: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$e^{\lambda\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3675: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$X_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3693: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{R}^{\Lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3697: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma, \tau:\underline{R}^{\Lambda}\rightarrow\underline{A}^{\infty}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3699: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma(X_{\lambda}):=L_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3701: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau(X_{\lambda}):=\bigtriangledown_{}(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3703: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\epsilon$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3705: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\epsilon(X_{\lambda}):=\sum_{\mu\in
+\Lambda}e^{\lambda\mu}X_{\mu}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3711: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma\circ
+\epsilon=\tau$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3713: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\tau}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3715: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\sigma}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3717: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3719: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3721: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\sigma}=\epsilon({\cal K}_{\tau})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3725: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\Lambda_{p}^-\neq \emptyset$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3729: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$d_{}^{\mu\mu}=1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3733: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\{\bigtriangledown_{F}(\mu)|\; \mu\in \Lambda_{p}\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3735: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$a_{\lambda\mu,p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3739: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda\in \Lambda_{p}^-$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3741: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[p]\bigtriangledown_{}(\lambda)=\sum_{\mu \in \Lambda_{p}} a_{\lambda\mu, p}[p]
+\bigtriangledown_{}(\mu). \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(\lambda,p)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3745: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}u_{\lambda,p}:=X_{\lambda}-\sum_{\mu \in \Lambda_{p}}  a_{\lambda\mu, p}
+X_{\mu}, \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\tau}'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3749: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p^l]u_{\lambda,p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3753: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{prop}\label{kern tau}
+We have ${\cal K}_{\tau}={\cal K}_{\tau}'$.
+\end{prop}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[q]{\rm res}_{q}^i(\tau([p^l]u_{\lambda,p}))= [q]{\rm res}_{q}^i([p^l])(
+ \bigtriangledown_{}(\lambda)-\sum_{\mu \in \Lambda_{p}} a_{\lambda\mu, p}
+\bigtriangledown_{}(\mu)). \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[q]{\rm res}_{q}^i([p^l])=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3763: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Res}_{q}^i(\tau([p^l]u_{\lambda,p}))=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3771: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\tau}'\subseteq {\cal K}_{\tau}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3775: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$x:=\sum_{\lambda\in \Lambda} b_{\lambda}X_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3777: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_{\lambda}\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3781: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^j(b_{\lambda})=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3785: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$j\geq i, \lambda\in \Lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3787: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_0\in \Lambda$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3791: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$j\geq i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3797: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^j(b_{\lambda_0})\neq 0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3799: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_{\lambda_0}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3803: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}:
+\underline{R}\rightarrow \underline{Q}={\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3815: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\underline{\varphi}(b_{\lambda_0})\neq
+0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3817: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\underline{\psi}(\tau(x))=\sum_{\lambda\in
+  \Lambda}\underline{\varphi}(b_{\lambda})
+\bigtriangledown_{Q}(\lambda) \neq 0 \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm G}_0(A_Q)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3819: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau(x)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3821: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3831: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$h_{\lambda,p}\in {\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3835: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]h_{\lambda,p}=[p]{\rm res}_{p}^{i-1}(b_{\lambda})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3837: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}y:=\sum_{\lambda\in \Lambda}\sum_{p\in P_{\lambda}}
+h_{\lambda,p}[p^i]u_{\lambda,p}\;\;
+\in {\cal K}_{\tau}'. \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$z:=x-y\in {\cal K}_{\tau}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3839: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$z=\sum_{\lambda\in \Lambda}
+c_{\lambda}X_{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3841: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^j(c_{\lambda})=[p]{\rm res}_{p}^j(b_{\lambda})=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3845: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^{i-1}(c_{\lambda})=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3851: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$x=y+z\in {\cal K}_{\tau}'$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3859: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$h_{\lambda,p}[p^i]+\sum_{q\neq p} [q^i]v_q$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3869: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$v_q\in \underline{R}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3871: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^{i-1}([q^i]v_q)=[p][q^i]{\rm res}_{p}^{i-1}(v_q)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3875: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^{i-1}(c_{\lambda})=[p]{\rm res}_{p}^{i-1}(b_{\lambda})-
+[p]h_{\lambda,p}=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3877: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$h_{\lambda,p}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3879: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau(z)=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3881: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}[p]{\rm res}_{p}^{i-1}(\tau(z))=\sum_{\lambda \in\lambda}
+[p]{\rm res}_{p}^{i-1}(c_{\lambda}){\rm res}_{p}^{i-1}(\bigtriangledown_{}(\lambda))
+=\sum_{\lambda \in \Lambda_{p}}[p]{\rm res}_{p}^{i-1}(c_{\lambda})[p]\bigtriangledown_{}(\lambda)
+=0, \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\{\bigtriangledown_{F}(\lambda)|\;\lambda
+\in \Lambda_{p}\}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3885: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[p]{\rm res}_{p}^{i-1}(c_{\lambda})$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3889: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal K}_{\tau}'=0$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3895: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{theo}% latex2html id marker 775
+\label{quasi}
+The $\underline{R}$-module $\underline{A}^{\infty}$ is free 
+iff $A$ is integrally quasi-hereditary. If this is the case
+$\{L_{}(\lambda)|\; \lambda\in \Lambda \}$ and
+$\{\bigtriangledown_{}(\lambda)|\; \lambda\in \Lambda \}$ are bases of $\underline{A}^{\infty}$. Furthermore, the global and regular
+decomposition matrices coincide and the
+decomposition numbers are uniquely determined by condition (3) of
+Proposition \ref{def dec}.
+\end{theo}}\hbox{}\vfil
+
+\stepcounter{section}
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A:={\mathbb Z}{\cal S}_{n}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3925: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\Lambda=\Lambda(n)^+$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3929: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$
+M^{\lambda}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3933: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda:=\lambda_{n-1}:=(n-1,1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3937: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal S}_{n-1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3941: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\cal S}_{n}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3943: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$e_1, \ldots , e_n$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3951: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$e_i\pi:=e_{\pi^{-1}(i)}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3955: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_i:=e_{i+1}-e_i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3961: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$i=1, \ldots , n-1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3963: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$A_{n-1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3973: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{\lambda}:\bigtriangleup_{}(\lambda) \rightarrow \bigtriangledown_{}(\lambda)=
+{\rm Hom}_{{\mathbb Z}}{(\bigtriangleup_{}(\lambda),{\mathbb Z})}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3975: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3977: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b^*_i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3981: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$nb^*_1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3987: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b^*_i-ib^*_1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3989: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$i=2, \ldots ,
+n-1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3991: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3993: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b^*_1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3997: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\mathbb Z}/n{\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline3999: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\mathbb Z}{\cal S}_{n}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4003: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma:=(12\ldots n)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4007: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\tau:=(12)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4009: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_1\sigma =-\sum_{i=1}^{n-1}b_i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4013: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_i\sigma =b_{i-1}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4015: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_1\tau =-b_1,\; b_2\tau =
+b_1+b_2$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4021: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_i\tau =b_i$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4023: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b^*_1\sigma^{-1}=b^*_{2}-
+b^*_1=b^*_1\tau$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4027: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b^*_2-b^*_1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4029: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_n:=(n)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4035: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\phi_{\lambda_n}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4037: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{}(\lambda_n)=\bigtriangledown_{}(\lambda_n)=L_{}(\lambda_n)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4039: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\bigtriangledown_{}(\lambda_{n-1})=L_{}(\lambda_{n-1})+[n]L_{}(\lambda_n). \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_1:=(1^3)=(1,1,1), \lambda_2:=(2,1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4047: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_3:=(3)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4049: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_2$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4059: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_3$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4061: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\bigtriangleup_{}(\lambda_1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4063: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$f_{\lambda}(b_1)=
+3!b^*_1$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4065: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda_1)=[3!]\bigtriangledown_{}(\lambda_1)=
+([2]+[3])\bigtriangledown_{}(\lambda_1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4067: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[2]\bigtriangledown_{}(\lambda_1)=[2]L_{}(\lambda_3)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4075: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[3]\bigtriangledown_{}(\lambda_1)=[3]L_{}(\lambda_3)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4077: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\begin{array}{|cc||c|c|c|} \hline
+\multicolumn{5}{|c|}{\mbox{Global Decomposition Matrix of } {\cal S}_{3}}\\  \hline
+ & L_{}(\lambda) & \lambda_1 & \lambda_2 & \lambda_3 \\ 
+\bigtriangledown_{}(\lambda) & & (1^3) &  (2,1) & (3) \\  \hline \hline
+\lambda_1 & (1^3)  & 1-[6] & [3] & [2] \\  \hline
+\lambda_2 & (2,1)  & & 1 & [3]  \\  \hline
+\lambda_3 & (3)  & & & 1   \\  \hline
+\end{array}
+\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(p,\lambda)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4099: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(2,\lambda_1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4103: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$(3,\lambda_1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4105: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$u_{\lambda_1 ,2}=X_{\lambda_1}-X_{\lambda_3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4107: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$u_{\lambda_1, 3}=X_{\lambda_1}-X_{\lambda_2}+X_{\lambda_3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4109: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\epsilon(u_{\lambda_1 ,2})=
+X_{\lambda_1}+[3]X_{\lambda_2}+([2]-1)X_{\lambda_3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4111: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\epsilon(u_{\lambda_1 ,3})=X_{\lambda_1}+([3]-1)X_{\lambda_2}+
+([2]-[3]+1)X_{\lambda_3}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4113: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$i,j\in {\mathbb N}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4115: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$k,l\in {\mathbb Z}$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4117: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}(k[2^i]+l[3^j])L_{}(\lambda_1)
+=l([3^j]-[3])L_{}(\lambda_2)+
+(k([2^i]-[2])+l([3]-[3^j]))L_{}(\lambda_3). \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_1:=(1^4),\; \lambda_2:=(2,1^2),\; \lambda_3:=(2,2),\;
+\lambda_4:=(3,1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4123: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\lambda_5:=(4)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4125: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}\begin{array}{|cc||c|c|c|c|c|} \hline
+\multicolumn{7}{|c|}{\mbox{Global Decomposition Matrix of } {\cal S}_{4}}\\  \hline
+ & L_{}(\lambda) &\lambda_1 &\lambda_2 &\lambda_3 &\lambda_4 &\lambda_5 \\ 
+\bigtriangledown_{}(\lambda) &  & (1^4) & (2,1^2)&  (2,2) & (3,1) & (4) \\  \hline
+\hline
+\lambda_1 & (1^4)  & 1-[24] & & [3] & & [8] \\  \hline
+\lambda_2 & (2,1^2)  & & 1-[2]& & [8] & [2] \\  \hline
+\lambda_3 & (2,2)  & & & 1-[2] & [2] & [3]  \\  \hline
+\lambda_4 & (3,1)  & & & & 1 &  [4]  \\  \hline
+\lambda_5 & (4)  & & & & & 1   \\  \hline
+\end{array}
+\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda_1)=[4!]\bigtriangledown_{}(\lambda_1)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4133: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[2]\bigtriangledown_{}(\lambda_1)=[2]L_{}(\lambda_5)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4135: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[8]\bigtriangledown_{}(\lambda_1)=[8]L_{}(\lambda_5)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4139: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda_3)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4149: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$T(\lambda_2)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4151: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_1, b_2, b_3$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4155: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$\sigma:=(1234)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4157: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_1\sigma=b_1-b_2+b_3, \; b_2\sigma=b_1,
+b_3\sigma=b_2$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4161: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$b_1\tau=-b_1,\; b_2\tau=b_3,\; b_2\tau=b_3$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4163: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}2\left(\begin{array}{rrr} 3 & 1 & -1 \\ 
+1 & 3 & 1 \\ 
+-1 & 1 & 3
+\end{array} \right)
+\end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$8b^*_1,8b^*_2$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4167: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$2(b^*_1-b^*_2+b^*_3)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4169: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$[2]T(\lambda_2)=[2](L_{}(\lambda_4)+L_{}(\lambda_5))$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4187: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{displaymath}{\rm Res}_{2}(T(\lambda_2))=([2](L_{}(\lambda_4)+L_{}(\lambda_5)),
+[2]L_{}(\lambda_4), [2]L_{}(\lambda_4), 0,\ldots ) \end{displaymath}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\begin{eqnarray*}\epsilon(u_{\lambda_1 ,2}) & = &X_{\lambda_1}+[3]X_{\lambda_3}+([8]-1)
+X_{\lambda_5} \\ 
+ \epsilon(u_{\lambda_1 ,3}) & = &X_{\lambda_1}+([3]-1)X_{\lambda_3}
+-[2]X_{\lambda_4}+([8]-[3]+1)X_{\lambda_5} \\ 
+ \epsilon(u_{\lambda_2 ,2})& = & X_{\lambda_2}+([8]-1)X_{\lambda_4}+
+([2]-[4])X_{\lambda_5}\\ 
+ \epsilon(u_{\lambda_3 ,2}) & = &X_{\lambda_3}+([2]-1)X_{\lambda_4}+
+([3]-[4]+1)X_{\lambda_5}.
+\end{eqnarray*}}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{$R:={\mathbb Z}[q,
+  q^{-1}]$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4201: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+{\newpage\clearpage\samepage
+\setbox\sizebox=\hbox{${\rm Spec}(R)$}\lthtmltypeout{latex2htmlSize :tex2html_wrap_inline4205: \the\ht\sizebox::\the\dp\sizebox.}\box\sizebox}\hbox{}\vfil
+
+\stepcounter{section}
+
+\clearpage
+\end{document}

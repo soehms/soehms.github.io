@@ -1,0 +1,681 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-1 (1.67)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Centralizer Coalgebras</TITLE>
+<META NAME="description" CONTENT="Centralizer Coalgebras">
+<META NAME="keywords" CONTENT="frt">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="frt.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="frt.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html33"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html31"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html25"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html34"
+  HREF="node3.html">Comparison Theorems</A>
+<B> Up:</B> <A NAME="tex2html32"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html26"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+Centralizer Coalgebras</A>
+</H1>
+
+<P>
+Let <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$"> be a noetherian integral domain, <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$V$"> a free
+<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module with a fixed basis <!-- MATH
+ $\{v_{1}, \ldots , v_{n}\}$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.png"
+ ALT="$\{v_{1}, \ldots , v_{n}\}$">. Let
+<IMG
+ WIDTH="20" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$e_{i}^{ j}$"> denote the corresponding basis of matrix units for
+<!-- MATH
+ ${\cal E}:={\rm End}_{R}{(V)}$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.png"
+ ALT="${\cal E}:={\rm End}_{R}{(V)}$">. The algebra structure on <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> induces a
+coalgebra structure on the dual <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-module
+<!-- MATH
+ ${{\cal E}}^*:={\rm Hom}_{R}{({\cal E},R)}$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.png"
+ ALT="${{\cal E}}^*:={\rm Hom}_{R}{({\cal E},R)}$">. On the dual basis elements the comultiplication
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.png"
+ ALT="$\Delta $"> and the counit <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\epsilon $"> are given by
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\Delta ({{e}^*_{i}}^{j})=\sum_{k=1}^n {{e}^*_{i}}^{k}  \otimes {{e}^*_{k}}^{j} ,\; \; \epsilon ({{e}^*_{i}}^{j})
+=\delta_{ij}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="426" HEIGHT="62" BORDER="0"
+ SRC="img13.png"
+ ALT="\begin{displaymath}\Delta ({{e}^*_{i}}^{j})=\sum_{k=1}^n {{e}^*_{i}}^{k} \otimes {{e}^*_{k}}^{j} ,\; \; \epsilon ({{e}^*_{i}}^{j})
+=\delta_{ij}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+We will be engaged with epimorphic coalgebra images of <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> since
+they correspond to subalgebras of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">. Consider the isomorphism
+<!-- MATH
+ ${\vartheta}_{tr}:{\cal E}\rightarrow {{\cal E}}^*$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.png"
+ ALT="${\vartheta}_{tr}:{\cal E}\rightarrow {{\cal E}}^*$"> of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-modules induced by 
+the nondegenerate bilinear form corresponding to 
+the matrix trace map <!-- MATH
+ $tr:{\cal E}\rightarrow R$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img16.png"
+ ALT="$tr:{\cal E}\rightarrow R$">, i.e. <!-- MATH
+ ${\vartheta}_{tr}(\mu)(\nu):= tr(\mu\nu)$
+ -->
+<IMG
+ WIDTH="161" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img17.png"
+ ALT="${\vartheta}_{tr}(\mu)(\nu):= tr(\mu\nu)$">.
+Note that <!-- MATH
+ ${\vartheta}_{tr}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img18.png"
+ ALT="${\vartheta}_{tr}$"> maps <IMG
+ WIDTH="20" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$e_{i}^{ j}$"> onto <!-- MATH
+ ${{e}^*_{j}}^{i}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.png"
+ ALT="${{e}^*_{j}}^{i}$">.
+Let <!-- MATH
+ $A\subseteq {\cal E}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$A\subseteq {\cal E}$"> be an arbitrary
+subset and <IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$L(A)$"> the <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$R$">-linear span in <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> of all commutators
+<!-- MATH
+ $[\nu, \mu ]=\nu\mu-\mu\nu$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.png"
+ ALT="$[\nu, \mu ]=\nu\mu-\mu\nu$"> where <IMG
+ WIDTH="15" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$\nu$"> runs through <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> and <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\mu$">
+runs through <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">. We set <!-- MATH
+ $K(A):={\vartheta}_{tr}(L(A))\subseteq {{\cal E}}^*$
+ -->
+<IMG
+ WIDTH="205" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$K(A):={\vartheta}_{tr}(L(A))\subseteq {{\cal E}}^*$">. If <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> consists of
+just one element <IMG
+ WIDTH="15" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$\nu$"> we use abbreviations <IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img27.png"
+ ALT="$L(\nu)$"> and <IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img28.png"
+ ALT="$K(\nu)$">
+for <IMG
+ WIDTH="46" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img21.png"
+ ALT="$L(A)$"> and <IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$K(A)$">.
+
+<P>
+<P>
+<DIV><A NAME="Koideal"><B>Lemma  2.1</B></A> &nbsp; 
+<IMG
+ WIDTH="50" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.png"
+ ALT="$K(A)$"> is a coideal in <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> for each subset <!-- MATH
+ $A\subseteq {\cal E}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$A\subseteq {\cal E}$">.</DIV><P></P>
+
+<P>
+S<SMALL>KETCH OF </SMALL>P<SMALL>ROOF: </SMALL>Since the sum of coideals is a coideal again we only need to consider
+the case <IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.png"
+ ALT="$A=\{\nu\}$">. Using an explicit expression for <IMG
+ WIDTH="15" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$\nu$"> 
+in terms of the basiselements <IMG
+ WIDTH="20" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$e_{i}^{ j}$"> one
+calculates for arbitrary numbers <!-- MATH
+ $k,l \in \{1,\ldots, n\}$
+ -->
+<IMG
+ WIDTH="134" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.png"
+ ALT="$k,l \in \{1,\ldots, n\}$">:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\Delta ({\vartheta}_{tr}([\nu ,e_{k}^{ l}]))=
+\sum_m (
+{{e}^*_{l}}^{m}\otimes{\vartheta}_{tr}([\nu,e_{k}^{ m}]) +
+{\vartheta}_{tr}([\nu, {{e}^*_{m}}^{l}]) \otimes {{e}^*_{m}}^{k},
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="522" HEIGHT="52" BORDER="0"
+ SRC="img32.png"
+ ALT="\begin{displaymath}\Delta ({\vartheta}_{tr}([\nu ,e_{k}^{ l}]))=
+\sum_m (
+{{e}^*...
+...artheta}_{tr}([\nu, {{e}^*_{m}}^{l}]) \otimes {{e}^*_{m}}^{k},
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+which just means
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\Delta (K(\nu)) \subseteq K(\nu) \otimes {{\cal E}}^*+ {{\cal E}}^*
+\otimes K(\nu).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="427" HEIGHT="33" BORDER="0"
+ SRC="img33.png"
+ ALT="\begin{displaymath}\Delta (K(\nu)) \subseteq K(\nu) \otimes {{\cal E}}^*+ {{\cal E}}^*
+\otimes K(\nu). \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+In a simialar way one shows <!-- MATH
+ $\epsilon (K(\nu))=0$
+ -->
+<IMG
+ WIDTH="103" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\epsilon (K(\nu))=0$">. A more detailed proof
+can be found in section 1.3 of
+[<A
+ HREF="node9.html#doc">Oe</A>].<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img35.png"
+ ALT="$\Box$">
+<BR><P>
+If <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$C$"> is an arbitrary coalgebra such that <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$V$"> is a <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$C$">-comodule
+with structure map <!-- MATH
+ $\tau_{V}:V\rightarrow V\otimes C$
+ -->
+<IMG
+ WIDTH="138" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img37.png"
+ ALT="$\tau_{V}:V\rightarrow V\otimes C$"> we denote the set of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$C$">-comodule
+endomorphisms by
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+{\rm End}_{C}{(V)}:=\{
+\mu \in {\cal E}|\; \; (\mu \otimes {\rm id}_{C}) \circ \tau_{V}= \tau_{V} 
+\circ \mu \}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="468" HEIGHT="33" BORDER="0"
+ SRC="img38.png"
+ ALT="\begin{displaymath}{\rm End}_{C}{(V)}:=\{
+\mu \in {\cal E}\vert\; \; (\mu \otimes {\rm id}_{C}) \circ \tau_{V}= \tau_{V}
+\circ \mu \}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Clearly this is a subalgebra of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$">. The proof of the next lemma is
+similar to the preceeding one.
+
+<P>
+<P>
+<DIV><A NAME="Koalgebren_Endomorphismen"><B>Lemma  2.2</B></A> &nbsp; 
+Let <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img36.png"
+ ALT="$C$"> be a coalgebra together with an epimorphism
+<!-- MATH
+ $\pi: {{\cal E}}^*\rightarrow C$
+ -->
+<IMG
+ WIDTH="96" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img39.png"
+ ALT="$\pi: {{\cal E}}^*\rightarrow C$">. Then
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\mu \in {\rm End}_{C}{(V)} \Longleftrightarrow K(\mu)  \subseteq {\rm ker}(\pi).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="418" HEIGHT="33" BORDER="0"
+ SRC="img40.png"
+ ALT="\begin{displaymath}\mu \in {\rm End}_{C}{(V)} \Longleftrightarrow K(\mu) \subseteq {\rm ker}(\pi).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P></DIV><P></P>
+
+<P>
+<P>
+<DIV><A NAME="Verknupfungstreue"><B>Corollary  2.3</B></A> &nbsp; 
+Let <IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img41.png"
+ ALT="$M$"> be a coideal in <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> and <!-- MATH
+ $\mu , \nu \in {\cal E}$
+ -->
+<IMG
+ WIDTH="70" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img42.png"
+ ALT="$\mu , \nu \in {\cal E}$">. Then
+<!-- MATH
+ $K(\mu)  \subseteq M$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.png"
+ ALT="$K(\mu) \subseteq M$"> and <!-- MATH
+ $K(\nu) \subseteq M$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img44.png"
+ ALT="$K(\nu) \subseteq M$"> implies
+<!-- MATH
+ $K(\mu \nu) \subseteq M$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img45.png"
+ ALT="$K(\mu \nu) \subseteq M$"> and <!-- MATH
+ $K(\nu\mu ) \subseteq M$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img46.png"
+ ALT="$K(\nu\mu ) \subseteq M$">.</DIV><P></P>
+
+<P>
+We now define the <EM>centralizer coalgebra</EM> of the subset
+<!-- MATH
+ $A\subseteq{\cal E}$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img20.png"
+ ALT="$A\subseteq {\cal E}$"> as
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+M(A):={{\cal E}}^*/ K(A).
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="358" HEIGHT="33" BORDER="0"
+ SRC="img47.png"
+ ALT="\begin{displaymath}M(A):={{\cal E}}^*/ K(A).\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+According to
+lemma
+<A HREF="node2.html#Koalgebren_Endomorphismen">2.2</A> we have
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+A \subseteq {\rm End}_{M(A)}{(V)}.
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="350" HEIGHT="34" BORDER="0"
+ SRC="img48.png"
+ ALT="\begin{displaymath}A \subseteq {\rm End}_{M(A)}{(V)}.\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Furthermore <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is the largest epimorphic image of <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> with this
+property. By the corollary <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> does not change if <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> is substituted
+by its algebraic span. Before going deeper into the analysis of
+relationships between <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> and the <EM>centralizer algebra</EM>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+C(A):={\rm End}_{A}{(V)}=\{ \mu \in {\cal E}|\; [\mu , \nu]=0, \;\mbox{ for
+all } \nu \in A\}
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="502" HEIGHT="33" BORDER="0"
+ SRC="img50.png"
+ ALT="\begin{displaymath}C(A):={\rm End}_{A}{(V)}=\{ \mu \in {\cal E}\vert\; [\mu , \nu]=0, \;\mbox{ for
+all } \nu \in A\} \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+we give a presentation of <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> by generators and relations, which is
+convenient for practical use.
+<BR>
+<P>
+The residue classes of the
+basis elements <!-- MATH
+ ${{e}^*_{i}}^{j}$
+ -->
+<IMG
+ WIDTH="28" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img51.png"
+ ALT="${{e}^*_{i}}^{j}$"> with respect to any coideal in <IMG
+ WIDTH="24" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="${{\cal E}}^*$"> will
+always be denoted by <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$x_{i j}$"> where <!-- MATH
+ $i,j\in \underline{n}:=\{1, \ldots , n\}$
+ -->
+<IMG
+ WIDTH="175" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.png"
+ ALT="$i,j\in \underline{n}:=\{1, \ldots , n\}$">. 
+If 
+<!-- MATH
+ $\mu =\sum_{i,j=1}^n a_{ij}e_{i}^{ j}\in {\cal E}$
+ -->
+<IMG
+ WIDTH="169" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img54.png"
+ ALT="$\mu =\sum_{i,j=1}^n a_{ij}e_{i}^{ j}\in {\cal E}$"> is arbitrary we write 
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mu x_{i j} :=\sum_{k=1}^n a_{ik}x_{kj \}; \; \mbox{ and } \; \;
+x_{i j}\mu :=\sum_{k=1}^n x_{i k}a_{kj}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="Notation_End"></A><IMG
+ WIDTH="441" HEIGHT="62" BORDER="0"
+ SRC="img55.png"
+ ALT="\begin{displaymath}
+\mu x_{i j} :=\sum_{k=1}^n a_{ik}x_{kj \}; \; \mbox{ and } \; \;
+x_{i j}\mu :=\sum_{k=1}^n x_{i k}a_{kj}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(1)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Now, if <IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img56.png"
+ ALT="$N$"> is a subset of <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.png"
+ ALT="${\cal E}$"> and <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$"> its algebraic span
+then  <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img49.png"
+ ALT="$M(A)$"> is defined by the generators <IMG
+ WIDTH="27" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$x_{i j}$"> and the relations
+
+<P>
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mu x_{i j} = x_{i j} \mu \; \; \mbox{ for all } \mu \in N, \;
+i,j \in \underline{n}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="Rel_MA"></A><IMG
+ WIDTH="424" HEIGHT="34" BORDER="0"
+ SRC="img57.png"
+ ALT="\begin{displaymath}
+\mu x_{i j} = x_{i j} \mu \; \; \mbox{ for all } \mu \in N, \;
+i,j \in \underline{n}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+As consequences one has relations of the same form where <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.png"
+ ALT="$\mu$"> runs
+through all of <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.png"
+ ALT="$A$">.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html33"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html31"
+  HREF="frt.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html25"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html34"
+  HREF="node3.html">Comparison Theorems</A>
+<B> Up:</B> <A NAME="tex2html32"
+  HREF="frt.html">frt</A>
+<B> Previous:</B> <A NAME="tex2html26"
+  HREF="node1.html">Introduction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2003-03-26
+</ADDRESS>
+</BODY>
+</HTML>

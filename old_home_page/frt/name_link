@@ -1,0 +1,5 @@
+for i in *.html
+do
+    mv $i $i.bak
+    awk -f name_link.awk  $i.bak > $i
+done

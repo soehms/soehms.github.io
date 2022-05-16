@@ -1,0 +1,1670 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Quantum Symplectic Exterior Algebra</TITLE>
+<META NAME="description" CONTENT="Quantum Symplectic Exterior Algebra">
+<META NAME="keywords" CONTENT="symp">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2002-2-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="symp.css">
+
+<LINK REL="next" HREF="node12.html">
+<LINK REL="previous" HREF="node10.html">
+<LINK REL="up" HREF="symp.html">
+<LINK REL="next" HREF="node12.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html158"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+  HREF="node12.html">Proof of Proposition 8.3</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node10.html">The Weak Straightening Algorithm</A>
+ &nbsp; <B>  <A NAME="tex2html159"
+  HREF="node23.html">Index</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000110000000000000000"></A> <A NAME="aussere_Algebra"></A>
+<BR>
+Quantum Symplectic Exterior Algebra
+</H1>
+
+<P>
+We are going to prepare the proof of Proposition <A HREF="#Straightening___Algorithmus_2"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]"
+ SRC="file:/usr/share/lib/latex2html/icons/crossref.png"></A> for general <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">. Since we need
+a <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">-analogue of [<A
+ HREF="node22.html#ofrt">O2</A>, Lemma 8.1], we have to investigate
+the quantum symplectic exterior algebra.
+We start with its definition 
+which can be found in many textbooks on 
+quantum groups (for instance [<A
+ HREF="node22.html#charipr">CP</A>, chapter 7]). 
+It is defined as the quotient of the
+tensor algebra <!-- MATH
+ ${{\cal T}(V)}\mbox{$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img758.png"
+ ALT="$ {{\cal T}(V)}$"><A NAME="8380"></A><IMG
+ WIDTH="116" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img759.png"
+ ALT="$ =\bigoplus_{r\in {\mathbb{N}}\,_0}V^{\otimes r}$"> by a certain ideal.
+We denote it by <!-- MATH
+ ${{\bigwedge}_{R,q}(n)}\mbox{$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img760.png"
+ ALT="$ {{\bigwedge}_{R,q}(n)}$"><A NAME="8389"></A> and write the symbol <!-- MATH
+ ${\wedge}\mbox{$
+ -->
+<IMG
+ WIDTH="17" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img761.png"
+ ALT="$ {\wedge}$"><A NAME="8397"></A> 
+for multiplication
+in this algebra. Setting
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{c_i}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="18" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img762.png"
+ ALT="$\displaystyle {c_i}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img763.png"
+ ALT="$\displaystyle \mbox{\index{${c_i}$}}$"><IMG
+ WIDTH="114" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img764.png"
+ ALT="$\displaystyle :=q^{i}v_{i'} \wedge v_{i},\;\;$"> and <IMG
+ WIDTH="30" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img765.png"
+ ALT="$\displaystyle \;\;
+{d_i}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img766.png"
+ ALT="$\displaystyle \mbox{\index{${d_i}$}}$"><IMG
+ WIDTH="124" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img767.png"
+ ALT="$\displaystyle :=-q^{-i}v_{i} \wedge v_{i'} $">
+</DIV><P></P>
+
+<P>
+for <!-- MATH
+ $i \in \underline{m}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$ i\in \underline{m}$">, we write down the defining relations holding in  <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> 
+according to [<A
+ HREF="node22.html#hay2">Ha2</A>, (5.2)]:
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="Rel_1"></A><A NAME="Rel_3"></A><A NAME="Rel_2"></A><A NAME="Rel_4"></A><!-- MATH
+ \begin{eqnarray}
+v_{k} \wedge v_{l} & = & -q^{-1} v_{l} \wedge v_{k}, \\
+y^{-i}c_i & = &
+y^{-1}d_i +(y^{-1}-1) \sum_{j=i+1}^m d_j \\
+y^i d_i & = &
+y c_i + (y-1)\sum_{j=i+1}^m c_j
+\\
+v_{k}\wedge v_{k} & = & 0
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="57" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img769.png"
+ ALT="$\displaystyle v_{k} \wedge v_{l}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="104" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img771.png"
+ ALT="$\displaystyle -q^{-1} v_{l} \wedge v_{k},$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(13)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="44" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img772.png"
+ ALT="$\displaystyle y^{-i}c_i$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="207" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img773.png"
+ ALT="$\displaystyle y^{-1}d_i +(y^{-1}-1) \sum_{j=i+1}^m d_j$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(14)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="35" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img774.png"
+ ALT="$\displaystyle y^i d_i$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="168" HEIGHT="71" ALIGN="MIDDLE" BORDER="0"
+ SRC="img775.png"
+ ALT="$\displaystyle y c_i + (y-1)\sum_{j=i+1}^m c_j$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(15)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="60" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img776.png"
+ ALT="$\displaystyle v_{k}\wedge v_{k}$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP>0</TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(16)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+where <!-- MATH
+ $k>l, \; k\neq l'$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img777.png"
+ ALT="$ k&gt;l, \; k\neq l'$"> and <!-- MATH
+ $i\in \underline{m}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$ i\in \underline{m}$"> is assumed. Remenber that the <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$"> of
+[<A
+ HREF="node22.html#hay2">Ha2</A>] corresponds to the inverse of our <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.png"
+ ALT="$ q$">.
+The third relation does not occur in [<A
+ HREF="node22.html#hay2">Ha2</A>] and indeed we have
+
+<P>
+<P>
+<DIV><B>Lemma  11.1</B> &nbsp; 
+<I>Relation (<A HREF="#Rel_2">15</A>)
+is a consequence of (<A HREF="#Rel_1">13</A>) and (<A HREF="#Rel_3">14</A>). </I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We use induction on <IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img778.png"
+ ALT="$ m-i$">. The beginning <!-- MATH
+ $y^m d_m=y c_m$
+ -->
+<IMG
+ WIDTH="105" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img779.png"
+ ALT="$ y^m d_m=y c_m$"> follows
+directly from <!-- MATH
+ $y^{-m}c_m = y^{-1}d_m$
+ -->
+<IMG
+ WIDTH="134" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img780.png"
+ ALT="$ y^{-m}c_m = y^{-1}d_m$"> by multiplication with <IMG
+ WIDTH="44" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img781.png"
+ ALT="$ y^{m+1}$">.
+For <IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img755.png"
+ ALT="$ i &lt;m$"> we use (<A HREF="#Rel_3">14</A>) and the induction hypothesis to see that
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rl}
+y^{-1}d_i 
+& = y^{-1}c_i - (y^{-1} -1)\sum_{j=i+1}^my^{-j}(y c_j + 
+(y-1)\sum_{k=j+1}^m c_k) \\
+& = y^{-1}c_i - (y^{-1} -1)\sum_{k=i+1}^m(y^{1-k}+ 
+\sum_{j=i+1}^{k-1} y^{-j}(y-1) )c_k \\
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="539" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img782.png"
+ ALT="$\displaystyle \begin{array}{rl}
+y^{-1}d_i
+&amp; = y^{-1}c_i - (y^{-1} -1)\sum_{j...
+...sum_{k=i+1}^m(y^{1-k}+
+\sum_{j=i+1}^{k-1} y^{-j}(y-1) )c_k \\
+\end{array}
+$">
+</DIV><P></P>
+
+<P>
+Since <!-- MATH
+ $(y-1)\sum_{j=i+1}^{k-1}y^{-j} = y^{-i} - y^{1-k}$
+ -->
+<IMG
+ WIDTH="264" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img783.png"
+ ALT="$ (y-1)\sum_{j=i+1}^{k-1}y^{-j} = y^{-i} - y^{1-k}$"> 
+we obtain (<A HREF="#Rel_2">15</A>).<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+We set 
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+{v_{I}}\mbox{
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img784.png"
+ ALT="$\displaystyle {v_{I}}$"><IMG
+ WIDTH="5" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img785.png"
+ ALT="$\displaystyle \mbox{\index{${v_{I}}$}}$"><IMG
+ WIDTH="194" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img786.png"
+ ALT="$\displaystyle :=
+v_{i_1} \wedge v_{i_2} \wedge \ldots \wedge v_{i_r} ,\;\;$">&nbsp; &nbsp; if <IMG
+ WIDTH="155" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img787.png"
+ ALT="$\displaystyle \;\; I:=\{i_1, \ldots, i_r\} \;\;$"> and <IMG
+ WIDTH="159" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img788.png"
+ ALT="$\displaystyle \;\;
+i_1 &lt; i_2 &lt; \ldots &lt;i_r.$">
+</DIV><P></P> 
+
+<P>
+In contrast to [<A
+ HREF="node22.html#ofrt">O2</A>, section 7] we take the usual
+order <IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img572.png"
+ ALT="$ &lt;$"> on <!-- MATH
+ $\underline{n}$
+ -->
+<IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img318.png"
+ ALT="$ \underline{n}$"> here for technical reasons. A subset <!-- MATH
+ $I\subseteq \underline{n}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img789.png"
+ ALT="$ I\subseteq \underline{n}$"> ordered
+in that way will be called an <EM>ordered subset</EM> in the sequel.
+
+<P>
+<P>
+<DIV><A NAME="Basis_aussere_Algebra"><B>Proposition  11.2</B></A> &nbsp; 
+<I>The set <!-- MATH
+ ${B}\mbox{$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img790.png"
+ ALT="$ {B}$"><A NAME="8434"></A><IMG
+ WIDTH="122" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img791.png"
+ ALT="$ :=\{ v_{I}\vert\; I\subseteq \underline{n} \}$">
+is a basis of <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>The fact that the set is a set 
+of <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> -linear generators of <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> follows directly from the relations.
+Linear independence is shown 
+using the Diamond Lemma for Ring Theory (cf. [<A
+ HREF="node22.html#hay1">Ha1</A>, p. 157]).
+The technical details can be found in Appendix <A HREF="node19.html#Diamond_Lemma">18.1</A>.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> is a graded algebra since the relations are
+homogeneous of degree two. A basis for the <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">-th homogeneous summand
+<!-- MATH
+ ${{\bigwedge}_{R,q}(n,r)}\mbox{$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img792.png"
+ ALT="$ {{\bigwedge}_{R,q}(n,r)}$"><A NAME="8446"></A> is given by the subset <!-- MATH
+ ${B_r}\mbox{$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img793.png"
+ ALT="$ {B_r}$"><A NAME="8454"></A> of 
+<IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img794.png"
+ ALT="$ B$"> corresponding to the
+set <!-- MATH
+ ${P({n},{r})}\mbox{$
+ -->
+<IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img795.png"
+ ALT="$ {P({n},{r})}$"><A NAME="8458"></A> of subsets <!-- MATH
+ $I\subseteq \underline{n}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img789.png"
+ ALT="$ I\subseteq \underline{n}$"> 
+having cardinality <IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img796.png"
+ ALT="$ \vert I\vert=r$">.
+<BR>
+<P>
+<P>
+<DIV><A NAME="Rel_und_Kernel"><B>Proposition  11.3</B></A> &nbsp; 
+<I>Considered as elements of <!-- MATH
+ $V^{\otimes 2}$
+ -->
+<IMG
+ WIDTH="38" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img797.png"
+ ALT="$ V^{\otimes 2}$"> the defining relations precislely
+span the kernel of the endomorphism <!-- MATH
+ $\beta - y {\rm id}_{}$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img798.png"
+ ALT="$ \beta - y {\rm id}_{}$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>It is a matter of calculation to show that
+<!-- MATH
+ \begin{displaymath}
+\begin{array}{rl}
+\beta( v_{k} \wedge v_{l} + q^{-1} v_{l} \wedge v_{k} ) & =
+y ( v_{k} \wedge v_{l} + q^{-1} v_{l} \wedge v_{k} ) \\
+\beta ( v_{k} \wedge v_{k} ) &= y( v_{k} \wedge v_{k})  \\
+\beta( y^{-i}c_i - y^{-1} d_i - ( y^{-1} -1)\sum_{j=i+1}^m d_j ) & =
+ y^{-i+1}c_i -  d_i + ( y -1)\sum_{j=i+1}^m d_j 
+\end{array}
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="605" HEIGHT="77" BORDER="0"
+ SRC="img799.png"
+ ALT="\begin{displaymath}
+\begin{array}{rl}
+\beta( v_{k} \wedge v_{l} + q^{-1} v_{l}...
+...
+y^{-i+1}c_i - d_i + ( y -1)\sum_{j=i+1}^m d_j
+\end{array}
+\end{displaymath}">
+</DIV><P></P>
+which is only hard in the last case. The technical details of that calculation
+can be found in Appendix <A HREF="node20.html#Rel_and_kernel">18.2</A>. 
+From these equations we see that the span of the relations is contained
+in the kernel. For <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.png"
+ ALT="$ q=1$"> we know that these both <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-modules coincide.
+But <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> is free as <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module and therefore the span of the
+relations is a direct summand of <!-- MATH
+ $V^{\otimes 2}$
+ -->
+<IMG
+ WIDTH="38" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img797.png"
+ ALT="$ V^{\otimes 2}$">. Consequently both modules
+coincide in general.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<P>
+<DIV><B>Proposition  11.4</B> &nbsp; 
+<I><!-- MATH
+ ${\bigwedge}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img800.png"
+ ALT="$ {\bigwedge}_{R,q}(n,2)$"> is an  <!-- MATH
+ $A^{{\rm s}}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="83" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img742.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n,2)$"> comodul.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>By the previous proposition we have to show that the kernel of <!-- MATH
+ $\beta -y{\rm id}_{}$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img798.png"
+ ALT="$ \beta - y {\rm id}_{}$">
+is an  <!-- MATH
+ $A:= A^{{\rm s}}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="128" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img801.png"
+ ALT="$ A:= A^{{\rm s}}_{R,q}(n,2)$"> subcomodul of <!-- MATH
+ $V^{\otimes 2}$
+ -->
+<IMG
+ WIDTH="38" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img797.png"
+ ALT="$ V^{\otimes 2}$">. 
+Call this kernel <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img507.png"
+ ALT="$ U$"> and let 
+<IMG
+ WIDTH="52" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img802.png"
+ ALT="$ r \in U$">. We must show <!-- MATH
+ $\tau_{}(r) \in  A \otimes U$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img803.png"
+ ALT="$ \tau_{}(r) \in A \otimes U$">. Since <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$">
+is a morphism of the  <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$">-comodule <!-- MATH
+ $V^{\otimes 2}$
+ -->
+<IMG
+ WIDTH="38" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img797.png"
+ ALT="$ V^{\otimes 2}$"> we see
+<!-- MATH
+ \begin{displaymath}
+y\tau_{} (r ) = \tau_{}(\beta(r)) = {\rm id}_{A} \otimes \beta( \tau_{} ( r ) ).
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="269" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img804.png"
+ ALT="$\displaystyle y\tau_{} (r ) = \tau_{}(\beta(r)) = {\rm id}_{A} \otimes \beta( \tau_{} ( r ) ).$">
+</DIV><P></P>
+But this means <!-- MATH
+ ${\rm id}_{A}\otimes(\beta -y{\rm id}_{})(\tau_{}( r ) )=0$
+ -->
+<IMG
+ WIDTH="212" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img805.png"
+ ALT="$ {\rm id}_{A}\otimes(\beta -y{\rm id}_{})(\tau_{}( r ) )=0$">.
+Since <IMG
+ WIDTH="42" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img806.png"
+ ALT="$ A, U$"> and <!-- MATH
+ ${\bigwedge}_{R,q}(n,2)$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img800.png"
+ ALT="$ {\bigwedge}_{R,q}(n,2)$"> are free <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-modules we may conclude
+<!-- MATH
+ $\tau_{}(r) \in A\otimes U$
+ -->
+<IMG
+ WIDTH="112" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img803.png"
+ ALT="$ \tau_{}(r) \in A \otimes U$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+If <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img794.png"
+ ALT="$ B$"> is a bialgebra and <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> an algebra which is a <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img794.png"
+ ALT="$ B$">-comodul we call
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img195.png"
+ ALT="$ A$"> a <IMG
+ WIDTH="20" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img794.png"
+ ALT="$ B$">-comodul algebra if multiplication as well as the embedding of the unit
+element are morphisms of comodules.
+
+<P>
+<P>
+<DIV><B>Proposition  11.5</B> &nbsp; 
+<I><!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> is an  <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">-comolule algebra.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>The tensor algebra <!-- MATH
+ ${\cal T}(V)=\bigoplus_{r\in {\mathbb{N}}\,_0}V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="166" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img503.png"
+ ALT="$ {\cal T}(V)=
+\bigoplus_{r \in {\mathbb{N}}\,_0} V^{\otimes r}$">
+over <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$"> has a natural structure of an <!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">-comolule algebra
+(cf. [<A
+ HREF="node22.html#doc">O1</A>, 1.5]). Consequently by multiplicativity and the above proposition
+the ideal generated by the kernel of <!-- MATH
+ $\beta -y{\rm id}_{}$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img798.png"
+ ALT="$ \beta - y {\rm id}_{}$"> is an
+<!-- MATH
+ $A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img96.png"
+ ALT="$ A^{{\rm s}}_{R,q}(n)$">-comodule. But this is precisely the defining ideal
+of <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> by Proposition <A HREF="#Rel_und_Kernel">11.3</A>. Thus <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> inherits
+the comodul algebra structure from <!-- MATH
+ ${\cal T}(V)$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img807.png"
+ ALT="$ {\cal T}(V)$">.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+
+<P>
+Denote the comodule structure map of <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> by
+<!-- MATH
+ ${\tau_{\wedge}}\mbox{(n)$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img808.png"
+ ALT="$ {\tau_{\wedge}}$"><A NAME="8540"></A><IMG
+ WIDTH="255" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img809.png"
+ ALT="$ :{\bigwedge}_{R,q}(n)\rightarrow {\bigwedge}_{R,q}(n)\otimes A^{{\rm s}}_{R,q}(n)$">.
+
+<P>
+<P>
+<DIV><A NAME="aA_comodul"><B>Proposition  11.6</B></A> &nbsp; 
+<I>The coefficient functions of <!-- MATH
+ ${\bigwedge}_{R,q}(n,r)$
+ -->
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img810.png"
+ ALT="$ {\bigwedge}_{R,q}(n,r)$"> are given by
+</I><!-- MATH
+ \begin{displaymath}
+\tau_{\wedge}(v_{J})=\sum_{I \in P({n},{r})}v_{I}\otimes T^{\omega_r}_q({\bf i}:{\bf j})
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="251" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img811.png"
+ ALT="$\displaystyle \tau_{\wedge}(v_{J})=\sum_{I \in P({n},{r})}v_{I}\otimes T^{\omega_r}_q({\bf i}:{\bf j})
+$">
+</DIV><P></P>
+<P>
+<I>where <!-- MATH
+ ${\bf i}=(i_1, \ldots , i_r)$
+ -->
+<IMG
+ WIDTH="120" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img59.png"
+ ALT="$ {\bf i}=(i_1, \ldots , i_r)$"> and <!-- MATH
+ ${\bf j}=(j_1, \ldots , j_r)$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img653.png"
+ ALT="$ {\bf j}=(j_1, \ldots , j_r)$"> 
+are the multi-indices corresponding to the
+ordered subsets <!-- MATH
+ $I:=\{i_1, \ldots , i_r\}$
+ -->
+<IMG
+ WIDTH="133" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img812.png"
+ ALT="$ I:=\{i_1, \ldots , i_r\}$"> and <!-- MATH
+ $J=\{j_1, \ldots , j_r\}$
+ -->
+<IMG
+ WIDTH="133" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img813.png"
+ ALT="$ J=\{j_1, \ldots , j_r\}$">, 
+respectively. </I></DIV><P></P>
+
+<P>
+Let us first treat the ingredients needed in the proof
+of that proposition.
+
+<P>
+<P>
+<DIV><A NAME="kappa_faktorisiert"><B>Lemma  11.7</B></A> &nbsp; 
+<I>Let <!-- MATH
+ ${\pi_r}\mbox{(n,r)$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img814.png"
+ ALT="$ {\pi_r}$"><A NAME="8566"></A><IMG
+ WIDTH="158" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img815.png"
+ ALT="$ :V^{\otimes r}\rightarrow {\bigwedge}_{R,q}(n,r)$"> be the natural projection. Then the endomorphism
+<!-- MATH
+ ${\kappa_{\lambda}}\mbox{\beta(w)$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.png"
+ ALT="$ {\kappa_{\lambda}}$"><A NAME="8579"></A><IMG
+ WIDTH="201" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img816.png"
+ ALT="$ :=\sum_{w \in {\cal S}_{\lambda}} (-y)^{-l(w)}\beta(w)$">
+factors through <IMG
+ WIDTH="23" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img817.png"
+ ALT="$ \pi_r$">, i.e. there is a homomorphism of 
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-modules <!-- MATH
+ ${\nu_r}\mbox{$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img818.png"
+ ALT="$ {\nu_r}$"><A NAME="8586"></A><IMG
+ WIDTH="158" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img819.png"
+ ALT="$ :{\bigwedge}_{R,q}(n,r) \rightarrow V^{\otimes r}$"> such that <!-- MATH
+ $\kappa_r=\nu_r\circ \pi_r$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img820.png"
+ ALT="$ \kappa_r=\nu_r\circ \pi_r$">.</I></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>Since the
+defining ideal of <!-- MATH
+ ${\bigwedge}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img768.png"
+ ALT="$ {\bigwedge}_{R,q}(n)$"> is generated by the kernel of 
+<!-- MATH
+ $({\rm id}_{V^{\otimes 2}}-y^{-1}\beta)$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img821.png"
+ ALT="$ ({\rm id}_{V^{\otimes 2}}-y^{-1}\beta)$"> by Proposition <A HREF="#Rel_und_Kernel">11.3</A> 
+the assertion immediately follows
+from Lemma <A HREF="node9.html#1-ybetai_Formel">9.1</A>.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+Let
+<!-- MATH
+ ${I_{\omega_r}^{<}}\mbox{$
+ -->
+<IMG
+ WIDTH="29" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img822.png"
+ ALT="$ {I_{\omega_r}^{&lt;}}$"><A NAME="8604"></A><IMG
+ WIDTH="280" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img823.png"
+ ALT="$ :=\{{\bf i} \in I(n,r) \vert\; i_1&lt;i_2&lt; \ldots &lt; i_r \}$"> be the
+set of multi-indices corresponding to the ordered subsets <!-- MATH
+ $I\in P({n},{r})$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img824.png"
+ ALT="$ I\in P({n},{r})$">.
+
+<P>
+<P>
+<DIV><A NAME="Initialindizes"><B>Lemma  11.8</B></A> &nbsp; 
+<I>Let <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img825.png"
+ ALT="$ F_r$"> be the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-linear span of
+<!-- MATH
+ $\{v_{{\bf j}}|\; {\bf j} \in I(n,r) \backslash I_{\omega_r}^{<}\}$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img826.png"
+ ALT="$ \{v_{{\bf j}}\vert\; {\bf j} \in I(n,r) \backslash I_{\omega_r}^{&lt;}\}$">
+in <!-- MATH
+ $V^{\otimes r}$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$ V^{\otimes r}$">. Then for
+all <!-- MATH
+ $w \in {\cal S}_{r}\backslash \{{\rm id}_{}\}$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img827.png"
+ ALT="$ w \in {\cal S}_{r}\backslash \{{\rm id}_{}\}$"> and <!-- MATH
+ ${\bf i} \in I_{\omega_r}^{<}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img828.png"
+ ALT="$ {\bf i} \in I_{\omega_r}^{&lt;}$"> it follows
+that <!-- MATH
+ $\beta (w)(v_{{\bf i}}) \in F_r$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img829.png"
+ ALT="$ \beta (w)(v_{{\bf i}}) \in F_r$">.
+</I>
+<P></DIV><P></P>
+
+<P>
+P<SMALL>ROOF: </SMALL>We use induction on <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">. The case <IMG
+ WIDTH="48" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img201.png"
+ ALT="$ r=2$"> directly follows
+from the formulas
+
+<P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="beta_auf_f__SPMlt__kl"></A><A NAME="beta_auf_f__SPMlt__i"></A><!-- MATH
+ \begin{eqnarray}
+\beta (v_{(k,l)}) & = & qv_{(l,k)} \\
+\beta (v_{(i,i')}) & = & v_{(i',i)} +
+(y-1)\sum_{j=1}^{i-1}q^{j-i}v_{(j',j)}
+\end{eqnarray}
+ -->
+<TABLE CELLPADDING="0" ALIGN="CENTER" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img830.png"
+ ALT="$\displaystyle \beta (v_{(k,l)})$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img831.png"
+ ALT="$\displaystyle qv_{(l,k)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(17)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img832.png"
+ ALT="$\displaystyle \beta (v_{(i,i')})$"></TD>
+<TD WIDTH="10" ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img770.png"
+ ALT="$\displaystyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="228" HEIGHT="77" ALIGN="MIDDLE" BORDER="0"
+ SRC="img833.png"
+ ALT="$\displaystyle v_{(i',i)} +
+(y-1)\sum_{j=1}^{i-1}q^{j-i}v_{(j',j)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(18)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL">
+
+<P>
+which are valid for <!-- MATH
+ $k<l,\; k\neq l'$
+ -->
+<IMG
+ WIDTH="106" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img834.png"
+ ALT="$ k&lt;l,\; k\neq l'$"> and <IMG
+ WIDTH="53" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.png"
+ ALT="$ i\leq m$">.
+If <IMG
+ WIDTH="48" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img196.png"
+ ALT="$ r &gt; 2$">, we embed <!-- MATH
+ ${\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img634.png"
+ ALT="$ {\cal S}_{r-1}$"> as the subgroup of <!-- MATH
+ ${\cal S}_{r}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.png"
+ ALT="$ {\cal S}_{r}$"> that
+fixes the letter <IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$ r$">.
+If <!-- MATH
+ $w \in {\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img636.png"
+ ALT="$ w\in {\cal S}_{r-1}$">, there is nothing to prove since
+<!-- MATH
+ $F_{r-1}\otimes V\subseteq F_r$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img835.png"
+ ALT="$ F_{r-1}\otimes V\subseteq F_r$">. Otherwise, we may write
+<!-- MATH
+ $\beta (w)=\beta (w')\beta_{r-1}\beta_{r-2} \ldots \beta_l$
+ -->
+<IMG
+ WIDTH="228" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img836.png"
+ ALT="$ \beta (w)=\beta (w')\beta_{r-1}\beta_{r-2} \ldots \beta_l$"> where <!-- MATH
+ $w' \in
+{\cal S}_{r-1}$
+ -->
+<IMG
+ WIDTH="82" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img638.png"
+ ALT="$ w'\in {\cal S}_{r-1}$"> and <!-- MATH
+ $l \leq r-1$
+ -->
+<IMG
+ WIDTH="78" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img837.png"
+ ALT="$ l \leq r-1$">.
+<BR>
+<P>
+First consider the case where
+<IMG
+ WIDTH="16" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img838.png"
+ ALT="$ i_l'$"> is not contained in <!-- MATH
+ $\{i_{l+1}, \ldots , i_r\}$
+ -->
+<IMG
+ WIDTH="108" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img839.png"
+ ALT="$ \{i_{l+1}, \ldots , i_r\}$">. 
+Applying <!-- MATH
+ $\beta_{r-1}\beta_{r-2} \ldots \beta_l$
+ -->
+<IMG
+ WIDTH="119" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img840.png"
+ ALT="$ \beta_{r-1}\beta_{r-2} \ldots \beta_l$">
+to <!-- MATH
+ $v_{{\bf i}}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img841.png"
+ ALT="$ v_{{\bf i}}$"> we only have to use (<A HREF="#beta_auf_f__SPMlt__kl">17</A>) but not
+(<A HREF="#beta_auf_f__SPMlt__i">18</A>). Consequently, we have <!-- MATH
+ $\beta_{r-1}\beta_{r-2} \ldots \beta_l(v_{{\bf i}})=
+q^{r-l}v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_r}v_{i_l}$
+ -->
+<IMG
+ WIDTH="340" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img842.png"
+ ALT="$ \beta_{r-1}\beta_{r-2} \ldots \beta_l(v_{{\bf i}})=
+q^{r-l}v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_r}v_{i_l}$">. 
+Here, 
+<!-- MATH
+ $\hat{v_{i_l}}$
+ -->
+<IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img843.png"
+ ALT="$ \hat{v_{i_l}}$"> denotes the omission of <IMG
+ WIDTH="24" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img844.png"
+ ALT="$ v_{i_l}$">. This element obviously
+lies in <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img825.png"
+ ALT="$ F_r$">, proving the assertion in the case <!-- MATH
+ $w'={\rm id}_{}$
+ -->
+<IMG
+ WIDTH="65" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img845.png"
+ ALT="$ w'={\rm id}_{}$">.
+If <IMG
+ WIDTH="23" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img846.png"
+ ALT="$ w'$"> is not the identity map we have
+<!-- MATH
+ $\beta (w')(q^{r-l+1}v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_r}v_{i_l})\in
+F_{r-1}\otimes v_{i_l}\subseteq F_r$
+ -->
+<IMG
+ WIDTH="396" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img847.png"
+ ALT="$ \beta (w')(q^{r-l+1}v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_r}v_{i_l})\in
+F_{r-1}\otimes v_{i_l}\subseteq F_r$"> by the induction hypothesis since
+<!-- MATH
+ $(i_1,\ldots , \hat{i_l},\ldots ,i_r) \in
+I_{\omega_{r-1}}^{<}$
+ -->
+<IMG
+ WIDTH="204" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img848.png"
+ ALT="$ (i_1,\ldots , \hat{i_l},\ldots ,i_r) \in
+I_{\omega_{r-1}}^{&lt;}$">.
+<BR>
+<P>
+We next consider the case <!-- MATH
+ $i_l' \in \{i_{l+1}, \ldots , i_r\}$
+ -->
+<IMG
+ WIDTH="143" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img849.png"
+ ALT="$ i_l' \in \{i_{l+1}, \ldots , i_r\}$">. 
+This forces <IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img850.png"
+ ALT="$ i_l\leq m$"> because <IMG
+ WIDTH="53" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img851.png"
+ ALT="$ i_l &lt;i_l'$">. Let <IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img852.png"
+ ALT="$ i_l'=i_k$">. 
+As above, we have
+<!-- MATH
+ $\beta_{k-2}\beta_{k-3} \ldots \beta_l(v_{{\bf i}})=q^{k-l-1}
+v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_{k-1}}
+v_{i_l}v_{i_k}v_{i_{k+1}}\ldots
+v_{i_r}$
+ -->
+<IMG
+ WIDTH="484" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img853.png"
+ ALT="$ \beta_{k-2}\beta_{k-3} \ldots \beta_l(v_{{\bf i}})=q^{k-l-1}
+v_{i_1}\ldots \hat{v_{i_l}}\ldots v_{i_{k-1}}
+v_{i_l}v_{i_k}v_{i_{k+1}}\ldots
+v_{i_r}$">. Applying <!-- MATH
+ $\beta_{k-1}$
+ -->
+<IMG
+ WIDTH="41" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img854.png"
+ ALT="$ \beta_{k-1}$"> to this expression, we have to use
+(<A HREF="#beta_auf_f__SPMlt__i">18</A>) for the first time. But  for each 
+basis element <!-- MATH
+ $v_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img461.png"
+ ALT="$ v_{{\bf j}}$"> occurring as a summand in the resulting
+expression we have <!-- MATH
+ $j_k\leq i_l\leq m$
+ -->
+<IMG
+ WIDTH="99" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img855.png"
+ ALT="$ j_k\leq i_l\leq m$">.
+Similar things happen concerning the remaining 
+<!-- MATH
+ $\beta_k, \ldots , \beta_{r-1}$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img856.png"
+ ALT="$ \beta_k, \ldots , \beta_{r-1}$">. Thus, for each <!-- MATH
+ $v_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img461.png"
+ ALT="$ v_{{\bf j}}$"> occurring
+as a summand in
+<!-- MATH
+ $\beta_{r-1}\beta_{r-2} \ldots \beta_l(v_{{\bf i}})$
+ -->
+<IMG
+ WIDTH="147" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img857.png"
+ ALT="$ \beta_{r-1}\beta_{r-2} \ldots \beta_l(v_{{\bf i}})$">,
+it follows <!-- MATH
+ $j_r\leq i_l \leq m$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img858.png"
+ ALT="$ j_r\leq i_l \leq m$">. On the other hand, for each such
+summand there must exist an  <IMG
+ WIDTH="50" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img859.png"
+ ALT="$ h &lt; r$"> where <IMG
+ WIDTH="62" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img860.png"
+ ALT="$ j_h &gt;m$">. This is because <IMG
+ WIDTH="11" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img410.png"
+ ALT="$ {\bf j}$">
+must contain a pair <IMG
+ WIDTH="49" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img861.png"
+ ALT="$ \{i,i'\}$"> for some <!-- MATH
+ $i \in \underline{m}$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$ i\in \underline{m}$">, since this was the
+case for the multi-index <IMG
+ WIDTH="11" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img322.png"
+ ALT="$ {\bf i}$"> we started with and <IMG
+ WIDTH="16" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$ \beta$"> either exchanges
+the position of such a pair or replaces it by a sum where other such pairs
+occur in each summand. Consequently,
+we obtain <!-- MATH
+ ${\bf j} \in F_r$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img862.png"
+ ALT="$ {\bf j} \in F_r$"> in this case too.<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+Let the coefficient matrices of the <IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.png"
+ ALT="$ R$">-module homomorphisms 
+<!-- MATH
+ $\pi_r,\;\kappa_r$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img863.png"
+ ALT="$ \pi_r,\;\kappa_r$"> and <IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img864.png"
+ ALT="$ \nu_r$"> (from Lemma <A HREF="#kappa_faktorisiert">11.7</A>)
+be given by
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\pi_r(v_{{\bf j}})=\sum_{I \in P({n},{r})}\pi_{I{\bf j}}v_{I},\;\;
+\kappa_r(v_{{\bf j}})=\sum_{{\bf i} \in I(n,r)}
+\kappa_{{\bf i}{\bf j}}v_{{\bf i}}\;\; \mbox{ and }\;\;
+\nu_r(v_{J})=\sum_{{\bf i} \in I(n,r)}
+\nu_{{\bf i} J}v_{{\bf i}}.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="364" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img865.png"
+ ALT="$\displaystyle \pi_r(v_{{\bf j}})=\sum_{I \in P({n},{r})}\pi_{I{\bf j}}v_{I},\;\...
+...(v_{{\bf j}})=\sum_{{\bf i} \in I(n,r)}
+\kappa_{{\bf i}{\bf j}}v_{{\bf i}}\;\;$">&nbsp; &nbsp; and <IMG
+ WIDTH="185" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img866.png"
+ ALT="$\displaystyle \;\;
+\nu_r(v_{J})=\sum_{{\bf i} \in I(n,r)}
+\nu_{{\bf i} J}v_{{\bf i}}.$">
+</DIV><P></P>
+
+<P>
+Now, if <!-- MATH
+ ${\bf j}\in I_{\omega_r}^{<}$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img867.png"
+ ALT="$ {\bf j}\in I_{\omega_r}^{&lt;}$"> corresponds to the 
+ordered set <!-- MATH
+ $J \in P({n},{r})$
+ -->
+<IMG
+ WIDTH="98" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img868.png"
+ ALT="$ J \in P({n},{r})$">
+we have <!-- MATH
+ $\pi_r(v_{{\bf j}})=v_{J}$
+ -->
+<IMG
+ WIDTH="95" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img869.png"
+ ALT="$ \pi_r(v_{{\bf j}})=v_{J}$"> yielding <!-- MATH
+ $\nu_{{\bf i}J}=\kappa_{{\bf i}
+{\bf j}}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img870.png"
+ ALT="$ \nu_{{\bf i}J}=\kappa_{{\bf i}
+{\bf j}}$"> by Lemma <A HREF="#kappa_faktorisiert">11.7</A>. From Lemma 
+<A HREF="#Initialindizes">11.8</A> it follows <!-- MATH
+ $\kappa_r(v_{{\bf j}})
+\equiv v_{{\bf j}}$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img871.png"
+ ALT="$ \kappa_r(v_{{\bf j}})
+\equiv v_{{\bf j}}$"> modulo <IMG
+ WIDTH="24" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img825.png"
+ ALT="$ F_r$">. Thus, for a pair <!-- MATH
+ ${\bf i},{\bf j}\in
+I_{\omega_r}^{<}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img872.png"
+ ALT="$ {\bf i},{\bf j}\in
+I_{\omega_r}^{&lt;}$"> of multi-indices corresponding to ordered sets 
+<!-- MATH
+ $I,J\in P({n},{r})$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img873.png"
+ ALT="$ I,J\in P({n},{r})$">, we obtain <!-- MATH
+ $\nu_{{\bf i}J}=\kappa_{{\bf i}{\bf j}}=
+\delta_{IJ}$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img874.png"
+ ALT="$ \nu_{{\bf i}J}=\kappa_{{\bf i}{\bf j}}=
+\delta_{IJ}$"> (Kronecker symbol). Finally, from  <!-- MATH
+ $\kappa_r=\nu_r\circ \pi_r$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img820.png"
+ ALT="$ \kappa_r=\nu_r\circ \pi_r$">
+we see for all <!-- MATH
+ ${\bf i}\in I_{\omega_r}^{<}$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img828.png"
+ ALT="$ {\bf i} \in I_{\omega_r}^{&lt;}$"> and <!-- MATH
+ ${\bf j} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img397.png"
+ ALT="$ {\bf j} \in I(n,r)$">
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="kappanupi"></A><!-- MATH
+ \begin{equation}
+\kappa_{{\bf i}{\bf j}}=\sum_{K\in P({n},{r})}\nu_{{\bf i}K}\pi_{K{\bf j}}=
+\pi_{I{\bf j}}.
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="223" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img875.png"
+ ALT="$\displaystyle \kappa_{{\bf i}{\bf j}}=\sum_{K\in P({n},{r})}\nu_{{\bf i}K}\pi_{K{\bf j}}= \pi_{I{\bf j}}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(19)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+We are now ready to give the proof of proposition <A HREF="#aA_comodul">11.6</A>.
+We calculate
+
+<P>
+<!-- MATH
+ \begin{displaymath}
+\tau_{\wedge}(v_{J})=\sum_{{\bf k} \in I(n,r)}
+v_{k_1}\wedge \ldots \wedge
+v_{k_r} \otimes x_{{\bf k} {\bf j}}=
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="316" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img876.png"
+ ALT="$\displaystyle \tau_{\wedge}(v_{J})=\sum_{{\bf k} \in I(n,r)}
+v_{k_1}\wedge \ldots \wedge
+v_{k_r} \otimes x_{{\bf k} {\bf j}}=$">
+</DIV><P></P>
+<!-- MATH
+ \begin{displaymath}
+\sum_{{\bf k} \in I(n,r)} \sum_{I \in P({n},{r})}\pi_{I{\bf k}}v_{I}
+\otimes x_{{\bf k} {\bf j}}=
+\sum_{I \in P({n},{r})} v_{I} \otimes
+\sum_{{\bf k} \in I(n,r)}\kappa_{{\bf i}{\bf k}}x_{{\bf k} {\bf j}}. 
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="444" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img877.png"
+ ALT="$\displaystyle \sum_{{\bf k} \in I(n,r)} \sum_{I \in P({n},{r})}\pi_{I{\bf k}}v_...
+... \otimes
+\sum_{{\bf k} \in I(n,r)}\kappa_{{\bf i}{\bf k}}x_{{\bf k} {\bf j}}. $">
+</DIV><P></P>
+
+<P>
+But, this is exactly what we wanted
+by 
+the definition <!-- MATH
+ $T^{\omega_r}_q({\bf i}:{\bf j})=
+\kappa_r\wr x_{{\bf i} {\bf j}}$
+ -->
+<IMG
+ WIDTH="154" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img878.png"
+ ALT="$ T^{\omega_r}_q({\bf i}:{\bf j})=
+\kappa_r\wr x_{{\bf i} {\bf j}}$"> of bideterminants.
+<BR>
+<P>
+The formula we just have proved has some useful consequences
+concerning the comultiplication and augmentation of <!-- MATH
+ $A:=A^{{\rm s}}_{R,q}(n)$
+ -->
+<IMG
+ WIDTH="110" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img879.png"
+ ALT="$ A:=A^{{\rm s}}_{R,q}(n)$">. These
+are valid for any pair <!-- MATH
+ ${\bf i},{\bf j}\in I_{\omega_{r}}^{<}$
+ -->
+<IMG
+ WIDTH="73" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img880.png"
+ ALT="$ {\bf i},{\bf j}\in I_{\omega_{r}}^{&lt;}$">
+of multi-indices corresponding to ordered sets <!-- MATH
+ $I,J \in P({n},{r})$
+ -->
+<IMG
+ WIDTH="116" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img873.png"
+ ALT="$ I,J\in P({n},{r})$"> and 
+follow directly with the help of the comodule axioms <!-- MATH
+ $(\tau_{\wedge}\otimes
+{\rm id}_{A})\circ \tau_{\wedge}=({\rm id}_{\wedge} \otimes \Delta )\circ \tau_{\wedge}$
+ -->
+<IMG
+ WIDTH="263" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img881.png"
+ ALT="$ (\tau_{\wedge}\otimes
+{\rm id}_{A})\circ \tau_{\wedge}=({\rm id}_{\wedge} \otimes \Delta )\circ \tau_{\wedge}$">
+and <!-- MATH
+ $({\rm id}_{\wedge}\otimes\epsilon )\circ \tau_{\wedge} ={\rm id}_{\wedge}$
+ -->
+<IMG
+ WIDTH="162" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img882.png"
+ ALT="$ ({\rm id}_{\wedge}\otimes\epsilon )\circ \tau_{\wedge} ={\rm id}_{\wedge}$">:
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="bidet_kom"></A><!-- MATH
+ \begin{equation}
+\Delta (T^{\omega_r}_q({\bf i}:{\bf j}))=\sum_{{\bf k}\in I_{\omega_r}^{<}}
+T^{\omega_r}_q({\bf i}:{\bf k})\otimes T^{\omega_r}_q({\bf k}:{\bf j}),
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="357" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img883.png"
+ ALT="$\displaystyle \Delta (T^{\omega_r}_q({\bf i}:{\bf j}))=\sum_{{\bf k}\in I_{\ome...
+...}^{&lt;}} T^{\omega_r}_q({\bf i}:{\bf k})\otimes T^{\omega_r}_q({\bf k}:{\bf j}),$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(20)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="bidet_koe"></A><!-- MATH
+ \begin{equation}
+\epsilon (T^{\omega_r}_q({\bf i}:{\bf j}))=
+\delta_{{\bf i}{\bf j}}.
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="148" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img884.png"
+ ALT="$\displaystyle \epsilon (T^{\omega_r}_q({\bf i}:{\bf j}))= \delta_{{\bf i}{\bf j}}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(21)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Another useful consequence is the following corollary:
+
+<P>
+<P>
+<DIV><A NAME="wedge-Regel"><B>Corollary  11.9</B></A> &nbsp; 
+<I>Let <!-- MATH
+ $a_{{\bf j}} \in R$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="35" ALIGN="MIDDLE" BORDER="0"
+ SRC="img520.png"
+ ALT="$ a_{{\bf j}} \in R$"> be such that <!-- MATH
+ $\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}
+v_{j_1} \wedge v_{j_2}\wedge \ldots \wedge v_{j_r} = 0 $
+ -->
+<IMG
+ WIDTH="280" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img885.png"
+ ALT="$ \sum_{{\bf j}\in I(n,r)}a_{{\bf j}}
+v_{j_1} \wedge v_{j_2}\wedge \ldots \wedge v_{j_r} = 0 $">. Then for all 
+<!-- MATH
+ ${\bf i} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$ {\bf i} \in I(n,r)$"> we have
+</I><!-- MATH
+ \begin{displaymath}
+\sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf i}:{\bf j})=
+ \sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf j}:{\bf i})=0.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="350" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img886.png"
+ ALT="$\displaystyle \sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf i}:{\bf j})=
+\sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf j}:{\bf i})=0.$">
+</DIV><P></P></DIV><P></P>
+P<SMALL>ROOF: </SMALL>By Lemma <A HREF="#kappa_faktorisiert">11.7</A> and the assumption  we have
+<!-- MATH
+ \begin{displaymath}
+\kappa_r(\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}})=
+\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}\kappa_r(v_{{\bf j}})=0.
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="300" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img887.png"
+ ALT="$\displaystyle \kappa_r(\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}v_{{\bf j}})=
+\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}\kappa_r(v_{{\bf j}})=0.$">
+</DIV><P></P>
+Consequently, for all <!-- MATH
+ ${\bf k} \in I(n,r)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img432.png"
+ ALT="$ {\bf k}\in I(n,r)$"> we obtain
+<!-- MATH
+ $\sum_{{\bf j}\in I(n,r)}a_{{\bf j}}\kappa_{{\bf k}{\bf j}}=0$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img888.png"
+ ALT="$ \sum_{{\bf j}\in I(n,r)}a_{{\bf j}}\kappa_{{\bf k}{\bf j}}=0$">
+and therefore
+<!-- MATH
+ \begin{displaymath}
+\sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf i}:{\bf j})=
+\sum_{{\bf k},{\bf j} \in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf k}}
+\kappa_{{\bf k}{\bf j}} =0 .
+\end{displaymath}
+ -->
+<P></P>
+<DIV ALIGN="CENTER">
+<IMG
+ WIDTH="339" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img889.png"
+ ALT="$\displaystyle \sum_{{\bf j} \in I(n,r)} a_{{\bf j}}T^{\omega_r}_q({\bf i}:{\bf ...
+...\bf j} \in I(n,r)} a_{{\bf j}}x_{{\bf i} {\bf k}}
+\kappa_{{\bf k}{\bf j}} =0 .$">
+</DIV><P></P>
+The equation with exchanged indices is deduced by an application of
+the involution <IMG
+ WIDTH="12" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img255.png"
+ ALT="$ ^*$"> according to (<A HREF="node7.html#bidet_transpos">8</A>).<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img232.png"
+ ALT="$ \Box$">
+<BR><P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html160"
+  HREF="node12.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html156"
+  HREF="symp.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html150"
+  HREF="node10.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/lib/latex2html/icons/prev.png"></A>  
+<A NAME="tex2html158"
+  HREF="node23.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index"
+ SRC="file:/usr/share/lib/latex2html/icons/index.png"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html161"
+  HREF="node12.html">Proof of Proposition 8.3</A>
+<B> Up:</B> <A NAME="tex2html157"
+  HREF="symp.html">symp</A>
+<B> Previous:</B> <A NAME="tex2html151"
+  HREF="node10.html">The Weak Straightening Algorithm</A>
+ &nbsp; <B>  <A NAME="tex2html159"
+  HREF="node23.html">Index</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Sebastian Oehms
+2004-08-13
+</ADDRESS>
+</BODY>
+</HTML>
