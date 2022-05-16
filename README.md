@@ -1,6 +1,6 @@
 # Sebastian Oehms
 
-This page is about my open source code contributions, focused on [SageMath](https://www.sagemath.org). This work is not related to my employment at [S&P Computersysteme](https: //en.sup-logistik.de). So these contributions were created in my free time mainly on subway and bus rides to and from my office.
+This page is about my open source code contributions, focused on [SageMath](https://www.sagemath.org). This work is not related to my employment at [S&P Computersysteme](https://en.sup-logistik.de). So these contributions were created in my free time mainly on subway and bus rides to and from my office.
 
 
 ## Contributions to SageMath
@@ -14,7 +14,7 @@ This page is about my open source code contributions, focused on [SageMath](http
 ## Contributions to SageMath in progress
 
 * [Cubic Hecke Algebras](https://trac.sagemath.org/ticket/29717)
-' [Links-Gould Invariant](https://trac.sagemath.org/ticket/33798)
+* [Links-Gould Invariant](https://trac.sagemath.org/ticket/33798)
 
 ## My homepage from 1997 at the University of Stuttgart
 
