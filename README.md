@@ -5,19 +5,31 @@ This page is about my open source code contributions, focused on [SageMath](http
 
 ## Contributions to SageMath
 
-* [Cubic Braid Groups](https://doc.sagemath.org/html/en/reference/groups/sage/groups/cubic_braid.html)
-* [Localization](https://doc.sagemath.org/html/en/reference/rings/sage/rings/localization.html)
-* [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html)
-* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html)
-* [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html)
+* [Cubic Braid Groups](https://doc.sagemath.org/html/en/reference/groups/sage/groups/cubic_braid.html) (released [9.0](https://wiki.sagemath.org/ReleaseTours/sage-9.0))
+* [Localization](https://doc.sagemath.org/html/en/reference/rings/sage/rings/localization.html) (released [9.1](https://wiki.sagemath.org/ReleaseTours/sage-9.1))
+* [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html) (released [9.2](https://wiki.sagemath.org/ReleaseTours/sage-9.2))
+* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4))
+* [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html) (released [9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5))
+
+Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://trac.sagemath.org/search?q=soehms&noquickjump=1&ticket=on).
 
 ## Contributions to SageMath in progress
 
 * [Cubic Hecke Algebras](https://trac.sagemath.org/ticket/29717)
 * [Links-Gould Invariant](https://trac.sagemath.org/ticket/33798)
 
+## Git repositories, Docker images and Python packages
+
+In general these are related to my work on SageMath:
+
+* [GitHub](https://github.com/soehms)
+* [GitLab](https://gitlab.com/soehms)
+* [dockerhub](https://hub.docker.com/u/soehms)
+* [PyPI](https://pypi.org/search/?q=soehms)
+
+
 ## My homepage from 1997 at the University of Stuttgart
 
 Formerly, this has been online at https://www.iaz.uni-stuttgart.de/AbDartheo/ehemalige/Oehms/.
 
-To go to a 2019 backup of this old homepage [click here](old_home_page/index.html). Note, that not all links given there are still working.
+To go to a 2019 backup of this old homepage [click here](old_home_page/index.html). Note, that not all links given there are still working. The publications listed there you can also find on [ResearchGate](https://www.researchgate.net/scientific-contributions/Sebastian-Oehms-2016069534).
