@@ -10,15 +10,19 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html) (released [9.2](https://wiki.sagemath.org/ReleaseTours/sage-9.2))
 * [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4))
 * [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html) (released [9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5))
+* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7))
+* [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7))
+
+
 
 Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://trac.sagemath.org/search?q=soehms&noquickjump=1&ticket=on).
 
 ## Contributions to SageMath in progress
 
-* [Cubic Hecke Algebras](https://trac.sagemath.org/ticket/29717)
-* [Links-Gould Invariant](https://trac.sagemath.org/ticket/33798)
+* [More KnotInfo wrappers for polynomial invariants](https://trac.sagemath.org/ticket/33969)
+* [New doctest option *hide features*](https://trac.sagemath.org/ticket/34185)
 
-## Git repositories, Docker images and Python packages
+## Git repositories, Docker images, Python packages and Gitpod workspaces
 
 In general these are related to my work on SageMath:
 
@@ -26,6 +30,7 @@ In general these are related to my work on SageMath:
 * [GitLab](https://gitlab.com/soehms)
 * [dockerhub](https://hub.docker.com/u/soehms)
 * [PyPI](https://pypi.org/search/?q=soehms)
+* [Gitpod](gitpod_workspaces.md)
 
 
 ## My homepage from 1997 at the University of Stuttgart
