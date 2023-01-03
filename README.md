@@ -8,9 +8,9 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Cubic Braid Groups](https://doc.sagemath.org/html/en/reference/groups/sage/groups/cubic_braid.html) (released [9.0](https://wiki.sagemath.org/ReleaseTours/sage-9.0))
 * [Localization](https://doc.sagemath.org/html/en/reference/rings/sage/rings/localization.html) (released [9.1](https://wiki.sagemath.org/ReleaseTours/sage-9.1))
 * [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html) (released [9.2](https://wiki.sagemath.org/ReleaseTours/sage-9.2))
-* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4))
+* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4), [tutorial](https://github.com/soehms/database_knotinfo/blob/main/tutorials/sage_knotinfo_interface_tutorial.ipynb))
 * [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html) (released [9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5))
-* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7))
+* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7), [tutorial](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb))
 * [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7))
 
 
