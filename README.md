@@ -18,7 +18,7 @@ This page is about my open source code contributions, focused on [SageMath](http
 
 
 
-Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://trac.sagemath.org/search?q=soehms&noquickjump=1&ticket=on).
+Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://github.com/issues?q=isauthor%3Asoehms+is%3Apublic)
 
 ## Contributions to SageMath in progress
 
