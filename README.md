@@ -10,8 +10,11 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html) (released [9.2](https://wiki.sagemath.org/ReleaseTours/sage-9.2))
 * [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4), [tutorial](https://github.com/soehms/database_knotinfo/blob/main/tutorials/sage_knotinfo_interface_tutorial.ipynb))
 * [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html) (released [9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5))
-* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7), [tutorial](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb))
-* [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://wiki.sagemath.org/ReleaseTours/sage-9.7))
+* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour), [tutorial](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb))
+* [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour))
+* [More KnotInfo wrappers for polynomial invariants (Khovanov polynomial, ](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial)
+[Conway polynomial)](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.conway_polynomial) (released [9.8](https://github.com/sagemath/sage/wiki/Sage-9.8-Release-Tour))
+
 
 
 
@@ -19,8 +22,9 @@ Furthermore I have been involved in the development of a couple of other feature
 
 ## Contributions to SageMath in progress
 
-* [More KnotInfo wrappers for polynomial invariants](https://trac.sagemath.org/ticket/33969)
-* [New doctest option *hide features*](https://trac.sagemath.org/ticket/34185)
+* [New doctest option *hide features*](https://github.com/sagemath/sage/pull/35668)
+* [GitHub workflow for synchronization of state labels](https://github.com/sagemath/sage/pull/35172)
+* [Changing the knot theory PD-code convention](https://github.com/sagemath/sage/pull/35665)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
 
