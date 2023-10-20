@@ -14,17 +14,17 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour))
 * [More KnotInfo wrappers for polynomial invariants (Khovanov polynomial, ](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial)
 [Conway polynomial)](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.conway_polynomial) (released [9.8](https://github.com/sagemath/sage/wiki/Sage-9.8-Release-Tour))
+* [Changing the knot theory PD-code convention](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.pd_code) (released [10.1](https://github.com/sagemath/sage/wiki/Sage-10.1-Release-Tour))
+* [New doctest option *hide features*](https://doc.sagemath.org/html/en/reference/doctest/sage/doctest/control.html#sage.doctest.control.DocTestController.run) (released [10.1](https://github.com/sagemath/sage/wiki/Sage-10.1-Release-Tour))
 
 
 
 
-Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://github.com/issues?q=isauthor%3Asoehms+is%3Apublic)
+Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://github.com/issues?q=is+author%3Asoehms+)
 
 ## Contributions to SageMath in progress
 
-* [New doctest option *hide features*](https://github.com/sagemath/sage/pull/35668)
 * [GitHub workflow for synchronization of state labels](https://github.com/sagemath/sage/pull/35172)
-* [Changing the knot theory PD-code convention](https://github.com/sagemath/sage/pull/35665)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
 
