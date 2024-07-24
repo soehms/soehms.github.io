@@ -20,6 +20,7 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [GitHub workflow to continue our images on Docker Hub](https://github.com/sagemath/sage/actions/workflows/push_to_docker_hub.yml) (released [10.2](https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour))
 * [Revision of the knot theory colorings method](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.coloring_maps) (released [10.2](https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour))
 * [Adjust the KnotInfo interface to current changes concerning Khovanov polynomials and knots with 13 crossings](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial) (released [10.3](https://github.com/sagemath/sage/wiki/Sage-10.3-Release-Tour))
+* [Explicit detection of symmetry mutants of links](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.SymmetryMutant) (released [10.4](https://github.com/sagemath/sage/wiki/Sage-10.4-Release-Tour))
 
 
 
