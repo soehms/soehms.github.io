@@ -21,14 +21,14 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Revision of the knot theory colorings method](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.coloring_maps) (released [10.2](https://github.com/sagemath/sage/wiki/Sage-10.2-Release-Tour))
 * [Adjust the KnotInfo interface to current changes concerning Khovanov polynomials and knots with 13 crossings](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial) (released [10.3](https://github.com/sagemath/sage/wiki/Sage-10.3-Release-Tour))
 * [Explicit detection of symmetry mutants of links](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.SymmetryMutant) (released [10.4](https://github.com/sagemath/sage/wiki/Sage-10.4-Release-Tour))
-
-
+* [Extend the method get_knotinfo of the Link class to cover non-prime knots](https://doc.sagemath.org/html/en/reference/knots/sage/knots/free_knotinfo_monoid.html) (released [10.5](https://github.com/sagemath/sage/wiki/Sage-10.5-Release-Tour))
 
 Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://github.com/search?q=soehms++&type=issues&state=closed) or [here](https://github.com/search?q=soehms++&type=pullrequests&state=closed)
 
 ## Contributions to SageMath in progress
 
-* [Extend the method get_knotinfo of the Link class to cover non-prime knots](https://github.com/sagemath/sage/pull/38254)
+* [Easy installation of SageMath on Windows using Docker](https://github.com/soehms/projects_docker_guide)
+* [Guide to SageMath installation methods for Windows](https://github.com/sagemath/sage-windows/pull/2)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
 
