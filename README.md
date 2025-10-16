@@ -28,7 +28,10 @@ Furthermore I have been involved in the development of a couple of other feature
 ## Contributions to SageMath in progress
 
 * [Easy installation of SageMath on Windows using Docker](https://github.com/soehms/projects_docker_guide)
-* [Guide to SageMath installation methods for Windows](https://github.com/sagemath/sage-windows/pull/2)
+* [Guide to SageMath installation methods for Windows](https://github.com/sagemath/sage-windows)
+* [Interface to Khoca](https://github.com/sagemath/sage/pull/40081)
+* [Interface to Regina](https://github.com/sagemath/sage/pull/40370)
+* [Interface to SnapPy](https://github.com/sagemath/sage/pull/40105)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
 
