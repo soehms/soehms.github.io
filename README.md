@@ -8,9 +8,9 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Cubic Braid Groups](https://doc.sagemath.org/html/en/reference/groups/sage/groups/cubic_braid.html) (released [9.0](https://wiki.sagemath.org/ReleaseTours/sage-9.0))
 * [Localization](https://doc.sagemath.org/html/en/reference/rings/sage/rings/localization.html) (released [9.1](https://wiki.sagemath.org/ReleaseTours/sage-9.1))
 * [Splitting Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/splitting_algebra.html) (released [9.2](https://wiki.sagemath.org/ReleaseTours/sage-9.2))
-* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4), [tutorial](https://github.com/soehms/database_knotinfo/blob/main/tutorials/sage_knotinfo_interface_tutorial.ipynb))
+* [Interface to KnotInfo and LinkInfo](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html) (released [9.4](https://wiki.sagemath.org/ReleaseTours/sage-9.4), [tutorial](https://github.com/soehms/database_knotinfo/blob/main/tutorials/sage_knotinfo_interface_tutorial.ipynb) [view on PyPIstats](https://pypistats.org/packages/database-knotinfo))
 * [Interface to Mathics](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/mathics.html) (released [9.5](https://wiki.sagemath.org/ReleaseTours/sage-9.5))
-* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour), [tutorial](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb))
+* [Cubic Hecke Algebras](https://doc.sagemath.org/html/en/reference/algebras/sage/algebras/hecke_algebras/cubic_hecke_algebra.html) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour), [tutorial](https://github.com/soehms/database_cubic_hecke/blob/main/tutorials/cubic_hecke_algebra_tutorial.ipynb) [view on PyPIstats](https://pypistats.org/packages/database-cubic-hecke))
 * [Links-Gould Invariant](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.links_gould_polynomial) (released [9.7](https://github.com/sagemath/sage/wiki/Sage-9.7-Release-Tour))
 * [More KnotInfo wrappers for polynomial invariants (Khovanov polynomial, ](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial)
 [Conway polynomial)](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.conway_polynomial) (released [9.8](https://github.com/sagemath/sage/wiki/Sage-9.8-Release-Tour))
@@ -22,6 +22,8 @@ This page is about my open source code contributions, focused on [SageMath](http
 * [Adjust the KnotInfo interface to current changes concerning Khovanov polynomials and knots with 13 crossings](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.KnotInfoBase.khovanov_polynomial) (released [10.3](https://github.com/sagemath/sage/wiki/Sage-10.3-Release-Tour))
 * [Explicit detection of symmetry mutants of links](https://doc.sagemath.org/html/en/reference/knots/sage/knots/knotinfo.html#sage.knots.knotinfo.SymmetryMutant) (released [10.4](https://github.com/sagemath/sage/wiki/Sage-10.4-Release-Tour))
 * [Extend the method get_knotinfo of the Link class to cover non-prime knots](https://doc.sagemath.org/html/en/reference/knots/sage/knots/free_knotinfo_monoid.html) (released [10.5](https://github.com/sagemath/sage/wiki/Sage-10.5-Release-Tour))
+* [Interface to Khoca](https://doc.sagemath.org/html/en/reference/knots/sage/knots/link.html#sage.knots.link.Link.khovanov_homology) (released [10.8](https://github.com/sagemath/sage/wiki/Sage-10.8-Release-Tour))
+* [Interface to Regina](https://doc.sagemath.org/html/en/reference/interfaces/sage/interfaces/regina.html) (released [10.8](https://github.com/sagemath/sage/wiki/Sage-10.8-Release-Tour), [view on PyPIstats](https://pypistats.org/packages/khocahttps://pypistats.org/packages/khoca))
 
 Furthermore I have been involved in the development of a couple of other features, functionalities and bug-fixes. To view them all [click here](https://github.com/search?q=soehms++&type=issues&state=closed) or [here](https://github.com/search?q=soehms++&type=pullrequests&state=closed)
 
@@ -29,8 +31,6 @@ Furthermore I have been involved in the development of a couple of other feature
 
 * [Easy installation of SageMath on Windows using Docker](https://github.com/soehms/projects_docker_guide)
 * [Guide to SageMath installation methods for Windows](https://github.com/sagemath/sage-windows)
-* [Interface to Khoca](https://github.com/sagemath/sage/pull/40081)
-* [Interface to Regina](https://github.com/sagemath/sage/pull/40370)
 * [Interface to SnapPy](https://github.com/sagemath/sage/pull/40105)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
