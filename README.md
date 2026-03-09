@@ -31,6 +31,7 @@ Furthermore I have been involved in the development of a couple of other feature
 
 * [Easy installation of SageMath on Windows using Docker](https://github.com/soehms/projects_docker_guide)
 * [Guide to SageMath installation methods for Windows](https://github.com/sagemath/sage-windows)
+* [Birman-Murakami-Wenzl algebra](https://github.com/sagemath/sage/pull/41513)
 * [Interface to SnapPy](https://github.com/sagemath/sage/pull/40105)
 
 ## Git repositories, Docker images, Python packages and Gitpod workspaces
